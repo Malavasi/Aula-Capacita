@@ -544,3 +544,55 @@ Stack Trace:
 #0 G:\Nube\Dropbox\Trabajos\2014\I-Semestre\Apps web\cursos\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 G:\Nube\Dropbox\Trabajos\2014\I-Semestre\Apps web\cursos\cake\index.php(41): require('G:\Nube\Dropbox...')
 #2 {main}
+2014-07-10 14:20:45 Error: Fatal Error (1): Call to undefined method View::redirect() in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Pages\home.ctp, line 3]
+2014-07-10 14:20:45 Error: [FatalErrorException] Call to undefined method View::redirect()
+Request URL: /cake/
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'G:\Nube\GitHub\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'G:\Nube\GitHub\...', 3, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'G:\Nube\GitHub\...', 3, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-10 14:21:41 Error: Fatal Error (1): Function name must be a string in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Pages\home.ctp, line 3]
+2014-07-10 14:21:41 Error: [FatalErrorException] Function name must be a string
+Request URL: /cake/
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Function name m...', 'G:\Nube\GitHub\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', 'G:\Nube\GitHub\...', 3, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Function name m...', 'G:\Nube\GitHub\...', 3, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-10 14:23:16 Error: [MissingControllerException] Controller class InicioController could not be found.
+Exception Attributes: array (
+  'class' => 'InicioController',
+  'plugin' => NULL,
+)
+Request URL: /cake/
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#2 {main}
+2014-07-10 14:29:50 Error: [MissingActionException] Action InicioController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'InicioController',
+  'action' => 'display',
+)
+Request URL: /cake/
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(InicioController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-10 14:44:26 Error: [MissingControllerException] Controller class UsuariosController could not be found.
+Exception Attributes: array (
+  'class' => 'UsuariosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#2 {main}
