@@ -49,13 +49,32 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function add() {
+		$temp;
+		
 		if ($this->request->is('post')) {
+			
+			if ($this->request->data['Usuario']['nick'] == "") {
+				$nick = $this->crearNick($this->request->data['Usuario']['nombre'],
+										 $this->request->data['Usuario']['apellidos']);
+				$this->request->data['Usuario']['nick'] = $nick;
+			}
+			
+			if ($this->request->data['Usuario']['contrasena'] == "") {
+				$this->request->data['Usuario']['contrasena'] = $this->crearContrasena($this->request->data['Usuario']['nombre'],
+																					   $this->request->data['Usuario']['apellidos']);	
+			}
+			
+			//para el md5 de la contrasena de tamano 32
+			$this->request->data['Usuario']['contrasena'] = md5($this->request->data['Usuario']['contrasena']);
+			$this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
+			
+			//creacion del usuario para ser almacenado
 			$this->Usuario->create();
 			if ($this->Usuario->save($this->request->data)) {
-				$this->Session->setFlash(__('El usuario ha sido guardado.'));
+				$this->Session->setFlash(__('El usuario ha sido creado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('El usuario no se ha podido guardar. Por favor, intente de nuevo.'));
+				$this->Session->setFlash(__('El usuario no se ha podido crear. Por favor, intente de nuevo.'));
 			}
 		}
 	}
@@ -80,15 +99,36 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$temp;
+		
 		if (!$this->Usuario->exists($id)) {
 			throw new NotFoundException(__('Usuario Inválido'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Usuario->save($this->request->data)) {
-				$this->Session->setFlash(__('El usuario ha sido actualizado'));
-				return $this->redirect(array('action' => 'index'));
+			if ($this->request->data['Usuario']['contrasena'] == $this->request->data['Usuario']['confirmarContrasena']) {
+				if ($this->request->data['Usuario']['nick'] == "") {
+					$nick = $this->crearNick($this->request->data['Usuario']['nombre'],
+											 $this->request->data['Usuario']['apellidos']);
+					$this->request->data['Usuario']['nick'] = $nick;
+				}
+				
+				if ($this->request->data['Usuario']['contrasena'] == "") {
+					$this->request->data['Usuario']['contrasena'] = $this->crearContrasena($this->request->data['Usuario']['nombre'],
+																						   $this->request->data['Usuario']['apellidos']);	
+				}
+				
+				//para el md5 de la contrasena de tamano 32
+				$this->request->data['Usuario']['contrasena'] = md5($this->request->data['Usuario']['contrasena']);
+				$this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
+				
+				if ($this->Usuario->save($this->request->data)) {
+					$this->Session->setFlash(__('El usuario ha sido actualizado'));
+					return $this->redirect(array('action' => 'index'));
+				} else {
+					$this->Session->setFlash(__('El usuario no se ha podido guardar. Por favor, intente de nuevo.'));
+				}
 			} else {
-				$this->Session->setFlash(__('El usuario no se ha podido guardar. Por favor, intente de nuevo.'));
+				$this->Session->setFlash(__('Las contraseñas no coinciden.'));
 			}
 		} else {
 			$options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
@@ -115,5 +155,69 @@ class UsuariosController extends AppController {
 			$this->Session->setFlash(__('El usuario no se ha podido eliminar. Por favor, intente de nuevo.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+	
+	public function AjaxAddUser() {
+		$this->layout = 'ajax';
+		
+		if($this->request->is('post'))	{
+			$this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
+				
+			$this->Blogforo->Comentario->create();
+			
+			if($this->Blogforo->Comentario->save($this->request->data))	{
+				//echo ($this->request->data['Comentario']['comentario']);
+			}
+		}
+	}
+	
+	//para crear el nombre de usuario con el nombre y apellidos.
+	public function crearNick($nombre, $apellidos) {
+		$aNombre;
+		$aApellidos;
+		$nick;
+		
+		if(strpos($nombre, ' ') != FALSE){
+			$aNombre = explode(' ', $nombre);
+			$nick = strtolower($aNombre[0]);
+		} else {
+			$nick = strtolower($nombre);
+		}
+		
+		if(strpos($apellidos, ' ') != FALSE){
+			$aApellido = explode(' ', $apellidos);
+			
+			$nick .= '.' . strtolower($aApellido[0]);
+		} else {
+			$nick .= '.' . strtolower($apellidos);
+		}
+		
+		
+		return $nick;
+	}
+
+	//para crear la contrasena del usuario con nombre y apellidos.
+	public function crearContrasena($nombre, $apellidos) {
+		$aNombre;
+		$aApellidos;
+		$contrasena;
+		
+		if(strpos($nombre, ' ') != FALSE){
+			$aNombre = explode(' ', $nombre);
+			$nick = strtoupper($aNombre[0]);
+		} else {
+			$nick = strtoupper($nombre);
+		}
+		
+		if(strpos($apellidos, ' ') != FALSE){
+			$aApellido = explode(' ', $apellidos);
+			
+			$nick .= '.' . strtoupper($aApellido[0]);
+		} else {
+			$nick .= '.' . strtoupper($apellidos);
+		}
+		
+		
+		return $nick;
 	}
 }

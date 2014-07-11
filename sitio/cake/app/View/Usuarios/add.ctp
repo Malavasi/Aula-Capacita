@@ -15,23 +15,20 @@
 		
 		echo $this->Form->input('nick');
 		
-		//echo $this->Form->input('contrasena');
-		
 		echo "<p>";
 			echo "Contraseña<br>" . $this->Form->password('contrasena');
 		echo "</p>";
 		
-		echo $this->Form->input('fecha');
 	?>
 	</fieldset>
 	
-	<?php echo $this->Form->end(__('Guardar')); ?>
+	<?php echo $this->Form->end(__('Crear')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Crear Usuario'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('Consultar Usuarios'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Crear Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Consultar Usuarios'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
 		<!--
 		<li><?php echo $this->Html->link(__('Crear Curso'), array('controller' => 'cursos', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('Consultar Cursos'), array('controller' => 'cursos', 'action' => 'index')); ?> </li>
