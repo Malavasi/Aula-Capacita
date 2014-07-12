@@ -160,15 +160,7 @@ class UsuariosController extends AppController {
 	public function AjaxAddUser() {
 		$this->layout = 'ajax';
 		
-		if($this->request->is('post'))	{
-			$this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
-				
-			$this->Blogforo->Comentario->create();
-			
-			if($this->Blogforo->Comentario->save($this->request->data))	{
-				//echo ($this->request->data['Comentario']['comentario']);
-			}
-		}
+		
 	}
 	
 	//para crear el nombre de usuario con el nombre y apellidos.
