@@ -25,5 +25,3 @@
 	<?php echo $this->Form->end(__('Crear')); ?>
 </div>
 <?php echo $this->element('acciones'); ?>
-
-<?php echo $this->Js->writeBuffer(); ?>
