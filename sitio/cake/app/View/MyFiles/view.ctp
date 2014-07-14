@@ -5,7 +5,7 @@
 		<dd><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'download', $myFile['MyFile']['id'])); ?>&nbsp;</dd>
 				
 		<dt><?php echo __('Tamaño'); ?></dt>
-		<dd><?php echo h($myFile['MyFile']['size']); ?>&nbsp;</dd>
+		<dd><?php echo h($myFile['MyFile']['size']), ' B'; ?>&nbsp;</dd>
 		
 		<dt><?php echo __('Incluído'); ?></dt>
 		<dd><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</dd>
