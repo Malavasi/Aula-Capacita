@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'Aula Virtual');
+$cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +40,7 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual');
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://google.com'); ?></h1>
+			<h3><?php echo $this->Html->link($cakeDescription, 'http://google.com'); ?></h3>
 		</div>
 		<div id="content">
        <?php echo $this->element('usuario'); ?>
@@ -60,6 +60,6 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual');
 			</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
