@@ -1,6 +1,8 @@
 <?php
+ App::uses('AppModel', 'Model');
+
 class Matriculas extends AppModel {
-    public $useTable = 'matricula';
+    public $useTable = 'matriculas';
 
     public $validate = array(
         'usuario_id' => array(

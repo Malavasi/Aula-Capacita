@@ -18,15 +18,22 @@ class BlogforosController extends AppController {
 	public $components = array('Paginator');
 	
 	public $helpers = array('Js' => array('Jquery'));
-	
+	var $paginate;
 /**
  * index method
  *
  * @return void
  */
-	public function index() {
-		$this->Blogforo->recursive = 0;
-		$this->set('blogforos', $this->Paginator->paginate());
+	public function index($id=NULL) {
+        if($id==NULL)
+        {
+		    $this->Blogforo->recursive = 0;
+		    $this->set('blogforos', $this->Paginator->paginate());
+        }
+        else
+        {
+            $this->set('blogforos', $this->Paginator->paginate(array ('curso_id'=>$id)));
+        }
         
 	}
 
@@ -41,6 +48,7 @@ class BlogforosController extends AppController {
 		if (!$this->Blogforo->exists($id)) {
 			throw new NotFoundException(__('Foro inválido'));
 		}
+        $_SESSION['id_curso'] = $id;
 		$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
         $usuario = new Usuarios();
         $blogforo = $this->Blogforo->find('first', $options);
@@ -61,9 +69,9 @@ class BlogforosController extends AppController {
 	public function add() {
 		$this->set('blogforos', $this->Paginator->paginate());
 		if ($this->request->is('post')) {
-			
 			$this->request->data['Blogforo']['fechapublicacion'] = date("Y-m-d H:i:s");
-			
+			$this->request->data['Blogforo']['curso_id'] = $_SESSION['id_curso'];
+            $this->request->data['Blogforo']['usuario_id'] = $_SESSION['id_usuario'];
 			var_dump($this->request->data);
 			
 			$this->Blogforo->create();
@@ -90,7 +98,7 @@ class BlogforosController extends AppController {
 		if (!$this->Blogforo->exists($id)) {
 			throw new NotFoundException(__('Invalid blogforo'));
 		}
-		
+		$_SESSION['id_curso'] = $id;
 		$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
 		$this->set('blogforo', $this->Blogforo->find('first', $options));
 		
@@ -160,4 +168,33 @@ class BlogforosController extends AppController {
 			}
 		}
 	}
+    	public function editComment($id = null)	{
+		
+		if (!$this->Blogforo->Comentario->exists($id)) {
+			throw new NotFoundException(__('Foro inválido'));
+		}
+		
+		$options = array('conditions' => array('Comentario.' . $this->Blogforo->Comentario->primaryKey => $id));
+		$this->set('comentario', $this->Blogforo->Comentario->find('first', $options));
+		
+		if ($this->request->is(array('post', 'put'))) {
+			
+			$this->request->data['Comentario']['fechapublicacion'] = date("Y-m-d H:i:s");
+			
+			if ($this->Blogforo->Comentario->save($this->request->data)) {
+				$this->Session->setFlash(__('El comentario ha sido actualizado.'));
+				
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('El comentario no se ha podido actualizar. Por favor, intente de nuevo.'));
+			}
+		} else {
+			$options = array('conditions' => array('Comentario.' . $this->Blogforo->Comentario->primaryKey => $id));
+			$this->request->data = $this->Blogforo->Comentario->find('first', $options);
+		}
+		$cursos = $this->Blogforo->Curso->find('list');
+		$usuarios = $this->Blogforo->Usuario->find('list');
+		$this->set(compact('cursos', 'usuarios'));
+	}
+
 }

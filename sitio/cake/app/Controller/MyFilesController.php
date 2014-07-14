@@ -6,6 +6,7 @@ App::uses('AppController', 'Controller');
  * @property MyFile $MyFile
  * @property PaginatorComponent $Paginator
  */
+ session_start();
 class MyFilesController extends AppController {
 
 /**
@@ -20,9 +21,18 @@ class MyFilesController extends AppController {
  *
  * @return void
  */
-	public function index() {
-		$this->MyFile->recursive = 0;
-		$this->set('myFiles', $this->Paginator->paginate());
+	public function index($id = NULL) {
+        if($id == NULL)
+        {
+            $this->MyFile->recursive = 0;
+		    $this->set('myFiles', $this->Paginator->paginate());    
+        }
+        else
+        {
+            $this->MyFile->recursive = 0;
+            $this->set('myFiles', $this->Paginator->paginate(array ('curso_id'=>$id)));    
+        }
+		
 	}
 
 /**
@@ -57,7 +67,8 @@ class MyFilesController extends AppController {
             $this->request->data['MyFile']['size'] = $this->request->data['MyFile']['File']['size'];
 			$this->request->data['MyFile']['created'] = date("Y-m-d H:i:s");
             $this->request->data['MyFile']['data'] = $fileData;
-					
+			$this->request->data['MyFile']['curso_id']	= '1';
+            $this->request->data['MyFile']['usuario_id']	= $_SESSION['id_usuario'];
             if($this->MyFile->save($this->request->data)) {
             	$this->Session->setFlash(__('El archivo ha sido guardado.'));
             	return $this->redirect(array('action' => 'index'));
@@ -90,7 +101,7 @@ class MyFilesController extends AppController {
             $this->request->data['MyFile']['size'] = $this->request->data['MyFile']['File']['size'];
 			$this->request->data['MyFile']['created'] = date("Y-m-d H:i:s");
             $this->request->data['MyFile']['data'] = $fileData;
-			
+			$this->MyFile->id = $id; 
 			if ($this->MyFile->save($this->request->data)) {
 				$this->Session->setFlash(__('El archivo ha sido guardado.'));
 				return $this->redirect(array('action' => 'index'));

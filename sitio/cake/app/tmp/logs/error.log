@@ -853,3 +853,454 @@ Stack Trace:
 #4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #6 {main}
+2014-07-14 12:25:11 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:29:21 Error: [MissingTableException] Table matricula for model Matriculas was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matricula',
+  'class' => 'Matriculas',
+  'ds' => 'default',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('matricula')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\SesionesController.php(21): Model->find('all', Array)
+#4 [internal function]: SesionesController->login()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-07-14 12:30:03 Error: [MissingTableException] Table matricula for model Matriculas was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matricula',
+  'class' => 'Matriculas',
+  'ds' => 'default',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('matricula')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\SesionesController.php(21): Model->find('all', Array)
+#4 [internal function]: SesionesController->login()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-07-14 12:31:17 Error: [MissingTableException] Table matricula for model Matriculas was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matricula',
+  'class' => 'Matriculas',
+  'ds' => 'default',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('matricula')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\SesionesController.php(21): Model->find('all', Array)
+#4 [internal function]: SesionesController->login()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-07-14 12:32:00 Error: [MissingTableException] Table matricula for model Matriculas was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matricula',
+  'class' => 'Matriculas',
+  'ds' => 'default',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('matricula')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\SesionesController.php(21): Model->find('all', Array)
+#4 [internal function]: SesionesController->login()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-07-14 12:33:12 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:37:09 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:37:30 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:37:42 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:38:28 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:38:53 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:38:57 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:39:18 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:39:26 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 12:57:54 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Elements\acciones.ctp, line 29]
+2014-07-14 12:57:54 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+Request URL: /cake/MyFiles/index/1
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 29, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 29, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 12:58:21 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 13:12:51 Error: Fatal Error (4): syntax error, unexpected '.' in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Elements\acciones.ctp, line 40]
+2014-07-14 13:12:51 Error: [FatalErrorException] syntax error, unexpected '.'
+Request URL: /cake/MyFiles/edit/3
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 40, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 40, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 13:37:11 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'curso_id' doesn't have a default value
+Request URL: /cake/my_files/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `cu...')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1834): DboSource->create(Object(MyFile), Array, Array)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MyFilesController.php(62): Model->save(Array)
+#5 [internal function]: MyFilesController->add()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#11 {main}
+2014-07-14 13:38:27 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'usuario_id' doesn't have a default value
+Request URL: /cake/my_files/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `cu...')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1834): DboSource->create(Object(MyFile), Array, Array)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MyFilesController.php(62): Model->save(Array)
+#5 [internal function]: MyFilesController->add()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#11 {main}
+2014-07-14 13:39:55 Error: [NotFoundException] Archivo inválido
+Request URL: /cake/my_files/delete
+Stack Trace:
+#0 [internal function]: MyFilesController->delete()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 13:40:05 Error: [NotFoundException] Archivo inválido
+Request URL: /cake/my_files/delete
+Stack Trace:
+#0 [internal function]: MyFilesController->delete()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 14:44:03 Error: Fatal Error (1): Call to a member function findById() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php, line 35]
+2014-07-14 14:44:03 Error: [FatalErrorException] Call to a member function findById() on a non-object
+Request URL: /cake/BlogForos/index/1
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 35, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 35, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 15:01:52 Error: [MissingModelException] BlogForo
+Request URL: /cake/BlogForos/index/1
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(1080): PaginatorComponent->paginate('BlogForo', Array, Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php(42): Controller->paginate('BlogForo')
+#2 [internal function]: BlogforosController->index('1')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#8 {main}
+2014-07-14 15:21:53 Error: Fatal Error (1): Call to a member function find() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MatriculasController.php, line 6]
+2014-07-14 15:21:53 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/Matriculas/index/1
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 6, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 6, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 15:40:29 Error: [MissingActionException] Action MatriculasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'add',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-14 15:41:55 Error: [MissingActionException] Action MatriculasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'add',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-14 15:41:57 Error: [MissingActionException] Action MatriculasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'add',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-14 15:41:57 Error: [MissingActionException] Action MatriculasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'add',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-14 15:41:58 Error: [MissingActionException] Action MatriculasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'add',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-14 15:41:58 Error: [MissingActionException] Action MatriculasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'add',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-14 15:41:59 Error: [MissingActionException] Action MatriculasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MatriculasController',
+  'action' => 'add',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2014-07-14 15:45:38 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Matriculas\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Matriculas\\add.ctp',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 15:47:20 Error: Fatal Error (1): Call to a member function save() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MatriculasController.php, line 20]
+2014-07-14 15:47:20 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 20, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 20, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 15:49:54 Error: Fatal Error (1): Class 'AppModel' not found in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Model\Matriculas.php, line 2]
+2014-07-14 15:49:54 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', 'G:\Nube\GitHub\...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', 'G:\Nube\GitHub\...', 2, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', 'G:\Nube\GitHub\...', 2, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 15:50:12 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Matriculas\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Matriculas\\add.ctp',
+)
+Request URL: /cake/matriculas/add/17
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}

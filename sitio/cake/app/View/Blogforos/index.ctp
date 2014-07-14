@@ -18,8 +18,11 @@
 				<td><?php echo h($blogforo['Blogforo']['fechapublicacion']); ?>&nbsp;</td>
 				<td class="actions">
 					<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $blogforo['Blogforo']['id'])); ?>
-					<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $blogforo['Blogforo']['id'])); ?>
-					<?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $blogforo['Blogforo']['id']), array(), __('Va a eliminar el foro del curso %s, ¿Desea continuar?', $blogforo['Blogforo']['curso_id'])); ?>
+					<?php if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
+                          {
+                            echo $this->Html->link(__('Editar'), array('action' => 'edit', $blogforo['Blogforo']['id']));
+					         echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $blogforo['Blogforo']['id']), array(), __('Va a eliminar el foro del curso %s, ¿Desea continuar?', $blogforo['Blogforo']['curso_id'])); 
+                    }?>
 				</td>
 			</tr>
 		<?php endforeach; ?>
@@ -40,4 +43,5 @@
 	</div>
 </div>
 
-<?php echo $this->element('acciones'); ?>
+<?php $this->set('blog', 1);
+echo $this->element('acciones'); ?>

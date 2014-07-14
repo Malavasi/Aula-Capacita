@@ -22,12 +22,7 @@
 	</div>
 	
 </div>
-<div class="actions">
-	<h3><?php echo __('Acciones'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Editar Archivo'), array('action' => 'edit', $myFile['MyFile']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Eliminar Archivo'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $myFile['MyFile']['name'])); ?> </li>
-		<li><?php echo $this->Html->link(__('Consultar Archivos'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('Subir Archivo'), array('action' => 'add')); ?> </li>
-	</ul>
-</div>
+<?php 
+$this->set('verArchivo', 1);
+echo $this->element('acciones'); 
+?>
