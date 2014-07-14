@@ -12,7 +12,7 @@
 	<tbody>
 	<?php foreach ($myFiles as $myFile): ?>
 	<tr>
-		<td><?php echo h($myFile['MyFile']['name']); ?>&nbsp;</td>
+		<td><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'download', $myFile['MyFile']['id'])); ?>&nbsp;</td>
 		<td><?php echo h($myFile['MyFile']['size']); ?>&nbsp;</td>
 		<td><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</td>
 		<td class="actions">
