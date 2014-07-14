@@ -3,12 +3,12 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-		<th><?php echo $this->Paginator->sort('Identificación'); ?></th>
-		<th><?php echo $this->Paginator->sort('Nombre'); ?></th>
-		<th><?php echo $this->Paginator->sort('Apellidos'); ?></th>
-		<th><?php echo $this->Paginator->sort('Tipo'); ?></th>
-		<th><?php echo $this->Paginator->sort('Usuario'); ?></th>
-		<th><?php echo $this->Paginator->sort('Fecha'); ?></th>
+		<th><?php echo $this->Paginator->sort('identificacion', 'Identificación'); ?></th>
+		<th><?php echo $this->Paginator->sort('nombre', 'Nombre'); ?></th>
+		<th><?php echo $this->Paginator->sort('apellidos', 'Apellidos'); ?></th>
+		<th><?php echo $this->Paginator->sort('tipo', 'Tipo'); ?></th>
+		<th><?php echo $this->Paginator->sort('nick', 'Usuario'); ?></th>
+		<th><?php echo $this->Paginator->sort('fecha', 'Fecha'); ?></th>
 		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	</thead>

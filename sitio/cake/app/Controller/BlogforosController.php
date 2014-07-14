@@ -1,5 +1,4 @@
 <?php
-session_start();
 App::uses('AppController', 'Controller');
 /**
  * Blogforos Controller
@@ -17,7 +16,7 @@ class BlogforosController extends AppController {
 	public $components = array('Paginator');
 	
 	public $helpers = array('Js' => array('Jquery'));
-
+	
 /**
  * index method
  *

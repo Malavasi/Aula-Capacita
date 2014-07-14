@@ -1,7 +1,5 @@
 <div class="blogforos form">
 	
-	<?php var_dump($blogforo); ?>
-	
 <?php echo $this->Form->create('Blogforo'); ?>
 	<fieldset>
 		<legend><?php echo __('Editar Foro'); ?></legend>

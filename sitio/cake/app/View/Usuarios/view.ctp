@@ -1,7 +1,7 @@
 <div class="usuarios view">
 <h2><?php echo __('Usuario'); ?></h2>
 	<dl>
-		<dt><?php echo __('Identificacion'); ?></dt>
+		<dt><?php echo __('Identificación'); ?></dt>
 		<dd><?php echo h($usuario['Usuario']['identificacion']); ?>&nbsp;</dd>
 		
 		<dt><?php echo __('Nombre'); ?></dt>
@@ -13,10 +13,10 @@
 		<dt><?php echo __('Tipo'); ?></dt>
 		<dd><?php echo h($usuario['Usuario']['tipo']); ?>&nbsp;</dd>
 		
-		<dt><?php echo __('Nick'); ?></dt>
+		<dt><?php echo __('Usuario'); ?></dt>
 		<dd><?php echo h($usuario['Usuario']['nick']); ?>&nbsp;</dd>
 		
-		<dt><?php echo __('Fecha'); ?></dt>
+		<dt><?php echo __('Creación'); ?></dt>
 		<dd><?php echo h($usuario['Usuario']['fecha']); ?>&nbsp;</dd>
 	</dl>
 	
@@ -29,13 +29,10 @@
 			<dt><?php echo __('Nombre'); ?></dt>
 			<dd><?php echo $usuario['Curso']['nombre']; ?>&nbsp;</dd>
 			
-			<dt><?php echo __('Usuario Id'); ?></dt>
-			<dd><?php echo $usuario['Curso']['usuario_id']; ?>&nbsp;</dd>
-			
-			<dt><?php echo __('Fechainicio'); ?></dt>
+			<dt><?php echo __('Fecha Inicio'); ?></dt>
 			<dd><?php echo $usuario['Curso']['fechainicio']; ?>&nbsp;</dd>
 			
-			<dt><?php echo __('Fechafin'); ?></dt>
+			<dt><?php echo __('Fecha Finalización'); ?></dt>
 			<dd><?php echo $usuario['Curso']['fechafin']; ?>&nbsp;</dd>
 		</dl>
 	<?php endif; ?>

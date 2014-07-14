@@ -3,9 +3,9 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-		<th><?php echo $this->Paginator->sort('asunto'); ?></th>
+		<th><?php echo $this->Paginator->sort('asunto', 'Asunto'); ?></th>
 		<th><?php echo $this->Paginator->sort('usuario_id') ?></th>
-		<th><?php echo $this->Paginator->sort('fechapublicacion'); ?></th>
+		<th><?php echo $this->Paginator->sort('fechapublicacion', 'Publicación'); ?></th>
 		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	</thead>

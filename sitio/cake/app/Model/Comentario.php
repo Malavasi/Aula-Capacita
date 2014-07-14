@@ -33,3 +33,4 @@ class Comentario extends AppModel {
 		)
 	);
 }
+?>
