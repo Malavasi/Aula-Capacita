@@ -21,6 +21,7 @@ class CursosController extends AppController {
         {
             if ($this->request->is('post')) {
                 $this->Curso->create();
+                $this->request->data['Curso']['usuario_id'] = $_SESSION['id_usuario'];
                 if ($this->Curso->save($this->request->data)) {
                     $this->Session->setFlash(__('Nuevo curso creado.'));
                     return $this->redirect(array('action' => 'index'));

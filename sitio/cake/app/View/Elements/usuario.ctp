@@ -5,4 +5,5 @@
         echo $this->Form->create('Sesiones', array('action' => 'logout'));
         echo $this->Form->end('Logout');
     }
+   
 ?>

@@ -1,4 +1,5 @@
 <?php
+    session_start();
 App::uses('AppController', 'Controller');
 /**
  * Blogforos Controller

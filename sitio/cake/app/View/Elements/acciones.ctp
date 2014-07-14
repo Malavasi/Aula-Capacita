@@ -1,3 +1,7 @@
+<?php 
+if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2)
+{
+?>
 <div class="actions">
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
@@ -22,3 +26,6 @@
 		?>
 	</ul>
 </div>
+<?php 
+}
+?>
