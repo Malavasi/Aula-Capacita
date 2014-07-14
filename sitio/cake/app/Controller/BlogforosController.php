@@ -25,16 +25,22 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function index($id=NULL) {
-        if($id==NULL)
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
         {
-		    $this->Blogforo->recursive = 0;
-		    $this->set('blogforos', $this->Paginator->paginate());
+            if($id==NULL)
+            {
+		        $this->Blogforo->recursive = 0;
+		        $this->set('blogforos', $this->Paginator->paginate());
+            }
+            else
+            {
+                $this->set('blogforos', $this->Paginator->paginate(array ('curso_id'=>$id)));
+            }
         }
         else
         {
-            $this->set('blogforos', $this->Paginator->paginate(array ('curso_id'=>$id)));
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
-        
 	}
 
 /**
@@ -45,6 +51,8 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
+        {
 		if (!$this->Blogforo->exists($id)) {
 			throw new NotFoundException(__('Foro inválido'));
 		}
@@ -59,6 +67,11 @@ class BlogforosController extends AppController {
             ++$conta;
         endforeach;
         $this->set('blogforo', $blogforo);
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 /**
@@ -67,6 +80,8 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function add() {
+         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
+        {
 		$this->set('blogforos', $this->Paginator->paginate());
 		if ($this->request->is('post')) {
 			$this->request->data['Blogforo']['fechapublicacion'] = date("Y-m-d H:i:s");
@@ -85,6 +100,11 @@ class BlogforosController extends AppController {
 		$cursos = $this->Blogforo->Curso->find('list');
 		$usuarios = $this->Blogforo->Usuario->find('list');
 		$this->set(compact('cursos', 'usuarios'));
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 /**
@@ -95,6 +115,8 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
+        {
 		if (!$this->Blogforo->exists($id)) {
 			throw new NotFoundException(__('Invalid blogforo'));
 		}
@@ -122,6 +144,11 @@ class BlogforosController extends AppController {
 		$cursos = $this->Blogforo->Curso->find('list');
 		$usuarios = $this->Blogforo->Usuario->find('list');
 		$this->set(compact('cursos', 'usuarios'));
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 /**
@@ -132,7 +159,9 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		$this->Blogforo->id = $id;
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
+        {
+            $this->Blogforo->id = $id;
 		if (!$this->Blogforo->exists()) {
 			throw new NotFoundException(__('Foro inválido'));
 		}
@@ -143,6 +172,11 @@ class BlogforosController extends AppController {
 			$this->Session->setFlash(__('El foro no se ha podido eliminar. Por favor, intente de nuevo.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 	
 	public function AjaxShowCommentForm($id = null)	{
@@ -169,7 +203,8 @@ class BlogforosController extends AppController {
 		}
 	}
     	public function editComment($id = null)	{
-		
+		 if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
+        {
 		if (!$this->Blogforo->Comentario->exists($id)) {
 			throw new NotFoundException(__('Foro inválido'));
 		}
@@ -195,6 +230,11 @@ class BlogforosController extends AppController {
 		$cursos = $this->Blogforo->Curso->find('list');
 		$usuarios = $this->Blogforo->Usuario->find('list');
 		$this->set(compact('cursos', 'usuarios'));
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 }

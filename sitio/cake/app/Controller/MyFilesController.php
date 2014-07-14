@@ -22,6 +22,8 @@ class MyFilesController extends AppController {
  * @return void
  */
 	public function index($id = NULL) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
+        {
         if($id == NULL)
         {
             $this->MyFile->recursive = 0;
@@ -32,7 +34,11 @@ class MyFilesController extends AppController {
             $this->MyFile->recursive = 0;
             $this->set('myFiles', $this->Paginator->paginate(array ('curso_id'=>$id)));    
         }
-		
+		}
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 /**
@@ -43,11 +49,18 @@ class MyFilesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
+        {
 		if (!$this->MyFile->exists($id)) {
 			throw new NotFoundException(__('Archivo inválido'));
 		}
 		$options = array('conditions' => array('MyFile.' . $this->MyFile->primaryKey => $id));
 		$this->set('myFile', $this->MyFile->find('first', $options));
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 /**
@@ -56,6 +69,8 @@ class MyFilesController extends AppController {
  * @return void
  */
 	function add() {			
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
+        {
         if (!empty($this->request->data) && 
             is_uploaded_file($this->request->data['MyFile']['File']['tmp_name'])) {
             
@@ -76,6 +91,11 @@ class MyFilesController extends AppController {
             	$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
             }            
         }
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
     }
 
 /**
@@ -86,6 +106,8 @@ class MyFilesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2)
+        {
 		if (!$this->MyFile->exists($id)) {
 			throw new NotFoundException(__('Archivo inválido'));
 		}
@@ -112,6 +134,11 @@ class MyFilesController extends AppController {
 			$options = array('conditions' => array('MyFile.' . $this->MyFile->primaryKey => $id));
 			$this->request->data = $this->MyFile->find('first', $options);
 		}
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 /**
@@ -122,6 +149,8 @@ class MyFilesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
+        {
 		$this->MyFile->id = $id;
 		if (!$this->MyFile->exists()) {
 			throw new NotFoundException(__('Archivo inválido'));
@@ -133,9 +162,16 @@ class MyFilesController extends AppController {
 			$this->Session->setFlash(__('El archivo no se ha podido eliminar. Por favor, intente de nuevo.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 	
 	function download($id) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
+        {
 	    Configure::write('debug', 0);
 	    $file = $this->MyFile->findById($id);
 			
@@ -145,5 +181,10 @@ class MyFilesController extends AppController {
 	    echo $file['MyFile']['data'];
 				
 	    exit();
+        }
+        else
+        {
+                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 }
