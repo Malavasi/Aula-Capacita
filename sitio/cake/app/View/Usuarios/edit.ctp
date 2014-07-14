@@ -27,14 +27,4 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Guardar')); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Acciones'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Crear Usuario'), array('controller' => 'usuarios', 'action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('Consultar Usuarios'), array('controller' => 'usuarios', 'action' => 'index')); ?></li>
-		<!--
-		<li><?php echo $this->Html->link(__('Crear Curso'), array('controller' => 'cursos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('Consultar Cursos'), array('controller' => 'cursos', 'action' => 'index')); ?> </li>
-		-->
-	</ul>
-</div>
+<?php echo $this->element('acciones'); ?>
