@@ -13,7 +13,7 @@
 	<?php foreach ($myFiles as $myFile): ?>
 	<tr>
 		<td><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'download', $myFile['MyFile']['id'])); ?>&nbsp;</td>
-		<td><?php echo h($myFile['MyFile']['size']); ?>&nbsp;</td>
+		<td><?php echo h($myFile['MyFile']['size']), ' B'; ?>&nbsp;</td>
 		<td><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $myFile['MyFile']['id'])); ?>
