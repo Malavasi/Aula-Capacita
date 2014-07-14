@@ -714,3 +714,142 @@ Stack Trace:
 #4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #6 {main}
+2014-07-14 10:20:37 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /cake/blogforos
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('blogforos')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php(28): PaginatorComponent->paginate()
+#9 [internal function]: BlogforosController->index()
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#15 {main}
+2014-07-14 10:30:35 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php, line 49]
+2014-07-14 10:30:35 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cake/blogforos/view/3
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 49, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 49, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 10:30:53 Error: [PDOException] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+Request URL: /cake/blogforos/view/3
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Blogfor...', Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Blogfor...', Array, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Blogfor...', false)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Blogforo), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('first', Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php(51): Model->find('first', Array)
+#7 [internal function]: BlogforosController->view('3')
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#13 {main}
+2014-07-14 10:31:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Blogforos.usuario_id' in 'on clause'
+Request URL: /cake/blogforos/view/3
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Blogfor...', Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Blogfor...', Array, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Blogfor...', false)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Blogforo), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('first', Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php(51): Model->find('first', Array)
+#7 [internal function]: BlogforosController->view('3')
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#13 {main}
+2014-07-14 10:36:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'usuario_id' doesn't have a default value
+Request URL: /cake/blogforos/AjaxAddComment
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `cu...')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1834): DboSource->create(Object(Comentario), Array, Array)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php(149): Model->save(Array)
+#5 [internal function]: BlogforosController->AjaxAddComment()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#11 {main}
+2014-07-14 10:37:34 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'usuario_id' doesn't have a default value
+Request URL: /cake/blogforos/AjaxAddComment
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `cu...')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1834): DboSource->create(Object(Comentario), Array, Array)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php(149): Model->save(Array)
+#5 [internal function]: BlogforosController->AjaxAddComment()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#11 {main}
+2014-07-14 10:50:36 Error: Fatal Error (1): Class 'Usuario' not found in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php, line 45]
+2014-07-14 10:50:36 Error: [FatalErrorException] Class 'Usuario' not found
+Request URL: /cake/blogforos/view/3
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Usuario'...', 'G:\Nube\GitHub\...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Usuario'...', 'G:\Nube\GitHub\...', 45, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Usuario'...', 'G:\Nube\GitHub\...', 45, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 10:50:37 Error: Fatal Error (1): Class 'Usuario' not found in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php, line 45]
+2014-07-14 10:50:37 Error: [FatalErrorException] Class 'Usuario' not found
+Request URL: /cake/blogforos/view/3
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Usuario'...', 'G:\Nube\GitHub\...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Usuario'...', 'G:\Nube\GitHub\...', 45, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Usuario'...', 'G:\Nube\GitHub\...', 45, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-14 10:53:09 Error: [NotFoundException] Usuario InvÃ¡lido
+Request URL: /cake/usuarios/view/i
+Stack Trace:
+#0 [internal function]: UsuariosController->view('i')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-07-14 10:58:05 Error: [NotFoundException] Usuario InvÃ¡lido
+Request URL: /cake/usuarios/view/6
+Stack Trace:
+#0 [internal function]: UsuariosController->view('6')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}

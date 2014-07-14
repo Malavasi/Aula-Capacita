@@ -16,12 +16,15 @@
 	
 	<div id="comments" style="margin-left: 50px">
 			
-		<?php foreach ($blogforo['Comentario'] as $comentario): ?>
+		<?php
+        //pr($blogforo);
+         foreach ($blogforo['Comentario'] as $comentario): ?>
 			<table>
+            
 				<tr><td><strong> RE: &nbsp; <?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
 					<br>
 					<?php //poner el nick del autor del comentario 
-						echo $this->Html->link($comentario['usuario_id'], array('controller' => 'usuarios', 'action' => 'view', $comentario['usuario_id']));
+                        echo $this->Html->link($comentario['nick'], array('controller' => 'usuarios', 'action' => 'view', $comentario['usuario_id']));
 					?>
 					&nbsp; - &nbsp;
 					<?php echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'edit', $comentario['id'])); ?>

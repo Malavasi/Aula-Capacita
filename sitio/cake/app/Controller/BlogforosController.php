@@ -1,6 +1,7 @@
 <?php
     session_start();
 App::uses('AppController', 'Controller');
+App::uses('Usuarios', 'Model');
 /**
  * Blogforos Controller
  *
@@ -26,6 +27,7 @@ class BlogforosController extends AppController {
 	public function index() {
 		$this->Blogforo->recursive = 0;
 		$this->set('blogforos', $this->Paginator->paginate());
+        
 	}
 
 /**
@@ -40,7 +42,15 @@ class BlogforosController extends AppController {
 			throw new NotFoundException(__('Foro inválido'));
 		}
 		$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
-		$this->set('blogforo', $this->Blogforo->find('first', $options));
+        $usuario = new Usuarios();
+        $blogforo = $this->Blogforo->find('first', $options);
+        $conta = 0;
+        foreach ($blogforo['Comentario'] as $comentario):
+            $tmp = $usuario->findById($comentario['usuario_id']);
+            $blogforo['Comentario'][$conta]['nick']=$tmp['Usuarios']['nick'];
+            ++$conta;
+        endforeach;
+        $this->set('blogforo', $blogforo);
 	}
 
 /**
