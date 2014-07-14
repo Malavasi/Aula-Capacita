@@ -16,8 +16,6 @@ class UsuariosController extends AppController {
  */
 	public $components = array('Paginator');
 
-	public $helpers = array('Js' => array('Jquery'));
-
 /**
  * index method
  *
@@ -88,7 +86,7 @@ class UsuariosController extends AppController {
 			    $this->Usuario->create();
 			    if ($this->Usuario->save($this->request->data)) {
 				    $this->Session->setFlash(__('El usuario ha sido creado.'));
-				    return $this->redirect(array('action' => 'index'));
+				    return $this->redirect(array('action' => 'add'));
 			    } else {
 				    $this->Session->setFlash(__('El usuario no se ha podido crear. Por favor, intente de nuevo.'));
 			    }
@@ -100,25 +98,6 @@ class UsuariosController extends AppController {
         }
 	}
 	
-	public function addContinue() {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
-        {
-		    if ($this->request->is('post')) {
-			    $this->Usuario->create();
-			    if ($this->Usuario->save($this->request->data)) {
-				    $this->Session->setFlash(__('El usuario ha sido guardado.'));
-				    return $this->redirect(array('action' => 'add'));
-			    } else {
-				    $this->Session->setFlash(__('El usuario no se ha podido guardar. Por favor, intente de nuevo.'));
-			    }
-		    }
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
-        }
-	}
-
 /**
  * edit method
  *
@@ -195,26 +174,6 @@ class UsuariosController extends AppController {
         else
         {
              $this->redirect(array('controller' =>'inicio','action' => 'index'));    
-        }
-	}
-	
-	public function AjaxAddUser() {
-		$this->layout = 'ajax';
-		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
-        {
-		    if($this->request->is('post'))	{
-			    $this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
-				
-			    $this->Blogforo->Comentario->create();
-			
-			    if($this->Blogforo->Comentario->save($this->request->data))	{
-				    //echo ($this->request->data['Comentario']['comentario']);
-			    }
-		    }
-        }
-        else
-        {
-            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 	
