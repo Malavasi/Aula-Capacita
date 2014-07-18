@@ -22,7 +22,7 @@ class MyFilesController extends AppController {
  * @return void
  */
 	public function index($id = NULL) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
         {
         if($id == NULL)
         {
