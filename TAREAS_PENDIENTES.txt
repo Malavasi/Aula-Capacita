@@ -1,0 +1,16 @@
+OBSERVACIONES DE PENDIENTES AULA CAPACITA
+
+- el nick_curso de la sesión no está definido. No se si lo quería para mostrar nombre del curso en la matricula.
+
+- al matricular un estudiante, quitarlo de la lista.
+
+- falta asignar instructor a un curso al momento de crearlo. Se podría hacer con un combobox que muestre todos los usuarios tipo instructor o como se hizo en matrícula.
+
+- la opción de subir archivo sólo debería de aparecer cuando se ingresa a la sección de material de descargas.
+
+- en la vista del aula para los usuarios instructor y estudiante agregar una acción para regresar al home del aula.
+
+- agregar el ordenamiento de tablas por columnas en aulas, matricula y cursos.
+estilo del aula virtual en general.
+
+- estilo del aula virtual en general.
