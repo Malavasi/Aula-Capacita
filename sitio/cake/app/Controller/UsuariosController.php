@@ -68,9 +68,7 @@ class UsuariosController extends AppController {
 		    if ($this->request->is('post')) {
 			
 			    if ($this->request->data['Usuario']['nick'] == "") {
-				    $nick = $this->crearNick($this->request->data['Usuario']['nombre'],
-										     $this->request->data['Usuario']['apellidos']);
-				    $this->request->data['Usuario']['nick'] = $nick;
+				    $this->request->data['Usuario']['nick'] = $this->request->data['Usuario']['email'];
 			    }
 			
 			    if ($this->request->data['Usuario']['contrasena'] == "") {

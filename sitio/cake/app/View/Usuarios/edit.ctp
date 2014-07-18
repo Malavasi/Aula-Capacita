@@ -7,22 +7,37 @@
 		echo $this->Form->input('identificacion', array('label' => __('Identificación', true)));
 		echo $this->Form->input('nombre', array('label' => __('Nombre', true)));
 		echo $this->Form->input('apellidos', array('label' => __('Apellidos', true)));
+		echo $this->Form->input('email', array('label' => __('Correo Electrónico', true)));
 		
 		$selectOptions = array('1'=>'Administrador', '2'=>'Instructor', '3'=>'Estudiante');
 		
-		echo "<p>";
-			echo "Tipo<br>" . $this->Form->select('tipo', $selectOptions);
-		echo "</p>";
+		echo $this->Form->input(
+		    'tipo',
+		    array(
+		        'options' => $selectOptions,
+		        'type' => 'select',
+		        'empty' => '-- Seleccione el tipo --',
+		        'label' => 'Tipo'
+		    )
+		);
 		
-		echo $this->Form->input('nick', array('disabled' => 'disabled', 'label' => __('Usuario', true)));
+		echo $this->Form->input('nick', array('label' => __('Usuario', true)));
 		
-		echo "<p>";
-			echo "Contraseña<br>" . $this->Form->password('contrasena');
-		echo "</p>";
+		echo $this->Form->input(
+		    'contrasena',
+		    array(
+		        'type' => 'password',
+		        'label' => 'Contraseña'
+		    )
+		);
 		
-		echo "<p>";
-			echo "Confirmar Contraseña<br>" . $this->Form->password('confirmarContrasena');
-		echo "</p>";
+		echo $this->Form->input(
+		    'confirmarContrasena',
+		    array(
+		        'type' => 'password',
+		        'label' => 'Confirmar Contraseña'
+		    )
+		);
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Guardar')); ?>

@@ -22,7 +22,7 @@
 			<?php 
             if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
             {
-                echo $this->Html->link(__('Matricula'), array('controller'=> 'matriculas','action' => 'add', $usuario['Usuarios']['id'])); 
+                echo $this->Html->link(__('Matricular'), array('controller'=> 'matriculas','action' => 'add', $usuario['Usuarios']['id'])); 
 			}
             ?>
 		</td>

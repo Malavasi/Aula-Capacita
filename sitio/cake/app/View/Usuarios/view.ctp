@@ -11,7 +11,24 @@
 		<dd><?php echo h($usuario['Usuario']['apellidos']); ?>&nbsp;</dd>
 		
 		<dt><?php echo __('Tipo'); ?></dt>
-		<dd><?php echo h($usuario['Usuario']['tipo']); ?>&nbsp;</dd>
+		<dd>	<?php 
+					$tipoUsuario;
+					switch($usuario['Usuario']['tipo']){
+						case 1:
+							$tipoUsuario = 'Administrador';
+							break;
+						case 2:
+							$tipoUsuario = 'Instructor';
+							break;
+						case 3:
+							$tipoUsuario = 'Estudiante';
+							break;
+					}
+					
+					echo h($tipoUsuario);
+					
+				?>&nbsp;
+		</dd>
 		
 		<dt><?php echo __('Usuario'); ?></dt>
 		<dd><?php echo h($usuario['Usuario']['nick']); ?>&nbsp;</dd>
