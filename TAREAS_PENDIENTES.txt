@@ -14,3 +14,9 @@ OBSERVACIONES DE PENDIENTES AULA CAPACITA
 estilo del aula virtual en general.
 
 - estilo del aula virtual en general.
+
+
+OTRAS
+
+- arreglar la función de editar comentario.
+- arreglar la función de editar archivo.
