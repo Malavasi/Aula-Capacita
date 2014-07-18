@@ -1,12 +1,14 @@
 <div class="Matriculas index">
 <h2><?php echo __('Matricular'); ?></h2>
+<h2><?php echo $_SESSION['id_curso']; ?></h2>
+
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
 		<th>Identificacion</th>
 		<th>Nombre</th>
 		<th>Apellidos</th>
-		<th>Nick</th>
+		<th>Usuario</th>
 		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	</thead>

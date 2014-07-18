@@ -10,7 +10,5 @@
 		    )
 		);
 		
-		
-		
-        echo $this->Form->end('Login');  
+		echo $this->Form->end('Login');  
 ?>

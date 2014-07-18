@@ -13,7 +13,7 @@
 	
 		<?php foreach ($blogforos as $blogforo): ?>
 			<tr>
-				<td><?php echo h($blogforo['Blogforo']['asunto']); ?>&nbsp;</td>
+				<td><?php echo $this->Html->link($blogforo['Blogforo']['asunto'], array('controller' => 'blogforos', 'action' => 'view', $blogforo['Blogforo']['id'])); ?>&nbsp;</td>
 				<td><?php echo $this->Html->link($blogforo['Usuario']['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?></td>
 				<td><?php echo h($blogforo['Blogforo']['fechapublicacion']); ?>&nbsp;</td>
 				<td class="actions">
@@ -21,7 +21,7 @@
 					<?php if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
                           {
                             echo $this->Html->link(__('Editar'), array('action' => 'edit', $blogforo['Blogforo']['id']));
-					         echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $blogforo['Blogforo']['id']), array(), __('Va a eliminar el foro del curso %s, ¿Desea continuar?', $blogforo['Blogforo']['curso_id'])); 
+					        echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $blogforo['Blogforo']['id']), array(), __('Va a eliminar el foro del curso %s, ¿Desea continuar?', $blogforo['Blogforo']['curso_id'])); 
                     }?>
 				</td>
 			</tr>

@@ -1304,3 +1304,158 @@ Stack Trace:
 #4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #6 {main}
+2014-07-18 17:29:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'MyFile.usuario_id' in 'field list'
+Request URL: /cake/usuarios/edit/12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `MyFile`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `MyFile`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(1421): DboSource->fetchAll('SELECT `MyFile`...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(1259): DboSource->_fetchHasMany(Object(Usuario), 'SELECT `MyFile`...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(1142): DboSource->queryAssociation(Object(Usuario), Object(MyFile), 'hasMany', 'MyFile', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Usuario), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cake/app/Controller/UsuariosController.php(143): Model->find('first', Array)
+#9 [internal function]: UsuariosController->edit('12')
+#10 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-18 17:36:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'MyFile.curso_id' in 'on clause'
+Request URL: /cake/MyFiles
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `MyFile`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `MyFile`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `MyFile`...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Model.php(2905): DboSource->read(Object(MyFile), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cake/app/Controller/MyFilesController.php(30): PaginatorComponent->paginate()
+#8 [internal function]: MyFilesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-07-18 17:37:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'MyFile.curso_id' in 'on clause'
+Request URL: /cake/MyFiles
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `MyFile`...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `MyFile`...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `MyFile`...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Model.php(2905): DboSource->read(Object(MyFile), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cake/app/Controller/MyFilesController.php(30): PaginatorComponent->paginate()
+#8 [internal function]: MyFilesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-07-18 18:28:50 Error: [MissingActionException] Action CursosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'view',
+)
+Request URL: /cake/cursos/view
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-18 18:32:11 Error: [NotFoundException] Usuario Inválido
+Request URL: /cake/usuarios/view/5
+Stack Trace:
+#0 [internal function]: UsuariosController->view('5')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-18 19:56:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'tipo' cannot be null
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `cu...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Model/Model.php(1834): DboSource->create(Object(Usuario), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/app/Controller/UsuariosController.php(85): Model->save(Array)
+#5 [internal function]: UsuariosController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-18 20:20:45 Error: [MissingActionException] Action CursosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'view',
+)
+Request URL: /cake/cursos/view/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-18 20:23:42 Error: [MissingActionException] Action CursosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'view',
+)
+Request URL: /cake/cursos/view/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-18 21:49:10 Error: [NotFoundException] Foro inválido
+Request URL: /cake/blogforos/view/12
+Stack Trace:
+#0 [internal function]: BlogforosController->view('12')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-18 22:34:13 Error: [NotFoundException] Usuario Inválido
+Request URL: /cake/usuarios/view/15
+Stack Trace:
+#0 [internal function]: UsuariosController->view('15')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-18 23:51:29 Error: [NotFoundException] Invalid blogforo
+Request URL: /cake/blogforos/edit/10
+Stack Trace:
+#0 [internal function]: BlogforosController->edit('10')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-19 00:02:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/cake/app/Controller/MatriculasController.php, line 16]
+2014-07-19 00:02:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/Matriculas/index/4
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-19 00:03:58 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/cake/app/Controller/MatriculasController.php, line 16]
+2014-07-19 00:03:58 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/Matriculas/index/4
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 16, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

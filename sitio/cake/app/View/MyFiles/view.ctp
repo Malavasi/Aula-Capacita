@@ -1,4 +1,5 @@
 <div class="myFiles view">
+	
 <h2><?php echo __('Archivo'); ?></h2>
 	<dl>		
 		<dt><?php echo __('Nombre'); ?></dt>
@@ -11,7 +12,10 @@
 		<dd><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</dd>
 		
 		<dt><?php echo __('Subido por'); ?></dt>
-		<dd><?php echo h($myFile['Usuario']['nick']); ?>&nbsp;</dd>
+		<dd><?php echo $myFile['Usuario']['nombre'], ' ', $myFile['Usuario']['apellidos']; ?>&nbsp;</dd>
+		
+		<dt><?php echo __('Curso'); ?></dt>
+		<dd><?php echo h($myFile['Curso']['nombre']); ?>&nbsp;</dd>
 		
 	</dl>
 	

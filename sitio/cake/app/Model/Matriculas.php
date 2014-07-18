@@ -12,6 +12,5 @@ class Matriculas extends AppModel {
             'rule' => 'notEmpty'
         )
     );
-
 }
 ?>

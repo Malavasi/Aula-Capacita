@@ -13,6 +13,7 @@ class MatriculasController extends AppController {
         $_SESSION['id_curso'] = $id;
         $usuario = new Usuarios();
         $this->set('usuarios', $usuario->find('all',array('conditions' => array('tipo' => 3))));
+		$this->set('infoCurso', $curso->find('all',array('conditions' => array('id' => $_SESSION['id_curso']))));
         }
         }
         else

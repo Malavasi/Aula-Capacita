@@ -42,7 +42,7 @@ if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2)
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 and isset($verArchivo) )
         {
             echo '<br>'.__('Archivos');
-            echo '<li>'.$this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $this->Form->value('MyFile.name'))).'</li>'; 
+            echo '<li>'.$this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo?', $this->Form->value('MyFile.name'))).'</li>'; 
             echo '<li>'.$this->Html->link(__('Editar Archivo'), array('action' => 'edit', $myFile['MyFile']['id'])).'</li>'; 
         }
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 and isset($blog) )

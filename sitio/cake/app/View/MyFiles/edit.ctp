@@ -1,14 +1,21 @@
 <div class="myFiles form">
 <fieldset>
 	<legend><?php echo __('Editar Archivo'); ?></legend>
-<h3><?php echo 'Usuario: '.$_SESSION['nombre_usuario']; ?> </h3>
+	
+	<h3><?php echo $infoArchivo[0]['Curso']['nombre'] ?></h3>
+	<h4><?php echo 'Usuario: ', $infoArchivo[0]['Usuario']['nombre'], ' ' ,$infoArchivo[0]['Usuario']['apellidos']; ?> </h4>
+	
+	<dl>		
+		<dt><?php echo __('Nombre'); ?></dt>
+		<dd><?php echo $infoArchivo[0]['MyFile']['name']; ?>&nbsp;</dd>
+		
+		<dt><?php echo __('Tamaño'); ?></dt>
+		<dd><?php echo $infoArchivo[0]['MyFile']['size'], ' B'; ?>&nbsp;</dd>
+	</dl>
+	
 <?php echo $this->Form->create('MyFile'); ?>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('curso_id', array('disabled' => 'disabled'));
-		echo $this->Form->input('nombre curso', array('label' => __('Curso', true), 'disabled' => 'disabled', 'default' => 'poner nombre del curso aqui'));
-		echo $this->Form->input('name', array('label' => __('Nombre', true), 'disabled' => 'disabled'));
-		echo $this->Form->input('size', array('label' => __('Tamaño', true), 'disabled' => 'disabled'));
 		echo $this->Form->file('File');
 	?>
 	

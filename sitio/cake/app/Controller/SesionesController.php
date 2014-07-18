@@ -10,7 +10,7 @@ class SesionesController extends AppController {
     public function login() {
         if ($this->request->is('post')) {
             $usuario = new Usuarios();
-            $datos = $usuario->find('all', array('conditions' => array('nick' => $this->request->data['Sesiones']['nick'],'contrasena' => md5($this->request->data['Sesiones']['contraseña'])) ) );
+            $datos = $usuario->find('all', array('conditions' => array('nick' => $this->request->data['Sesiones']['nick'],'contrasena' => md5($this->request->data['Sesiones']['contrasena'])) ) );
             if(isset($datos[0]))
             {
                 $_SESSION['id_usuario']=$datos[0]['Usuarios']['id'];

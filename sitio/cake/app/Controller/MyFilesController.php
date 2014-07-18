@@ -68,7 +68,13 @@ class MyFilesController extends AppController {
  *
  * @return void
  */
-	function add() {			
+	function add() {
+		
+		if (isset($_SESSION['id_curso'])) {
+			$this->MyFile->recursive = 0;
+            $this->set('infoArchivo', $this->Paginator->paginate(array ('curso_id'=>$_SESSION['id_curso'])));   
+		}
+		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
         {
         if (!empty($this->request->data) && 
@@ -82,7 +88,7 @@ class MyFilesController extends AppController {
             $this->request->data['MyFile']['size'] = $this->request->data['MyFile']['File']['size'];
 			$this->request->data['MyFile']['created'] = date("Y-m-d H:i:s");
             $this->request->data['MyFile']['data'] = $fileData;
-			$this->request->data['MyFile']['curso_id']	= '1';
+			$this->request->data['MyFile']['curso_id']	= $_SESSION['id_curso'];
             $this->request->data['MyFile']['usuario_id']	= $_SESSION['id_usuario'];
             if($this->MyFile->save($this->request->data)) {
             	$this->Session->setFlash(__('El archivo ha sido guardado.'));
@@ -106,6 +112,12 @@ class MyFilesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		
+		if (isset($_SESSION['id_curso'])) {
+			$this->MyFile->recursive = 0;
+            $this->set('infoArchivo', $this->Paginator->paginate(array ('curso_id'=>$_SESSION['id_curso'])));   
+		}
+		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2)
         {
 		if (!$this->MyFile->exists($id)) {

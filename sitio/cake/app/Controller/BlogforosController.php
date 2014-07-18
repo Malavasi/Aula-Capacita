@@ -63,7 +63,7 @@ class BlogforosController extends AppController {
         $conta = 0;
         foreach ($blogforo['Comentario'] as $comentario):
             $tmp = $usuario->findById($comentario['usuario_id']);
-            $blogforo['Comentario'][$conta]['nick']=$tmp['Usuarios']['nick'];
+            $blogforo['Comentario'][$conta]['nick'] = $tmp['Usuarios']['nick'];
             ++$conta;
         endforeach;
         $this->set('blogforo', $blogforo);
@@ -192,7 +192,8 @@ class BlogforosController extends AppController {
 	public function AjaxAddComment($id = null)	{
 		$this->layout = 'ajax';
 		
-		if($this->request->is('post'))	{
+		if($this->request->is('post') && isset($_SESSION['id_usuario']))	{
+			$this->request->data['Comentario']['usuario_id'] = $_SESSION['id_usuario'];
 			$this->request->data['Comentario']['fecha'] = date("Y-m-d H:i:s");
 				
 			$this->Blogforo->Comentario->create();
