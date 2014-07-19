@@ -7,6 +7,12 @@
 			<br>
 			<?php echo 'de ', $this->Html->link($blogforo['Usuario']['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?>
 			&nbsp; - &nbsp;
+			<?php
+				if ($_SESSION['id_usuario'] == $blogforo['Blogforo']['usuario_id']) {
+					echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'edit', $blogforo['Blogforo']['id'])); 
+					echo '&nbsp; - &nbsp';
+				}
+			?>
 			<?php echo h($blogforo['Blogforo']['fechapublicacion']); ?>&nbsp;
 		</td></tr>
 		<tr><td><?php echo h($blogforo['Blogforo']['cuerpo']); ?>&nbsp;</td></tr>
@@ -23,7 +29,7 @@
 			<table>
 				<tr><td><strong> RE: &nbsp; <?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
 					<br>
-					<?php echo $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?>
+					<?php echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?>
 					&nbsp; - &nbsp;
 					<?php
 						if ($_SESSION['id_usuario'] == $blogforo['Comentario'][$cont]['usuario_id']) {

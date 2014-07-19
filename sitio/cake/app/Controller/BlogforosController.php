@@ -131,9 +131,7 @@ class BlogforosController extends AppController {
 			if ($this->Blogforo->save($this->request->data)) {
 				$this->Session->setFlash(__('El foro ha sido actualizado.'));
 				
-				//$this->view($this->request->data['Comentario']['blogforo_id']);
-				
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'view', $this->request->data['Blogforo']['id']));
 			} else {
 				$this->Session->setFlash(__('El foro no se ha podido actualizar. Por favor, intente de nuevo.'));
 			}

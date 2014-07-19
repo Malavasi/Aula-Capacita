@@ -3,12 +3,18 @@
 <?php echo $this->Form->create('Blogforo'); ?>
 	<fieldset>
 		<legend><?php echo __('Editar Foro'); ?></legend>
+		
+		<dl>
+			<dt><?php echo __('Curso'); ?></dt>
+			<dd><?php echo $blogforo['Curso']['nombre']; ?>&nbsp;</dd>
+			
+			<dt><?php echo __('Usuario'); ?></dt>
+			<dd><?php echo $blogforo['Usuario']['nick']; ?>&nbsp;</dd>
+		</dl>
+		<br>
+		
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->hidden('curso_id', array('disabled' => 'disabled'));
-		echo $this->Form->hidden('usuario_id', array('disabled' => 'disabled'));
-		echo $this->Form->input('nombre curso', array('disabled' => 'disabled', 'default' => $blogforo['Curso']['nombre']));
-		echo $this->Form->input('nick', array('disabled' => 'disabled', 'default' => $blogforo['Usuario']['nick']));
 		echo $this->Form->input('asunto');
 		
 	?>

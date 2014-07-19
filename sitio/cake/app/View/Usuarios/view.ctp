@@ -1,4 +1,7 @@
 <div class="usuarios view">
+	
+	<?php pr($usuario); ?>
+	
 <h2><?php echo __('Usuario'); ?></h2>
 	<dl>
 		<dt><?php echo __('Identificación'); ?></dt>
