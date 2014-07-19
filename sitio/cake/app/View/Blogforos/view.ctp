@@ -25,8 +25,12 @@
 					<br>
 					<?php echo $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?>
 					&nbsp; - &nbsp;
-					<?php echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'edit', $comentario['id'])); ?>
-					&nbsp; - &nbsp;
+					<?php
+						if ($_SESSION['id_usuario'] == $blogforo['Comentario'][$cont]['usuario_id']) {
+							echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'editComment', $blogforo['Comentario'][$cont]['id'])); 
+							echo '&nbsp; - &nbsp';
+						}
+					?>
 					<?php echo h($comentario['fecha']); ?>
 				</td></tr>
 				<tr><td><?php echo h($comentario['comentario']); ?>&nbsp;</td></tr>

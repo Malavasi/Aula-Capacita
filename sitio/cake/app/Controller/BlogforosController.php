@@ -220,7 +220,9 @@ class BlogforosController extends AppController {
 			if ($this->Blogforo->Comentario->save($this->request->data)) {
 				$this->Session->setFlash(__('El comentario ha sido actualizado.'));
 				
-				return $this->redirect(array('action' => 'index'));
+				var_dump($this->request->data);
+				
+				return $this->redirect(array('action' => 'view', $this->request->data['Comentario']['blogforo_id']));
 			} else {
 				$this->Session->setFlash(__('El comentario no se ha podido actualizar. Por favor, intente de nuevo.'));
 			}
