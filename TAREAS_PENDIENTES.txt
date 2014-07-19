@@ -1,7 +1,5 @@
 OBSERVACIONES DE PENDIENTES AULA CAPACITA
 
-- el nick_curso de la sesión no está definido. No se si lo quería para mostrar nombre del curso en la matricula.
-
 - al matricular un estudiante, quitarlo de la lista.
 
 - falta asignar instructor a un curso al momento de crearlo. Se podría hacer con un combobox que muestre todos los usuarios tipo instructor o como se hizo en matrícula.
