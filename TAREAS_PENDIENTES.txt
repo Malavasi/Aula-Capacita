@@ -1,5 +1,7 @@
 OBSERVACIONES DE PENDIENTES AULA CAPACITA
 
+- en aulas, no se debería de usar variables de sesión para mostrar los datos, se muestran datos equivocados. Lo ideal es una consulta a la base de datos. Las variables de sesión me parece que son sólo para validaciones de permisos e inserciones/ediciones.
+
 - al matricular un estudiante, quitarlo de la lista.
 
 - falta asignar instructor a un curso al momento de crearlo. Se podría hacer con un combobox que muestre todos los usuarios tipo instructor o como se hizo en matrícula.
