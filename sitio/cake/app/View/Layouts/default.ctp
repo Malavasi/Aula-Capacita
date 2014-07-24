@@ -41,10 +41,10 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 	<div id="container">
 		<div id="header">
 			<h3><?php echo $this->Html->link($cakeDescription, 'http://google.com'); ?></h3>
+			<div align="right"> <?php echo $this->element('usuario'); ?> </div>
 		</div>
 		<div id="content">
-       <?php echo $this->element('usuario'); ?>
-			<?php echo $this->Session->flash(); ?>
+       		<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
@@ -60,6 +60,6 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 			</p>
 		</div>
 	</div>
-	<?php //echo $this->element('sql_dump'); ?>
+	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

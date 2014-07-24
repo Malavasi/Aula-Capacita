@@ -3,25 +3,24 @@ session_start();
         
 class CursosController extends AppController {
     public $helpers = array('Html', 'Form');
+	
+	public $uses = array('Curso', 'Usuario');
 
     public function index() {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
                 $this->set('cursos', $this->Curso->find('all'));
         }
-        else
-        {
-                //$this->redirect(array('controller' =>'inicio','action' => 'index'));    
-                $this->set('cursos', $this->Curso->find('all'));
-        }
     }
 
     public function add() {
+    	
+		$this->set('instructores', $this->Usuario->find('all', array('conditions' => array('Usuario.tipo' => 2))));
+		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
             if ($this->request->is('post')) {
                 $this->Curso->create();
-                $this->request->data['Curso']['usuario_id'] = $_SESSION['id_usuario'];
                 if ($this->Curso->save($this->request->data)) {
                     $this->Session->setFlash(__('Nuevo curso creado.'));
                     return $this->redirect(array('action' => 'index'));
@@ -36,6 +35,8 @@ class CursosController extends AppController {
     }
 
     public function edit($id = null) {
+    	$this->set('instructores', $this->Usuario->find('all', array('conditions' => array('Usuario.tipo' => 2))));
+		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
             if (!$id) {
