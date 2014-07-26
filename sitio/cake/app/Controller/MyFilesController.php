@@ -9,6 +9,7 @@ App::uses('AppController', 'Controller');
  session_start();
 class MyFilesController extends AppController {
 
+	public $uses = array('MyFile', 'Curso');
 /**
  * Components
  *
@@ -37,7 +38,7 @@ class MyFilesController extends AppController {
 		}
         else
         {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 
@@ -72,8 +73,9 @@ class MyFilesController extends AppController {
 		
 		if (isset($_SESSION['id_curso'])) {
 			$this->MyFile->recursive = 0;
-            $this->set('infoArchivo', $this->Paginator->paginate(array ('curso_id'=>$_SESSION['id_curso'])));   
-		}
+			
+            $this->set('infoCurso', $this->Curso->findById($_SESSION['id_curso']));
+		}else{echo 'info archivo no esta seteado';}
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
         {
@@ -124,10 +126,12 @@ class MyFilesController extends AppController {
 			throw new NotFoundException(__('Archivo inválido'));
 		}
 
+		$this->set('requestInfo', $this->request->data);		
+
 		if ($this->request->is(array('post', 'put')) && 
-            is_uploaded_file($this->request->data['MyFile']['File']['tmp_name'])) {
+            is_uploaded_file($this->request->data['MyFile']['File'])) {
 			
-			$fileData = fread(fopen($this->request->data['MyFile']['File']['tmp_name'], "r"), 
+			$fileData = fread(fopen($this->request->data['MyFile']['File'], "r"), 
                                      $this->request->data['MyFile']['File']['size']);
             
             $this->request->data['MyFile']['name'] = $this->request->data['MyFile']['File']['name'];
@@ -138,7 +142,10 @@ class MyFilesController extends AppController {
 			$this->MyFile->id = $id; 
 			if ($this->MyFile->save($this->request->data)) {
 				$this->Session->setFlash(__('El archivo ha sido guardado.'));
-				return $this->redirect(array('action' => 'index'));
+				
+				
+				
+				//return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
 			}
