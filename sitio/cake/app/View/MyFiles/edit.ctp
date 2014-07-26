@@ -1,28 +1,49 @@
-<div class="myFiles form">
-<fieldset>
-	<legend><?php echo __('Editar Archivo'); ?></legend>
-	
-	<h3><?php echo $infoArchivo[0]['Curso']['nombre'] ?></h3>
-	<h4><?php echo 'Usuario: ', $infoArchivo[0]['Usuario']['nombre'], ' ' ,$infoArchivo[0]['Usuario']['apellidos']; ?> </h4>
-	
-	<dl>		
-		<dt><?php echo __('Nombre'); ?></dt>
-		<dd><?php echo $infoArchivo[0]['MyFile']['name']; ?>&nbsp;</dd>
+<div class="myFiles index">
+	<h2><?php echo __('Archivos'); ?></h2>
+	<table cellpadding="0" cellspacing="0">
+	<thead>
+	<tr>
+			<th><?php echo $this->Paginator->sort('name','Nombre'); ?></th>
+			<th><?php echo $this->Paginator->sort('size', 'Tamaño'); ?></th>
+			<th><?php echo $this->Paginator->sort('created', 'Incluído'); ?></th>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
+	</tr>
+	</thead>
+	<tbody>
+	<?php pr($_SESSION); foreach ($myFiles as $myFile): ?>
 		
-		<dt><?php echo __('Tamaño'); ?></dt>
-		<dd><?php echo $infoArchivo[0]['MyFile']['size'], ' B'; ?>&nbsp;</dd>
-	</dl>
-	
-<?php echo $this->Form->create('MyFile'); ?>
+		
+			<tr>
+				<td><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'download', $myFile['MyFile']['id'])); ?>&nbsp;</td>
+				<td><?php echo h($myFile['MyFile']['size']), ' B'; ?>&nbsp;</td>
+				<td><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</td>
+				<td class="actions">
+					<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $myFile['MyFile']['id'])); ?>
+					<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $myFile['MyFile']['id'])); ?>
+					<?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $myFile['MyFile']['name'])); ?>
+				</td>
+			</tr>
+		
+		
+	<?php endforeach; ?>
+	</tbody>
+	</table>
+	<p>
 	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->file('File');
+	echo $this->Paginator->counter(array(
+	'format' => __('Página {:page} de {:pages}')
+	));
+	?>	</p>
+	<div class="paging">
+	<?php
+		echo $this->Paginator->prev('< ' . __('Anterior'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->numbers(array('separator' => ''));
+		echo $this->Paginator->next(__('Siguiente') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
-	
-<?php echo $this->Form->end(__('Subir')); ?>
-</fieldset>
+	</div>
 </div>
+
 <?php 
-$this->set('editaArchivo', 1);
-echo $this->element('acciones'); 
+	$this->set('archivos', 1);
+	echo $this->element('acciones');
 ?>
