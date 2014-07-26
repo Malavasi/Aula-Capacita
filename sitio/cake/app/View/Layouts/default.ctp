@@ -29,7 +29,7 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('style');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -37,14 +37,28 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 		echo $this->Html->script('jquery');
 	?>
 </head>
-<body>
+<body class="style-1">
+<div class="wrap-header"></div>
+<header id="header" class="clearfix">
+		
+</header>
+
+
+<section class="container sbr clearfix">
+	
+		<a href="index.html" id="logo"><img src="http://www.capacita.co/images/capacita_logo.gif" alt="" width="300" height="77" title="Capacita" /></a>
+		<!-- - - - - - - - - - - Slider - - - - - - - - - - - - - -->	
+
+<div id="slider" class="flexslider clearfix">
+
 	<div id="container">
 		<div id="header">
 			<h3><?php echo $this->Html->link($cakeDescription, 'http://google.com'); ?></h3>
-			<div align="right"> <?php echo $this->element('usuario'); ?> </div>
 		</div>
-		<div id="content">
-       		<?php echo $this->Session->flash(); ?>
+		
+        <div id="content">
+       <?php echo $this->element('usuario'); ?>
+			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
@@ -60,6 +74,9 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 			</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+    <section>
+</div>
+
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
