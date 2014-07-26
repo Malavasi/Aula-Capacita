@@ -1,10 +1,8 @@
-
 <div class="Cursos index">
 <h1>Cursos actuales</h1>
 <table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
-						<th>id</th>
 						<th>Nombre</th>
 						<th>Fecha inicio</th>
 						<th>Fecha final</th>
@@ -14,7 +12,6 @@
 				<tbody>
 				<?php foreach ($cursos as $curso): ?>
 					<tr>
-						<td><?php echo $curso['Curso']['id']; ?>&nbsp;</td>
 						<td><?php echo $curso['Curso']['nombre']; ?>&nbsp;</td>
 						<td><?php echo $curso['Curso']['fechainicio']; ?>&nbsp;</td>
 						<td><?php echo $curso['Curso']['fechafin']; ?>&nbsp;</td>

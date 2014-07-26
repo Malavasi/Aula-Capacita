@@ -4,13 +4,16 @@ session_start();
 class CursosController extends AppController {
     public $helpers = array('Html', 'Form');
 	
-	public $uses = array('Curso', 'Usuario');
+	public $uses = array('Curso', 'Usuario', 'Matricula');
 
     public function index() {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
-        {
-                $this->set('cursos', $this->Curso->find('all'));
-        }
+        if(isset($_SESSION['tipo_usuario'])) {
+        	if( $_SESSION['tipo_usuario']==1 ) {
+	            $this->set('cursos', $this->Curso->find('all'));
+	        } elseif($_SESSION['tipo_usuario'] == 2) {
+	        	$this->set('cursos', $this->Curso->find('all', array('conditions' => array('Curso.usuario_id' => $_SESSION['id_usuario']))));
+	        }
+		}
     }
 
     public function add() {
