@@ -10,18 +10,22 @@
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($myFiles as $myFile): ?>
-	<tr>
-		<td><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'download', $myFile['MyFile']['id'])); ?>&nbsp;</td>
-		<td><?php echo h($myFile['MyFile']['size']), ' B'; ?>&nbsp;</td>
-		<td><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $myFile['MyFile']['id'])); ?>
-			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $myFile['MyFile']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $myFile['MyFile']['name'])); ?>
-		</td>
-	</tr>
-<?php endforeach; ?>
+	<?php pr($_SESSION); foreach ($myFiles as $myFile): ?>
+		
+		
+			<tr>
+				<td><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'download', $myFile['MyFile']['id'])); ?>&nbsp;</td>
+				<td><?php echo h($myFile['MyFile']['size']), ' B'; ?>&nbsp;</td>
+				<td><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</td>
+				<td class="actions">
+					<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $myFile['MyFile']['id'])); ?>
+					<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $myFile['MyFile']['id'])); ?>
+					<?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $myFile['MyFile']['name'])); ?>
+				</td>
+			</tr>
+		
+		
+	<?php endforeach; ?>
 	</tbody>
 	</table>
 	<p>
@@ -38,4 +42,8 @@
 	?>
 	</div>
 </div>
-<?php echo $this->element('acciones'); ?>
+
+<?php 
+	$this->set('archivos', 1);
+	echo $this->element('acciones');
+?>
