@@ -26,7 +26,9 @@
 	</div>
 	
 </div>
+
 <?php 
-$this->set('verArchivo', 1);
-echo $this->element('acciones'); 
+	$this->set('archivos', 1);
+	$this->set('verArchivo', 1);
+	echo $this->element('acciones');
 ?>
