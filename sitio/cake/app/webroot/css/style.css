@@ -546,7 +546,7 @@ h7 {line-height: 1.5em;}
 	/*	Forms
 	/* -------------------------------------------------- */
 
-	button,
+	/*button,
 	input[type="button"],
 	input[type="reset"],
 	input[type="submit"] {
@@ -597,11 +597,11 @@ h7 {line-height: 1.5em;}
 		padding: 10px;
 		border: 1px solid transparent;
 	}
-
-	/* Firefox */
+    */
+	/* Firefox 
 	input:-moz-placeholder,
 	textarea:-moz-placeholder {color: #8f8f8f;}
-
+    */
 	/* Chrome, Safari */
 	input::-webkit-input-placeholder,
 	textarea::-webkit-input-placeholder {color: #8f8f8f;}
@@ -1029,7 +1029,7 @@ h7 {line-height: 1.5em;}
 		
 		/* Donate */
 		
-		a.donate {
+		input[type="submit"] {
 			float: right;
 			display: block;
 			margin: 0;
@@ -1039,10 +1039,10 @@ h7 {line-height: 1.5em;}
 			font-size: 13px;			
 	font-weight: bold;
 			font-family: Arial, Helvetica, sans-serif;
-			line-height: 60px;
+			line-height: 30px;
 		}
 		
-		.not-ie a.donate {
+		.not-ie input[type="submit"] {
 			-webkit-transition: all .25s linear;
 			   -moz-transition: all .25s linear;
 				-ms-transition: all .25s linear;
@@ -1050,32 +1050,32 @@ h7 {line-height: 1.5em;}
 					transition: all .25s linear;
 		}
 		
-		.style-1 a.donate {background-color: #a2b933;}
-		.style-2 a.donate {background-color: #61931d;}
+		.style-1 input[type="submit"] {background-color: #a2b933;}
+		.style-2 .donate {background-color: #61931d;}
 		
-		.style-3 a.donate,
-		.style-4 a.donate,
-		.style-5 a.donate,
-		.style-6 a.donate {background-color: #61931d;}
+		.style-3 .donate,
+		.style-4 .donate,
+		.style-5 .donate,
+		.style-6 .donate {background-color: #61931d;}
 		
-		a.donate:hover {
+		input[type="submit"]:hover {
 			text-shadow: -1px -1px 0 rgba(0,0,0,.2);
 			color: #fff;
 		}
 		
-		.not-ie a.donate:hover {
+		.not-ie input[type="submit"]:hover {
 			-webkit-box-shadow: inset 0 0 8px rgba(0,0,0,.35);
 			   -moz-box-shadow: inset 0 0 8px rgba(0,0,0,.35);
 					box-shadow: inset 0 0 8px rgba(0,0,0,.35);			
 		}
 		
-		.style-1 a.donate:hover {background-color: #61931d;}
-		.style-2 a.donate:hover {background-color: #61931d;}
+		.style-1 input[type="submit"]:hover {background-color: #61931d;}
+		.style-2 .donate:hover {background-color: #61931d;}
 		
-		.style-3 a.donate:hover,
-		.style-4 a.donate:hover,
-		.style-5 a.donate:hover,
-		.style-6 a.donate:hover {background-color: #cb1c41;}
+		.style-3 .donate:hover,
+		.style-4 .donate:hover,
+		.style-5 .donate:hover,
+		.style-6 .donate:hover {background-color: #cb1c41;}
 	
 	/* -------------------------------------------------- */
 	/*	Social Links
@@ -3358,3 +3358,16 @@ ul.error_messages {
 			-moz-transform: scale(1);
 		}
 	}
+
+
+/*login*/
+#content-box {
+	border: 2px solid #ccc;
+	border-top: 2;
+	float: right;
+	width: 50%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-bottom: 5px;
+    top: 50px;
+}

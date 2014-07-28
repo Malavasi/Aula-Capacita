@@ -62,6 +62,8 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
+        	</div>
+</div>
 		<div id="footer">
 			<?php echo $this->Html->link(
 					$this->Html->image('capacita.gif', array('alt' => $cakeDescription, 'border' => '0')),
@@ -70,12 +72,10 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 				);
 			?>
 			<p>
-				<?php echo'Aula Virtual'; ?>
+				<?php //echo'Aula Virtual'; ?>
 			</p>
 		</div>
-	</div>
-    <section>
-</div>
+
 
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
