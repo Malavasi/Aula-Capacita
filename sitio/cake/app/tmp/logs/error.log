@@ -2272,3 +2272,133 @@ Stack Trace:
 #0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
 #2 {main}
+2014-07-27 19:02:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:03:38 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:04:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:04:27 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:04:28 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:04:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:04:57 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:05:57 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:05:58 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:05:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:06:47 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:06:56 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-07-27 19:07:04 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cake/images/bgs/bg-1.png
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
