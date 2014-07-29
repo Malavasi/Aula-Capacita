@@ -45,6 +45,12 @@ if(isset($_SESSION['tipo_usuario']))
             echo '<br>'.__('Blog');
             echo '<li>'.$this->Html->link(__('Agregar Tema'), array('action' => 'add')).'</li>'; 
         }
+	
+		if(isset($_SESSION['id_usuario']) )
+        {
+            echo '<li>'.$this->Html->link(__('Mi Cuenta'), array('controller' => 'Usuarios','action' => 'edit', $_SESSION['id_usuario'])).'</li>'; 
+        }
+
 		?>
 	</ul>
 </div>

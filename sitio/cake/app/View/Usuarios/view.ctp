@@ -1,7 +1,5 @@
 <div class="usuarios view">
 	
-	<?php pr($usuario); ?>
-	
 <h2><?php echo __('Usuario'); ?></h2>
 	<dl>
 		<dt><?php echo __('Identificación'); ?></dt>
@@ -43,17 +41,17 @@
 	<br>
 	
 	<div class="related">
-		<h3><?php echo __('Curso Matriculado'); ?></h3>
-		<?php if (!empty($usuario['Curso'])): ?>
+		<?php if (!empty($curso['Curso'])): ?>
+			<h3><?php echo __('Curso Matriculado'); ?></h3>
 			<dl>
 				<dt><?php echo __('Nombre'); ?></dt>
-				<dd><?php echo$this->Html->link(__($usuario['Curso'][0]['nombre']), array('controller' => 'aulas', 'index' => 'view', $usuario['Curso'][0]['id'])); ?>&nbsp;</dd>
+				<dd><?php echo$this->Html->link(__($curso['Curso']['nombre']), array('controller' => 'aulas', 'index' => 'view', $curso['Curso']['id'])); ?>&nbsp;</dd>
 				
 				<dt><?php echo __('Fecha Inicio'); ?></dt>
-				<dd><?php echo $usuario['Curso'][0]['fechainicio']; ?>&nbsp;</dd>
+				<dd><?php echo $curso['Curso']['fechainicio']; ?>&nbsp;</dd>
 				
 				<dt><?php echo __('Fecha Finalización'); ?></dt>
-				<dd><?php echo $usuario['Curso'][0]['fechafin']; ?>&nbsp;</dd>
+				<dd><?php echo $curso['Curso']['fechafin']; ?>&nbsp;</dd>
 			</dl>
 		<?php endif; ?>
 	</div>

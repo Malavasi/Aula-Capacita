@@ -9,6 +9,7 @@ App::uses('AppController', 'Controller');
  session_start();
 class UsuariosController extends AppController {
 
+	public $uses = array('Usuario', 'Curso', 'Matricula');
 /**
  * Components
  *
@@ -42,17 +43,26 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
 		    if (!$this->Usuario->exists($id)) {
 			    throw new NotFoundException(__('Usuario Inválido'));
 		    }
 		    $options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
-		    $this->set('usuario', $this->Usuario->find('first', $options));
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+			$usuario = $this->Usuario->find('first', $options);
+		    $this->set('usuario', $usuario);
+			
+			if ($usuario['Usuario']['tipo'] == 2) {
+				$options = array('conditions' => array('Curso.usuario_id' => $id));
+				$this->set('curso', $this->Curso->find('first', $options));
+				
+			} elseif ($usuario['Usuario']['tipo'] == 3) {
+				$options = array('conditions' => array('Curso.' . $this->Curso->primaryKey => $usuario['Matricula'][0]['curso_id']));
+				$this->set('curso', $this->Curso->find('first', $options));
+			}
+			
+        } else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 
