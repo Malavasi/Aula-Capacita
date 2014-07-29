@@ -2,6 +2,8 @@ OBSERVACIONES DE PENDIENTES AULA CAPACITA
 
 - al matricular un estudiante en un curso, quitarlo de la lista.
 
+- permitir a los usuarios cambiar su contraseña.
+
 - agregar el ordenamiento de tablas por columnas en aulas, matricula y cursos.
 estilo del aula virtual en general.
 
