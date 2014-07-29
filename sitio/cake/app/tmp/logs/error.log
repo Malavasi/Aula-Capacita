@@ -2402,3 +2402,66 @@ Stack Trace:
 #0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
 #2 {main}
+2014-07-28 04:18:25 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Aula-capacita/sitio/cake/images/bgs/bg-1.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-29 05:22:22 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /aula-capacita/sitio/cake/images/bgs/bg-1.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-29 16:45:07 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /aula-capacita/sitio/cake/images/bgs/bg-1.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-29 16:45:45 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /aula-capacita/sitio/cake/images/bgs/bg-1.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-29 16:45:46 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /aula-capacita/sitio/cake/images/bgs/bg-1.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-29 16:48:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /aula-capacita/sitio/cake/images/bgs/bg-1.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-29 16:49:35 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /aula-capacita/sitio/cake/images/bgs/bg-1.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

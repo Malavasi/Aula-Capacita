@@ -1,16 +1,22 @@
 <?php 
-if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2)
+if(isset($_SESSION['tipo_usuario']))
 {
 ?>
 <div class="actions">
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
         <?php
+        
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 3 and isset($_SESSION['id_curso']))
+        {
+            echo '<li>'.$this->Html->link(__('Inicio'), array('controller' => 'Aulas','action' => 'index', $_SESSION['id_curso'])).'</li>';    
+        }
+        
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
             echo '<li>'.$this->Html->link(__('Crear Usuario'), array('controller' => 'usuarios','action' => 'add')).'</li>';    
         }
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
             echo '<li>'.$this->Html->link(__('Consultar Usuarios'), array('controller' => 'usuarios','action' => 'index')).'</li>';    
         }

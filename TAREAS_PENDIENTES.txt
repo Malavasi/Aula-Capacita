@@ -1,8 +1,6 @@
 OBSERVACIONES DE PENDIENTES AULA CAPACITA
 
-- al matricular un estudiante, quitarlo de la lista.
-
-- en la vista del aula para los usuarios instructor y estudiante agregar una acción para regresar al home del aula.
+- al matricular un estudiante en un curso, quitarlo de la lista.
 
 - agregar el ordenamiento de tablas por columnas en aulas, matricula y cursos.
 estilo del aula virtual en general.
