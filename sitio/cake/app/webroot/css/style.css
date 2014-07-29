@@ -1039,7 +1039,7 @@ h7 {line-height: 1.5em;}
 			font-size: 13px;			
 	font-weight: bold;
 			font-family: Arial, Helvetica, sans-serif;
-			line-height: 30px;
+			line-height: 20px;
 		}
 		
 		.not-ie input[type="submit"] {
@@ -3369,16 +3369,16 @@ ul.error_messages {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	margin-bottom: 5px;
-    top: 50px;
+    top: 30px;
 }
 
 #logout-box {
 	border: 2px solid #ccc;
 	border-top: 2;
-	float: left;
-	width: 50%;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	float: right;
+	width: 25%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	margin-bottom: 5px;
-    top: 50px;
+    top: 25px;
 }

@@ -1,2 +1,2 @@
-1406645729
+1406653599
 a:2:{s:4:"name";a:7:{s:32:"c738fcfe0aad23c84f62b6da6994158d";s:8:"`cursos`";s:32:"71ffabe60b6d13782fb8f8b0fa76db8e";s:12:"`Curso`.`id`";s:32:"2480bbe909b68488153a77791d89d47a";s:16:"`Curso`.`nombre`";s:32:"db28c690095acf515914f7e3caa994a1";s:20:"`Curso`.`usuario_id`";s:32:"2ebeb639a6c4b261b3bd2500213769be";s:21:"`Curso`.`fechainicio`";s:32:"62a0e2b797a82754d9104e35d7953c5c";s:18:"`Curso`.`fechafin`";s:32:"2be0f71fbaa2fc0c6e8292b687eea760";s:7:"`Curso`";}s:6:"fields";a:1:{s:32:"41c1b3a6a377d754190b5103e2eb1654";a:5:{i:0;s:12:"`Curso`.`id`";i:1;s:16:"`Curso`.`nombre`";i:2;s:20:"`Curso`.`usuario_id`";i:3;s:21:"`Curso`.`fechainicio`";i:4;s:18:"`Curso`.`fechafin`";}}}
