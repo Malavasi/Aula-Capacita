@@ -23,7 +23,7 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function index() {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 )
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
 		    $this->Usuario->recursive = 0;
 		    $this->set('usuarios', $this->Paginator->paginate());
@@ -115,8 +115,10 @@ class UsuariosController extends AppController {
  */
 	public function edit($id = null) {
 		$temp;
-		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
         {
+        	$this->set('usuario', $this->Usuario->findById($_SESSION['id_usuario']));
+			
 		    if (!$this->Usuario->exists($id)) {
 			    throw new NotFoundException(__('Usuario Inválido'));
 		    }
@@ -150,9 +152,43 @@ class UsuariosController extends AppController {
 			    $options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
 			    $this->request->data = $this->Usuario->find('first', $options);
 		    }
-        }
-        else
-        {
+        } elseif(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] >= 2 and $id == $_SESSION['id_usuario'])  {
+        	$this->set('usuario', $this->Usuario->findById($_SESSION['id_usuario']));
+			
+        	if (!$this->Usuario->exists($id)) {
+			    throw new NotFoundException(__('Usuario Inválido'));
+		    }
+		    if ($this->request->is(array('post', 'put'))) {
+			    if ($this->request->data['Usuario']['contrasena'] == $this->request->data['Usuario']['confirmarContrasena']) {
+				    if ($this->request->data['Usuario']['nick'] == "") {
+					    $nick = $this->crearNick($this->request->data['Usuario']['nombre'],
+											     $this->request->data['Usuario']['apellidos']);
+					    $this->request->data['Usuario']['nick'] = $nick;
+				    }
+				
+				    if ($this->request->data['Usuario']['contrasena'] == "") {
+					    $this->request->data['Usuario']['contrasena'] = $this->crearContrasena($this->request->data['Usuario']['nombre'],
+																						       $this->request->data['Usuario']['apellidos']);	
+				    }
+				
+				    //para el md5 de la contrasena de tamano 32
+				    $this->request->data['Usuario']['contrasena'] = md5($this->request->data['Usuario']['contrasena']);
+				    $this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
+				
+				    if ($this->Usuario->save($this->request->data)) {
+					    $this->Session->setFlash(__('El usuario ha sido actualizado'));
+					    return $this->redirect(array('action' => 'index'));
+				    } else {
+					    $this->Session->setFlash(__('El usuario no se ha podido guardar. Por favor, intente de nuevo.'));
+				    }
+			    } else {
+				    $this->Session->setFlash(__('Las contraseñas no coinciden.'));
+			    }
+		    } else {
+			    $options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
+			    $this->request->data = $this->Usuario->find('first', $options);
+		    }
+        }else {
                 $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
