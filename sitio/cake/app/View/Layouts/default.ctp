@@ -53,12 +53,11 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 
 	<div id="container">
 		<div id="header">
-			<h3><?php echo $this->Html->link($cakeDescription, 'http://google.com'); ?></h3>
+			<h3><?php echo $this->Html->link($cakeDescription, 'http://google.com'); ?><?php echo $this->element('usuario'); ?></h3>
 		</div>
 		
         <div id="content">
-       <?php echo $this->element('usuario'); ?>
-			<?php echo $this->Session->flash(); ?>
+       	<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
