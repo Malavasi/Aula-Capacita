@@ -12,9 +12,16 @@ class MatriculasController extends AppController {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 ) {
         	if($id != NULL) {
 		        $_SESSION['id_curso'] = $id;
-		        
-				$this->set('usuarios', $this->Paginator->paginate('Usuario',  array('Usuario.tipo' => 3)));
+		       
+				$idMatriculados = $this->Matricula->find('all', array ('fields' => array('Matricula.usuario_id')));
+				$ids = array();
+				foreach ($idMatriculados as $id) {
+					array_push($ids, $id['Matricula']['usuario_id']);
+				}				
 				
+				$conditions = array("NOT" => array( "Usuario.id" => $ids), array('Usuario.tipo' => 3));
+				
+				$this->set('usuarios', $this->Paginator->paginate('Usuario', $conditions));
 				$this->set('infoCurso', $this->Curso->findById( $_SESSION['id_curso']));
 	        }
         } else {
