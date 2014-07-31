@@ -1,24 +1,24 @@
 <?php
-    session_start();
-    App::uses('Usuarios', 'Model');
-    App::uses('Matriculas', 'Model');
+session_start();
+App::uses('Matriculas', 'Model');
+
 class MatriculasController extends AppController {
     public $helpers = array('Html', 'Form');
+	public $uses = array('Curso', 'Usuario', 'Matricula');
+	public $components = array('Paginator');
+	public $paginate = array('Usuario');
     
     public function index($id =NULL) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
-        {
-        if($id != NULL)
-        {
-        $_SESSION['id_curso'] = $id;
-        $usuario = new Usuarios();
-        $this->set('usuarios', $usuario->find('all',array('conditions' => array('tipo' => 3))));
-		$this->set('infoCurso', $curso->find('all',array('conditions' => array('id' => $_SESSION['id_curso']))));
-        }
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 ) {
+        	if($id != NULL) {
+		        $_SESSION['id_curso'] = $id;
+		        
+				$this->set('usuarios', $this->Paginator->paginate('Usuario',  array('Usuario.tipo' => 3)));
+				
+				$this->set('infoCurso', $this->Curso->findById( $_SESSION['id_curso']));
+	        }
+        } else {
+			$this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
     }
 

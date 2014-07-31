@@ -3,9 +3,10 @@
 <table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
-						<th>Nombre</th>
-						<th>Fecha inicio</th>
-						<th>Fecha final</th>
+						<th><?php echo $this->Paginator->sort('nombre', 'Nombre'); ?></th>
+						<th><?php echo $this->Paginator->sort('fechainicio', 'Inicio'); ?></th>
+						<th><?php echo $this->Paginator->sort('fechafin', 'Final'); ?></th>
+						
 						<th class="actions">Acciones</th>
 					</tr>
 				</thead>
