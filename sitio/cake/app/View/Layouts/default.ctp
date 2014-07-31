@@ -45,7 +45,6 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 
 
 <section class="container sbr clearfix">
-	
 		<a href="index.html" id="logo"><img src="http://www.capacita.co/images/capacita_logo.gif" alt="" width="300" height="77" title="Capacita" /></a>
 		<!-- - - - - - - - - - - Slider - - - - - - - - - - - - - -->	
 
@@ -57,11 +56,11 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 		</div>
 		
         <div id="content">
-       	<?php echo $this->Session->flash(); ?>
+           	<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-        	</div>
+    </div>
 </div>
 		<div id="footer">
 			<?php echo $this->Html->link(
@@ -74,6 +73,7 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 				<?php //echo'Aula Virtual'; ?>
 			</p>
 		</div>
+</section>	
 
 
 	<?php //echo $this->element('sql_dump'); ?>
