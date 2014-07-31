@@ -2,9 +2,6 @@ OBSERVACIONES DE PENDIENTES AULA CAPACITA
 
 - estilo del aula virtual en general.
 
-- realizar pruebas.
-
-
-OTRAS
-
 - arreglar la función de editar archivo.
+
+- realizar pruebas.
