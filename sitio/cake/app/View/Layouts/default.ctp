@@ -62,17 +62,17 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 		</div>
     </div>
 </div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('capacita.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.capacita.co',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php //echo'Aula Virtual'; ?>
-			</p>
-		</div>
+	<footer id="footer">
+		
+		<ul class="copyright">
+			
+			<li>Derechos Reservados &copy; 2014</li>
+			<li><a href="index.html">Capacita</a></li>
+		  <li>San Jos&eacute;, Costa Rica</li>
+			
+		</ul><!--/ .copyright-->
+	
+	</footer>
 </section>	
 
 
