@@ -3186,3 +3186,14 @@ Stack Trace:
 #0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #2 {main}
+2014-08-03 18:16:40 Error: [MissingActionException] Action MyFilesController::index.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'MyFilesController',
+  'action' => 'index.html',
+)
+Request URL: /Aula-capacita/sitio/cake/MyFiles/index.html
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

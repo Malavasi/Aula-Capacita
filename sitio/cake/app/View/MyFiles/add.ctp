@@ -7,9 +7,8 @@
 	<?php
 		echo $this->Form->file('File');
 	?>
-	
-<?php echo $this->Form->end(__('Subir')); ?>
 </fieldset>
+<?php echo $this->Form->end(__('Subir')); ?>
 </div>
 
 <?php 

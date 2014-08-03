@@ -16,13 +16,12 @@
 	<?php foreach ($myFiles as $myFile): ?>
 		
 			<tr>
-				<td><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'download', $myFile['MyFile']['id'])); ?>&nbsp;</td>
+				<td><?php echo $this->Html->link($myFile['MyFile']['name'], array('action' => 'view', $myFile['MyFile']['id'])); ?>&nbsp;</td>
 				<td><?php echo h($myFile['MyFile']['size']), ' B'; ?>&nbsp;</td>
 				<td><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</td>
 				
 				<?php if (isset($_SESSION) and $_SESSION['tipo_usuario'] <= 2) { ?>
 					<td class="actions">
-						<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $myFile['MyFile']['id'])); ?>
 						<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $myFile['MyFile']['id'])); ?>
 						<?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $myFile['MyFile']['name'])); ?>
 					</td>

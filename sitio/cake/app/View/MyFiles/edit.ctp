@@ -1,8 +1,6 @@
 <div class="myFiles form">
 <fieldset>
 	
-	<?php pr($requestInfo); ?>
-	
 	<legend><?php echo __('Editar Archivo'); ?></legend>
 	
 	<h3><?php echo $infoArchivo[0]['Curso']['nombre'] ?></h3>
@@ -22,8 +20,8 @@
 		echo $this->Form->file('File');
 	?>
 	
-<?php echo $this->Form->end(__('Subir')); ?>
 </fieldset>
+<?php echo $this->Form->end(__('Subir')); ?>
 </div>
 
 <?php 

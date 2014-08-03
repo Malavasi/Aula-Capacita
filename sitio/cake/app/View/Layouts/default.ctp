@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
+$cakeDescription = __d('cake_dev', 'Aula Virtual');
 ?>
 <!DOCTYPE html>
 <html>
@@ -52,7 +52,8 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 
 	<div id="container">
 		<div id="header">
-			<h3><?php echo $this->Html->link($cakeDescription, 'http://google.com'); ?><?php echo $this->element('usuario'); ?></h3>
+			<h1><?php echo $cakeDescription; ?> </h1>
+			<?php echo $this->element('usuario'); ?>
 		</div>
 		
         <div id="content">
@@ -67,7 +68,7 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual Capacita');
 		<ul class="copyright">
 			
 			<li>Derechos Reservados &copy; 2014</li>
-			<li><a href="index.html">Capacita</a></li>
+			<li><a href="http://www.capacita.co">Capacita</a></li>
 		  <li>San Jos&eacute;, Costa Rica</li>
 			
 		</ul><!--/ .copyright-->
