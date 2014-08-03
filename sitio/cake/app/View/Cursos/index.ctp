@@ -13,13 +13,12 @@
 				<tbody>
 				<?php foreach ($cursos as $curso): ?>
 					<tr>
-						<td><?php echo $curso['Curso']['nombre']; ?>&nbsp;</td>
+						<td><?php echo $this->Html->link('<span class="glyphicon glyphicon-edit">'. $curso['Curso']['nombre'] .'</span>', array('controller' =>'aulas','action' => 'index', $curso['Curso']['id']), array('escape' => false)); ?> </td>
 						<td><?php echo $curso['Curso']['fechainicio']; ?>&nbsp;</td>
 						<td><?php echo $curso['Curso']['fechafin']; ?>&nbsp;</td>
 						
                         <td class="actions">
 							<?php
-                            echo $this->Html->link('<span class="glyphicon glyphicon-edit">ver</span>', array('controller' =>'aulas','action' => 'index', $curso['Curso']['id']), array('escape' => false));
                                  
                             if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
                             {
@@ -33,6 +32,21 @@
 				<?php endforeach; ?>
 				</tbody>
 			</table>
+			
+			<p>
+				<?php
+					echo $this->Paginator->counter(array(
+					'format' => __('Página {:page} de {:pages}')
+					));
+				?>
+			</p>
+			<div class="paging">
+			<?php
+				echo $this->Paginator->prev('< ' . __('Anterior'), array(), null, array('class' => 'prev disabled'));
+				echo $this->Paginator->numbers(array('separator' => ''));
+				echo $this->Paginator->next(__('Siguiente') . ' >', array(), null, array('class' => 'next disabled'));
+			?>
+			</div>
 </div>
 
 <?php echo $this->element('acciones'); ?>

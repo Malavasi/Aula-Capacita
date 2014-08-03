@@ -3,11 +3,11 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-		<th><?php echo $this->Paginator->sort('identificacion', 'Identificación'); ?></th>
+		<th><?php echo $this->Paginator->sort('nick', 'Usuario'); ?></th>
+		<!--th><?php echo $this->Paginator->sort('identificacion', 'Identificación'); ?></th-->
 		<th><?php echo $this->Paginator->sort('nombre', 'Nombre'); ?></th>
 		<th><?php echo $this->Paginator->sort('apellidos', 'Apellidos'); ?></th>
 		<th><?php echo $this->Paginator->sort('tipo', 'Tipo'); ?></th>
-		<th><?php echo $this->Paginator->sort('nick', 'Usuario'); ?></th>
 		<th><?php echo $this->Paginator->sort('fecha', 'Fecha'); ?></th>
 		<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
@@ -15,7 +15,8 @@
 	<tbody>
 	<?php foreach ($usuarios as $usuario): ?>
 	<tr>
-		<td><?php echo h($usuario['Usuario']['identificacion']); ?>&nbsp;</td>
+		<td><?php echo $this->Html->link(__($usuario['Usuario']['nick']), array('action' => 'view', $usuario['Usuario']['id'])); ?></td>
+		<!--td><?php echo h($usuario['Usuario']['identificacion']); ?>&nbsp;</td-->
 		<td><?php echo h($usuario['Usuario']['nombre']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['apellidos']); ?>&nbsp;</td>
 		
@@ -38,10 +39,8 @@
 				?>&nbsp;
 		</td>
 		
-		<td><?php echo h($usuario['Usuario']['nick']); ?>&nbsp;</td>
 		<td><?php echo h($usuario['Usuario']['fecha']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $usuario['Usuario']['id'])); ?>
 			<?php 
             if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
             {
