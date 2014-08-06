@@ -22,9 +22,10 @@
 			
 			echo $this->Form->input('fechainicio', array('label' => __('Inicio', true)));
 			echo $this->Form->input('fechafin', array('label' => __('Fin', true)));
+			echo '<br>';
 		?>
+		<?php echo $this->Form->end('Crear'); ?>
 	</fieldset>
-	<?php echo $this->Form->end('Crear'); ?>
 	
 </div>
 <?php echo $this->element('acciones'); ?>

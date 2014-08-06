@@ -29,7 +29,13 @@
 			<table>
 				<tr><td><strong> RE: &nbsp; <?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
 					<br>
-					<?php echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?>
+					<?php 
+						if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
+							echo $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+						} else {
+							echo $blogforo['Comentario'][$cont]['nick'];
+						}
+					?>
 					&nbsp; - &nbsp;
 					<?php
 						if ($_SESSION['id_usuario'] == $blogforo['Comentario'][$cont]['usuario_id']) {
@@ -51,15 +57,17 @@
 	</div>
 
 	<?php 
-		echo $this->Form->create("Comentario");
-		echo $this->Js->submit("Comentar",
-								array( 'url' => array('action' => 'AjaxShowCommentForm',
-									   $blogforo['Blogforo']['id']/*, $blogforo['Usuario']['id'], $blogforo['Usuario']['nick']*/),//enviar el id del usuario que comenta
-									   'update' => '#formAddComment'));
-		echo $this->Form->end();
+		echo '<div id="comm">';
+			$this->Form->create("Comentario");
+			echo '<br>';
+			echo $this->Js->submit("Comentar",
+									array( 'url' => array('action' => 'AjaxShowCommentForm',
+										   $blogforo['Blogforo']['id']),
+										   'update' => '#formAddComment',
+										   'success' => $this->Js->get('#comm')->effect('fadeOut')));
+			echo $this->Form->end();
+		echo '</div>';
 	?>
-	
-	<div id="sending" style="display: none; color: green;">Enviando comentario...</div>
 	
 	<div id="formAddComment"></div>
 	

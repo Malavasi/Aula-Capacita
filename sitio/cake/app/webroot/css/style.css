@@ -377,3 +377,7 @@ label {
 	width: 150px;
 	text-align: right;
 }
+
+fieldset {
+	width: 380px;
+}

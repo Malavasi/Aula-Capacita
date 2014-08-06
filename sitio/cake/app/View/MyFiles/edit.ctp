@@ -19,9 +19,9 @@
 		echo $this->Form->input('id');
 		echo $this->Form->file('File');
 	?>
-	
+	<br>
+	<?php echo $this->Form->end(__('Subir')); ?>
 </fieldset>
-<?php echo $this->Form->end(__('Subir')); ?>
 </div>
 
 <?php 

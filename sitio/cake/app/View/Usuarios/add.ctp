@@ -31,8 +31,9 @@
 		);
 		
 	?>
+		<br>
+		<?php echo $this->Form->end(__('Crear')); ?>
 	</fieldset>
 	
-	<?php echo $this->Form->end(__('Crear')); ?>
 </div>
 <?php echo $this->element('acciones'); ?>

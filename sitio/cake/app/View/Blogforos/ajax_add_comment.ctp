@@ -5,7 +5,13 @@
 	<table>
 		<tr><td><strong> RE: &nbsp; <?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
 			<br>
-			<?php echo $this->Html->link($blogforo['Comentario'][$cont]['usuario_id'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?>
+			<?php 
+				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
+					echo $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+				} else {
+					echo $blogforo['Comentario'][$cont]['nick'];
+				}
+			?>
 			&nbsp; - &nbsp;
 			<?php echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'edit', $comentario['id'])); ?>
 			&nbsp; - &nbsp;
