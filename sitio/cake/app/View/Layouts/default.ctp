@@ -52,8 +52,9 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual');
 
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $cakeDescription; ?> </h1>
 			<?php echo $this->element('usuario'); ?>
+			<h1 class="titulo"><?php echo $cakeDescription; ?> </h1>
+			
 		</div>
 		
         <div id="content">
