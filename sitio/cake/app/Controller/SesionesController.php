@@ -40,6 +40,8 @@ class SesionesController extends AppController {
         unset($_SESSION['id_usuario']);
         unset($_SESSION['tipo_usuario']);
         unset($_SESSION['nombre_usuario']);
+        unset($_SESSION['id_curso']);
+
         $this->redirect(array('controller' =>'inicio','action' => 'index')); 
     }
 

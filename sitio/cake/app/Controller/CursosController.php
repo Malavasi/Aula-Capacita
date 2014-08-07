@@ -18,6 +18,7 @@ class CursosController extends AppController {
 	        	$this->set('cursos', $this->Paginator->paginate('Curso',  array('Curso.usuario_id' => $_SESSION['id_usuario'])));
 	        }
 		}
+        pr($_SESSION);
     }
 
     public function add() {
