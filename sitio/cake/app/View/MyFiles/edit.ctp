@@ -14,7 +14,7 @@
 		<dd><?php echo $infoArchivo[0]['MyFile']['size'], ' B'; ?>&nbsp;</dd>
 	</dl>
 	
-<?php echo $this->Form->create('MyFile'); ?>
+<?php echo $this->Form->create('MyFile',array('action' => 'edit', 'type' => 'file')); ?>
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->file('File');

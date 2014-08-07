@@ -3197,3 +3197,38 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-08-06 23:15:16 Error: [PDOException] SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'a' for column 'size' at row 1
+Request URL: /cake/my_files/edit/3
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `cursos`...', Array)
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\Database\Mysql.php(411): DboSource->execute('UPDATE `cursos`...')
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1823): Mysql->update(Object(MyFile), Array, Array)
+#4 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\Controller\MyFilesController.php(143): Model->save(Array)
+#5 [internal function]: MyFilesController->edit('3')
+#6 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#7 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#9 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#11 {main}
+2014-08-06 23:17:30 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\View\MyFiles\edit.ctp, line 17]
+2014-08-06 23:17:30 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cake/my_files/edit/3
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Malava...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Malava...', 17, Array)
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Malava...', 17, Array)
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 23:24:38 Error: [NotFoundException] Archivo inválido
+Request URL: /cake/my_files/edit
+Stack Trace:
+#0 [internal function]: MyFilesController->edit()
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#4 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#6 {main}

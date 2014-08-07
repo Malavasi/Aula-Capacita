@@ -127,25 +127,21 @@ class MyFilesController extends AppController {
 		}
 
 		$this->set('requestInfo', $this->request->data);		
-
-		if ($this->request->is(array('post', 'put')) && 
-            is_uploaded_file($this->request->data['MyFile']['File'])) {
+        	
 			
-			$fileData = fread(fopen($this->request->data['MyFile']['File'], "r"), 
+		if ($this->request->is(array('post', 'put')) && 
+            is_uploaded_file($this->request->data['MyFile']['File']['tmp_name'])) {
+		    $fileData = fread(fopen($this->request->data['MyFile']['File']['tmp_name'], "r"), 
                                      $this->request->data['MyFile']['File']['size']);
-            
             $this->request->data['MyFile']['name'] = $this->request->data['MyFile']['File']['name'];
             $this->request->data['MyFile']['type'] = $this->request->data['MyFile']['File']['type'];
             $this->request->data['MyFile']['size'] = $this->request->data['MyFile']['File']['size'];
 			$this->request->data['MyFile']['created'] = date("Y-m-d H:i:s");
             $this->request->data['MyFile']['data'] = $fileData;
-			$this->MyFile->id = $id; 
+            $this->MyFile->id = $id; 
 			if ($this->MyFile->save($this->request->data)) {
 				$this->Session->setFlash(__('El archivo ha sido guardado.'));
-				
-				
-				
-				//return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
 			}
