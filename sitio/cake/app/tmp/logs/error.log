@@ -3256,3 +3256,13 @@ Stack Trace:
 #12 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
 #14 {main}
+2014-08-07 11:44:54 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\Controller\AulasController.php, line 14]
+2014-08-07 11:44:54 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cake/aulas/index/1
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Malava...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Malava...', 14, Array)
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Malava...', 14, Array)
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

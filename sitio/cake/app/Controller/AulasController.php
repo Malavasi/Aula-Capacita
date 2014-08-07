@@ -10,12 +10,12 @@ class AulasController extends AppController {
         {
             $_SESSION['id_curso'] = $id;
         }
-        $this->set('curso', $this->Curso->find('first', array('conditions' => array('Curso.id' => $_SESSION['id_curso']))));
-		else
+        else
         {
                 $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
-
+        $this->set('curso', $this->Curso->find('first', array('conditions' => array('Curso.id' => $_SESSION['id_curso']))));
+		
     }
 
 }
