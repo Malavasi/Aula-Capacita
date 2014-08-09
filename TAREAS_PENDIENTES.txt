@@ -10,8 +10,11 @@ CORREOS
     [][] Al crear un comentario notificar por correo al instructor.
     
 PERMISOS
-    [][] sólo se permitir la edición de contraseña para el instructor y el estudiante.
-    [][] permitir a los estudiantes subir archivos.
+    [D][x] sólo se permitir la edición de contraseña para el instructor y el estudiante.
+    [D][x] permitir a los estudiantes subir archivos.
+
+UUSARIOS
+    [D][x] quiere que el nombre de usuario sea el nombre del usuario y no un nick.
 
 CONSULTAS
     [][] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.

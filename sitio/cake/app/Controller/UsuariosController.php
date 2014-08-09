@@ -75,7 +75,7 @@ class UsuariosController extends AppController {
 		    if ($this->request->is('post')) {
 			
 			    if ($this->request->data['Usuario']['nick'] == "") {
-				    $this->request->data['Usuario']['nick'] = $this->request->data['Usuario']['email'];
+				    $this->request->data['Usuario']['nick'] = $this->request->data['Usuario']['nombre'] . ' ' . $this->request->data['Usuario']['apellidos'];
 			    }
 			
 			    if ($this->request->data['Usuario']['contrasena'] == "") {

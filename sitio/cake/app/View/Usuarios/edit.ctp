@@ -51,14 +51,13 @@
 			<legend><?php echo __('Editar Usuario'); ?></legend>
 		<?php
 			echo $this->Form->input('id');
-			echo $this->Form->input('identificacion', array('label' => __('Identificación', true)));
-			echo $this->Form->input('nombre', array('label' => __('Nombre', true)));
-			echo $this->Form->input('apellidos', array('label' => __('Apellidos', true)));
-			echo $this->Form->input('email', array('label' => __('Correo Electrónico', true)));
+			echo $this->Form->label('Identificación: '); echo ' ', $usuario['Usuario']['identificacion'], '<br>';
+			echo $this->Form->label('Nombre: '); echo ' ', $usuario['Usuario']['nombre'],' ', $usuario['Usuario']['apellidos'], '<br>';
+			echo $this->Form->label('Correo Electrónico: '); echo ' ', $usuario['Usuario']['email'], '<br>';
 			
 			$selectOptions = array('1'=>'Administrador', '2'=>'Instructor', '3'=>'Estudiante');
 			
-			echo $this->Form->label('tipo');
+			echo $this->Form->label('Tipo: ');
 			
 			$tipoUsuario;
 			switch($usuario['Usuario']['tipo']){
@@ -73,9 +72,9 @@
 					break;
 			}
 			
-			echo '&nbsp;', h($tipoUsuario);
+			echo ' ', h($tipoUsuario), '<br>';
 						
-			echo $this->Form->input('nick', array('label' => __('Usuario', true)));
+			echo $this->Form->label('Usuario: '); echo ' ', $usuario['Usuario']['nick'], '<br>';
 			
 			echo $this->Form->input(
 			    'contrasena',

@@ -35,7 +35,7 @@ if(isset($_SESSION['tipo_usuario']))
             echo '<li>'.$this->Html->link(__('Mi Cuenta'), array('controller' => 'Usuarios','action' => 'edit', $_SESSION['id_usuario'])).'</li>'; 
         }
 		
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 and isset($archivos) )
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 and isset($archivos) )
         {
             echo '<br>'.__('Archivos');
 			echo '<li>'. $this->Html->link(__('Subir Archivo'), array('controller' => 'MyFiles','action' => 'add')).'</li>';

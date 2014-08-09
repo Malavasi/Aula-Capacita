@@ -3293,3 +3293,13 @@ Stack Trace:
 #11 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
 #12 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-08-09 23:26:59 Error: Fatal Error (4): syntax error, unexpected '¡' (T_STRING), expecting ',' or ';' in [/Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/View/Usuarios/edit.ctp, line 54]
+2014-08-09 23:26:59 Error: [FatalErrorException] syntax error, unexpected '¡' (T_STRING), expecting ',' or ';'
+Request URL: /Aula-capacita/sitio/cake/Usuarios/edit/28
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
