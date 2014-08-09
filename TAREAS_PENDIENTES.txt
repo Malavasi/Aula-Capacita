@@ -28,10 +28,11 @@ OTROS
     [][] que siempre se muestre el nombre completo de la persona no el nick, entonces creo que el campo del nick se podría eliminar.
     [][] revisar validaciones de los campos.
 
-ESTILO Y ESTÁNDARES
+INTERFAZ, ESTILO, ESTÁNDARES
     [][] estandarizar mensajes.
     [][] estilo de los mensajes.
     [][] estilo de los mensajes de validación de campos.
+    [][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.
 
 APARTE (este aún NO!!!)
     [][] obtener datos del correo electrónico de la inscripción y guardarlos en algún archivo para luego crear los usuarios a partir de él.
