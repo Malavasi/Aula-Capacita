@@ -1,6 +1,6 @@
 INSTRUCCIONES
     Ya que vamos a utilzar este archivo para administrar las tareas, se me ocurrió organizarlo un poco mejor. La idea es poner la
-inicial del nombre de uno dentro del segundo paréntesis de la tarea que uno está realizando(si está vacío, no está asignada). Cuando una tarea está completa, se pone una x en el primer paréntesis. Esto porque en el anterior yo eliminaba por completo la tarea, y ahora me parece mejor dejarlas para tener un control mejor.
+inicial del nombre de uno dentro del primer paréntesis de la tarea que uno está realizando(si está vacío, no está asignada). Cuando una tarea está completa, se pone una x en el segundo paréntesis. Esto porque en el anterior yo eliminaba por completo la tarea, y ahora me parece mejor dejarlas para tener un control mejor.
    ¿qué le parece?
 
 
@@ -17,9 +17,9 @@ CONSULTAS
     [][] consultar usuarios por curso.
 
 BLOGFORO
-    [][] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
-    [][] algo pasa con el botón agregar tema en los usuarios instructor y estudiante. no abre la vista para crear el tema.
-    [][] Botón para comentar en el usuario estudiante. No aparece.
+    [D][] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
+    [D][] algo pasa con el botón agregar tema en los usuarios instructor y estudiante. no abre la vista para crear el tema.
+    [D][] Botón para comentar en el usuario estudiante. No aparece.
 
 ARCHIVOS
     [][] nombre de los programas recomendados para abrir los archivos.
