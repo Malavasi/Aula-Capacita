@@ -17,7 +17,7 @@ UUSARIOS
     [D][x] quiere que el nombre de usuario sea el nombre del usuario y no un nick.
 
 CONSULTAS
-    [][] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
+    [D][] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
 
 BLOGFORO
     [D][x] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
@@ -26,10 +26,9 @@ BLOGFORO
     [D][x] Aparecen temas de discusión de otros seminarios.
 
 ARCHIVOS
-    [][] nombre de los programas recomendados para abrir los archivos.
+    [D][] nombre de los programas recomendados para abrir los archivos. Posiblemente, agregar un campo para que la persona que lo suba escriba el nombre de un programa recomendado para abrir el archivo.
 
 OTROS
-    [][] que siempre se muestre el nombre completo de la persona no el nick, entonces creo que el campo del nick se podría eliminar.
     [][] revisar validaciones de los campos.
 
 INTERFAZ, ESTILO, ESTÁNDARES
