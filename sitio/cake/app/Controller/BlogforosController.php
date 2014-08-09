@@ -27,7 +27,7 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function index($id = null) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 and (id != null)) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 and ($id != null)) {
         	$this->Blogforo->recursive = 0;
 			
             $this->set('blogforos', $this->Paginator->paginate('Blogforo', array('Blogforo.curso_id' => $id)));

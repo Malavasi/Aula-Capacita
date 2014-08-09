@@ -10,4 +10,4 @@
     ?></h3>
 </div>
 
-<?php  pr($curso); pr($_SESSION); echo $this->element('acciones'); ?>
+<?php echo $this->element('acciones'); ?>

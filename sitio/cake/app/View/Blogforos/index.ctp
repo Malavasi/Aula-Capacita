@@ -1,5 +1,5 @@
 <div class="blogforos index">
-	<h2><?php echo __('Blogforos'); pr($blogforos); pr($_SESSION) ?></h2>
+	<h2><?php echo __('Blogforos'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
