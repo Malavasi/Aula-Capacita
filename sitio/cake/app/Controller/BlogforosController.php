@@ -15,31 +15,24 @@ class BlogforosController extends AppController {
  *
  * @var array
  */
+ 	public $uses = array('Blogforo', 'Usuario', 'Curso');
 	public $components = array('Paginator');
+	public $paginate = array('Blogforo');
 	
 	public $helpers = array('Js' => array('Jquery'));
-	var $paginate;
+	
 /**
  * index method
  *
  * @return void
  */
-	public function index($id=NULL) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
-        {
-            if($id==NULL)
-            {
-		        $this->Blogforo->recursive = 0;
-		        $this->set('blogforos', $this->Paginator->paginate());
-            }
-            else
-            {
-                $this->set('blogforos', $this->Paginator->paginate(array ('curso_id'=>$id)));
-            }
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+	public function index($id = null) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 and (id != null)) {
+        	$this->Blogforo->recursive = 0;
+			
+            $this->set('blogforos', $this->Paginator->paginate('Blogforo', array('Blogforo.curso_id' => $id)));
+        } else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 
@@ -51,26 +44,25 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
-        {
-		if (!$this->Blogforo->exists($id)) {
-			throw new NotFoundException(__('Foro inválido'));
-		}
-        $_SESSION['id_curso'] = $id;
-		$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
-        $usuario = new Usuarios();
-        $blogforo = $this->Blogforo->find('first', $options);
-        $conta = 0;
-        foreach ($blogforo['Comentario'] as $comentario):
-            $tmp = $usuario->findById($comentario['usuario_id']);
-            $blogforo['Comentario'][$conta]['nick'] = $tmp['Usuarios']['nick'];
-            ++$conta;
-        endforeach;
-        $this->set('blogforo', $blogforo);
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
+			if (!$this->Blogforo->exists($id)) {
+				throw new NotFoundException(__('Foro inválido'));
+			}
+	        $_SESSION['id_curso'] = $id;
+			$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
+	        $usuario = new Usuarios();
+	        $blogforo = $this->Blogforo->find('first', $options);
+	        $conta = 0;
+	        foreach ($blogforo['Comentario'] as $comentario):
+	            $tmp = $usuario->findById($comentario['usuario_id']);
+	            $blogforo['Comentario'][$conta]['nombre'] = $tmp['Usuarios']['nombre'];
+				$blogforo['Comentario'][$conta]['apellidos'] = $tmp['Usuarios']['apellidos'];
+	            ++$conta;
+	        endforeach;
+	        $this->set('blogforo', $blogforo);
         }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 
@@ -80,7 +72,7 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function add() {
-         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
+         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
         {
 		$this->set('blogforos', $this->Paginator->paginate());
 		if ($this->request->is('post')) {

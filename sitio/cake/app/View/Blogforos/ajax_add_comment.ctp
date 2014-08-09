@@ -3,21 +3,25 @@
 	foreach ($blogforo['Comentario'] as $comentario):
 ?>
 	<table>
-		<tr><td><strong> RE: &nbsp; <?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
+		<tr><td><strong><?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
 			<br>
-			<?php 
+			<?php
 				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
-					echo $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+					echo 'de ', $this->Html->link($blogforo['Comentario']['nombre'].' '.$blogforo['Comentario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
 				} else {
-					echo $blogforo['Comentario'][$cont]['nick'];
+					echo 'de ', $blogforo['Usuario']['nombre'],' ',$blogforo['Usuario']['apellidos'];
 				}
 			?>
 			&nbsp; - &nbsp;
-			<?php echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'edit', $comentario['id'])); ?>
-			&nbsp; - &nbsp;
-			<?php echo h($comentario['fecha']); ?>
+			<?php
+				if ($_SESSION['id_usuario'] == $blogforo['Blogforo']['usuario_id']) {
+					echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'edit', $blogforo['Blogforo']['id'])); 
+					echo '&nbsp; - &nbsp';
+				}
+			?>
+			<?php echo h($blogforo['Blogforo']['fechapublicacion']); ?>&nbsp;
 		</td></tr>
-		<tr><td><?php echo h($comentario['comentario']); ?>&nbsp;</td></tr>
+		<tr><td><?php echo h($blogforo['Blogforo']['cuerpo']); ?>&nbsp;</td></tr>
 	</table>
 	<br>
 	

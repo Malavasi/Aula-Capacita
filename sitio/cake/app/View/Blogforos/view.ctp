@@ -5,7 +5,13 @@
 	<table>
 		<tr><td><strong><?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
 			<br>
-			<?php echo 'de ', $this->Html->link($blogforo['Usuario']['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); ?>
+			<?php
+				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
+					echo 'de ', $this->Html->link($blogforo['Comentario']['nombre'].' '.$blogforo['Comentario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+				} else {
+					echo 'de ', $blogforo['Usuario']['nombre'],' ',$blogforo['Usuario']['apellidos'];
+				}
+			?>
 			&nbsp; - &nbsp;
 			<?php
 				if ($_SESSION['id_usuario'] == $blogforo['Blogforo']['usuario_id']) {
@@ -31,9 +37,9 @@
 					<br>
 					<?php 
 						if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
-							echo $this->Html->link($blogforo['Comentario'][$cont]['nick'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+							echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nombre'].' '.$blogforo['Comentario'][$cont]['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
 						} else {
-							echo $blogforo['Comentario'][$cont]['nick'];
+							echo 'de ', $blogforo['Comentario'][$cont]['nombre'], ' ', $blogforo['Comentario'][$cont]['apellidos'];
 						}
 					?>
 					&nbsp; - &nbsp;
@@ -72,5 +78,8 @@
 	<div id="formAddComment"></div>
 	
 </div>
-<?php echo $this->element('acciones'); ?>
+<?php 
+	$this->set('blog', 1);
+	echo $this->element('acciones');
+?>
 <?php echo $this->Js->writeBuffer(); ?>

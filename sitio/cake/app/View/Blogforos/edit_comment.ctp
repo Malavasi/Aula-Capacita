@@ -12,4 +12,7 @@
 		echo '</fieldset>';
 	?>
 </div>
-<?php echo $this->element('acciones'); ?>
+<?php
+	$this->set('blog', 1); 
+	echo $this->element('acciones');
+?>

@@ -14,12 +14,13 @@ PERMISOS
     [][] permitir a los estudiantes subir archivos.
 
 CONSULTAS
-    [][] consultar usuarios por curso.
+    [][] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
 
 BLOGFORO
-    [D][] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
-    [D][] algo pasa con el botón agregar tema en los usuarios instructor y estudiante. no abre la vista para crear el tema.
-    [D][] Botón para comentar en el usuario estudiante. No aparece.
+    [D][x] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
+    [D][x] algo pasa con el botón agregar tema en los usuarios instructor y estudiante. no abre la vista para crear el tema.
+    [D][x] Botón para comentar en el usuario estudiante. No aparece.
+    [D][x] Aparecen temas de discusión de otros seminarios.
 
 ARCHIVOS
     [][] nombre de los programas recomendados para abrir los archivos.

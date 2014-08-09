@@ -23,14 +23,11 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function index() {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
-        {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
 		    $this->Usuario->recursive = 0;
 		    $this->set('usuarios', $this->Paginator->paginate());
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        } else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 
 	}
