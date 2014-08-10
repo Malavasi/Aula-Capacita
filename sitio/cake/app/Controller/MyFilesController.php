@@ -25,16 +25,20 @@ class MyFilesController extends AppController {
 	public function index($id = NULL) {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
         {
-        if($id == NULL)
-        {
-            $this->MyFile->recursive = 0;
-		    $this->set('myFiles', $this->Paginator->paginate());    
-        }
-        else
-        {
-            $this->MyFile->recursive = 0;
-            $this->set('myFiles', $this->Paginator->paginate(array ('curso_id'=>$id)));    
-        }
+            if($_SESSION['tipo_usuario']>1 and $_SESSION['id_curso'] != $id)
+            {
+                $this->redirect(array('controller' =>'aulas','action' => 'index/'.$_SESSION['id_curso'])); 
+            }
+            if($id == NULL)
+            {
+                $this->MyFile->recursive = 0;
+		        $this->set('myFiles', $this->Paginator->paginate());    
+            }
+            else
+            {
+                $this->MyFile->recursive = 0;
+                $this->set('myFiles', $this->Paginator->paginate(array ('curso_id'=>$id)));    
+            }
 		}
         else
         {
