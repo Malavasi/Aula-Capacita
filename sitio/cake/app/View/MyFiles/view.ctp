@@ -14,6 +14,9 @@
 		<dt><?php echo __('Subido por'); ?></dt>
 		<dd><?php echo $myFile['Usuario']['nombre'], ' ', $myFile['Usuario']['apellidos']; ?>&nbsp;</dd>
 		
+		<dt><?php echo __('Programas Recomendados'); ?></dt>
+		<dd><?php echo $myFile['MyFile']['programas']; ?>&nbsp;</dd>
+		
 		<dt><?php echo __('Curso'); ?></dt>
 		<dd><?php echo h($myFile['Curso']['nombre']); ?>&nbsp;</dd>
 		

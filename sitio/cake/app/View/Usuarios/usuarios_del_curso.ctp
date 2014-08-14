@@ -37,30 +37,8 @@
 	<tbody>
 	<?php foreach ($usuarios as $usuario): ?>
 	<tr>
-		<!--td><?php echo $this->Html->link(__($usuario['Usuario']['nick']), array('action' => 'view', $usuario['Usuario']['id'])); ?></td-->
-		<!--td><?php echo h($usuario['Usuario']['identificacion']); ?>&nbsp;</td-->
 		<td><?php echo $this->Html->link(__($usuario['Usuario']['nombre'].' '. $usuario['Usuario']['apellidos']), array('action' => 'view', $usuario['Usuario']['id'])); ?>&nbsp;</td>
 		
-		<!--td>	<?php 
-					$tipoUsuario;
-					switch($usuario['Usuario']['tipo']){
-						case 1:
-							$tipoUsuario = 'Administrador';
-							break;
-						case 2:
-							$tipoUsuario = 'Instructor';
-							break;
-						case 3:
-							$tipoUsuario = 'Estudiante';
-							break;
-					}
-					
-					echo h($tipoUsuario);
-					
-				?>&nbsp;
-		</td-->
-		
-		<!--td><?php echo h($usuario['Usuario']['fecha']); ?>&nbsp;</td-->
 		<td class="actions">
 			<?php 
             if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )

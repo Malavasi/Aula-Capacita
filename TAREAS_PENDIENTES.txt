@@ -26,7 +26,7 @@ BLOGFORO
     [D][x] Aparecen temas de discusión de otros seminarios.
 
 ARCHIVOS
-    [D][] nombre de los programas recomendados para abrir los archivos. Posiblemente, agregar un campo para que la persona que lo suba escriba el nombre de un programa recomendado para abrir el archivo.
+    [D][x] nombre de los programas recomendados para abrir los archivos. Posiblemente, agregar un campo para que la persona que lo suba escriba el nombre de un programa recomendado para abrir el archivo.
 
 OTROS
     [][] revisar validaciones de los campos.

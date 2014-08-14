@@ -6,6 +6,7 @@
 		<?php echo $this->Form->create('MyFile', array('action' => 'add', 'type' => 'file')); ?>
 		<?php
 			echo $this->Form->file('File');
+			echo $this->Form->input('programas', array('label' => __('Abrir con', true)));
 		?>
 		<br>
 		<?php echo $this->Form->end(__('Subir')); ?>

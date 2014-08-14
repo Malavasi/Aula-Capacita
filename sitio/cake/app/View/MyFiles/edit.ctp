@@ -18,6 +18,7 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->file('File');
+		echo $this->Form->input('programas', array('label' => __('Abrir con', true)));
 	?>
 	<br>
 	<?php echo $this->Form->end(__('Subir')); ?>
