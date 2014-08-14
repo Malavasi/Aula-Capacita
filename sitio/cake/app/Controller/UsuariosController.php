@@ -267,5 +267,22 @@ class UsuariosController extends AppController {
 		
 		return $nick;
 	}
+	
+	public function usuariosDelCurso($idCurso) {
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
+			$idMatriculados = $this->Matricula->find('all', array ('conditions' => array('Matricula.curso_id' => $idCurso), 'fields' => array('Matricula.usuario_id')));
+			$ids = array();
+			foreach ($idMatriculados as $id) {
+				array_push($ids, $id['Matricula']['usuario_id']);
+			}				
+			
+			$conditions = array("Usuario.id" => $ids, 'Usuario.tipo' => 3);
+			
+			$this->set('usuarios', $this->Paginator->paginate('Usuario', $conditions));
+			
+			$infoCurso = $this->Curso->findById( $idCurso);
+			$this->set('instructor', $this->Usuario->find('first', array('conditions' => array('Usuario.id' => $infoCurso['Curso']['usuario_id']))));
+		}
+	}
 
 }

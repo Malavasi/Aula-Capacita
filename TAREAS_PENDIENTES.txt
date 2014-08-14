@@ -17,7 +17,7 @@ UUSARIOS
     [D][x] quiere que el nombre de usuario sea el nombre del usuario y no un nick.
 
 CONSULTAS
-    [D][] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
+    [D][x] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
 
 BLOGFORO
     [D][x] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
@@ -36,6 +36,9 @@ INTERFAZ, ESTILO, ESTÁNDARES
     [][] estilo de los mensajes.
     [][] estilo de los mensajes de validación de campos.
     [][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.
+
+SEGURIDAD
+    [][] Revisar seguridad al consultar usuarios por curso, se pude cambiar el id en el url y consultar usuarios de otros cursos. Aunque es algo que sólo va a poder hacer el administrador sería bueno evitarlo.
 
 APARTE (este aún NO!!!)
     [][] obtener datos del correo electrónico de la inscripción y guardarlos en algún archivo para luego crear los usuarios a partir de él.
