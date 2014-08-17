@@ -19,6 +19,9 @@ UUSARIOS
 CONSULTAS
     [D][x] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
 
+MATRÍCULAS
+    [][] agregar opción de desmatricular. En la consulta de usuarios por curso.
+
 BLOGFORO
     [D][x] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
     [D][x] algo pasa con el botón agregar tema en los usuarios instructor y estudiante. no abre la vista para crear el tema.
