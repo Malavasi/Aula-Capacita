@@ -1,13 +1,13 @@
-INSTRUCCIONES
+﻿INSTRUCCIONES
     Ya que vamos a utilzar este archivo para administrar las tareas, se me ocurrió organizarlo un poco mejor. La idea es poner la
 inicial del nombre de uno dentro del primer paréntesis de la tarea que uno está realizando(si está vacío, no está asignada). Cuando una tarea está completa, se pone una x en el segundo paréntesis. Esto porque en el anterior yo eliminaba por completo la tarea, y ahora me parece mejor dejarlas para tener un control mejor.
    ¿qué le parece?
 
 
 CORREOS
-    [][] Al crear un usuario notificarle por correo al usuario.
-    [][] Al subir un archivo no tificar por correo a estudiantes e instructor.
-    [][] Al crear un comentario notificar por correo al instructor.
+    [A][] Al crear un usuario notificarle por correo al usuario.
+    [A][] Al subir un archivo no tificar por correo a estudiantes e instructor.
+    [A][] Al crear un comentario notificar por correo al instructor.
     
 PERMISOS
     [D][x] sólo se permitir la edición de contraseña para el instructor y el estudiante.
