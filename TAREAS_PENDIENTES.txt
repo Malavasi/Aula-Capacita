@@ -1,4 +1,4 @@
-﻿INSTRUCCIONES
+INSTRUCCIONES
     Ya que vamos a utilzar este archivo para administrar las tareas, se me ocurrió organizarlo un poco mejor. La idea es poner la
 inicial del nombre de uno dentro del primer paréntesis de la tarea que uno está realizando(si está vacío, no está asignada). Cuando una tarea está completa, se pone una x en el segundo paréntesis. Esto porque en el anterior yo eliminaba por completo la tarea, y ahora me parece mejor dejarlas para tener un control mejor.
    ¿qué le parece?
@@ -20,7 +20,7 @@ CONSULTAS
     [D][x] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
 
 MATRÍCULAS
-    [][] agregar opción de desmatricular. En la consulta de usuarios por curso.
+    [D][] agregar opción de desmatricular. En la consulta de usuarios por curso.
 
 BLOGFORO
     [D][x] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
