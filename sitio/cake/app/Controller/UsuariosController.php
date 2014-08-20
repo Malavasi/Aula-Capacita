@@ -281,6 +281,7 @@ class UsuariosController extends AppController {
 			$this->set('usuarios', $this->Paginator->paginate('Usuario', $conditions));
 			
 			$infoCurso = $this->Curso->findById( $idCurso);
+			$this->set('infoCurso', $infoCurso);
 			$this->set('instructor', $this->Usuario->find('first', array('conditions' => array('Usuario.id' => $infoCurso['Curso']['usuario_id']))));
 		}
 	}

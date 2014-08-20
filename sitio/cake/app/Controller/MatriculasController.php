@@ -31,23 +31,54 @@ class MatriculasController extends AppController {
 
     public function add($id =NULL)
     {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
-        {
-        $datos = array('Matriculas'=>array('usuario_id'=>$id,'curso_id'=>$_SESSION['id_curso']));
-        $matriculas = new Matriculas();
-        if ($matriculas->save($datos)) {
-				    $this->Session->setFlash(__('El usuario ha sido matriculado.'));
-				    return $this->redirect(array('action' => 'index/'.$_SESSION['id_curso']));
-			    } else {
-				    $this->Session->setFlash(__('El usuario no se ha podido agregar correctamente'));
-			    }
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 ) {
+        	$datos = array('Matriculas'=>array('usuario_id'=>$id,'curso_id'=>$_SESSION['id_curso']));
+        	$matriculas = new Matriculas();
+        	
+        	if ($matriculas->save($datos)) {
+			    $this->Session->setFlash(__('El usuario ha sido matriculado.'));
+			    return $this->redirect(array('action' => 'index/'.$_SESSION['id_curso']));
+		    } else {
+			    $this->Session->setFlash(__('El usuario no se ha podido agregar correctamente'));
+		    }
 
         }
-        else
-        {
+        else {
                 $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
     }
+	
+	public function delete($idCurso = null, $idUsuario = null){
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 1) {
+			$matricula = $this->Matricula->find('first', array ('conditions' => array('Matricula.curso_id' => $idCurso, 'Matricula.usuario_id', $idUsuario), 'fileds' => array('Matricula.id')));
+		    
+			echo $this->Matricula->id = $matricula['Matricula']['id'];
+			
+			$this->Matricula->id = $matricula['Matricula']['id'];
+		    
+		    if (!$this->Matricula->exists()) {
+			    throw new NotFoundException(__('Usuario inválido'));
+		    }
+		    $this->request->allowMethod('post', 'delete');
+		    if ($this->Matricula->delete()) {
+			    $this->Session->setFlash(__('El usuario ha sido desmatriculado.'));
+		    } else {
+			    $this->Session->setFlash(__('El usuario no se ha podido desmatricular. Por favor, intente de nuevo.'));
+		    }
+		    //return $this->redirect(array('controller' => 'Usuarios', 'action' => 'index'));
+		} else {
+             //$this->redirect(array('controller' =>'Usuarios', 'action' => 'index'));    
+        }
+	}
+	
+	public function deleteMatricula() {
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 ) {
+		    
+			
+        } else {
+             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
+	}
 
 }
 ?>

@@ -31,6 +31,9 @@ BLOGFORO
 ARCHIVOS
     [D][x] nombre de los programas recomendados para abrir los archivos. Posiblemente, agregar un campo para que la persona que lo suba escriba el nombre de un programa recomendado para abrir el archivo.
 
+BASE DE DATOS
+    [][] Cascades para que al eliminar un curso se eliminen los usuarios matriculados en  él.
+
 OTROS
     [][] revisar validaciones de los campos.
 

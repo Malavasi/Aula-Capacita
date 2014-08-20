@@ -3366,3 +3366,204 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-08-20 22:12:48 Error: Fatal Error (1): Call to a member function exists() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php, line 57]
+2014-08-20 22:12:48 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/19
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 57, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 57, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 22:14:02 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:14:46 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:15:27 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:22:55 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:28:01 Error: Fatal Error (1): Call to a member function exists() on a non-object in [/Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php, line 55]
+2014-08-20 22:28:01 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 55, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 55, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 22:31:01 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:34:10 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:34:31 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:39:43 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:40:13 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:43:04 Error: [NotFoundException] Usuario inválido
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 [internal function]: MatriculasController->delete('3', '25')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-20 22:43:22 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(61): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: MatriculasController->delete('3', '25')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-20 22:48:05 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/deleteMatricula/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(69): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: MatriculasController->deleteMatricula('3', '25')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-20 22:48:26 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/deleteMatricula/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(69): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: MatriculasController->deleteMatricula('3', '25')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-20 23:11:54 Error: Fatal Error (4): syntax error, unexpected ']' in [/Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php, line 52]
+2014-08-20 23:11:54 Error: [FatalErrorException] syntax error, unexpected ']'
+Request URL: /Aula-capacita/sitio/cake/Matriculas/deleteMatricula/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 52, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 52, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 23:12:12 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/deleteMatricula/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(58): CakeRequest->allowMethod('post', 'delete')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(75): MatriculasController->delete('4')
+#2 [internal function]: MatriculasController->deleteMatricula('3', '25')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-08-20 23:20:24 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(60): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: MatriculasController->delete('3', '25')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-21 00:15:18 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3%2625
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(60): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: MatriculasController->delete('3&25')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-21 00:17:55 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(60): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: MatriculasController->delete('3', '25')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-21 00:18:52 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Aula-capacita/sitio/cake/Matriculas/delete/3/25
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MatriculasController.php(62): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: MatriculasController->delete('3', '25')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

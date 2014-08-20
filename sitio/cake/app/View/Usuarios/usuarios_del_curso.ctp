@@ -1,10 +1,11 @@
+
 <div class="usuarios index">
 	<h2><?php echo __('Instructor'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
 		<th><?php echo $this->Paginator->sort('nombre', 'Nombre'); ?></th>
-		<th class="actions"><?php echo __('Acciones'); ?></th>
+		<th class="actions"><?php echo __(''); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -13,11 +14,9 @@
 		
 		<td class="actions">
 			<?php 
-            if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
-            {
-                echo $this->Html->link(__('Editar'), array('action' => 'edit', $instructor['Usuario']['id'])); 
-			    echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $instructor['Usuario']['id']), array(), __('Va a eliminar el usuario %s, ¿Desea continuar?', $instructor['Usuario']['nick'])); 
-            }
+	            if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 ) {
+	                echo $this->Html->link(__('Cambiar Instructor'), array('controller' => 'Cursos', 'action' => 'edit', $infoCurso['Curso']['id'])); 
+	            }
             ?>
 		</td>
 	</tr>
@@ -31,7 +30,7 @@
 	<thead>
 	<tr>
 		<th><?php echo $this->Paginator->sort('nombre', 'Nombre'); ?></th>
-		<th class="actions"><?php echo __('Acciones'); ?></th>
+		<th class="actions"><?php echo __(''); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -41,11 +40,10 @@
 		
 		<td class="actions">
 			<?php 
-            if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
-            {
-                echo $this->Html->link(__('Editar'), array('action' => 'edit', $usuario['Usuario']['id'])); 
-			    echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $usuario['Usuario']['id']), array(), __('Va a eliminar el usuario %s, ¿Desea continuar?', $usuario['Usuario']['nick'])); 
-            }
+	            if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 ) {
+	            	//echo $this->Html->link(__('Desmatricular'), array ('url' => '/Matriculas/delete?idCurso='. $infoCurso['Curso']['id'].'&idUsuario='.$usuario['Usuario']['id']));
+	                echo $this->Html->link(__('Desmatricular'), array('controller' => 'Matriculas', 'action' => 'delete', $infoCurso['Curso']['id'], $usuario['Usuario']['id'])); 			    
+	            }
             ?>
 		</td>
 	</tr>
