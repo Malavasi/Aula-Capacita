@@ -39,8 +39,8 @@ OTROS
 
 INTERFAZ, ESTILO, ESTÁNDARES
     [][] estandarizar mensajes.
-    [][] estilo de los mensajes.
-    [][] estilo de los mensajes de validación de campos.
+    [D][x] estilo de los mensajes.
+    [D][x] estilo de los mensajes de validación de campos.
     [][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.
 
 SEGURIDAD

@@ -367,9 +367,12 @@ div.actions h3 {
 	clear: both;
 }
 
-h1.titulo {
+.titulo {
 	font-size: 32px;
 	margin-top: 10px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 label { 
@@ -380,4 +383,14 @@ label {
 
 fieldset {
 	width: 380px;
+}
+
+div.error-message {
+	color: red;
+	text-align: center;
+}
+
+div.message{
+	color: orange;
+	text-align: center;
 }

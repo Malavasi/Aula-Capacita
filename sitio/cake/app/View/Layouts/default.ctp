@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'Aula Virtual');
+$cakeDescription = __d('cake_dev', 'Capacita Virtual');
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +45,7 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual');
 
 
 <section class="container sbr clearfix">
-		<a href="index.html" id="logo"><img src="http://www.capacita.co/images/capacita_logo.gif" alt="" width="300" height="77" title="Capacita" /></a>
+		<a href="index.html" id="logo" class="logo-align"><img src="http://www.capacita.co/images/capacita_logo.gif" alt="" width="300" height="77" title="Capacita" /></a>
 		<!-- - - - - - - - - - - Slider - - - - - - - - - - - - - -->	
 
 <div id="slider" class="flexslider clearfix">
@@ -53,7 +53,7 @@ $cakeDescription = __d('cake_dev', 'Aula Virtual');
 	<div id="container">
 		<div id="header">
 			<?php echo $this->element('usuario'); ?>
-			<h1 class="titulo"><?php echo $cakeDescription; ?> </h1>
+			<!--h1 class="titulo"><?php echo $cakeDescription; ?> </h1-->
 			
 		</div>
 		
