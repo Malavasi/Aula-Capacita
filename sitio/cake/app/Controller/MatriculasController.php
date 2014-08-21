@@ -39,7 +39,7 @@ class MatriculasController extends AppController {
 			    $this->Session->setFlash(__('El usuario ha sido matriculado.'));
 			    return $this->redirect(array('action' => 'index/'.$_SESSION['id_curso']));
 		    } else {
-			    $this->Session->setFlash(__('El usuario no se ha podido agregar correctamente'));
+			    $this->Session->setFlash(__('El usuario no se ha podido matricular correctamente. Por favor, intente de nuevo.'));
 		    }
 
         }

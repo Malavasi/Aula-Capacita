@@ -32,7 +32,7 @@ class CursosController extends AppController {
                     $this->Session->setFlash(__('Nuevo curso creado.'));
                     return $this->redirect(array('action' => 'index'));
                 }
-                $this->Session->setFlash(__('No se pudo crear el curso'));
+                $this->Session->setFlash(__('El curso no se ha podido crear. Por favor, intente de nuevo.'));
             }
         }
         else
@@ -61,7 +61,7 @@ class CursosController extends AppController {
                     $this->Session->setFlash(__('El curso ha sido actualizado.'));
                     return $this->redirect(array('action' => 'index'));
                 }
-                $this->Session->setFlash(__('No se pudo actualizar el curso'));
+                $this->Session->setFlash(__('El curso no se ha podido actualizar. Por favor, intente de nuevo.'));
             }
 
             if (!$this->request->data) {

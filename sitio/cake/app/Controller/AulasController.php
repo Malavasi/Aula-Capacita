@@ -7,8 +7,7 @@ class AulasController extends AppController {
 
     public function index($id) {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 ) {
-            if($_SESSION['tipo_usuario']>1 and $_SESSION['id_curso'] != $id)
-            {
+            if($_SESSION['tipo_usuario']>1 and $_SESSION['id_curso'] != $id) {
                 $this->redirect(array('controller' =>'aulas','action' => 'index/'.$_SESSION['id_curso'])); 
             }
             $_SESSION['id_curso'] = $id;

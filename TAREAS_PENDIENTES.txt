@@ -38,7 +38,7 @@ OTROS
     [][] revisar validaciones de los campos.
 
 INTERFAZ, ESTILO, ESTÁNDARES
-    [][] estandarizar mensajes.
+    [D][x] estandarizar mensajes.
     [D][x] estilo de los mensajes.
     [D][x] estilo de los mensajes de validación de campos.
     [D][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.

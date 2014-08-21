@@ -11,19 +11,16 @@ class SesionesController extends AppController {
         if ($this->request->is('post')) {
             $usuario = new Usuarios();
             $datos = $usuario->find('all', array('conditions' => array('nick' => $this->request->data['Sesiones']['nick'],'contrasena' => md5($this->request->data['Sesiones']['contrasena'])) ) );
-            if(isset($datos[0]))
-            {
+            
+            if(isset($datos[0])) {
                 $_SESSION['id_usuario']=$datos[0]['Usuarios']['id'];
                 $_SESSION['tipo_usuario']=$datos[0]['Usuarios']['tipo'];
                 $_SESSION['nombre_usuario']=$datos[0]['Usuarios']['nombre'].' '.$datos[0]['Usuarios']['apellidos'];
-            }
-            else
-            {
+            } else {
                 $this->redirect(array('controller' =>'inicio','action' => 'index')); 
             }
             
-            if($_SESSION['tipo_usuario'] == 3)
-            {
+            if($_SESSION['tipo_usuario'] == 3) {
                 $matricula = new Matriculas();
                 $datos_curso = $matricula->find('all', array('conditions' => array('usuario_id' => $_SESSION['id_usuario']) ) );
                 $_SESSION['id_curso'] = $datos_curso[0]['Matriculas']['curso_id']; 

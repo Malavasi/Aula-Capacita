@@ -149,7 +149,7 @@ class UsuariosController extends AppController {
 					    $this->Session->setFlash(__('El usuario ha sido actualizado'));
 					    return $this->redirect(array('action' => 'index'));
 				    } else {
-					    $this->Session->setFlash(__('El usuario no se ha podido guardar. Por favor, intente de nuevo.'));
+					    $this->Session->setFlash(__('El usuario no se ha podido actualizar. Por favor, intente de nuevo.'));
 				    }
 			    } else {
 				    $this->Session->setFlash(__('Las contraseñas no coinciden.'));
@@ -185,7 +185,7 @@ class UsuariosController extends AppController {
 					    $this->Session->setFlash(__('El usuario ha sido actualizado'));
 					    return $this->redirect(array('action' => 'index'));
 				    } else {
-					    $this->Session->setFlash(__('El usuario no se ha podido guardar. Por favor, intente de nuevo.'));
+					    $this->Session->setFlash(__('El usuario no se ha podido actualizar. Por favor, intente de nuevo.'));
 				    }
 			    } else {
 				    $this->Session->setFlash(__('Las contraseñas no coinciden.'));
