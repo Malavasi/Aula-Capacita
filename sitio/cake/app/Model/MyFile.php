@@ -7,6 +7,13 @@ App::uses('AppModel', 'Model');
 class MyFile extends AppModel {
 	
 	var $name = 'MyFile';
+	
+	public $validate = array(
+        'programas' => array(
+        	'rule' => 'notEmpty',
+        	'message' => 'Indique con cuál programa se abre.'
+		)
+	);
 /**
  * Display field
  *

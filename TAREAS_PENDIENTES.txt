@@ -34,9 +34,6 @@ ARCHIVOS
 BASE DE DATOS
     [][] Cascades para que al eliminar un curso se eliminen los usuarios matriculados en  él.
 
-OTROS
-    [][] revisar validaciones de los campos.
-
 INTERFAZ, ESTILO, ESTÁNDARES
     [D][x] estandarizar mensajes.
     [D][x] estilo de los mensajes.
@@ -45,6 +42,7 @@ INTERFAZ, ESTILO, ESTÁNDARES
 
 SEGURIDAD
     [][] Revisar seguridad al consultar usuarios por curso, se pude cambiar el id en el url y consultar usuarios de otros cursos. Aunque es algo que sólo va a poder hacer el administrador sería bueno evitarlo.
+    [D][x] revisar validaciones de los campos.
 
 APARTE (este aún NO!!!)
     [][] obtener datos del correo electrónico de la inscripción y guardarlos en algún archivo para luego crear los usuarios a partir de él.

@@ -17,6 +17,14 @@ class Usuario extends AppModel {
         		'rule' => 'alphaNumeric',
         		'allowEmpty' => true,
 				'message' => 'Únicamente letras y números (sin espacios).')),
+		'tipo' => array(
+	        'rule' => array('multiple', array(
+	            'in'  => array('1', '2', '3'),
+	            'min' => 1,
+	            'max' => 1
+	        )),
+	        'message' => 'Debe seleccionar un tipo de usuario.'
+	    ),
 		'email' => array(
         	'email' => array(
         		'rule' => 'email',
