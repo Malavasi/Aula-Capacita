@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Usuarios Controller
  *
@@ -90,6 +91,14 @@ class UsuariosController extends AppController {
 			    //creacion del usuario para ser almacenado
 			    $this->Usuario->create();
 			    if ($this->Usuario->save($this->request->data)) {
+
+                    //correo
+                    $Email = new CakeEmail();
+                    $Email->config('gmail');
+                    $Email->from(array('fadrian59@gmail.com' => 'My Site'));
+                    $Email->to('fadrian59@gmail.com ');
+                    $Email->subject('About');
+                    $Email->send('My message');
 				    $this->Session->setFlash(__('El usuario ha sido creado.'));
 				    return $this->redirect(array('action' => 'add'));
 			    } else {
