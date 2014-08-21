@@ -20,7 +20,7 @@ CONSULTAS
     [D][x] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
 
 MATRÍCULAS
-    [D][] agregar opción de desmatricular. En la consulta de usuarios por curso.
+    [D][] agregar opción de desmatricular en la lista de usuarios de un curso. CORREGIR ERROR!!.
 
 BLOGFORO
     [D][x] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.

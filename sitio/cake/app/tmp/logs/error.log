@@ -3567,3 +3567,47 @@ Stack Trace:
 #4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
 #5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-08-21 02:00:26 Error: [MissingActionException] Action UsuariosController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'img',
+)
+Request URL: /Aula-capacita/sitio/cake/usuarios/img/capacita_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 02:03:12 Error: [MissingActionException] Action UsuariosController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'img',
+)
+Request URL: /Aula-capacita/sitio/cake/usuarios/img/capacita_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 02:04:04 Error: [MissingActionException] Action UsuariosController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'img',
+)
+Request URL: /Aula-capacita/sitio/cake/usuarios/img/capacita_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 02:07:32 Error: [MissingActionException] Action UsuariosController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'img',
+)
+Request URL: /Aula-capacita/sitio/cake/usuarios/img/capacita_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

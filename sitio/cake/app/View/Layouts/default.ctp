@@ -45,7 +45,7 @@ $cakeDescription = __d('cake_dev', 'Capacita Virtual');
 
 
 <section class="container sbr clearfix">
-		<a href="index.html" id="logo" class="logo-align"><img src="http://www.capacita.co/images/capacita_logo.gif" alt="" width="300" height="77" title="Capacita" /></a>
+		<img src="/Aula-capacita/sitio/cake/img/capacita_logo.gif" class="center">
 		<!-- - - - - - - - - - - Slider - - - - - - - - - - - - - -->	
 
 <div id="slider" class="flexslider clearfix">
