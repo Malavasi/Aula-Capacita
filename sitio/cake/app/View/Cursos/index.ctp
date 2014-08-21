@@ -23,8 +23,8 @@
                                  
                             if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
                                 echo $this->Html->link('<span class="glyphicon glyphicon-edit">Matricular</span>', array('controller'=>'Matriculas','action' => 'index', $curso['Curso']['id']), array('escape' => false));
-                                echo $this->Html->link('<span class="glyphicon glyphicon-edit">editar</span>', array('action' => 'edit', $curso['Curso']['id']), array('escape' => false));
-                                echo $this->Form->postLink('<span class="glyphicon glyphicon-remove">borrar</span>', array('action' => 'delete', $curso['Curso']['id']), array('escape' => false), __('¿Realmente desea borrar el curso %s?', $curso['Curso']['nombre'])); 
+                                echo $this->Html->link('<span class="glyphicon glyphicon-edit">Editar</span>', array('action' => 'edit', $curso['Curso']['id']), array('escape' => false));
+                                echo $this->Form->postLink('<span class="glyphicon glyphicon-remove">Eliminar</span>', array('action' => 'delete', $curso['Curso']['id']), array('escape' => false), __('¿Realmente desea borrar el curso %s?', $curso['Curso']['nombre'])); 
                              }
                              ?>
 						</td>
