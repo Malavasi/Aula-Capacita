@@ -8,8 +8,8 @@
 			echo $this->Form->input('asunto');
 			echo $this->Form->input('cuerpo');
 		?>
-	</fieldset>
 		<?php echo $this->Form->end(__('Publicar')); ?>
+	</fieldset>
 
 </div>
 <?php echo $this->element('acciones'); ?>

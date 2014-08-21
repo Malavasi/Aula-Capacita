@@ -28,8 +28,7 @@ class BlogforosController extends AppController {
  */
 	public function index($id = null) {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 and ($id != null)) {
-            if($_SESSION['tipo_usuario']>1 and $_SESSION['id_curso'] != $id)
-            {
+            if($_SESSION['tipo_usuario']>1 and $_SESSION['id_curso'] != $id) {
                 $this->redirect(array('controller' =>'aulas','action' => 'index/'.$_SESSION['id_curso'])); 
             }
         	$this->Blogforo->recursive = 0;
@@ -66,7 +65,7 @@ class BlogforosController extends AppController {
 	        $this->set('blogforo', $blogforo);
         }
         else {
-            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));
         }
 	}
 
@@ -76,30 +75,27 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function add() {
-         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
-        {
-		$this->set('blogforos', $this->Paginator->paginate());
-		if ($this->request->is('post')) {
-			$this->request->data['Blogforo']['fechapublicacion'] = date("Y-m-d H:i:s");
-			$this->request->data['Blogforo']['curso_id'] = $_SESSION['id_curso'];
-            $this->request->data['Blogforo']['usuario_id'] = $_SESSION['id_usuario'];
-			var_dump($this->request->data);
-			
-			$this->Blogforo->create();
-			if ($this->Blogforo->save($this->request->data)) {
-				$this->Session->setFlash(__('El foro ha sido creado.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('El foro no se ha podido crear. Por favor, intente de nuevo.'));
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
+			$this->set('blogforos', $this->Paginator->paginate());
+			if ($this->request->is('post')) {
+				$this->request->data['Blogforo']['fechapublicacion'] = date("Y-m-d H:i:s");
+				$this->request->data['Blogforo']['curso_id'] = $_SESSION['id_curso'];
+	            $this->request->data['Blogforo']['usuario_id'] = $_SESSION['id_usuario'];
+				var_dump($this->request->data);
+				
+				$this->Blogforo->create();
+				if ($this->Blogforo->save($this->request->data)) {
+					$this->Session->setFlash(__('El foro ha sido creado.'));
+					return $this->redirect(array('controller' => 'Blogforos', 'action' => 'index', $_SESSION['id_curso']));
+				} else {
+					$this->Session->setFlash(__('El foro no se ha podido crear. Por favor, intente de nuevo.'));
+				}
 			}
-		}
-		$cursos = $this->Blogforo->Curso->find('list');
-		$usuarios = $this->Blogforo->Usuario->find('list');
-		$this->set(compact('cursos', 'usuarios'));
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+			$cursos = $this->Blogforo->Curso->find('list');
+			$usuarios = $this->Blogforo->Usuario->find('list');
+			$this->set(compact('cursos', 'usuarios'));
+        } else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 
@@ -111,37 +107,36 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
-        {
-		if (!$this->Blogforo->exists($id)) {
-			throw new NotFoundException(__('Invalid blogforo'));
-		}
-		$_SESSION['id_curso'] = $id;
-		$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
-		$this->set('blogforo', $this->Blogforo->find('first', $options));
-		
-		if ($this->request->is(array('post', 'put'))) {
-			
-			$this->request->data['Blogforo']['fechapublicacion'] = date("Y-m-d H:i:s");
-			
-			if ($this->Blogforo->save($this->request->data)) {
-				$this->Session->setFlash(__('El foro ha sido actualizado.'));
-				
-				return $this->redirect(array('action' => 'view', $this->request->data['Blogforo']['id']));
-			} else {
-				$this->Session->setFlash(__('El foro no se ha podido actualizar. Por favor, intente de nuevo.'));
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
+			if (!$this->Blogforo->exists($id)) {
+				throw new NotFoundException(__('Invalid blogforo'));
 			}
-		} else {
+			$_SESSION['id_curso'] = $id;
 			$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
-			$this->request->data = $this->Blogforo->find('first', $options);
-		}
-		$cursos = $this->Blogforo->Curso->find('list');
-		$usuarios = $this->Blogforo->Usuario->find('list');
-		$this->set(compact('cursos', 'usuarios'));
+			$this->set('blogforo', $this->Blogforo->find('first', $options));
+			
+			if ($this->request->is(array('post', 'put'))) {
+				
+				$this->request->data['Blogforo']['fechapublicacion'] = date("Y-m-d H:i:s");
+				
+				if ($this->Blogforo->save($this->request->data)) {
+					$this->Session->setFlash(__('El foro ha sido actualizado.'));
+					
+					return $this->redirect(array('controller' => 'Blogforos', 'action' => 'view', $this->request->data['Blogforo']['id']));
+				} else {
+					$this->Session->setFlash(__('El foro no se ha podido actualizar. Por favor, intente de nuevo.'));
+				}
+			} else {
+				$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
+				$this->request->data = $this->Blogforo->find('first', $options);
+			}
+			$cursos = $this->Blogforo->Curso->find('list');
+			$usuarios = $this->Blogforo->Usuario->find('list');
+			$this->set(compact('cursos', 'usuarios'));
         }
         else
         {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 
@@ -153,23 +148,20 @@ class BlogforosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
-        {
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 ) {
             $this->Blogforo->id = $id;
-		if (!$this->Blogforo->exists()) {
-			throw new NotFoundException(__('Foro inválido'));
-		}
-		$this->request->allowMethod('post', 'delete');
-		if ($this->Blogforo->delete()) {
-			$this->Session->setFlash(__('El foro ha sido eliminado.'));
-		} else {
-			$this->Session->setFlash(__('El foro no se ha podido eliminar. Por favor, intente de nuevo.'));
-		}
-		return $this->redirect(array('action' => 'index'));
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+			if (!$this->Blogforo->exists()) {
+				throw new NotFoundException(__('Foro inválido'));
+			}
+			$this->request->allowMethod('post', 'delete');
+			if ($this->Blogforo->delete()) {
+				$this->Session->setFlash(__('El foro ha sido eliminado.'));
+			} else {
+				$this->Session->setFlash(__('El foro no se ha podido eliminar. Por favor, intente de nuevo.'));
+			}
+			return $this->redirect(array('controller' => 'Blogforos', 'action' => 'index', $_SESSION['id_curso']));
+        } else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 	
@@ -197,40 +189,38 @@ class BlogforosController extends AppController {
 			}
 		}
 	}
-    	public function editComment($id = null)	{
-		 if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 )
-        {
-		if (!$this->Blogforo->Comentario->exists($id)) {
-			throw new NotFoundException(__('Foro inválido'));
-		}
-		
-		$options = array('conditions' => array('Comentario.' . $this->Blogforo->Comentario->primaryKey => $id));
-		$this->set('comentario', $this->Blogforo->Comentario->find('first', $options));
-		
-		if ($this->request->is(array('post', 'put'))) {
-			
-			$this->request->data['Comentario']['fechapublicacion'] = date("Y-m-d H:i:s");
-			
-			if ($this->Blogforo->Comentario->save($this->request->data)) {
-				$this->Session->setFlash(__('El comentario ha sido actualizado.'));
-				
-				var_dump($this->request->data);
-				
-				return $this->redirect(array('action' => 'view', $this->request->data['Comentario']['blogforo_id']));
-			} else {
-				$this->Session->setFlash(__('El comentario no se ha podido actualizar. Por favor, intente de nuevo.'));
+	
+	public function editComment($id = null)	{
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
+			if (!$this->Blogforo->Comentario->exists($id)) {
+				throw new NotFoundException(__('Foro inválido'));
 			}
-		} else {
+			
 			$options = array('conditions' => array('Comentario.' . $this->Blogforo->Comentario->primaryKey => $id));
-			$this->request->data = $this->Blogforo->Comentario->find('first', $options);
-		}
-		$cursos = $this->Blogforo->Curso->find('list');
-		$usuarios = $this->Blogforo->Usuario->find('list');
-		$this->set(compact('cursos', 'usuarios'));
-        }
-        else
-        {
-                $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+			$this->set('comentario', $this->Blogforo->Comentario->find('first', $options));
+			
+			if ($this->request->is(array('post', 'put'))) {
+				
+				$this->request->data['Comentario']['fechapublicacion'] = date("Y-m-d H:i:s");
+				
+				if ($this->Blogforo->Comentario->save($this->request->data)) {
+					$this->Session->setFlash(__('El comentario ha sido actualizado.'));
+					
+					var_dump($this->request->data);
+					
+					return $this->redirect(array('action' => 'view', $this->request->data['Comentario']['blogforo_id']));
+				} else {
+					$this->Session->setFlash(__('El comentario no se ha podido actualizar. Por favor, intente de nuevo.'));
+				}
+			} else {
+				$options = array('conditions' => array('Comentario.' . $this->Blogforo->Comentario->primaryKey => $id));
+				$this->request->data = $this->Blogforo->Comentario->find('first', $options);
+			}
+			$cursos = $this->Blogforo->Curso->find('list');
+			$usuarios = $this->Blogforo->Usuario->find('list');
+			$this->set(compact('cursos', 'usuarios'));
+        } else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
 

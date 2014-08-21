@@ -3651,3 +3651,69 @@ Stack Trace:
 #7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #9 {main}
+2014-08-21 23:33:34 Error: [MissingActionException] Action CursosController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => '1',
+)
+Request URL: /Aula-capacita/sitio/cake/cursos/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 23:33:41 Error: [MissingActionException] Action CursosController::2() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => '2',
+)
+Request URL: /Aula-capacita/sitio/cake/cursos/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 23:34:08 Error: [MissingActionException] Action CursosController::3() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => '3',
+)
+Request URL: /Aula-capacita/sitio/cake/cursos/3
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 23:34:14 Error: [MissingActionException] Action CursosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'view',
+)
+Request URL: /Aula-capacita/sitio/cake/cursos/view/3
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 23:55:40 Error: [CakeException] Unknown status code
+Request URL: /Aula-capacita/sitio/cake/Blogforos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(785): CakeResponse->statusCode('3')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/BlogforosController.php(89): Controller->redirect(Array, '3')
+#2 [internal function]: BlogforosController->add()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-08-21 23:56:49 Error: [CakeException] Unknown status code
+Request URL: /Aula-capacita/sitio/cake/Blogforos/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(785): CakeResponse->statusCode('3')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/BlogforosController.php(89): Controller->redirect(Array, '3')
+#2 [internal function]: BlogforosController->add()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

@@ -3,6 +3,8 @@ INSTRUCCIONES
 inicial del nombre de uno dentro del primer paréntesis de la tarea que uno está realizando(si está vacío, no está asignada). Cuando una tarea está completa, se pone una x en el segundo paréntesis. Esto porque en el anterior yo eliminaba por completo la tarea, y ahora me parece mejor dejarlas para tener un control mejor.
    ¿qué le parece?
 
+CURSOS y AULAS
+    [][] como usuario instructor, no se puede consultar un curso/seminario porque el índice id_curso no está definido.
 
 CORREOS
     [A][] Al crear un usuario notificarle por correo al usuario.
@@ -27,6 +29,7 @@ BLOGFORO
     [D][x] algo pasa con el botón agregar tema en los usuarios instructor y estudiante. no abre la vista para crear el tema.
     [D][x] Botón para comentar en el usuario estudiante. No aparece.
     [D][x] Aparecen temas de discusión de otros seminarios.
+    [D][x] Hay errores al crear un tema como estudiante e instructor. No se crea el tema y redirije al incio del aula, se indefine el índice curso.
 
 ARCHIVOS
     [D][x] nombre de los programas recomendados para abrir los archivos. Posiblemente, agregar un campo para que la persona que lo suba escriba el nombre de un programa recomendado para abrir el archivo.

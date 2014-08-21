@@ -16,9 +16,9 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('asunto');
-		
+		echo $this->Form->input('cuerpo');
 	?>
+	<?php echo $this->Form->end(__('Guardar')); ?>
 	</fieldset>
-<?php echo $this->Form->end(__('Guardar')); ?>
 </div>
 <?php echo $this->element('acciones'); ?>

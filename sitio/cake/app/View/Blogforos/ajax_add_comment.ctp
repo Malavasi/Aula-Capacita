@@ -7,7 +7,7 @@
 			<br>
 			<?php
 				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
-					echo 'de ', $this->Html->link($blogforo['Comentario']['nombre'].' '.$blogforo['Comentario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+					echo 'de ', $this->Html->link($blogforo['Usuario']['nombre'].' '.$blogforo['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
 				} else {
 					echo 'de ', $blogforo['Usuario']['nombre'],' ',$blogforo['Usuario']['apellidos'];
 				}
