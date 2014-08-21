@@ -1,5 +1,4 @@
 <div class="Cursos index">
-<?php pr($_SESSION); ?>	
 	
 <h1>Cursos actuales</h1>
 <table cellpadding="0" cellspacing="0" class="table table-striped">
