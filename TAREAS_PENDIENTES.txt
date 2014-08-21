@@ -41,7 +41,7 @@ INTERFAZ, ESTILO, ESTÁNDARES
     [][] estandarizar mensajes.
     [D][x] estilo de los mensajes.
     [D][x] estilo de los mensajes de validación de campos.
-    [][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.
+    [D][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.
 
 SEGURIDAD
     [][] Revisar seguridad al consultar usuarios por curso, se pude cambiar el id en el url y consultar usuarios de otros cursos. Aunque es algo que sólo va a poder hacer el administrador sería bueno evitarlo.
