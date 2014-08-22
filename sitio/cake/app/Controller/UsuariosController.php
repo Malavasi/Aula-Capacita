@@ -24,15 +24,14 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function index() {
-        echo phpinfo();
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
+         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
 		    $this->Usuario->recursive = 0;
-             $Email = new CakeEmail();
+             /*$Email = new CakeEmail();
                     $Email->from(array('aulacapacita1@gmail.com' => 'My Site'));
                     //$Email->sender('app@example.com', 'MyApp emailer');
                     $Email->to('fadrian59@gmail.com');
                     $Email->subject('Matricula');
-                    $Email->send('My message');
+                    $Email->send('My message');*/
 		    $this->set('usuarios', $this->Paginator->paginate());
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
