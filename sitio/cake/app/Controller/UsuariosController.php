@@ -24,8 +24,15 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function index() {
+        echo phpinfo();
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
 		    $this->Usuario->recursive = 0;
+             $Email = new CakeEmail();
+                    $Email->from(array('aulacapacita1@gmail.com' => 'My Site'));
+                    //$Email->sender('app@example.com', 'MyApp emailer');
+                    $Email->to('fadrian59@gmail.com');
+                    $Email->subject('Matricula');
+                    $Email->send('My message');
 		    $this->set('usuarios', $this->Paginator->paginate());
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
@@ -94,10 +101,9 @@ class UsuariosController extends AppController {
 
                     //correo
                     $Email = new CakeEmail();
-                    $Email->config('gmail');
-                    $Email->from(array('fadrian59@gmail.com' => 'My Site'));
-                    $Email->to('fadrian59@gmail.com ');
-                    $Email->subject('About');
+                    $Email->from(array('aulacapacita1@gmail.com' => 'My Site'));
+                    $Email->to('aulacapacita1@gmail.com ');
+                    $Email->subject('Matricula');
                     $Email->send('My message');
 				    $this->Session->setFlash(__('El usuario ha sido creado.'));
 				    return $this->redirect(array('action' => 'add'));

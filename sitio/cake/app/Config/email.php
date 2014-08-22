@@ -40,10 +40,11 @@
 class EmailConfig {
 
 	public $default = array(
-		'transport' => 'Mail',
-		'from' => 'you@localhost',
-		//'charset' => 'utf-8',
-		//'headerCharset' => 'utf-8',
+		'host' => 'ssl://smtp.gmail.com',
+        'port' => 465,
+        'username' => 'aulacapacita1@gmail.com',
+        'password' => 'aulacapacita1&',
+        'transport' => 'Smtp'
 	);
 
     public $gmail = array(
@@ -57,11 +58,11 @@ class EmailConfig {
 	public $smtp = array(
 		'transport' => 'Smtp',
 		'from' => array('site@localhost' => 'My Site'),
-		'host' => 'localhost',
-		'port' => 25,
+		'host' => 'ssl://smtp.gmail.com',
+		'port' => 465,
 		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
+		'username' => 'aulacapacita1@gmail.com',
+		'password' => 'aulacapacita1',
 		'client' => null,
 		'log' => false,
 		//'charset' => 'utf-8',
