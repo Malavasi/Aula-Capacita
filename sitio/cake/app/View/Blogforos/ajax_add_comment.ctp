@@ -3,25 +3,25 @@
 	foreach ($blogforo['Comentario'] as $comentario):
 ?>
 	<table>
-		<tr><td><strong><?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
+		<tr><td><strong> RE: &nbsp; <?php echo h($blogforo['Blogforo']['asunto']); ?></strong>
 			<br>
-			<?php
+			<?php 
 				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
-					echo 'de ', $this->Html->link($blogforo['Usuario']['nombre'].' '.$blogforo['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+					echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nombre'].' '.$blogforo['Comentario'][$cont]['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
 				} else {
-					echo 'de ', $blogforo['Usuario']['nombre'],' ',$blogforo['Usuario']['apellidos'];
+					echo 'de ', $blogforo['Comentario'][$cont]['nombre'], ' ', $blogforo['Comentario'][$cont]['apellidos'];
 				}
 			?>
 			&nbsp; - &nbsp;
 			<?php
-				if ($_SESSION['id_usuario'] == $blogforo['Blogforo']['usuario_id']) {
-					echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'edit', $blogforo['Blogforo']['id'])); 
+				if ($_SESSION['id_usuario'] == $blogforo['Comentario'][$cont]['usuario_id']) {
+					echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'editComment', $blogforo['Comentario'][$cont]['id'])); 
 					echo '&nbsp; - &nbsp';
 				}
 			?>
-			<?php echo h($blogforo['Blogforo']['fechapublicacion']); ?>&nbsp;
+			<?php echo h($comentario['fecha']); ?>
 		</td></tr>
-		<tr><td><?php echo h($blogforo['Blogforo']['cuerpo']); ?>&nbsp;</td></tr>
+		<tr><td><?php echo h($comentario['comentario']); ?>&nbsp;</td></tr>
 	</table>
 	<br>
 	

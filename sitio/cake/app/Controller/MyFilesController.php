@@ -88,7 +88,7 @@ class MyFilesController extends AppController {
 	            $this->request->data['MyFile']['usuario_id']	= $_SESSION['id_usuario'];
 	            if($this->MyFile->save($this->request->data)) {
 	            	$this->Session->setFlash(__('El archivo ha sido guardado.'));
-	            	return $this->redirect(array('action' => 'index'));
+					return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
 	            } else {
 	            	$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
 	            }            
@@ -132,7 +132,7 @@ class MyFilesController extends AppController {
 	            $this->MyFile->id = $id; 
 				if ($this->MyFile->save($this->request->data)) {
 					$this->Session->setFlash(__('El archivo ha sido guardado.'));
-					return $this->redirect(array('action' => 'index'));
+					return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
 				} else {
 					$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
 				}
@@ -153,7 +153,7 @@ class MyFilesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=2 ) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
 			$this->MyFile->id = $id;
 			if (!$this->MyFile->exists()) {
 				throw new NotFoundException(__('Archivo inválido'));
@@ -164,7 +164,7 @@ class MyFilesController extends AppController {
 			} else {
 				$this->Session->setFlash(__('El archivo no se ha podido eliminar. Por favor, intente de nuevo.'));
 			}
-			return $this->redirect(array('action' => 'index'));
+			return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }

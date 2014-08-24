@@ -24,6 +24,13 @@
 	
 	<div class="actions">
 		<ul>
+			<li>
+				<?php 
+					if (isset($_SESSION['id_usuario']) and $_SESSION['id_usuario'] == $myFile['MyFile']['usuario_id']) {
+						echo $this->Html->link(__('Editar'), array('action' => 'edit', $myFile['MyFile']['id']));
+					}
+				?>
+			</li>
 			<li><?php echo $this->Html->link(__('Descargar'), array('action' => 'download', $myFile['MyFile']['id'])); ?> </li> 
 		</ul>
 	</div>

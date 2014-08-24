@@ -3821,3 +3821,17 @@ Stack Trace:
 #7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #9 {main}
+2014-08-24 19:48:36 Error: [PDOException] SQLSTATE[08S01]: Communication link failure: 1153 Got a packet bigger than 'max_allowed_packet' bytes
+Request URL: /Aula-capacita/sitio/cake/my_files/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `cu...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Model.php(1834): DboSource->create(Object(MyFile), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/MyFilesController.php(89): Model->save(Array)
+#5 [internal function]: MyFilesController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyFilesController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MyFilesController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

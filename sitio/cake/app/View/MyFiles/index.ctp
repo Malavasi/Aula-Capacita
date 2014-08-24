@@ -6,10 +6,7 @@
 			<th><?php echo $this->Paginator->sort('name','Nombre'); ?></th>
 			<th><?php echo $this->Paginator->sort('size', 'Tamaño'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Incluído'); ?></th>
-			
-			<?php if (isset($_SESSION) and $_SESSION['tipo_usuario'] <= 2) { ?>
-				<th class="actions"><?php echo __('Acciones'); ?></th>
-			<?php } ?>
+			<th class="actions"><?php echo __('Acciones'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -20,10 +17,14 @@
 				<td><?php echo h($myFile['MyFile']['size']), ' B'; ?>&nbsp;</td>
 				<td><?php echo h($myFile['MyFile']['created']); ?>&nbsp;</td>
 				
-				<?php if (isset($_SESSION) and $_SESSION['tipo_usuario'] <= 2) { ?>
+				<?php if (isset($_SESSION) and $_SESSION['tipo_usuario'] <= 3) { ?>
 					<td class="actions">
-						<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $myFile['MyFile']['id'])); ?>
-						<?php echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $myFile['MyFile']['name'])); ?>
+						<?php 
+							if (isset($_SESSION['id_usuario']) and $_SESSION['id_usuario'] == $myFile['MyFile']['usuario_id']) {
+								echo $this->Html->link(__('Editar'), array('action' => 'edit', $myFile['MyFile']['id']));
+								echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $myFile['MyFile']['id']), array(), __('¿Desea eliminar el archivo %s?', $myFile['MyFile']['name']));
+							}
+						?>
 					</td>
 				<?php } ?>
 					
