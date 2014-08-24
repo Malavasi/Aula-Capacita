@@ -6,7 +6,7 @@ class AulasController extends AppController {
 	public $uses = array('Curso');
 
     public function index($id) {
-    	$_SESSION['id_curso'] = $id;
+		$this->set('curso', $this->Curso->find('first', array('conditions' => array('Curso.id' => $_SESSION['id_curso']))));
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 ) {
             if($_SESSION['tipo_usuario'] > 1 and $_SESSION['id_curso'] != $id) {
@@ -15,7 +15,7 @@ class AulasController extends AppController {
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
-        $this->set('curso', $this->Curso->find('first', array('conditions' => array('Curso.id' => $_SESSION['id_curso']))));
+        
 		
     }
 

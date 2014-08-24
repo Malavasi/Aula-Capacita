@@ -1,5 +1,4 @@
 <div class="Cursos index">
-	
 <h1>Cursos actuales</h1>
 <table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
@@ -7,8 +6,9 @@
 						<th><?php echo $this->Paginator->sort('nombre', 'Nombre'); ?></th>
 						<th><?php echo $this->Paginator->sort('fechainicio', 'Inicio'); ?></th>
 						<th><?php echo $this->Paginator->sort('fechafin', 'Final'); ?></th>
-						
-						<th class="actions">Acciones</th>
+						<?php if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) { ?>
+							<th class="actions">Acciones</th>
+						<?php } ?>
 					</tr>
 				</thead>
 				<tbody>
