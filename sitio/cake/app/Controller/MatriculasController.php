@@ -48,14 +48,9 @@ class MatriculasController extends AppController {
         }
     }
 	
-	public function delete($idCurso = null, $idUsuario = null){
+	public function delete($id = null){
 		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 1) {
-			$matricula = $this->Matricula->find('first', array ('conditions' => array('Matricula.curso_id' => $idCurso, 'Matricula.usuario_id', $idUsuario), 'fileds' => array('Matricula.id')));
-		    
-			echo $this->Matricula->id = $matricula['Matricula']['id'];
-			
-			$this->Matricula->id = $matricula['Matricula']['id'];
-		    
+			$this->Matricula->id = $id;
 		    if (!$this->Matricula->exists()) {
 			    throw new NotFoundException(__('Usuario inválido'));
 		    }
@@ -65,9 +60,10 @@ class MatriculasController extends AppController {
 		    } else {
 			    $this->Session->setFlash(__('El usuario no se ha podido desmatricular. Por favor, intente de nuevo.'));
 		    }
-		    //return $this->redirect(array('controller' => 'Usuarios', 'action' => 'index'));
+			
+		    return $this->redirect(array('controller' => 'Usuarios', 'action' => 'index'));
 		} else {
-             //$this->redirect(array('controller' =>'Usuarios', 'action' => 'index'));    
+            $this->redirect(array('controller' =>'Usuarios', 'action' => 'index'));    
         }
 	}
 	
