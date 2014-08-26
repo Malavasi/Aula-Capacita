@@ -3915,3 +3915,16 @@ Stack Trace:
 #4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
 #5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-08-26 09:35:29 Error: [SocketException] Invalid email: "aulacapacita1@gmail.com "
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('aulacapacita1@g...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'aulacapacita1@g...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(104): CakeEmail->to('aulacapacita1@g...')
+#3 [internal function]: UsuariosController->add()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}

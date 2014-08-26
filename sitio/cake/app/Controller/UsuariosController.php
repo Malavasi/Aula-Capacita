@@ -298,6 +298,10 @@ class UsuariosController extends AppController {
 			$this->set('infoCurso', $infoCurso);
 			$this->set('instructor', $this->Usuario->find('first', array('conditions' => array('Usuario.id' => $infoCurso['Curso']['usuario_id']))));
 		}
+        else
+        {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
 	}
 
 }

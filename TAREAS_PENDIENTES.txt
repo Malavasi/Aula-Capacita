@@ -1,4 +1,4 @@
-INSTRUCCIONES
+﻿INSTRUCCIONES
     Ya que vamos a utilzar este archivo para administrar las tareas, se me ocurrió organizarlo un poco mejor. La idea es poner la
 inicial del nombre de uno dentro del primer paréntesis de la tarea que uno está realizando(si está vacío, no está asignada). Cuando una tarea está completa, se pone una x en el segundo paréntesis. Esto porque en el anterior yo eliminaba por completo la tarea, y ahora me parece mejor dejarlas para tener un control mejor.
    ¿qué le parece?
@@ -44,7 +44,7 @@ INTERFAZ, ESTILO, ESTÁNDARES
     [D][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.
 
 SEGURIDAD
-    [][] Revisar seguridad al consultar usuarios por curso, se pude cambiar el id en el url y consultar usuarios de otros cursos. Aunque es algo que sólo va a poder hacer el administrador sería bueno evitarlo.
+    [A][X] Revisar seguridad al consultar usuarios por curso, se pude cambiar el id en el url y consultar usuarios de otros cursos. Aunque es algo que sólo va a poder hacer el administrador sería bueno evitarlo.
     [D][x] revisar validaciones de los campos.
 
 APARTE (este aún NO!!!)
