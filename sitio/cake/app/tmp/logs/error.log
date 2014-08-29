@@ -3928,3 +3928,92 @@ Stack Trace:
 #7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #9 {main}
+2014-08-28 10:46:44 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\SesionesController.php(13): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2014-08-28 10:47:48 Error: [SocketException] Invalid email: "aulacapacita1@gmail.com "
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('aulacapacita1@g...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'aulacapacita1@g...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(104): CakeEmail->to('aulacapacita1@g...')
+#3 [internal function]: UsuariosController->add()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-08-28 10:49:06 Error: [SocketException] Invalid email: "fadrian59@gmail.com "
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('fadrian59@gmail...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'fadrian59@gmail...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(104): CakeEmail->to('fadrian59@gmail...')
+#3 [internal function]: UsuariosController->add()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-08-28 10:49:44 Error: [SocketException] Invalid email: "fadrian59@gmail.com "
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('fadrian59@gmail...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'fadrian59@gmail...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(104): CakeEmail->to('fadrian59@gmail...')
+#3 [internal function]: UsuariosController->add()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-08-28 10:50:14 Error: [SocketException] Invalid email: "fadrian59@gmail.com "
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('fadrian59@gmail...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'fadrian59@gmail...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(104): CakeEmail->to('fadrian59@gmail...')
+#3 [internal function]: UsuariosController->add()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-08-28 10:52:03 Error: [SocketException] Invalid email: "fadrian59@gmail.com "
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('fadrian59@gmail...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'fadrian59@gmail...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(104): CakeEmail->to('fadrian59@gmail...')
+#3 [internal function]: UsuariosController->add()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}

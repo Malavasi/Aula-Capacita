@@ -40,33 +40,11 @@
 class EmailConfig {
 
 	public $default = array(
-		'host' => 'ssl://smtp.gmail.com',
-        'port' => 465,
-        'username' => 'aulacapacita1@gmail.com',
-        'password' => 'aulacapacita1&',
+		'host' => 'mail.capacita.co',
+        'port' => 26,
+        'username' => 'soporte@capcacita.co',
+        'password' => 'SOP0Capa2014$',
         'transport' => 'Smtp'
-	);
-
-    public $gmail = array(
-        'host' => 'ssl://smtp.gmail.com',
-        'port' => 465,
-        'username' => 'usuario',
-        'password' => 'contrasena',
-        'transport' => 'Smtp'
-    );
-
-	public $smtp = array(
-		'transport' => 'Smtp',
-		'from' => array('site@localhost' => 'My Site'),
-		'host' => 'ssl://smtp.gmail.com',
-		'port' => 465,
-		'timeout' => 30,
-		'username' => 'aulacapacita1@gmail.com',
-		'password' => 'aulacapacita1',
-		'client' => null,
-		'log' => false,
-		//'charset' => 'utf-8',
-		//'headerCharset' => 'utf-8',
 	);
 
 	public $fast = array(
