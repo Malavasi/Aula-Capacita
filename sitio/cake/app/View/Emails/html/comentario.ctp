@@ -1,6 +1,6 @@
 <h3><p>Saludos, <?php echo $Usuario ?>.</p></h3>
 
-Se le informa que se ha hecho un nuevo comentario en el curso <?php echo $curso; ?> 
+Se le informa que se ha hecho un nuevo comentario en el curso
 
 <br><br>
 Para acceder a nuestra aula virtual haga click <a href="www.capacita.co">aqu&iacute;</a>

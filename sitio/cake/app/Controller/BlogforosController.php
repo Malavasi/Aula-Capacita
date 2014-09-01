@@ -187,6 +187,7 @@ class BlogforosController extends AppController {
 			$this->Blogforo->Comentario->create();
 			
 			if($this->Blogforo->Comentario->save($this->request->data))	{
+
 				$this->view($this->request->data['Comentario']['blogforo_id']);
 			}
 		}
