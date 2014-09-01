@@ -101,7 +101,7 @@ class MyFilesController extends AppController {
                         {
                             $Email = new CakeEmail('default');
                             $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
-                            $Email->to($estudiantes[0]['Usuario']['correo']);
+                            $Email->to($estudiantes[0]['Usuario']['email']);
                             $Email->subject('Nuevo archivo');
                             $Email->template('archivo');
                             $Email->viewVars(array('Usuario' =>$estudiantes[0]['Usuario']['nombre'].' '.$estudiantes[0]['Usuario']['apellidos'], 'archivo'=>$this->request->data['MyFile']['File']['name'],'curso'=>''));
