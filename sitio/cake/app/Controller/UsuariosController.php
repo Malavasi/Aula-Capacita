@@ -24,14 +24,10 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function index() {
+                    
          if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
 		    $this->Usuario->recursive = 0;
-             /*$Email = new CakeEmail();
-                    $Email->from(array('aulacapacita1@gmail.com' => 'My Site'));
-                    //$Email->sender('app@example.com', 'MyApp emailer');
-                    $Email->to('fadrian59@gmail.com');
-                    $Email->subject('Matricula');
-                    $Email->send('My message');*/
+             
 		    $this->set('usuarios', $this->Paginator->paginate());
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
@@ -89,22 +85,26 @@ class UsuariosController extends AppController {
 				    $this->request->data['Usuario']['contrasena'] = $this->crearContrasena($this->request->data['Usuario']['nombre'],
 																					       $this->request->data['Usuario']['apellidos']);	
 			    }
-			
+			    $contrasenaTmp = $this->request->data['Usuario']['contrasena'];
 			    //para el md5 de la contrasena de tamano 32
 			    $this->request->data['Usuario']['contrasena'] = md5($this->request->data['Usuario']['contrasena']);
 			    $this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
 			
 			    //creacion del usuario para ser almacenado
 			    $this->Usuario->create();
+                pr($this->request->data);
 			    if ($this->Usuario->save($this->request->data)) {
 
                     //correo
-                    $Email = new CakeEmail();
-                    $Email->from(array('soporte@capcacita.co' => 'capacita.co'));
-                    $Email->to('fadrian59@gmail.com ');
-                    $Email->subject('Matricula');
-                    $Email->send('My message');
-				    $this->Session->setFlash(__('El usuario ha sido creado.'));
+                    $Email = new CakeEmail('default');
+                    $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
+                    $Email->to($this->request->data['Usuario']['email']);
+                    $Email->subject('Usuario creado');
+                    $Email->template('UsuarioCreado');
+                    $Email->viewVars(array('Usuario' =>$this->request->data['Usuario']['nombre'].' '.$this->request->data['Usuario']['apellidos'] , 'nick' => $this->request->data['Usuario']['nick'], 'contrasena'=>$contrasenaTmp));
+                    $Email->emailFormat('html');
+                    $Email->send();
+                    $this->Session->setFlash(__('El usuario ha sido creado.'));
 				    return $this->redirect(array('action' => 'add'));
 			    } else {
 				    $this->Session->setFlash(__('El usuario no se ha podido crear. Por favor, intente de nuevo.'));

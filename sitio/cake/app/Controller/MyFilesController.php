@@ -1,5 +1,8 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('Usuario', 'Model');
+App::uses('Matriculas', 'Model');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * MyFiles Controller
  *
@@ -87,8 +90,28 @@ class MyFilesController extends AppController {
 				$this->request->data['MyFile']['curso_id']	= $_SESSION['id_curso'];
 	            $this->request->data['MyFile']['usuario_id']	= $_SESSION['id_usuario'];
 	            if($this->MyFile->save($this->request->data)) {
+                    //correo
+                    $usuarios = new Matriculas();
+                    $matriculas = $usuarios->find('all', array('conditions' => array('curso_id' => $_SESSION['id_curso'] )) );
+                    $usuarios = new Usuario();     
+                    foreach($matriculas as $matricula)
+                    {
+                        $estudiantes =  $usuarios->find('all', array('conditions' => array('id' =>$matricula['Matriculas']['usuario_id'] )) );
+                        if(isset($estudiantes[0]))
+                        {
+                            $Email = new CakeEmail('default');
+                            $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
+                            $Email->to($estudiantes[0]['Usuario']['correo']);
+                            $Email->subject('Nuevo archivo');
+                            $Email->template('archivo');
+                            $Email->viewVars(array('Usuario' =>$estudiantes[0]['Usuario']['nombre'].' '.$estudiantes[0]['Usuario']['apellidos'], 'archivo'=>$this->request->data['MyFile']['File']['name'],'curso'=>''));
+                            $Email->emailFormat('html');
+                            $Email->send();
+                        }
+                    }
+                    
 	            	$this->Session->setFlash(__('El archivo ha sido guardado.'));
-					return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
+					//return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
 	            } else {
 	            	$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
 	            }            

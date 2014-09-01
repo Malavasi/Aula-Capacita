@@ -179,6 +179,8 @@ class BlogforosController extends AppController {
 		$this->layout = 'ajax';
 		
 		if($this->request->is('post') && isset($_SESSION['id_usuario']))	{
+            //correo
+
 			$this->request->data['Comentario']['usuario_id'] = $_SESSION['id_usuario'];
 			$this->request->data['Comentario']['fecha'] = date("Y-m-d H:i:s");
 				

@@ -4017,3 +4017,765 @@ Stack Trace:
 #7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #9 {main}
+2014-08-31 18:59:29 Error: [SocketException] Invalid email: "fadrian59@gmail.com "
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('fadrian59@gmail...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'fadrian59@gmail...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(99): CakeEmail->to('fadrian59@gmail...')
+#3 [internal function]: UsuariosController->add()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 09:18:43 Error: [SocketException] Invalid email: "fadrian59@gmail.com "
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('fadrian59@gmail...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'fadrian59@gmail...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(30): CakeEmail->to('fadrian59@gmail...')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:41:21 Error: [SocketException] Invalid email: "fadrian59@gmail.com "
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('fadrian59@gmail...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'fadrian59@gmail...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(30): CakeEmail->to('fadrian59@gmail...')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:43:19 Error: [SocketException] mail(): Failed to connect to mailserver at "smtp.gmail.com" port 465, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set()
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\MailTransport.php(51): MailTransport->_mail('fadrian59@gmail...', 'Matricula', 'My message????', 'From: "capacita...', NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): MailTransport->send(Object(CakeEmail))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(32): CakeEmail->send('My message')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:44:54 Error: [SocketException] mail(): Failed to connect to mailserver at "smtp.gmail.com" port 465, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set()
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\MailTransport.php(51): MailTransport->_mail('fadrian59@gmail...', 'Matricula', 'My message????', 'From: "capacita...', NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): MailTransport->send(Object(CakeEmail))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(33): CakeEmail->send('My message')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:48:02 Error: [SocketException] mail(): Failed to connect to mailserver at "localhost" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set()
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\MailTransport.php(51): MailTransport->_mail('fadrian59@gmail...', 'Matricula', 'My message????', 'From: "capacita...', NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): MailTransport->send(Object(CakeEmail))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(33): CakeEmail->send('My message')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:48:39 Error: [SocketException] mail(): Failed to connect to mailserver at "mail.capacita.co" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set()
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\MailTransport.php(51): MailTransport->_mail('fadrian59@gmail...', 'Matricula', 'My message????', 'From: "capacita...', NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): MailTransport->send(Object(CakeEmail))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(33): CakeEmail->send('My message')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:49:39 Error: [SocketException] mail(): Failed to connect to mailserver at "mail.capacita.co" port 26, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set()
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\MailTransport.php(51): MailTransport->_mail('fadrian59@gmail...', 'Matricula', 'My message????', 'From: "capacita...', NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): MailTransport->send(Object(CakeEmail))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(33): CakeEmail->send('My message')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:54:59 Error: [SocketException] SMTP Error: +OK Dovecot ready.
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(157): SmtpTransport->_smtpSend(NULL, '220')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 10:55:40 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 10:56:00 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 10:56:17 Error: [SocketException] La dirección solicitada no es válida en este contexto.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 10:56:19 Error: [SocketException] La dirección solicitada no es válida en este contexto.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 10:57:44 Error: [SocketException] Class "PopTransport" not found.
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1256): CakeEmail->transportClass()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1124): CakeEmail->_applyConfig('default')
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(32): CakeEmail->config('default')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 10:57:54 Error: [SocketException] Class "popTransport" not found.
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1256): CakeEmail->transportClass()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1124): CakeEmail->_applyConfig('default')
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(32): CakeEmail->config('default')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 11:03:40 Error: [SocketException] SMTP Error: +OK Dovecot ready.
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(157): SmtpTransport->_smtpSend(NULL, '220')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:04:47 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:09:27 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:09:59 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:10:08 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Emails\html\only_text.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Emails\\html\\only_text.ctp',
+)
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName('only_text')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1683): View->render('only_text', 'default')
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1536): CakeEmail->_renderTemplates('My message?')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1147): CakeEmail->_render(Array)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#5 [internal function]: UsuariosController->index()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#11 {main}
+2014-09-01 11:10:31 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:10:51 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:26:14 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:27:04 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:28:05 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:28:53 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:29:14 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:29:53 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:30:16 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:37:42 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:37:50 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:38:27 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:38:56 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:39:38 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:40:19 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:40:44 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:41:12 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:41:45 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:42:23 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:44:09 Error: [SocketException] SMTP Error: 535 Incorrect authentication data
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('U09QMENhcGEyMDE...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:47:55 Error: [SocketException] SMTP Error: 534 5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 ry4sm3603037vdc.4 - gsmtp
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('cHV0YXNhbEs5MDA...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:49:04 Error: [SocketException] SMTP Error: 534 5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 o1sm3587162vdj.10 - gsmtp
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('cHV0YXNhbEs5MDA...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:49:40 Error: [SocketException] SMTP Error: 530 5.5.1 http://support.google.com/mail/bin/answer.py?answer=14257 o1sm3590674vdj.10 - gsmtp
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(290): SmtpTransport->_smtpSend('MAIL FROM:<fadr...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(97): SmtpTransport->_sendRcpt()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:50:10 Error: [SocketException] SMTP Error: 534 5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 v15sm3574062vdi.15 - gsmtp
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('cHV0YXNhbEs5MDA...', '235')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:51:31 Error: [SocketException] stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+stream_socket_client(): Failed to enable crypto
+stream_socket_client(): unable to connect to ssl://mail.capacita.co:25 (Unknown error)
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:52:09 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:53:16 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 11:53:48 Error: [SocketException] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(154): CakeSocket->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\SmtpTransport.php(95): SmtpTransport->_connect()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1149): SmtpTransport->send(Object(CakeEmail))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(34): CakeEmail->send('My message')
+#4 [internal function]: UsuariosController->index()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
+2014-09-01 13:12:29 Error: [ConfigureException] Unknown email configuration "Usuario".
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1124): CakeEmail->_applyConfig('Usuario')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(346): CakeEmail->config('Usuario')
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(29): CakeEmail->__construct('Usuario')
+#3 [internal function]: UsuariosController->index()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#9 {main}
+2014-09-01 13:20:20 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Emails\html\usuario_creado.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Emails\\html\\usuario_creado.ctp',
+)
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName('UsuarioCreado')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1683): View->render('UsuarioCreado', 'default')
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1536): CakeEmail->_renderTemplates('')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Network\Email\CakeEmail.php(1147): CakeEmail->_render(Array)
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(35): CakeEmail->send()
+#5 [internal function]: UsuariosController->index()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#11 {main}
+2014-09-01 15:12:44 Error: Fatal Error (1): Call to a member function findById() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MyFilesController.php, line 98]
+2014-09-01 15:12:44 Error: [FatalErrorException] Call to a member function findById() on a non-object
+Request URL: /cake/my_files/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-01 15:13:29 Error: Fatal Error (1): Call to a member function findById() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MyFilesController.php, line 98]
+2014-09-01 15:13:29 Error: [FatalErrorException] Call to a member function findById() on a non-object
+Request URL: /cake/my_files/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-01 15:14:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MyFilesController.php, line 98]
+2014-09-01 15:14:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cake/my_files/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 98, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-01 16:15:55 Error: Fatal Error (1): Class 'CakeEmail' not found in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\MyFilesController.php, line 101]
+2014-09-01 16:15:55 Error: [FatalErrorException] Class 'CakeEmail' not found
+Request URL: /cake/my_files/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', 'G:\Nube\GitHub\...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', 'G:\Nube\GitHub\...', 101, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', 'G:\Nube\GitHub\...', 101, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

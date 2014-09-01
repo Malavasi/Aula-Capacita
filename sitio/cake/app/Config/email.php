@@ -41,41 +41,18 @@ class EmailConfig {
 
 	public $default = array(
 		'host' => 'mail.capacita.co',
-        'port' => 26,
-        'username' => 'soporte@capcacita.co',
+        'port' => 25,
+        'username' => 'soporte@capacita.co',
         'password' => 'SOP0Capa2014$',
         'transport' => 'Smtp'
 	);
 
 	public $fast = array(
-		'from' => 'you@localhost',
-		'sender' => null,
-		'to' => null,
-		'cc' => null,
-		'bcc' => null,
-		'replyTo' => null,
-		'readReceipt' => null,
-		'returnPath' => null,
-		'messageId' => true,
-		'subject' => null,
-		'message' => null,
-		'headers' => null,
-		'viewRender' => null,
-		'template' => false,
-		'layout' => false,
-		'viewVars' => null,
-		'attachments' => null,
-		'emailFormat' => null,
-		'transport' => 'Smtp',
-		'host' => 'localhost',
-		'port' => 25,
-		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
-		'client' => null,
-		'log' => true,
-		//'charset' => 'utf-8',
-		//'headerCharset' => 'utf-8',
+		'host' => 'mail.capacita.co',
+        'port' => 26,
+        'username' => 'soporte@capcacita.co',
+        'password' => 'SOP0Capa2014$',
+        'transport' => 'Smtp'
 	);
 
 }
