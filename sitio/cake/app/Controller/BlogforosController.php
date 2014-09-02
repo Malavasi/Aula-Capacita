@@ -2,6 +2,10 @@
     session_start();
 App::uses('AppController', 'Controller');
 App::uses('Usuarios', 'Model');
+App::uses('Usuario', 'Model');
+App::uses('CakeEmail', 'Network/Email');
+App::uses('Cursos', 'Model');
+App::uses('Blogforo', 'Model');
 /**
  * Blogforos Controller
  *
@@ -179,7 +183,7 @@ class BlogforosController extends AppController {
 		$this->layout = 'ajax';
 		
 		if($this->request->is('post') && isset($_SESSION['id_usuario']))	{
-            //correo
+               
 
 			$this->request->data['Comentario']['usuario_id'] = $_SESSION['id_usuario'];
 			$this->request->data['Comentario']['fecha'] = date("Y-m-d H:i:s");
@@ -187,7 +191,24 @@ class BlogforosController extends AppController {
 			$this->Blogforo->Comentario->create();
 			
 			if($this->Blogforo->Comentario->save($this->request->data))	{
-
+                //correo
+            $curso = new Blogforo();
+                   $matriculas = $curso->findById($_SESSION['id_curso']);//('all', array('conditions' => array('id' => $_SESSION['id_curso'] )) );
+                    //pr($matriculas);
+                    $usuarios = new Usuario();     
+                    $profesor =  $usuarios->find('all', array('conditions' => array('id' =>$matriculas['Curso']['usuario_id'] )) );
+                        if(isset($profesor[0]))
+                        {
+                            $Email = new CakeEmail('default');
+                            $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
+                            $Email->to($profesor[0]['Usuario']['email']);
+                            $Email->subject('Nuevo comentario');
+                            $Email->template('Comentario');
+                            $Email->viewVars(array('Usuario' =>$profesor[0]['Usuario']['nombre'].' '.$profesor[0]['Usuario']['apellidos'],'curso'=>''));
+                            $Email->emailFormat('html');
+                            $Email->send();
+                        }
+            
 				$this->view($this->request->data['Comentario']['blogforo_id']);
 			}
 		}
