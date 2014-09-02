@@ -54,7 +54,7 @@ class MatriculasController extends AppController {
 		    if (!$this->Matricula->exists()) {
 			    throw new NotFoundException(__('Usuario inválido'));
 		    }
-		    $this->request->allowMethod('post', 'delete');
+		    //$this->request->allowMethod('post', 'delete');
 		    if ($this->Matricula->delete()) {
 			    $this->Session->setFlash(__('El usuario ha sido desmatriculado.'));
 		    } else {
