@@ -55,7 +55,8 @@ class BlogforosController extends AppController {
 			if (!$this->Blogforo->exists($id)) {
 				throw new NotFoundException(__('Foro inválido'));
 			}
-	        $_SESSION['id_curso'] = $id;
+	        //$_SESSION['id_curso'] = $id;
+			
 			$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
 	        $usuario = new Usuarios();
 	        $blogforo = $this->Blogforo->find('first', $options);
