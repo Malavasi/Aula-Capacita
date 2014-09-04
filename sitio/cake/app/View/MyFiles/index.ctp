@@ -6,7 +6,7 @@
 			<th><?php echo $this->Paginator->sort('name','Nombre'); ?></th>
 			<th><?php echo $this->Paginator->sort('size', 'Tamaño'); ?></th>
 			<th><?php echo $this->Paginator->sort('created', 'Incluído'); ?></th>
-			<th class="actions"><?php echo __('Acciones'); ?></th>
+			<th class="actions"><?php if ($_SESSION['tipo_usuario'] == 1) { echo __('Acciones'); } ?></th>
 	</tr>
 	</thead>
 	<tbody>
