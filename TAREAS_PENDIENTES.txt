@@ -30,6 +30,7 @@ BLOGFORO
     [D][x] Botón para comentar en el usuario estudiante. No aparece.
     [D][x] Aparecen temas de discusión de otros seminarios.
     [D][x] Hay errores al crear un tema como estudiante e instructor. No se crea el tema y redirije al incio del aula, se indefine el índice curso.
+    [][] Al comentar un tema, aparece un error de índice no encontrado. Creo que está relacionado con las búsquedas hechas para buscar al instructor del curso.
 
 ARCHIVOS
     [D][x] nombre de los programas recomendados para abrir los archivos. Posiblemente, agregar un campo para que la persona que lo suba escriba el nombre de un programa recomendado para abrir el archivo.
