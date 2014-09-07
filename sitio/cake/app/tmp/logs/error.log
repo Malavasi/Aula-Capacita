@@ -5377,3 +5377,23 @@ Stack Trace:
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #7 {main}
+2014-09-05 01:47:53 Error: Fatal Error (1): Class 'Curso' not found in [/Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/BlogforosController.php, line 196]
+2014-09-05 01:47:53 Error: [FatalErrorException] Class 'Curso' not found
+Request URL: /Aula-capacita/sitio/cake/blogforos/AjaxAddComment
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Curso' n...', '/Applications/X...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Curso' n...', '/Applications/X...', 196, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Curso' n...', '/Applications/X...', 196, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-05 01:48:07 Error: Fatal Error (1): Class 'Curso' not found in [/Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/BlogforosController.php, line 196]
+2014-09-05 01:48:07 Error: [FatalErrorException] Class 'Curso' not found
+Request URL: /Aula-capacita/sitio/cake/blogforos/AjaxAddComment
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Curso' n...', '/Applications/X...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Curso' n...', '/Applications/X...', 196, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Curso' n...', '/Applications/X...', 196, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

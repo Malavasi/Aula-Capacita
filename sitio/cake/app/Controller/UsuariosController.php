@@ -82,8 +82,7 @@ class UsuariosController extends AppController {
 			    }
 			
 			    if ($this->request->data['Usuario']['contrasena'] == "") {
-				    $this->request->data['Usuario']['contrasena'] = $this->crearContrasena($this->request->data['Usuario']['nombre'],
-																					       $this->request->data['Usuario']['apellidos']);	
+				    $this->request->data['Usuario']['contrasena'] = $this->crearContrasena(8);	
 			    }
 			    $contrasenaTmp = $this->request->data['Usuario']['contrasena'];
 			    //para el md5 de la contrasena de tamano 32
@@ -261,28 +260,15 @@ class UsuariosController extends AppController {
 	}
 
 	//para crear la contrasena del usuario con nombre y apellidos.
-	public function crearContrasena($nombre, $apellidos) {
-		$aNombre;
-		$aApellidos;
-		$contrasena;
+	public function crearContrasena($length = 8) {
 		
-		if(strpos($nombre, ' ') != FALSE){
-			$aNombre = explode(' ', $nombre);
-			$nick = strtoupper($aNombre[0]);
-		} else {
-			$nick = strtoupper($nombre);
+	    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*_-=+;:,.?";
+	    
+	    for ($i = 0; $i < $length; $i++) {
+			$password .= $chars[mt_rand(0, strlen($chars) -1)];
 		}
 		
-		if(strpos($apellidos, ' ') != FALSE){
-			$aApellido = explode(' ', $apellidos);
-			
-			$nick .= '.' . strtoupper($aApellido[0]);
-		} else {
-			$nick .= '.' . strtoupper($apellidos);
-		}
-		
-		
-		return $nick;
+	    return $password;
 	}
 	
 	public function usuariosDelCurso($idCurso) {

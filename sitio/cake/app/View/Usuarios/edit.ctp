@@ -44,8 +44,8 @@
                 array('label'=>'Notificaciones')
 			);
 		?>
+		<?php echo $this->Form->end(__('Guardar')); ?>
 		</fieldset>
-	<?php echo $this->Form->end(__('Guardar')); ?>
 	</div>
 	<?php echo $this->element('acciones'); ?>
 <?php } else { ?>
