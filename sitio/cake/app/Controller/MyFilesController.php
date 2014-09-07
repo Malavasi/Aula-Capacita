@@ -97,7 +97,7 @@ class MyFilesController extends AppController {
                     foreach($matriculas as $matricula)
                     {
                         $estudiantes =  $usuarios->find('all', array('conditions' => array('id' =>$matricula['Matriculas']['usuario_id'] )) );
-                        if(isset($estudiantes[0]))
+                        if(isset($estudiantes[0]) &&  $estudiantes[0]['Usuario']['notificaciones']==1)
                         {
                             $Email = new CakeEmail('default');
                             $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
@@ -111,7 +111,7 @@ class MyFilesController extends AppController {
                     }
                     
 	            	$this->Session->setFlash(__('El archivo ha sido guardado.'));
-					//return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
+					return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
 	            } else {
 	            	$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
 	            }            

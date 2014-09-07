@@ -198,7 +198,7 @@ class BlogforosController extends AppController {
                     //pr($matriculas);
                     $usuarios = new Usuario();     
                     $profesor =  $usuarios->find('all', array('conditions' => array('id' =>$matriculas['Curso']['usuario_id'] )) );
-                        if(isset($profesor[0]))
+                        if(isset($profesor[0])  &&  $profesor[0]['Usuario']['notificaciones']==1)
                         {
                             $Email = new CakeEmail('default');
                             $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));

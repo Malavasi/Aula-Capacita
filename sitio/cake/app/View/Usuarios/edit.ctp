@@ -39,6 +39,10 @@
 			        'label' => 'Confirmar Contraseña'
 			    )
 			);
+            echo $this->Form->input(
+			    'notificaciones',
+                array('label'=>'Notificaciones')
+			);
 		?>
 		</fieldset>
 	<?php echo $this->Form->end(__('Guardar')); ?>
