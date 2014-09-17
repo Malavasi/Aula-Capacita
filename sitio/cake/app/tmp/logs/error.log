@@ -5447,3 +5447,43 @@ Stack Trace:
 #4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-09-17 22:43:08 Error: [SocketException] File not found: "/Aula-capacita/sitio/cake/img/capacita_logo.gif"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments(Array)
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-09-17 22:47:06 Error: [SocketException] File not found: "/Aula-capacita/sitio/cake/img/capacita_logo.gif"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments(Array)
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-09-17 22:48:16 Error: [SocketException] File not found: "/Aula-capacita/sitio/cake/app/webroot/capacita_logo.gif"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments('/Aula-capacita/...')
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-09-17 22:51:08 Error: [SocketException] File not found: "/Aula-capacita/sitio/cake/app/webroot/capacita_logo.gif"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments('/Aula-capacita/...')
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

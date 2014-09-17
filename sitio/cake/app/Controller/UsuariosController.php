@@ -102,8 +102,8 @@ class UsuariosController extends AppController {
                     $Email->template('UsuarioCreado');
                     $Email->viewVars(array('Usuario' =>$this->request->data['Usuario']['nombre'].' '.$this->request->data['Usuario']['apellidos'] , 'nick' => $this->request->data['Usuario']['nick'], 'contrasena'=>$contrasenaTmp));
                     $Email->emailFormat('html');
-					//$Email->attachments(array('manual_usuario.png' => '/Aula-capacita/sitio/cake/files/Manual.pdf'));
-					//$Email->attachments(array('manual_usuario.png' => '/capacitavirtual/files/Manual.pdf'));
+					$Email->attachments(array('manual_usuario.pdf' => ROOT.'/app/webroot/files/Manual.pdf'));
+					//$Email->attachments(array('manual_usuario.pdf' => '/capacitavirtual/app/webroot/files/Manual.pdf'));
                     $Email->send();
                     $this->Session->setFlash(__('El usuario ha sido creado.'));
 				    return $this->redirect(array('action' => 'add'));
