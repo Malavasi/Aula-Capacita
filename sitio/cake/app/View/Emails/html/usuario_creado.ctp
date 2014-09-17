@@ -5,12 +5,16 @@
 <br>
 <br>
 
-<p>Se recomienda un cambio de contraseña.</p>
+<p>Se recomienda un cambio de contraseña al ingresar por primera vez.</p>
+<p>
+	Esta notificación es automática, para recibir notifiaciones de comentarios y archivos puede
+	habilitar la opción en Mi Cuenta.
+</p>
 
 <br>
 <br>
 
-Para acceder a nuestra Aula Virtual haga click <a href="www.capacita.co">aqu&iacute;</a>
+Para acceder a nuestra Aula Virtual haga click <a href="www.capacita.co/capacitavirtual">aqu&iacute;</a>
 
 <br><br>
 <p>Soporte TI <strong>CAPACITA</strong> Latin America</p>

@@ -5397,3 +5397,53 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-09-17 19:54:48 Error: [SocketException] File not found: "/capacitavirtual/app/webroot/files/Manual.pdf"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments(Array)
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-09-17 19:57:39 Error: [SocketException] File not found: "/capacitavirtual/app/webroot/files/Manual.pdf"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments(Array)
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-09-17 20:00:23 Error: Fatal Error (4): syntax error, unexpected '/' in [/Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php, line 105]
+2014-09-17 20:00:23 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 105, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 105, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 20:01:44 Error: [SocketException] File not found: "/Aula-capacita/sitio/cake/app/webroot/files/Manual.pdf"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments(Array)
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-09-17 20:08:06 Error: [SocketException] File not found: "/Aula-capacita/sitio/cake/files/Manual.pdf"
+Request URL: /aula-capacita/sitio/cake/usuarios/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/Controller/UsuariosController.php(105): CakeEmail->attachments(Array)
+#1 [internal function]: UsuariosController->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
