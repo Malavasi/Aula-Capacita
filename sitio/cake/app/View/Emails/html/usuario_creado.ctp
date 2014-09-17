@@ -1,4 +1,4 @@
-<p>Saludos <strong><?php echo $Usuario ?></strong> se le ha creado una cuenta Capacita Virtual.</p>
+<p>Saludos <strong><?php echo $Usuario ?></strong> se le ha creado una cuenta en Capacita Virtual.</p>
 
 <strong> Usuario: </strong> <?php echo $nick ?><br>
 <strong> Contraseña: </strong> <?php echo $contrasena ?>
