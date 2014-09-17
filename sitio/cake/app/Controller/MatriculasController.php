@@ -75,6 +75,10 @@ class MatriculasController extends AppController {
              $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
+	
+	public function nomatriculado() {
+		
+	}
 
 }
 ?>

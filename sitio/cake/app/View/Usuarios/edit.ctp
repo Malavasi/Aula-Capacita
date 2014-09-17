@@ -95,6 +95,11 @@
 			        'label' => 'Confirmar Contraseña'
 			    )
 			);
+			
+			echo $this->Form->input(
+			    'notificaciones',
+                array('label'=>'Notificaciones')
+			);
 		?>
 			<br>
 			<?php echo $this->Form->end(__('Guardar')); ?>

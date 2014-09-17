@@ -19,27 +19,35 @@ class SesionesController extends AppController {
             } else {
                 $this->redirect(array('controller' =>'inicio','action' => 'index')); 
             }
-            
-            if($_SESSION['tipo_usuario'] == 3) {
-                $matricula = new Matriculas();
-                $datos_curso = $matricula->find('all', array('conditions' => array('usuario_id' => $_SESSION['id_usuario']) ) );
-                $_SESSION['id_curso'] = $datos_curso[0]['Matriculas']['curso_id']; 
-                $curso = new Cursos();
-                $datos_curso = $curso->find('all', array('conditions' => array('id' => $_SESSION['id_curso']) ) );
-                $_SESSION['nick_curso'] = $datos_curso[0]['Cursos']['nombre']; 
-                $this->redirect(array('controller' =>'Aulas','action' => 'index/'.$_SESSION['id_curso'])); 
-            } elseif($_SESSION['tipo_usuario'] == 2) {
-            	$curso = new Cursos();
-				$datos_curso = $curso->find('first', array('conditions' => array('usuario_id' => $_SESSION['id_usuario']) ) );
-				
-				$_SESSION['id_curso'] = $datos_curso['Cursos']['id']; 
-				
-				$this->redirect(array('controller' =>'Aulas','action' => 'index', $datos_curso['Cursos']['id'])); 
-            }
-            
+	            if($_SESSION['tipo_usuario'] == 3) {
+	                $matricula = new Matriculas();
+	                $datos_curso = $matricula->find('all', array('conditions' => array('usuario_id' => $_SESSION['id_usuario']) ) );
+	                					
+					if(!isset($datos_curso[0]['Matriculas']['curso_id']) and $_SESSION['tipo_usuario'] != 1) {
+	            		$this->redirect(array('controller' =>'Matriculas','action' => 'nomatriculado'));
+					}
+					
+					$_SESSION['id_curso'] = $datos_curso[0]['Matriculas']['curso_id']; 
+	                $curso = new Cursos();
+	                $datos_curso = $curso->find('all', array('conditions' => array('id' => $_SESSION['id_curso']) ) );
+	                $_SESSION['nick_curso'] = $datos_curso[0]['Cursos']['nombre']; 
+	                $this->redirect(array('controller' =>'Aulas','action' => 'index/'.$_SESSION['id_curso'])); 
+	            } elseif($_SESSION['tipo_usuario'] == 2) {
+	            	$curso = new Cursos();
+					$datos_curso = $curso->find('first', array('conditions' => array('usuario_id' => $_SESSION['id_usuario']) ) );					 
+					
+					if(!isset($datos_curso['Cursos']['id']) and $_SESSION['tipo_usuario'] != 1) {
+	            		$this->redirect(array('controller' =>'Matriculas','action' => 'nomatriculado'));
+					}
+					
+					$_SESSION['id_curso'] = $datos_curso['Cursos']['id'];
+					
+					$this->redirect(array('controller' =>'Aulas','action' => 'index', $datos_curso['Cursos']['id'])); 
+	            }
         }
         $this->redirect(array('controller' =>'Cursos','action' => 'index')); 
     }
+
     public function logout(){
         unset($_SESSION['id_usuario']);
         unset($_SESSION['tipo_usuario']);

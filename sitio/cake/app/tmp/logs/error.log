@@ -5487,3 +5487,41 @@ Stack Trace:
 #4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-09-18 00:45:06 Error: [MissingActionException] Action UsuariosController::Aula-Capacita() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'Aula-Capacita',
+)
+Request URL: /Aula-capacita/sitio/cake/usuarios/Aula-Capacita/sitio/cake/img/capacitavirtual_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-18 00:45:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Aula-Capacita/sitio/cake/img/capacitavirtual_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-Capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-18 00:46:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Aula-Capacita/sitio/cake/img/capacitavirtual_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-Capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-18 00:46:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Aula-capacita/sitio/cake/img/capacitavirtual_logo.gif
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

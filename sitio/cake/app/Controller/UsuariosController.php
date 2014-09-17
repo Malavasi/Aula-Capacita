@@ -56,7 +56,7 @@ class UsuariosController extends AppController {
 				$options = array('conditions' => array('Curso.usuario_id' => $id));
 				$this->set('curso', $this->Curso->find('first', $options));
 				
-			} elseif ($usuario['Usuario']['tipo'] == 3) {
+			} elseif ($usuario['Usuario']['tipo'] == 3 and isset($usuario['Matricula'][0]['curso_id'])) {
 				$options = array('conditions' => array('Curso.' . $this->Curso->primaryKey => $usuario['Matricula'][0]['curso_id']));
 				$this->set('curso', $this->Curso->find('first', $options));
 			}
