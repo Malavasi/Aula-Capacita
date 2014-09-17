@@ -17,6 +17,8 @@ class CursosController extends AppController {
 	        } elseif($_SESSION['tipo_usuario'] == 2) {
 	        	$this->set('cursos', $this->Paginator->paginate('Curso',  array('Curso.usuario_id' => $_SESSION['id_usuario'])));
 	        }
+		} else {
+			$this->redirect(array('controller' =>'inicio','action' => 'index'));  
 		}
     }
 
