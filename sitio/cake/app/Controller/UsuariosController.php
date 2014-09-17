@@ -96,7 +96,7 @@ class UsuariosController extends AppController {
 
                     //correo
                     $Email = new CakeEmail('default');
-                    $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
+                    $Email->from(array('soporte@capacita.co' => 'Soporte Capacita'));
                     $Email->to($this->request->data['Usuario']['email']);
                     $Email->subject('Usuario creado');
                     $Email->template('UsuarioCreado');

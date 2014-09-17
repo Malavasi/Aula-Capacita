@@ -1,11 +1,11 @@
-<h3><p>Saludos <?php echo $Usuario ?>, se le ha creado una cuenta Capacita Virtual.</p></h3>
+<p>Saludos <strong><?php echo $Usuario ?></strong> se le ha creado una cuenta Capacita Virtual.</p>
 
 <strong> Usuario: </strong> <?php echo $nick ?><br>
 <strong> Contraseña: </strong> <?php echo $contrasena ?>
 <br>
 <br>
 
-<p>Se recomienda un cambio de contraseña al ingresar por primera vez.</p>
+<p>Se recomienda que cambie de contraseña al ingresar por primera vez.</p>
 <p>
 	Esta notificación es automática, para recibir notifiaciones de comentarios y archivos puede
 	habilitar la opción en Mi Cuenta.
