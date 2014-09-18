@@ -1,7 +1,26 @@
-﻿INSTRUCCIONES
-    Ya que vamos a utilzar este archivo para administrar las tareas, se me ocurrió organizarlo un poco mejor. La idea es poner la
-inicial del nombre de uno dentro del primer paréntesis de la tarea que uno está realizando(si está vacío, no está asignada). Cuando una tarea está completa, se pone una x en el segundo paréntesis. Esto porque en el anterior yo eliminaba por completo la tarea, y ahora me parece mejor dejarlas para tener un control mejor.
-   ¿qué le parece?
+REUNIÓN 18 de Setiembre 2014
+
+CORREOS
+    [][] Indicar en el cuerpo del correo que las notificaciones son comentarios o archivos. también que pueden contactar a soporte.
+    [][] Enviar correo cuando se matricula al usuario. Este me tiene pensando por lo de la contraseña, habría que generarla cuando se matricula el usuario y no cuando se crea el usuario, esto porque la contraseña se guarda como MD5.
+
+ARCHIVOS
+    [][] agregar lista de programas que se reconozcan por la extensión del archivo.
+    [][] Agregar descripción para el archivo.
+
+USUARIOS
+    [][] En edición, cambiar texto de Confirmar Contraseña a Nueva Contraseña.
+
+OTROS
+    [][] Corregir texto de no matriculado, por “no se ha habilitado el aula.”
+    
+
+
+APARTE
+    [][] Al comentar un tema, aparece un error de índice no encontrado. Creo que está relacionado con las búsquedas hechas para buscar al instructor del curso.
+——————————————————————————————————————————o——————————————————————————————————————————
+
+REUNION 8 de Agosto 2014 (no recuerdo la fecha exacta de la reunión)
 
 CORREOS
     [A][] Al crear un usuario notificarle por correo al usuario.
@@ -22,7 +41,7 @@ CONSULTAS
     [D][x] consultar usuarios por curso. Agregar un link al inicio del aula que sólo lo pueda ver el administrador.
 
 MATRÍCULAS
-    [D][] agregar opción de desmatricular en la lista de usuarios de un curso. CORREGIR ERROR!!.
+    [D][x] agregar opción de desmatricular en la lista de usuarios de un curso. CORREGIR ERROR!!.
 
 BLOGFORO
     [D][x] corregir la consulta de usuarios en Blogforos en el tema. No debería de aparecer con link para el instructor ni el estudiante.
@@ -30,7 +49,7 @@ BLOGFORO
     [D][x] Botón para comentar en el usuario estudiante. No aparece.
     [D][x] Aparecen temas de discusión de otros seminarios.
     [D][x] Hay errores al crear un tema como estudiante e instructor. No se crea el tema y redirije al incio del aula, se indefine el índice curso.
-    [][] Al comentar un tema, aparece un error de índice no encontrado. Creo que está relacionado con las búsquedas hechas para buscar al instructor del curso.
+
 
 ARCHIVOS
     [D][x] nombre de los programas recomendados para abrir los archivos. Posiblemente, agregar un campo para que la persona que lo suba escriba el nombre de un programa recomendado para abrir el archivo.
@@ -47,6 +66,8 @@ INTERFAZ, ESTILO, ESTÁNDARES
 SEGURIDAD
     [A][X] Revisar seguridad al consultar usuarios por curso, se pude cambiar el id en el url y consultar usuarios de otros cursos. Aunque es algo que sólo va a poder hacer el administrador sería bueno evitarlo.
     [D][x] revisar validaciones de los campos.
+
+——————————————————————————————————————————o——————————————————————————————————————————
 
 APARTE (este aún NO!!!)
     [][] obtener datos del correo electrónico de la inscripción y guardarlos en algún archivo para luego crear los usuarios a partir de él.
