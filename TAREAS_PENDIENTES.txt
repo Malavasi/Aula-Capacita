@@ -16,8 +16,9 @@ OTROS
     
 
 
-APARTE
+BLOGFOROS
     [][] Al comentar un tema, aparece un error de índice no encontrado. Creo que está relacionado con las búsquedas hechas para buscar al instructor del curso.
+
 ——————————————————————————————————————————o——————————————————————————————————————————
 
 REUNION 8 de Agosto 2014 (no recuerdo la fecha exacta de la reunión)
