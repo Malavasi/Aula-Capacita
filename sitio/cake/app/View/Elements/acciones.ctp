@@ -47,7 +47,7 @@ if(isset($_SESSION['tipo_usuario'])) {
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 and isset($blog) ) {
             echo '<br>'.__('Blog');
-            echo '<li>'.$this->Html->link(__('Agregar Tema'), array('controller' => 'Blogforos','action' => 'add')).'</li>'; 
+            echo '<li>'.$this->Html->link(__('Agregar Tema'), array('controller' => 'BlogForos','action' => 'add')).'</li>'; 
         }
 	
 		?>

@@ -13,7 +13,7 @@
 	
 		<?php foreach ($blogforos as $blogforo): ?>
 			<tr>
-				<td><?php echo $this->Html->link($blogforo['Blogforo']['asunto'], array('controller' => 'blogforos', 'action' => 'view', $blogforo['Blogforo']['id'])); ?>&nbsp;</td>
+				<td><?php echo $this->Html->link($blogforo['Blogforo']['asunto'], array('controller' => 'BlogForos', 'action' => 'view', $blogforo['Blogforo']['id'])); ?>&nbsp;</td>
 				<td><?php
 					if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
 						echo $this->Html->link($blogforo['Usuario']['nombre'].' '. $blogforo['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 

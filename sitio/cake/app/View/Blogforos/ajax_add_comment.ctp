@@ -15,7 +15,7 @@
 			&nbsp; - &nbsp;
 			<?php
 				if ($_SESSION['id_usuario'] == $blogforo['Comentario'][$cont]['usuario_id']) {
-					echo $this->Html->link(__('Editar'), array('controller' => 'blogforos', 'action' => 'editComment', $blogforo['Comentario'][$cont]['id'])); 
+					echo $this->Html->link(__('Editar'), array('controller' => 'BlogForos', 'action' => 'editComment', $blogforo['Comentario'][$cont]['id'])); 
 					echo '&nbsp; - &nbsp';
 				}
 			?>

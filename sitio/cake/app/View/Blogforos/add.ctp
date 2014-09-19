@@ -1,6 +1,6 @@
 <div class="blogforos form">
 
-	<?php echo $this->Form->create('Blogforo'); ?>
+	<?php echo $this->Form->create('BlogForo'); ?>
 	<fieldset>
 		<legend><?php  echo __('Crear Tema de Discusión'); ?></legend>
 		

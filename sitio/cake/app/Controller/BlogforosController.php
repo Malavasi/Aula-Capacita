@@ -12,7 +12,7 @@ App::uses('Blogforo', 'Model');
  * @property Blogforo $Blogforo
  * @property PaginatorComponent $Paginator
  */
-class BlogforosController extends AppController {
+class BlogForosController extends AppController {
 
 /**
  * Components
