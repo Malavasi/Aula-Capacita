@@ -1,7 +1,7 @@
 <div class="usuarios form">
 	
-	<h1>Aún no se encuentra matriculad@.</h1>
-	<p>Se habilitará cuando inicie el seminario.</p>
+	<h1>El aula virtual aún no está habilitada.</h1>
+	<p>Si gusta, puede cambiar su contraseña en Mi Cuenta.</p>
 	
 </div>
 <?php

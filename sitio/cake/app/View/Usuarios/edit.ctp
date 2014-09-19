@@ -28,7 +28,7 @@
 			    'contrasena',
 			    array(
 			        'type' => 'password',
-			        'label' => 'Contraseña'
+			        'label' => 'Nueva Contraseña'
 			    )
 			);
 			
@@ -84,7 +84,7 @@
 			    'contrasena',
 			    array(
 			        'type' => 'password',
-			        'label' => 'Contraseña'
+			        'label' => 'Nueva Contraseña'
 			    )
 			);
 			

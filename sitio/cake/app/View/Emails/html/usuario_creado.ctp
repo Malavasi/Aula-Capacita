@@ -7,15 +7,21 @@
 
 <p>Se recomienda que cambie de contraseña al ingresar por primera vez.</p>
 <p>
-	Esta notificación es automática, si no desea recibir más notifiaciones automáticas puede
-	cambiar la opción en Mi Cuenta.
+	Esta notificación es automática. Durante el seminario, se estarán enviando más notificaciones cuando
+	se hagan comentarios o se suba material relevante, si no desea recibir estas notifiaciones, puede
+	cambiar la opción en Mi Cuenta (se adjunta un manual de usuario en este correo).
 </p>
 
 <br>
 
 <p>
 	Para acceder a Capacita Virtual haga click <a href="http://www.capacita.co/capacitavirtual">aqu&iacute;</a>.
-	Es posible que aún no se haya matriculado en el seminario, en tal caso, aún no podrá utilizar capacita virtual.
+	Es posible que aún no se haya habilitado el seminario en Capacita Virtual, en tal caso, sólo podrá acceder a
+	los datos de su cuenta.
+</p>
+<br>
+<p>
+	Para consultas, puede contactar a Soporte.
 </p>
 <br><br>
 <p>Soporte TI <strong>CAPACITA</strong> Latin America</p>

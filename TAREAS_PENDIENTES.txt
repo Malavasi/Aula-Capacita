@@ -1,7 +1,7 @@
 REUNIÓN 18 de Setiembre 2014
 
 CORREOS
-    [][] Indicar en el cuerpo del correo que las notificaciones son comentarios o archivos. también que pueden contactar a soporte.
+    [D][x] Indicar en el cuerpo del correo que las notificaciones son comentarios o archivos. también que pueden contactar a soporte.
     [][] Enviar correo cuando se matricula al usuario. Este me tiene pensando por lo de la contraseña, habría que generarla cuando se matricula el usuario y no cuando se crea el usuario, esto porque la contraseña se guarda como MD5.
 
 ARCHIVOS
@@ -9,15 +9,13 @@ ARCHIVOS
     [][] Agregar descripción para el archivo.
 
 USUARIOS
-    [][] En edición, cambiar texto de Confirmar Contraseña a Nueva Contraseña.
+    [D][x] En edición, cambiar texto de Confirmar Contraseña a Nueva Contraseña.
 
 OTROS
-    [][] Corregir texto de no matriculado, por “no se ha habilitado el aula.”
-    
-
+    [D][x] Corregir texto de no matriculado, por “no se ha habilitado el aula.”
 
 BLOGFOROS
-    [][] Al comentar un tema, aparece un error de índice no encontrado. Creo que está relacionado con las búsquedas hechas para buscar al instructor del curso.
+    [][] Al comentar un tema, aparece un error de índice no encontrado. Creo que está relacionado con las búsquedas hechas para buscar el correo del instructor del curso.
 
 ——————————————————————————————————————————o——————————————————————————————————————————
 
