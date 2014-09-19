@@ -5525,3 +5525,23 @@ Request URL: /Aula-capacita/sitio/cake/img/capacitavirtual_logo.gif
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-09-18 23:55:47 Error: Fatal Error (1): Class 'Matriculas' not found in [C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php, line 196]
+2014-09-18 23:55:47 Error: [FatalErrorException] Class 'Matriculas' not found
+Request URL: /cake/BlogForos/AjaxAddComment
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Matricul...', 'C:\Users\Malava...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Matricul...', 'C:\Users\Malava...', 196, Array)
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Matricul...', 'C:\Users\Malava...', 196, Array)
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-18 23:56:02 Error: Fatal Error (1): Class 'Matriculas' not found in [C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php, line 196]
+2014-09-18 23:56:02 Error: [FatalErrorException] Class 'Matriculas' not found
+Request URL: /cake/BlogForos/AjaxAddComment
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Matricul...', 'C:\Users\Malava...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Matricul...', 'C:\Users\Malava...', 196, Array)
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Matricul...', 'C:\Users\Malava...', 196, Array)
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

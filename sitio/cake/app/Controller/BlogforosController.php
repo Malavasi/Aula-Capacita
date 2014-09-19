@@ -193,11 +193,10 @@ class BlogForosController extends AppController {
 			
 			if($this->Blogforo->Comentario->save($this->request->data))	{
                 //correo
-            $curso = new Blogforo();
+                $curso = new Cursos();
                    $matriculas = $curso->findById($_SESSION['id_curso']);//('all', array('conditions' => array('id' => $_SESSION['id_curso'] )) );
-                    //pr($matriculas);
                     $usuarios = new Usuario();     
-                    $profesor =  $usuarios->find('all', array('conditions' => array('id' =>$matriculas['Curso']['usuario_id'] )) );
+                    $profesor =  $usuarios->find('all', array('conditions' => array('id' =>$matriculas['Cursos']['usuario_id'] )) );
                         if(isset($profesor[0])  &&  $profesor[0]['Usuario']['notificaciones']==1)
                         {
                             $Email = new CakeEmail('default');
