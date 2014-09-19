@@ -45,7 +45,10 @@
             if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
             {
                 echo $this->Html->link(__('Editar'), array('action' => 'edit', $usuario['Usuario']['id'])); 
-			    echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $usuario['Usuario']['id']), array(), __('Va a eliminar el usuario %s, ¿Desea continuar?', $usuario['Usuario']['nick'])); 
+			    
+				if($_SESSION['id_usuario'] != $usuario['Usuario']['id']) {
+			    	echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $usuario['Usuario']['id']), array(), __('Va a eliminar el usuario %s, ¿Desea continuar?', $usuario['Usuario']['nick']));
+				} 
             }
             ?>
 		</td>
