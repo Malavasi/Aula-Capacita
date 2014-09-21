@@ -17,8 +17,8 @@
 		<dt><?php echo __('Programas Recomendados'); ?></dt>
 		<dd><?php echo $myFile['MyFile']['programas']; ?>&nbsp;</dd>
 		
-		<dt><?php echo __('Curso'); ?></dt>
-		<dd><?php echo h($myFile['Curso']['nombre']); ?>&nbsp;</dd>
+		<dt><?php echo __('Descripción'); ?></dt>
+		<dd><?php echo h($myFile['MyFile']['descripcion']); ?>&nbsp;</dd>
 		
 	</dl>
 	

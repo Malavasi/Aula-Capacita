@@ -7,6 +7,7 @@
 		<?php
 			echo $this->Form->file('File');
 			echo $this->Form->input('programas', array('label' => __('Abrir con', true)));
+			echo $this->Form->input('descripcion', array('label' => __('Descripción', true)));
 		?>
 		<br>
 		<?php echo $this->Form->end(__('Subir')); ?>

@@ -1,4 +1,4 @@
-﻿REUNIÓN 18 de Setiembre 2014
+REUNIÓN 18 de Setiembre 2014
 
 CORREOS
     [D][x] Indicar en el cuerpo del correo que las notificaciones son comentarios o archivos. también que pueden contactar a soporte.
@@ -6,7 +6,7 @@ CORREOS
 
 ARCHIVOS
     [][] agregar lista de programas que se reconozcan por la extensión del archivo.
-    [][] Agregar descripción para el archivo.
+    [D][x] Agregar descripción para el archivo.
 
 USUARIOS
     [D][x] En edición, cambiar texto de Confirmar Contraseña a Nueva Contraseña.
