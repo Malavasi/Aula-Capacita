@@ -1,11 +1,11 @@
-REUNIÓN 18 de Setiembre 2014
+﻿REUNIÓN 18 de Setiembre 2014
 
 CORREOS
     [D][x] Indicar en el cuerpo del correo que las notificaciones son comentarios o archivos. también que pueden contactar a soporte.
     [][] Enviar correo cuando se matricula al usuario. Este me tiene pensando por lo de la contraseña, habría que generarla cuando se matricula el usuario y no cuando se crea el usuario, esto porque la contraseña se guarda como MD5.
 
 ARCHIVOS
-    [][] agregar lista de programas que se reconozcan por la extensión del archivo.
+    [A][] agregar lista de programas que se reconozcan por la extensión del archivo.
     [D][x] Agregar descripción para el archivo.
 
 USUARIOS
@@ -22,9 +22,9 @@ BLOGFOROS
 REUNION 8 de Agosto 2014 (no recuerdo la fecha exacta de la reunión)
 
 CORREOS
-    [A][] Al crear un usuario notificarle por correo al usuario.
-    [A][] Al subir un archivo no tificar por correo a estudiantes e instructor.
-    [A][] Al crear un comentario notificar por correo al instructor.
+    [A][X] Al crear un usuario notificarle por correo al usuario.
+    [A][X] Al subir un archivo no tificar por correo a estudiantes e instructor.
+    [A][X] Al crear un comentario notificar por correo al instructor.
     
 CURSOS y AULAS
     [D][x] como usuario instructor, no se puede consultar un curso/seminario porque el índice id_curso no está definido.

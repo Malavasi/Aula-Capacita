@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.8.1
+-- version 4.0.10
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 21, 2014 at 03:57 PM
--- Server version: 5.5.38-35.2-log
--- PHP Version: 5.4.32
+-- Generation Time: Sep 21, 2014 at 09:52 PM
+-- Server version: 5.1.72-community
+-- PHP Version: 5.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `etechni1_capacitavirtual`
+-- Database: `cursos`
 --
 
 -- --------------------------------------------------------
@@ -27,13 +27,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `blogforos` (
-`id` bigint(20) unsigned NOT NULL,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `curso_id` int(11) NOT NULL,
   `usuario_id` int(11) NOT NULL,
   `fechapublicacion` datetime NOT NULL,
   `asunto` varchar(150) NOT NULL,
-  `cuerpo` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+  `cuerpo` text NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `blogforos`
@@ -57,12 +59,13 @@ INSERT INTO `blogforos` (`id`, `curso_id`, `usuario_id`, `fechapublicacion`, `as
 --
 
 CREATE TABLE IF NOT EXISTS `comentarios` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `blogforo_id` int(11) NOT NULL,
   `usuario_id` int(11) NOT NULL,
   `fecha` datetime NOT NULL,
-  `comentario` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=latin1;
+  `comentario` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=51 ;
 
 --
 -- Dumping data for table `comentarios`
@@ -118,12 +121,13 @@ INSERT INTO `comentarios` (`id`, `blogforo_id`, `usuario_id`, `fecha`, `comentar
 --
 
 CREATE TABLE IF NOT EXISTS `cursos` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(300) NOT NULL,
   `usuario_id` int(11) NOT NULL,
   `fechainicio` date NOT NULL,
-  `fechafin` date DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+  `fechafin` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `cursos`
@@ -139,10 +143,11 @@ INSERT INTO `cursos` (`id`, `nombre`, `usuario_id`, `fechainicio`, `fechafin`) V
 --
 
 CREATE TABLE IF NOT EXISTS `matriculas` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `usuario_id` int(11) NOT NULL,
-  `curso_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+  `curso_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `matriculas`
@@ -164,7 +169,7 @@ INSERT INTO `matriculas` (`id`, `usuario_id`, `curso_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `my_files` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `curso_id` int(11) NOT NULL,
   `usuario_id` int(11) NOT NULL,
   `name` varchar(75) NOT NULL,
@@ -173,8 +178,9 @@ CREATE TABLE IF NOT EXISTS `my_files` (
   `data` longblob NOT NULL,
   `created` datetime DEFAULT NULL,
   `programas` text NOT NULL,
-  `descripcion` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+  `descripcion` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `my_files`
@@ -196,11 +202,38 @@ INSERT INTO `my_files` (`id`, `curso_id`, `usuario_id`, `name`, `type`, `size`, 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tipos_archivos`
+--
+
+CREATE TABLE IF NOT EXISTS `tipos_archivos` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `extension` text NOT NULL,
+  `programas` text NOT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `tipos_archivos`
+--
+
+INSERT INTO `tipos_archivos` (`id`, `extension`, `programas`) VALUES
+(1, 'xls', 'excel, calc'),
+(2, 'pdf', 'adobe reader, foxit'),
+(3, 'xlsx', 'excel, calc'),
+(4, 'doc', 'word, writter'),
+(5, 'docx', 'word, writter'),
+(6, 'ppt', 'power point, impress'),
+(7, 'pptx', 'power point, impress'),
+(8, 'txt', 'bloc de notas, notepad++');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `usuarios`
 --
 
 CREATE TABLE IF NOT EXISTS `usuarios` (
-`id` bigint(20) unsigned NOT NULL,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `identificacion` varchar(20) NOT NULL,
   `nombre` varchar(30) NOT NULL,
   `apellidos` varchar(60) NOT NULL,
@@ -209,8 +242,10 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `nick` varchar(35) NOT NULL,
   `contrasena` varchar(32) NOT NULL,
   `fecha` datetime NOT NULL,
-  `notificaciones` tinyint(1) DEFAULT '1'
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+  `notificaciones` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
 
 --
 -- Dumping data for table `usuarios`
@@ -222,80 +257,6 @@ INSERT INTO `usuarios` (`id`, `identificacion`, `nombre`, `apellidos`, `email`, 
 (32, '1234', 'Estudiante', 'Prueba', 'dom_2789@yahoo.com', 3, 'e.prueba', '81dc9bdb52d04dc20036dbd8313ed055', '2014-09-18 10:29:15', 1),
 (33, '113930466', 'AndrÃ©', 'Barrantes Ramirez', 'andre.barrantes@capacita.co', 1, 'andre.barrantes', '22af3eec8771f6cf6138a17bd1ca6845', '2014-09-19 09:39:49', 1);
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `blogforos`
---
-ALTER TABLE `blogforos`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `id` (`id`);
-
---
--- Indexes for table `comentarios`
---
-ALTER TABLE `comentarios`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `cursos`
---
-ALTER TABLE `cursos`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `matriculas`
---
-ALTER TABLE `matriculas`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `my_files`
---
-ALTER TABLE `my_files`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `usuarios`
---
-ALTER TABLE `usuarios`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `id` (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `blogforos`
---
-ALTER TABLE `blogforos`
-MODIFY `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
---
--- AUTO_INCREMENT for table `comentarios`
---
-ALTER TABLE `comentarios`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
---
--- AUTO_INCREMENT for table `cursos`
---
-ALTER TABLE `cursos`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
---
--- AUTO_INCREMENT for table `matriculas`
---
-ALTER TABLE `matriculas`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
---
--- AUTO_INCREMENT for table `my_files`
---
-ALTER TABLE `my_files`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
---
--- AUTO_INCREMENT for table `usuarios`
---
-ALTER TABLE `usuarios`
-MODIFY `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=34;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

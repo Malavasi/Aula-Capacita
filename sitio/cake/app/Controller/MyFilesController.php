@@ -2,6 +2,7 @@
 App::uses('AppController', 'Controller');
 App::uses('Usuario', 'Model');
 App::uses('Matriculas', 'Model');
+App::uses('Programas', 'Model');
 App::uses('CakeEmail', 'Network/Email');
 /**
  * MyFiles Controller
@@ -89,6 +90,17 @@ class MyFilesController extends AppController {
 	            $this->request->data['MyFile']['data'] = $fileData;
 				$this->request->data['MyFile']['curso_id']	= $_SESSION['id_curso'];
 	            $this->request->data['MyFile']['usuario_id']	= $_SESSION['id_usuario'];
+                if(strcmp($this->request->data['MyFile']['programas'],'')==0)
+                {
+                    $programas = new Programas();
+                    $archivo = explode($this->request->data['MyFile']['name'],'.');
+                    $extension = strtolower($archivo[1]);
+                    $programa = $programas->find('all', array('conditions' => array('extension' => $extension )) );
+                    if(isset($programa['Programas'][0]))
+                    {
+                        $this->request->data['MyFile']['programas'] = $programa['Programas'][0]['programas'];
+                    }
+                }
 	            if($this->MyFile->save($this->request->data)) {
                     //correo
                     $usuarios = new Matriculas();

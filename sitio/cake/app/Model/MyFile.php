@@ -10,7 +10,6 @@ class MyFile extends AppModel {
 	
 	public $validate = array(
         'programas' => array(
-        	'rule' => 'notEmpty',
         	'message' => 'Indique con cuál programa se abre.'
 		)
 	);
