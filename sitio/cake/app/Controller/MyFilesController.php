@@ -93,12 +93,12 @@ class MyFilesController extends AppController {
                 if(strcmp($this->request->data['MyFile']['programas'],'')==0)
                 {
                     $programas = new Programas();
-                    $archivo = explode($this->request->data['MyFile']['name'],'.');
+                    $archivo = explode('.',$this->request->data['MyFile']['name']);
                     $extension = strtolower($archivo[1]);
                     $programa = $programas->find('all', array('conditions' => array('extension' => $extension )) );
-                    if(isset($programa['Programas'][0]))
+                    if(isset($programa[0]['Programas']))
                     {
-                        $this->request->data['MyFile']['programas'] = $programa['Programas'][0]['programas'];
+                        $this->request->data['MyFile']['programas'] = $programa[0]['Programas']['programas'];
                     }
                 }
 	            if($this->MyFile->save($this->request->data)) {
@@ -126,7 +126,7 @@ class MyFilesController extends AppController {
 					return $this->redirect(array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso']));
 	            } else {
 	            	$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
-	            }            
+	            }       
 	        }
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    

@@ -8,11 +8,11 @@ class MyFile extends AppModel {
 	
 	var $name = 'MyFile';
 	
-	public $validate = array(
+	/*public $validate = array(
         'programas' => array(
         	'message' => 'Indique con cuál programa se abre.'
 		)
-	);
+	);*/
 /**
  * Display field
  *
