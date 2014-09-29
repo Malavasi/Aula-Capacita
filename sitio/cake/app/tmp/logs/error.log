@@ -5992,3 +5992,89 @@ Stack Trace:
 #8 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
 #10 {main}
+2014-09-29 09:14:02 Error: [MissingControllerException] Controller class TiposArchivosController could not be found.
+Exception Attributes: array (
+  'class' => 'TiposArchivosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/TiposArchivos
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-09-29 09:14:37 Error: [MissingControllerException] Controller class TiposArchivosController could not be found.
+Exception Attributes: array (
+  'class' => 'TiposArchivosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/TiposArchivos
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-09-29 09:14:40 Error: [MissingControllerException] Controller class TiposArchivosController could not be found.
+Exception Attributes: array (
+  'class' => 'TiposArchivosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/TiposArchivos
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-09-29 09:14:42 Error: [MissingControllerException] Controller class TiposArchivosController could not be found.
+Exception Attributes: array (
+  'class' => 'TiposArchivosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/TiposArchivos
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#2 {main}
+2014-09-29 09:15:36 Error: Fatal Error (1): Class 'AppModel' not found in [C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\Model\Programas.php, line 2]
+2014-09-29 09:15:36 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /cake/TiposArchivos
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', 'C:\Users\Malava...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', 'C:\Users\Malava...', 2, Array)
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', 'C:\Users\Malava...', 2, Array)
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-29 09:43:16 Error: [MissingActionException] Action TiposArchivosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'TiposArchivosController',
+  'action' => 'view',
+)
+Request URL: /cake/TiposArchivos/view/1
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TiposArchivosController), Object(CakeRequest))
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#4 {main}
+2014-09-29 09:43:37 Error: [MissingActionException] Action TiposArchivosController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'TiposArchivosController',
+  'action' => 'delete',
+)
+Request URL: /cake/TiposArchivos/delete/1
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TiposArchivosController), Object(CakeRequest))
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#4 {main}
+2014-09-29 09:58:03 Error: [MissingActionException] Action TiposArchivosController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'TiposArchivosController',
+  'action' => 'add',
+)
+Request URL: /cake/TiposArchivos/add
+Stack Trace:
+#0 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TiposArchivosController), Object(CakeRequest))
+#2 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\Users\Malavasi\Documents\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('C:\Users\Malava...')
+#4 {main}

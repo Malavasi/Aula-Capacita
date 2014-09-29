@@ -26,6 +26,10 @@ if(isset($_SESSION['tipo_usuario'])) {
             echo '<li>'.$this->Html->link(__('Consultar Cursos'), array('controller' => 'cursos', 'action' => 'index')).'</li>';    
         }
 		
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
+            echo '<li>'.$this->Html->link(__('Extensiones'), array('controller' => 'TiposArchivos','action' => 'index')).'</li>';    
+        }
+		
 		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] >= 2 and !isset($_SESSION['no_matriculado'])) {
 			echo '<li>', $this->Html->link('Descargas', array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso'])), '</li>'; 
 			echo '<li>', $this->Html->link('Comentarios', array('controller' => 'BlogForos', 'action' => 'index', $_SESSION['id_curso'])), '</li>';
