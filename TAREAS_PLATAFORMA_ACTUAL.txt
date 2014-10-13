@@ -13,4 +13,5 @@ EXAMENES
     [][] crear modulo para que el profesor o administrador pueda crear examenes en línea
     [][] crear modulo donde los estudiantes puedan realizar los examenes en línea
     [][] examenes con tiempo definido o sin tiempo indefinido
+    [][] crear preguntas de selección unica(no se si también de selección multiple)
 

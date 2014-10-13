@@ -1,0 +1,27 @@
+ANTES DE INICIAR(muy importante)
+    [][] Probar hacer una instalacion de moodle en el servidor de capacita.co para ver si cumple los requisitos
+
+INTERFAZ, ESTILO, ESTÁNDARES
+    [][] Crear plantilla de diseño del sitio
+    [][] Presentaciones en línea no descargables
+    [][] Ocultar todos los cursos disponibles
+
+INICIO DE SESIÓN
+    [][] Hacer un inicio de sesión sin mostrar el resto de la página
+
+CORREO
+    [][] Enviar notificaciones por correo electrónico (posiblemente usando quickmail)
+    [][] Al crear un usuario notificarle por correo al usuario.
+    [][] Al subir un archivo no tificar por correo a estudiantes e instructor.
+    [][] Al crear un comentario notificar por correo al instructor.
+
+ARCHIVOS
+    [][] Son de descarga directa, modificar para poner los programas preferenciales y la descripción
+
+
+PERMISOS
+    [][] Permitir a los estudiantes subir archivos(crear nuevo roll en moodle)
+    [][] Que los estudiantes solo puedan modificar su contraseña
+
+OPCIONAL
+    [][] Quitar algunas opciones que no se van a utilizar de la interfaz para que el usuario no se pierda
