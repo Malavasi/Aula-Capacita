@@ -1,0 +1,16 @@
+Usuarios
+    [][] Enviar correo cuando se matricula al usuario. Este me tiene pensando por lo de la contraseña, habría que generarla cuando se matricula el usuario y no cuando se crea el usuario, esto porque la contraseña se guarda como MD5.
+
+BASE DE DATOS
+    [][] Cascades para que al eliminar un curso se eliminen los usuarios matriculados en  él.
+
+INTERFAZ, ESTILO, ESTÁNDARES
+    [][] agregar un breadcrumb o algo para que el usuario sepa dónde está o pueda regresar fácilmente a la vista anterior.
+    [][] crear módulos semanales que muestren el material necesario
+    [][] presentacion de power point no descargable
+
+EXAMENES
+    [][] crear modulo para que el profesor o administrador pueda crear examenes en línea
+    [][] crear modulo donde los estudiantes puedan realizar los examenes en línea
+    [][] examenes con tiempo definido o sin tiempo indefinido
+
