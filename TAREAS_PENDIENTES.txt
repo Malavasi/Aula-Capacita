@@ -1,4 +1,4 @@
-﻿REUNIÓN 18 de Setiembre 2014
+REUNIÓN 18 de Setiembre 2014
 
 CORREOS
     [D][x] Indicar en el cuerpo del correo que las notificaciones son comentarios o archivos. también que pueden contactar a soporte.
@@ -10,6 +10,8 @@ ARCHIVOS
 
 USUARIOS
     [D][x] En edición, cambiar texto de Confirmar Contraseña a Nueva Contraseña.
+    [D][x] Error al cambiar de contraseña en usuarios estudiante e instructor.
+    [][] Revisar el cambio de contraseña, me parece que está mal hecho. Me parece que no va a dejar editar otros campos si no se hace el cambio de contraseña.
 
 OTROS
     [D][x] Corregir texto de no matriculado, por “no se ha habilitado el aula.”

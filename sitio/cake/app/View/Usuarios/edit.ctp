@@ -28,7 +28,8 @@
 			    'contrasena',
 			    array(
 			        'type' => 'password',
-			        'label' => 'Nueva Contraseña'
+			        'label' => 'Nueva Contraseña',
+			        'default' => ''
 			    )
 			);
 			
@@ -36,7 +37,8 @@
 			    'confirmarContrasena',
 			    array(
 			        'type' => 'password',
-			        'label' => 'Confirmar Contraseña'
+			        'label' => 'Confirmar Contraseña',
+			        'default' => ''
 			    )
 			);
             echo $this->Form->input(

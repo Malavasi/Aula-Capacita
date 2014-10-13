@@ -155,7 +155,7 @@ class UsuariosController extends AppController {
 				
 				    if ($this->Usuario->save($this->request->data)) {
 					    $this->Session->setFlash(__('El usuario ha sido actualizado'));
-					    return $this->redirect(array('action' => 'index'));
+					    return $this->redirect(array('controller' => 'Usuarios', 'action' => 'edit', $id));
 				    } else {
 					    $this->Session->setFlash(__('El usuario no se ha podido actualizar. Por favor, intente de nuevo.'));
 				    }
@@ -174,25 +174,13 @@ class UsuariosController extends AppController {
 		    }
 		    if ($this->request->is(array('post', 'put'))) {
 			    if ($this->request->data['Usuario']['contrasena'] == $this->request->data['Usuario']['confirmarContrasena']) {
-				    if ($this->request->data['Usuario']['nick'] == "") {
-					    /*$nick = $this->crearNick($this->request->data['Usuario']['nombre'],
-											     $this->request->data['Usuario']['apellidos']);
-					    $this->request->data['Usuario']['nick'] = $nick;*/
-					    $this->request->data['Usuario']['nick'] = $this->request->data['Usuario']['email'];
-				    }
-				
-				    if ($this->request->data['Usuario']['contrasena'] == "") {
-					    $this->request->data['Usuario']['contrasena'] = $this->crearContrasena($this->request->data['Usuario']['nombre'],
-																						       $this->request->data['Usuario']['apellidos']);	
-				    }
-				
 				    //para el md5 de la contrasena de tamano 32
 				    $this->request->data['Usuario']['contrasena'] = md5($this->request->data['Usuario']['contrasena']);
 				    $this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
 				
 				    if ($this->Usuario->save($this->request->data)) {
 					    $this->Session->setFlash(__('El usuario ha sido actualizado'));
-					    return $this->redirect(array('action' => 'index'));
+					    return $this->redirect(array('controller' => 'Usuarios', 'action' => 'edit', $id));
 				    } else {
 					    $this->Session->setFlash(__('El usuario no se ha podido actualizar. Por favor, intente de nuevo.'));
 				    }
