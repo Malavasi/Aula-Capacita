@@ -6167,3 +6167,129 @@ Stack Trace:
 #4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #6 {main}
+2014-11-03 04:26:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1049] Unknown database \'cursos\'',
+  'enabled' => true,
+)
+Request URL: /capacitavirtual/sitio/cake/sesiones/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3482): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3504): Model->setSource('usuarios')
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/Controller/SesionesController.php(13): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-03 04:28:46 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2005] Unknown MySQL server host \'localhost:8888\' (2)',
+  'enabled' => true,
+)
+Request URL: /capacitavirtual/sitio/cake/sesiones/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3482): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3504): Model->setSource('usuarios')
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/Controller/SesionesController.php(13): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-03 04:29:02 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1044] Access denied for user \'\'@\'localhost\' to database \'etechni1_capacitavirtual\'',
+  'enabled' => true,
+)
+Request URL: /capacitavirtual/sitio/cake/sesiones/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3482): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3504): Model->setSource('usuarios')
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/Controller/SesionesController.php(13): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-03 23:42:08 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'etechni1_admin\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /capacitavirtual/sitio/cake/sesiones/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3482): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3504): Model->setSource('usuarios')
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/Controller/SesionesController.php(13): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-11-27 01:01:46 Error: [MissingTableException] Table usuarios for model Usuario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'usuarios',
+  'class' => 'Usuario',
+  'ds' => 'default',
+)
+Request URL: /capacitavirtual/sitio/cake/usuarios
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3504): Model->setSource('usuarios')
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/Controller/UsuariosController.php(31): PaginatorComponent->paginate()
+#5 [internal function]: UsuariosController->index()
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-27 01:06:51 Error: [MissingTableException] Table usuarios for model Usuario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'usuarios',
+  'class' => 'Usuario',
+  'ds' => 'default',
+)
+Request URL: /capacitavirtual/sitio/cake/usuarios
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(3504): Model->setSource('usuarios')
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/Controller/UsuariosController.php(31): PaginatorComponent->paginate()
+#5 [internal function]: UsuariosController->index()
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
