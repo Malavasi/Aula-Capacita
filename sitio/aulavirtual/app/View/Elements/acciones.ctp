@@ -6,9 +6,7 @@ if(isset($_SESSION['tipo_usuario'])) {
 	<ul>
         <?php
         
-        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] >= 3 and isset($_SESSION['id_curso'])) {
-            echo '<li>'.$this->Html->link(__('Inicio'), array('controller' => 'Aulas','action' => 'index', $_SESSION['id_curso'])).'</li>';    
-        } else if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 2) {
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3) {
         	echo '<li>'.$this->Html->link(__('Inicio'), array('controller' => 'Cursos','action' => 'index')).'</li>';
         }
         

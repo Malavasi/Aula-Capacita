@@ -30,8 +30,9 @@ class SesionesController extends AppController {
 					$_SESSION['id_curso'] = $datos_curso[0]['Matriculas']['curso_id']; 
 	                $curso = new Cursos();
 	                $datos_curso = $curso->find('all', array('conditions' => array('id' => $_SESSION['id_curso']) ) );
-	                $_SESSION['nick_curso'] = $datos_curso[0]['Cursos']['nombre']; 
-	                $this->redirect(array('controller' =>'Aulas','action' => 'index/'.$_SESSION['id_curso'])); 
+	                $_SESSION['nick_curso'] = $datos_curso[0]['Cursos']['nombre'];
+					$this->redirect(array('controller' =>'Cursos','action' => 'index'));
+	                
 	            } elseif($_SESSION['tipo_usuario'] == 2) {
 	            	$curso = new Cursos();
 					$datos_curso = $curso->find('first', array('conditions' => array('usuario_id' => $_SESSION['id_usuario']) ) );					 

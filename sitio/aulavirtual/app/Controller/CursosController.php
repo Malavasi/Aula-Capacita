@@ -16,6 +16,17 @@ class CursosController extends AppController {
 	            $this->set('cursos', $this->Paginator->paginate());
 	        } elseif($_SESSION['tipo_usuario'] == 2) {
 	        	$this->set('cursos', $this->Paginator->paginate('Curso',  array('Curso.usuario_id' => $_SESSION['id_usuario'])));
+	        } elseif($_SESSION['tipo_usuario'] == 3) {
+	        	
+				$cursosMatriculados = $this->Matricula->find('all', array ('conditions' => array('Matricula.usuario_id' => $_SESSION['id_usuario']),
+																				'fields' => array('Matricula.curso_id')));
+				$idsCursos = array();
+				foreach ($cursosMatriculados as $id) {
+					array_push($idsCursos, $id['Matricula']['curso_id']);
+				}
+				
+				$this->set('cursos', $this->Paginator->paginate('Curso', array( "Curso.id" => $idsCursos)));
+				
 	        }
 		} else {
 			$this->redirect(array('controller' =>'inicio','action' => 'index'));  
