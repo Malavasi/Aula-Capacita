@@ -96,11 +96,13 @@ class BlogForosController extends AppController {
 					$this->Session->setFlash(__('El foro no se ha podido crear. Por favor, intente de nuevo.'));
 				}
 			}
+			
 			$cursos = $this->Blogforo->Curso->find('list');
 			$usuarios = $this->Blogforo->Usuario->find('list');
 			$this->set(compact('cursos', 'usuarios'));
+			
         } else {
-            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+            $this->redirect(array('controller' =>'inicio', 'action' => 'index'));    
         }
 	}
 

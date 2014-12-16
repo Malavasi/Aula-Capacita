@@ -15,7 +15,7 @@
 			&nbsp; - &nbsp;
 			<?php
 				if ($_SESSION['id_usuario'] == $blogforo['Blogforo']['usuario_id']) {
-					echo $this->Html->link(__('Editar'), array('controller' => 'BlogForos', 'action' => 'edit', $blogforo['Blogforo']['id'])); 
+					echo $this->Html->link(__('Editar'), array('controller' => 'Blogforos', 'action' => 'edit', $blogforo['Blogforo']['id'])); 
 					echo '&nbsp; - &nbsp';
 				}
 			?>
@@ -45,7 +45,7 @@
 					&nbsp; - &nbsp;
 					<?php
 						if ($_SESSION['id_usuario'] == $blogforo['Comentario'][$cont]['usuario_id']) {
-							echo $this->Html->link(__('Editar'), array('controller' => 'BlogForos', 'action' => 'editComment', $blogforo['Comentario'][$cont]['id'])); 
+							echo $this->Html->link(__('Editar'), array('controller' => 'Blogforos', 'action' => 'editComment', $blogforo['Comentario'][$cont]['id'])); 
 							echo '&nbsp; - &nbsp';
 						}
 					?>

@@ -32,7 +32,7 @@ if(isset($_SESSION['tipo_usuario'])) {
 		
 		if(isset($enAula) and isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] >= 2 and !isset($_SESSION['no_matriculado'])) {
 			echo '<li>', $this->Html->link('Descargas', array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso'])), '</li>'; 
-			echo '<li>', $this->Html->link('Comentarios', array('controller' => 'BlogForos', 'action' => 'index', $_SESSION['id_curso'])), '</li>';
+			echo '<li>', $this->Html->link('Comentarios', array('controller' => 'Blogforos', 'action' => 'index', $_SESSION['id_curso'])), '</li>';
 		}
 		
 		if(isset($_SESSION['id_usuario']) ) {
@@ -51,7 +51,7 @@ if(isset($_SESSION['tipo_usuario'])) {
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 and isset($blog) ) {
             echo '<br>'.__('Blog');
-            echo '<li>'.$this->Html->link(__('Agregar Tema'), array('controller' => 'BlogForos','action' => 'add')).'</li>'; 
+            echo '<li>'.$this->Html->link(__('Agregar Tema'), array('controller' => 'Blogforos','action' => 'add')).'</li>'; 
         }
 	
 		?>
