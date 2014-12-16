@@ -300,5 +300,14 @@ class UsuariosController extends AppController {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
+	
+	public function search() {
+		
+		print "<pre>";
+		print_r($this->data);
+		print "</pre>";
+		 
+        $this->set('resultados', $this->Usuario->search($this->data['Usuario']['query'])); 
+    }
 
 }

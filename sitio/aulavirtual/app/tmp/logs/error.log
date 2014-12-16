@@ -6095,3 +6095,259 @@ Stack Trace:
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
 #12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-12-16 21:37:54 Error: Fatal Error (1): Call to a member function create() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Matriculas/index.ctp, line 16]
+2014-12-16 21:37:54 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 21:38:49 Error: Fatal Error (1): Call to a member function create() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Matriculas/index.ctp, line 16]
+2014-12-16 21:38:49 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 21:39:05 Error: Fatal Error (1): Call to a member function input() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Matriculas/index.ctp, line 17]
+2014-12-16 21:39:05 Error: [FatalErrorException] Call to a member function input() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 21:39:52 Error: Fatal Error (1): Call to a member function create() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Matriculas/index.ctp, line 16]
+2014-12-16 21:39:52 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 22:18:31 Error: Fatal Error (1): Call to a member function create() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Matriculas/index.ctp, line 16]
+2014-12-16 22:18:31 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 22:26:02 Error: [MissingBehaviorException] Behavior class SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Searchable', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(747): BehaviorCollection->init('Usuario', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(367): Controller->loadModel('Usuario')
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(270): Controller->__isset('Usuario')
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(135): PaginatorComponent->_getObject('Usuario')
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/MatriculasController.php(25): PaginatorComponent->paginate('Usuario')
+#9 [internal function]: MatriculasController->index('16')
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-12-16 22:27:58 Error: [MissingBehaviorException] Behavior class SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Searchable', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(747): BehaviorCollection->init('Usuario', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(367): Controller->loadModel('Usuario')
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(270): Controller->__isset('Usuario')
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(135): PaginatorComponent->_getObject('Usuario')
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/MatriculasController.php(25): PaginatorComponent->paginate('Usuario')
+#9 [internal function]: MatriculasController->index('16')
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-12-16 22:28:07 Error: [MissingBehaviorException] Behavior class SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Searchable', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(747): BehaviorCollection->init('Usuario', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(367): Controller->loadModel('Usuario')
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(270): Controller->__isset('Usuario')
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(135): PaginatorComponent->_getObject('Usuario')
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/MatriculasController.php(25): PaginatorComponent->paginate('Usuario')
+#9 [internal function]: MatriculasController->index('16')
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-12-16 22:28:22 Error: [MissingBehaviorException] Behavior class SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Searchable', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(747): BehaviorCollection->init('Usuario', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(367): Controller->loadModel('Usuario')
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(270): Controller->__isset('Usuario')
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(135): PaginatorComponent->_getObject('Usuario')
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/MatriculasController.php(25): PaginatorComponent->paginate('Usuario')
+#9 [internal function]: MatriculasController->index('16')
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-12-16 22:28:30 Error: [MissingBehaviorException] Behavior class SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Searchable', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(747): BehaviorCollection->init('Usuario', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(367): Controller->loadModel('Usuario')
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(270): Controller->__isset('Usuario')
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Component/PaginatorComponent.php(135): PaginatorComponent->_getObject('Usuario')
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/MatriculasController.php(25): PaginatorComponent->paginate('Usuario')
+#9 [internal function]: MatriculasController->index('16')
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MatriculasController), Array)
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MatriculasController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-12-16 22:32:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search' at line 1
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('search', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('search', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('search', Array, Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(800): DboSource->query('search', Array, Object(Usuario))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(305): Model->__call('search', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(305): Usuario->search(NULL)
+#7 [internal function]: UsuariosController->search()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-16 22:32:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search' at line 1
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('search', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('search', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('search', Array, Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(800): DboSource->query('search', Array, Object(Usuario))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(305): Model->__call('search', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(305): Usuario->search('d')
+#7 [internal function]: UsuariosController->search()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-16 22:36:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search' at line 1
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('search', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('search', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('search', Array, Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(800): DboSource->query('search', Array, Object(Usuario))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Model->__call('search', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Usuario->search('a')
+#7 [internal function]: UsuariosController->search()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-16 22:38:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search' at line 1
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('search', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('search', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('search', Array, Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(800): DboSource->query('search', Array, Object(Usuario))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Model->__call('search', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Usuario->search(NULL)
+#7 [internal function]: UsuariosController->search()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-16 22:38:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search' at line 1
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('search', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('search', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('search', Array, Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(800): DboSource->query('search', Array, Object(Usuario))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Model->__call('search', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Usuario->search(NULL)
+#7 [internal function]: UsuariosController->search()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-16 22:39:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search' at line 1
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('search', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('search', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('search', Array, Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(800): DboSource->query('search', Array, Object(Usuario))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Model->__call('search', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(310): Usuario->search('q')
+#7 [internal function]: UsuariosController->search()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

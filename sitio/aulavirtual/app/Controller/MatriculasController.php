@@ -21,8 +21,10 @@ class MatriculasController extends AppController {
 				
 				$conditions = array("NOT" => array( "Usuario.id" => $ids), array('Usuario.tipo' => 3));
 				
-				$this->set('usuarios', $this->Paginator->paginate('Usuario', $conditions));
+				//$this->set('usuarios', $this->Paginator->paginate('Usuario', $conditions));
+				$this->set('usuarios', $this->Paginator->paginate('Usuario'));
 				$this->set('infoCurso', $this->Curso->findById( $_SESSION['id_curso']));
+				
 	        }
         } else {
 			$this->redirect(array('controller' =>'inicio','action' => 'index'));    
