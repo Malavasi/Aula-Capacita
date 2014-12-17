@@ -20,7 +20,7 @@ NOTIFICACIONES
 USUARIOS
     [D][x] Permitir edición de datos al instructor.
     [][] Mostrar foto de instructor.
-    [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql “normal”. Tal vez lo mejor sea utilizar jquery.
+    [D][] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql “normal”. Tal vez lo mejor sea utilizar jquery.
     [][] Agregar un blacklist. Sería bueno notificar al usuario que ha sido incluido en la lista negra.
 
 LINKS
