@@ -2,7 +2,7 @@ REUNIÓN 9 de Diciembre 2014
 
 BLOGFOROS
     [D][x] Eliminar la controladora duplicada.
-    [D][] Revisar blogforos, reportaron que no se puede accesar, ver y editar. Ya se revisó, pero Ahora ocurre otro error, debe de estar relacionado con la eliminación de la controladora duplicada, aunqur ya se corrigió el nombre de la controladora en todo el código.
+    [D][] Revisar blogforos, reportaron que no se puede accesar, ver y editar. Ya se revisó, pero Ahora ocurre otro error, debe de estar relacionado con la eliminación de la controladora duplicada, aunque ya se corrigió el nombre de la controladora en todo el código.
 
 MATERIALES
     [D][] Permitir subir links.
@@ -12,6 +12,7 @@ MATERIALES
 
 MATRICULAS
     [D][x] Permitir que los estudiantes puedan estar matriculados en varios cursos.
+    [][] Arreglar redirecciones de matrículas luego de realizar una búsqueda.
 
 NOTIFICACIONES
     [][] Enviar correos de notificación de todo lo que ocurre en el aula al instructor.
@@ -19,15 +20,18 @@ NOTIFICACIONES
 USUARIOS
     [D][x] Permitir edición de datos al instructor.
     [][] Mostrar foto de instructor.
-    [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql normal.
+    [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql “normal”. Tal vez lo mejor sea utilizar jquery.
     [][] Agregar un blacklist. Sería bueno notificar al usuario que ha sido incluido en la lista negra.
 
 LINKS
-    [D][] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aulavirtual“.
-    [D][] Asegurar que todos los links redirijan al aula virtual. “aulavirtual”.
+    [D][x] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aulavirtual“.
+    [D][x] Asegurar que todos los links redirijan al aula virtual. “aulavirtual”.
 
 LOG/REPORTES
     [][] Mostrar cuales usuarios se han conectado al aula.
+
+OTROS
+    [A][] creación y matrícula de usuarios a partir de archivo csv con lista de usuarios.
 
 ——————————————————————————————————————————o——————————————————————————————————————————
 REUNIÓN 18 de Setiembre 2014
@@ -99,8 +103,3 @@ INTERFAZ, ESTILO, ESTÁNDARES
 SEGURIDAD
     [A][X] Revisar seguridad al consultar usuarios por curso, se pude cambiar el id en el url y consultar usuarios de otros cursos. Aunque es algo que sólo va a poder hacer el administrador sería bueno evitarlo.
     [D][x] revisar validaciones de los campos.
-
-——————————————————————————————————————————o——————————————————————————————————————————
-
-APARTE (este aún NO!!!)
-    [][] obtener datos del correo electrónico de la inscripción y guardarlos en algún archivo para luego crear los usuarios a partir de él.

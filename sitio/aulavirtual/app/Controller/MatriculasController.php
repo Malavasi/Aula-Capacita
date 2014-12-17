@@ -13,19 +13,20 @@ class MatriculasController extends AppController {
         	if($id != NULL) {
 		        $_SESSION['id_curso'] = $id;
 		       
+				/*estas eran s'olo para mostrar a los usuarios que no estaban matriculados.
 				$idMatriculados = $this->Matricula->find('all', array ('fields' => array('Matricula.usuario_id')));
 				$ids = array();
 				foreach ($idMatriculados as $id) {
 					array_push($ids, $id['Matricula']['usuario_id']);
-				}				
-				
+				}
 				$conditions = array("NOT" => array( "Usuario.id" => $ids), array('Usuario.tipo' => 3));
-				
-				//$this->set('usuarios', $this->Paginator->paginate('Usuario', $conditions));
-				$this->set('usuarios', $this->Paginator->paginate('Usuario'));
+				$this->set('usuarios', $this->Paginator->paginate('Usuario', $conditions));
+				$this->set('usuarios', $this->Paginator->paginate('Usuario'));*/
+				$this->set('usuarios', $this->Paginator->paginate('Usuario', array('Usuario.tipo' => 3)));
 				$this->set('infoCurso', $this->Curso->findById( $_SESSION['id_curso']));
 				
 	        }
+			
         } else {
 			$this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
@@ -39,7 +40,7 @@ class MatriculasController extends AppController {
         	
         	if ($matriculas->save($datos)) {
 			    $this->Session->setFlash(__('El usuario ha sido matriculado.'));
-			    return $this->redirect(array('action' => 'index/'.$_SESSION['id_curso']));
+			    return $this->redirect(array('controller' => 'Matriculas', 'action' => 'index/'.$_SESSION['id_curso']));
 		    } else {
 			    $this->Session->setFlash(__('El usuario no se ha podido matricular correctamente. Por favor, intente de nuevo.'));
 		    }

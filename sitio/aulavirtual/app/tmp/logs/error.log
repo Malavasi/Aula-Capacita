@@ -6462,3 +6462,56 @@ Stack Trace:
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-12-17 13:06:39 Error: Fatal Error (64): Cannot redeclare MatriculasController::$helpers in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/MatriculasController.php, line 10]
+2014-12-17 13:06:39 Error: [FatalErrorException] Cannot redeclare MatriculasController::$helpers
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 10, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 10, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-17 13:07:26 Error: Fatal Error (1): Cannot access empty property in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/View/View.php, line 856]
+2014-12-17 13:07:26 Error: [FatalErrorException] Cannot access empty property
+Request URL: /capacitavirtual/sitio/aulavirtual/Matriculas/index/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/Applications/M...', 856)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/Applications/M...', 856, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/Applications/M...', 856, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-17 13:08:15 Error: [MissingActionException] Action UsuariosController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'search',
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-17 13:09:07 Error: [MissingActionException] Action UsuariosController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'search',
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-17 13:09:12 Error: [MissingActionException] Action UsuariosController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'search',
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -18,7 +18,7 @@
 	    echo $this->form->end("Buscar"); 
 	?> 
 	<tbody>
-	<?php foreach ($resultados as $usuario): ?>
+	<?php foreach ($usuarios as $usuario): ?>
 	<tr>
 		<!--td><?php echo $usuario['Usuario']['identificacion']; ?>&nbsp;</td-->
 		<td><?php echo $usuario['Usuario']['nombre']; ?>&nbsp;</td>
@@ -29,7 +29,7 @@
 			<?php 
             if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
             {
-                echo $this->Html->link(__('Matricular'), array('controller'=> 'matriculas','action' => 'add', $usuario['Usuario']['id'])); 
+                echo $this->Html->link(__('Matricular'), array('controller'=> 'Matriculas','action' => 'add', $usuario['Usuario']['id'])); 
 			}
             ?>
 		</td>

@@ -15,7 +15,7 @@
 <br>
 
 <p>
-	Para acceder a Capacita Virtual haga click <a href="http://www.capacita.co/capacitavirtual">aqu&iacute;</a>.
+	Para acceder a Capacita Virtual haga click <a href="http://www.capacita.co/aulavirtual">aqu&iacute;</a>.
 	Es posible que aún no se haya habilitado el seminario en Capacita Virtual, en tal caso, sólo podrá acceder a
 	los datos de su cuenta.
 </p>
