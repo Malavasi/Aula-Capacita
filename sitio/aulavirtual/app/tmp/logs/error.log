@@ -6351,3 +6351,35 @@ Stack Trace:
 #10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2014-12-17 00:26:26 Error: [MissingBehaviorException] Behavior class SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/sesiones/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Searchable', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(747): BehaviorCollection->init('Usuarios', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/SesionesController.php(12): Model->__construct()
+#3 [internal function]: SesionesController->login()
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-12-17 00:28:10 Error: [MissingBehaviorException] Behavior class SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/sesiones/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Searchable', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(747): BehaviorCollection->init('Usuarios', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/SesionesController.php(12): Model->__construct()
+#3 [internal function]: SesionesController->login()
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

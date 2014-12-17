@@ -8,7 +8,7 @@ App::uses('AppModel', 'Model');
 * @property Comentario $Comentario
 */
 class Usuarios extends AppModel {
-	var $actsAs = array ('Searchable');
+	//var $actsAs = array ('Searchable');
 
 //The Associations below have been created with all possible keys, those that are not needed can be removed
 	public $validate = array(
