@@ -302,12 +302,16 @@ class UsuariosController extends AppController {
 	}
 	
 	public function search() {
-		
-		print "<pre>";
-		print_r($this->data);
-		print "</pre>";
-		 
-        $this->set('resultados', $this->Usuario->search($this->data['Usuario']['query'])); 
+		$this->set('infoCurso', $this->Curso->findById( $_SESSION['id_curso']));
+		$this->set('resultados', $this->Paginator->paginate('Usuario', array (
+												    "OR" => array (
+												        "Usuario.identificacion LIKE" => "%". $this->data['Usuario']['query'] ."%",
+												        "Usuario.nombre LIKE" => "%". $this->data['Usuario']['query'] ."%",
+														"Usuario.apellidos LIKE" => "%". $this->data['Usuario']['query'] ."%",
+														"Usuario.email LIKE" => "%". $this->data['Usuario']['query'] ."%",
+														"Usuario.nick LIKE" => "%". $this->data['Usuario']['query'] ."%")
+												    )
+												));
     }
 
 }

@@ -1,16 +1,17 @@
 REUNIÓN 9 de Diciembre 2014
 
 BLOGFOROS
-    [][] Revisar blogforos, reportaron que no se puede accesar, ver y editar.
+    [D][x] Eliminar la controladora duplicada.
+    [D][] Revisar blogforos, reportaron que no se puede accesar, ver y editar. Ya se revisó, pero Ahora ocurre otro error, debe de estar relacionado con la eliminación de la controladora duplicada, aunqur ya se corrigió el nombre de la controladora en todo el código.
 
 MATERIALES
-    [][] Permitir subir links.
-    [][] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
+    [D][] Permitir subir links.
+    [D][x] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
     [][] Se reportó un error al subir archivos, revisarlo.
     [][] agregar barra de progreso al subir un archivo.
 
 MATRICULAS
-    [D][] Permitir que los estudiantes puedan estar matriculados en varios cursos.
+    [D][x] Permitir que los estudiantes puedan estar matriculados en varios cursos.
 
 NOTIFICACIONES
     [][] Enviar correos de notificación de todo lo que ocurre en el aula al instructor.
@@ -18,11 +19,12 @@ NOTIFICACIONES
 USUARIOS
     [D][x] Permitir edición de datos al instructor.
     [][] Mostrar foto de instructor.
+    [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql normal.
     [][] Agregar un blacklist. Sería bueno notificar al usuario que ha sido incluido en la lista negra.
 
 LINKS
-    [][] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aulavirtual“.
-    [][] Asegurar que todos los links redirijan al aula virtual. “aulavirtual”.
+    [D][] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aulavirtual“.
+    [D][] Asegurar que todos los links redirijan al aula virtual. “aulavirtual”.
 
 LOG/REPORTES
     [][] Mostrar cuales usuarios se han conectado al aula.
