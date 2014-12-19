@@ -6,7 +6,7 @@ class AulasController extends AppController {
 	public $uses = array('Curso');
 
     public function index($id) {
-    	if($_SESSION['tipo_usuario'] <= 2) {	
+    	if($_SESSION['tipo_usuario'] <= 3) {	
     		$_SESSION['id_curso'] = $id;
 		}
 		

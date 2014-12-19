@@ -22,6 +22,7 @@ USUARIOS
     [][] Mostrar foto de instructor.
     [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql “normal”. Tal vez lo mejor sea utilizar jquery. Se agregó SIN jquery.
     [][] Agregar un blacklist. Sería bueno notificar al usuario que ha sido incluido en la lista negra.
+    [][] Hay dos modelos para usuario. Dejar solo uno.
 
 LINKS
     [D][x] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aulavirtual“.

@@ -6,7 +6,7 @@
     ?></h3>
     <p><h3>
     <?php 
-        echo $this->Html->link('Comentarios y preguntas', array('controller' => 'BlogForos', 'action' => 'index', $curso['Curso']['id'])); 
+        echo $this->Html->link('Comentarios y preguntas', array('controller' => 'Blogforos', 'action' => 'index', $curso['Curso']['id'])); 
     ?></h3>
     <p><h3>
     <?php 
