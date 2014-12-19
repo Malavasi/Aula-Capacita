@@ -6515,3 +6515,45 @@ Stack Trace:
 #1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-12-19 16:40:48 Error: [MissingActionException] Action UsuariosController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'search',
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-19 16:41:12 Error: [MissingActionException] Action UsuariosController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'search',
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-19 17:11:27 Error: Fatal Error (1): Call to a member function create() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Usuarios/add.ctp, line 33]
+2014-12-19 17:11:27 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-19 17:12:19 Error: Fatal Error (1): Call to a member function create() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Usuarios/add.ctp, line 39]
+2014-12-19 17:12:19 Error: [FatalErrorException] Call to a member function create() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 39, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 39, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
