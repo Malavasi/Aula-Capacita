@@ -112,5 +112,18 @@ class Usuario extends AppModel {
 			'counterQuery' => ''
 		)
 	);
-
+    /**
+    * hasOne associations
+    *
+    * @var array
+    */
+	public $hasOne = array(
+		'Curso' => array(
+		'className' => 'Curso',
+		'foreignKey' => 'usuario_id',
+		'conditions' => '',
+		'fields' => '',
+		'order' => ''
+		)
+	);
 }
