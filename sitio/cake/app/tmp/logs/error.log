@@ -6317,3 +6317,139 @@ Stack Trace:
 #12 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #14 {main}
+2014-12-21 22:03:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /cake/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\SesionesController.php(13): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2014-12-21 22:26:12 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-12-21 22:40:29 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-12-21 22:40:51 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-12-21 22:41:05 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-12-21 22:42:10 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-12-21 22:45:08 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2014-12-21 22:50:36 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php(148): CakeEmail->send()
+#1 [internal function]: UsuariosController->adds()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#7 {main}
+2014-12-21 22:56:34 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php, line 137]
+2014-12-21 22:56:34 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 137, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 137, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-21 23:03:45 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\cake\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /cake/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}

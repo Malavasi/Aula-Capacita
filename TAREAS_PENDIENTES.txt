@@ -32,7 +32,8 @@ LOG/REPORTES
     [][] Mostrar cuales usuarios se han conectado al aula.
 
 OTROS
-    [A][] creación y matrícula de usuarios a partir de archivo csv con lista de usuarios.
+    [A][X] creación y matrícula de usuarios a partir de archivo csv con lista de usuarios.
+	[A][] Elegir curso en el cual cual matricular a los alumnos agregados
 
 ——————————————————————————————————————————o——————————————————————————————————————————
 REUNIÓN 18 de Setiembre 2014

@@ -33,7 +33,16 @@
 	?>
 		<br>
 		<?php echo $this->Form->end(__('Crear')); ?>
+       
 	</fieldset>
-	
+	<fieldset>
+		<legend><?php echo __('Crear Usuarios'); ?></legend>
+        <?php echo $this->Form->create('Usuarios', array('action' => 'adds', 'type' => 'file')); ?>
+		<?php
+			echo $this->Form->file('File');
+		?>
+		<br>
+		<?php echo $this->Form->end(__('Subir')); ?>
+	</fieldset>
 </div>
 <?php echo $this->element('acciones'); ?>
