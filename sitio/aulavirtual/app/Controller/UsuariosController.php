@@ -11,6 +11,7 @@ App::uses('CakeEmail', 'Network/Email');
 class UsuariosController extends AppController {
 
 	public $uses = array('Usuario', 'Curso', 'Matricula');
+	public $helpers = array('Html', 'Form');
 /**
  * Components
  *
@@ -91,7 +92,6 @@ class UsuariosController extends AppController {
 			
 			    //creacion del usuario para ser almacenado
 			    $this->Usuario->create();
-                pr($this->request->data);
 			    if ($this->Usuario->save($this->request->data)) {
 
                     //correo

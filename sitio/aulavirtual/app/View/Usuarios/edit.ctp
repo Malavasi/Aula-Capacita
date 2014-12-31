@@ -64,6 +64,8 @@
 			    'notificaciones',
                 array('label'=>'Notificaciones')
 			);
+			
+			echo $this->Form->input('urlfoto', array('type' => 'file', 'label' => 'Foto: '));
 		?>
 		<?php echo $this->Form->end(__('Guardar')); ?>
 		</fieldset>

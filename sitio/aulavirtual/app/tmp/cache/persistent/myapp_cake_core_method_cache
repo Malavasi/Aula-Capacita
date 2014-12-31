@@ -1,2 +1,2 @@
-1419005563
-a:1:{s:4:"name";a:2:{s:32:"6807a757d1439b360cfcf0cb1f43a9fc";s:26:"`etechni1_capacitavirtual`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";}}
+1420037329
+a:2:{s:4:"name";a:5:{s:32:"6807a757d1439b360cfcf0cb1f43a9fc";s:26:"`etechni1_capacitavirtual`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";s:32:"47eb7bb09414c64f779510914712b6ee";s:7:"`count`";s:32:"73e33efe2cf7bfca160787ebe11a73ab";s:16:"`Usuario`.`nick`";s:32:"bdff66b6db806558355d8822383bee1c";s:9:"`Usuario`";}s:6:"fields";a:1:{s:32:"76dc9c51b8346c598e293c8cc2aabe41";a:1:{i:0;s:19:"COUNT(*) AS `count`";}}}

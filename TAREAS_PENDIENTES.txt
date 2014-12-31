@@ -7,33 +7,34 @@ BLOGFOROS
 MATERIALES
     [D][] Permitir subir links.
     [D][x] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
+    [D][] Cambiar forma de subir archivos de BD a filesystem.
     [][] Se reportó un error al subir archivos, revisarlo.
     [][] agregar barra de progreso al subir un archivo.
 
 MATRICULAS
     [D][x] Permitir que los estudiantes puedan estar matriculados en varios cursos.
-    [][] Arreglar redirecciones de matrículas luego de realizar una búsqueda, llevan a una página en blanco(WSOD). Parece que el error sólo lo tengo en mi instalación local.
+    [D][x] Arreglar redirecciones de matrículas luego de realizar una búsqueda, llevan a una página en blanco(WSOD). Parece que el error sólo lo tengo en mi instalación local.
 
 NOTIFICACIONES
     [][] Enviar correos de notificación de todo lo que ocurre en el aula al instructor.
 
 USUARIOS
     [D][x] Permitir edición de datos al instructor.
-    [][] Mostrar foto de instructor.
+    [D][] Mostrar foto de instructor.
     [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql “normal”. Tal vez lo mejor sea utilizar jquery. Se agregó SIN jquery.
     [][] Agregar un blacklist. Sería bueno notificar al usuario que ha sido incluido en la lista negra.
     [A][X] Hay dos modelos para usuario. Dejar solo uno.
 
 LINKS
     [D][x] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aulavirtual“.
-    [D][x] Asegurar que todos los links redirijan al aula virtual. “aulavirtual”.
+    [D][x] Asegurar que todos los links redirijan al aula virtual. “aula_virtual”.
 
 LOG/REPORTES
     [][] Mostrar cuales usuarios se han conectado al aula.
 
 OTROS
     [A][X] creación y matrícula de usuarios a partir de archivo csv con lista de usuarios.
-	[A][] Elegir curso en el cual cual matricular a los alumnos agregados
+    [A][] Elegir curso en el cual cual matricular a los alumnos agregados
 
 ——————————————————————————————————————————o——————————————————————————————————————————
 REUNIÓN 18 de Setiembre 2014

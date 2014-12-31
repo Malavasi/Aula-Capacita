@@ -6557,3 +6557,114 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-30 04:12:51 Error: Fatal Error (1): Call to a member function labelTag() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Usuarios/add.ctp, line 33]
+2014-12-30 04:12:51 Error: [FatalErrorException] Call to a member function labelTag() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-30 04:16:51 Error: Fatal Error (1): Call to a member function labelTag() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Usuarios/add.ctp, line 33]
+2014-12-30 04:16:51 Error: [FatalErrorException] Call to a member function labelTag() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-30 04:16:54 Error: Fatal Error (1): Call to a member function labelTag() on null in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/View/Usuarios/add.ctp, line 33]
+2014-12-30 04:16:54 Error: [FatalErrorException] Call to a member function labelTag() on null
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 33, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-31 15:33:01 Error: [CakeException] Can not determine the mimetype.
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/edit/12
+Stack Trace:
+#0 [internal function]: Validation::mimeType('shidokan06', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('urlfoto', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/ModelValidator.php(267): CakeValidationSet->validate(Array, true)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(3325): ModelValidator->validates(Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(1745): Model->validates(Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(165): Model->save(Array)
+#8 [internal function]: UsuariosController->edit('12')
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-31 15:33:47 Error: [CakeException] Can not determine the mimetype.
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/edit/12
+Stack Trace:
+#0 [internal function]: Validation::mimeType('shidokan01.jpg', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('urlfoto', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/ModelValidator.php(267): CakeValidationSet->validate(Array, true)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(3325): ModelValidator->validates(Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Model/Model.php(1745): Model->validates(Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/Controller/UsuariosController.php(165): Model->save(Array)
+#8 [internal function]: UsuariosController->edit('12')
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-31 15:37:33 Error: [MissingActionException] Action UsuariosController::fotos_instructores() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'fotos_instructores',
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/usuarios/fotos_instructores/shidokan01.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-31 15:41:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/img/fotos_instructores/shidokan01.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:41:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/img/fotos_instructores/shidokan01.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:47:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/img/img/fotos_instructores/shidokan01.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-12-31 15:48:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aulavirtual/img/img/fotos_instructores/shidokan01.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

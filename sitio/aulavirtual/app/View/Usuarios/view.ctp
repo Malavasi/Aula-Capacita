@@ -5,6 +5,15 @@
 		<dt><?php echo __('Identificación'); ?></dt>
 		<dd><?php echo h($usuario['Usuario']['identificacion']); ?>&nbsp;</dd>
 		
+		<?php if (!empty($usuario['Usuario']['urlfoto'])): ?>
+			<div>
+				<label>Foto</label>
+				<?php
+					echo $this->Html->image($usuario['Usuario']['urlfoto'], array('class' => 'center'));
+				?>
+			</div>
+		<?php endif; ?>
+		
 		<dt><?php echo __('Nombre'); ?></dt>
 		<dd><?php echo h($usuario['Usuario']['nombre']); ?>&nbsp;</dd>
 		
