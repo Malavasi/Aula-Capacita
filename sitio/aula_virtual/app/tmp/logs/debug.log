@@ -1,0 +1,3082 @@
+2014-10-22 16:25:39 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php, line 200]
+Trace:
+BlogForosController::AjaxAddComment() - APP/Controller/BlogForosController.php, line 200
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:17 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:18 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:18 Notice: Notice (8): Undefined index: tipo_usuario in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 9]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:18 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 10]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 10
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:19 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:19 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:19 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:19 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:19 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:46:19 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:47:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:47:47 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 09:48:19 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:53 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined index: tipo_usuario in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 9]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 10]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 10
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-18 12:52:54 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 07:04:05 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 07:04:05 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 07:04:05 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 16:34:59 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 16:34:59 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 16:34:59 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 16:35:14 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 16:35:14 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 16:35:14 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 17:01:30 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 17:01:30 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 17:01:30 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:29:20 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:29:20 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:30:53 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:30:53 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:32:33 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:32:33 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:33:10 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:33:10 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:34:55 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:34:55 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:44:16 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-24 19:44:16 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 07:31:37 Notice: Notice (8): Undefined index: blogforo_id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php, line 212]
+Trace:
+BlogForosController::AjaxAddComment() - APP/Controller/BlogForosController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:32 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:32 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:38 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:38 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:46 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:46 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:49 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:49 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:51 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:51 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:53 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:39:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:28 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:28 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:35 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:35 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:49 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:49 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:52 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:42:52 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:04 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:04 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:11 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:11 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:17 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:17 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:26 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:26 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:54 Notice: Notice (8): Undefined variable: infoCurso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/MyFiles/add.ctp, line 4]
+Trace:
+include - APP/View/MyFiles/add.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:43:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:46:47 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:46:58 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 08:51:10 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:03:32 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:03:32 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:03:36 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:03:37 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:03:37 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:03:51 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:03:51 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:09:31 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:09:31 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:32 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:33 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:33 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:40 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:40 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:49 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:49 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:25:49 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:26:07 Notice: Notice (8): Undefined variable: infoCurso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/MyFiles/add.ctp, line 4]
+Trace:
+include - APP/View/MyFiles/add.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:26:07 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:26:07 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:26:36 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:24 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:24 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:24 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:24 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:49:27 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:50:42 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:51:59 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:52:38 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:52:56 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:47 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:47 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:47 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:47 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:47 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:47 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:47 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:52 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:52 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:52 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:52 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:52 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:52 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:52 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:54:57 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 09:55:15 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:15:22 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:15:22 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:15:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:15:30 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:02 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:03 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:03 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:03 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:03 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:03 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:03 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:32:48 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:06 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:07 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:07 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:07 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:07 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:07 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:07 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:33:10 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:34:22 Notice: Notice (8): Undefined variable: infoCurso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/MyFiles/add.ctp, line 4]
+Trace:
+include - APP/View/MyFiles/add.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 10:34:25 Notice: Notice (8): Undefined variable: infoCurso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/MyFiles/add.ctp, line 4]
+Trace:
+include - APP/View/MyFiles/add.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:25 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:25 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/InicioController.php, line 9]
+Trace:
+InicioController::index() - APP/Controller/InicioController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:26 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 13]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 13
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:26 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:26 Notice: Notice (8): Undefined variable: id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 16]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 16
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:26 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:26 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:26 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:28 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:23:39 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:26:05 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-26 15:26:07 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:28 Notice: Notice (8): Undefined offset: 0 in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/SesionesController.php, line 33]
+Trace:
+SesionesController::login() - APP/Controller/SesionesController.php, line 33
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:29 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:29 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:29 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:32 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:32 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:32 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:36 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:36 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:36 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:39 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:39 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:39 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:43 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:43 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:22:43 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:23:51 Notice: Notice (8): Undefined offset: 0 in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/SesionesController.php, line 33]
+Trace:
+SesionesController::login() - APP/Controller/SesionesController.php, line 33
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:23:52 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:23:52 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:23:52 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:24:26 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:24:26 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:24:26 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:24:28 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:24:28 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:24:28 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:25:27 Notice: Notice (8): Undefined offset: 0 in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/SesionesController.php, line 33]
+Trace:
+SesionesController::login() - APP/Controller/SesionesController.php, line 33
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:25:27 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:25:27 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:25:27 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:26:14 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 2]
+Trace:
+include - APP/View/Aulas/index.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:26:14 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 5]
+Trace:
+include - APP/View/Aulas/index.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-27 17:26:14 Notice: Notice (8): Undefined index: Curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Aulas/index.ctp, line 9]
+Trace:
+include - APP/View/Aulas/index.ctp, line 9
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:35:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:35:54 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:35:57 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:35:57 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:35:57 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:36:47 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 31]
+Trace:
+MyFilesController::index() - APP/Controller/MyFilesController.php, line 31
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:36:48 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:36:48 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/index.ctp, line 53
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:36:59 Notice: Notice (8): Undefined variable: infoCurso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/MyFiles/add.ctp, line 4]
+Trace:
+include - APP/View/MyFiles/add.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:36:59 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:36:59 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:14 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:18 Notice: Notice (8): Undefined variable: infoCurso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/MyFiles/add.ctp, line 4]
+Trace:
+include - APP/View/MyFiles/add.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:18 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:18 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:21 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:23 Notice: Notice (8): Undefined variable: infoCurso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/MyFiles/add.ctp, line 4]
+Trace:
+include - APP/View/MyFiles/add.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 12:39:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/MyFiles/add.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 14:30:58 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 14:31:07 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/MyFilesController.php, line 91]
+Trace:
+MyFilesController::add() - APP/Controller/MyFilesController.php, line 91
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 14:31:10 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 14:31:10 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Usuarios/edit.ctp, line 71
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 14:31:14 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 14:31:14 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-11-28 19:26:39 Notice: Notice (8): Undefined index: tipo_usuario in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 9]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-08 08:21:26 Notice: Notice (8): Undefined index: blogforo_id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php, line 212]
+Trace:
+BlogForosController::AjaxAddComment() - APP/Controller/BlogForosController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-08 08:21:34 Notice: Notice (8): Undefined index: blogforo_id in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php, line 212]
+Trace:
+BlogForosController::AjaxAddComment() - APP/Controller/BlogForosController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-08 14:17:10 Notice: Notice (8): Undefined index: tipo_usuario in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/AulasController.php, line 9]
+Trace:
+AulasController::index() - APP/Controller/AulasController.php, line 9
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:44:39 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:44:39 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:44:43 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:44:43 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:44:58 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:44:58 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:45:01 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 10:45:01 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 12:14:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 36]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-12-10 12:14:24 Notice: Notice (8): Undefined index: id_curso in [/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Elements/acciones.ctp, line 37]
+Trace:
+include - APP/View/Elements/acciones.ctp, line 37
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::_renderElement() - CORE/Cake/View/View.php, line 1213
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Cursos/index.ctp, line 52
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
