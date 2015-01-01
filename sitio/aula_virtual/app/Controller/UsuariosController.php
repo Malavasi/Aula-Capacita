@@ -125,10 +125,9 @@ class UsuariosController extends AppController {
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
+	public function edit($id = null) {		
 		$temp;
-		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 )
-        {
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 ) { //si es usuario administrador
         	$this->set('usuario', $this->Usuario->findById($_SESSION['id_usuario']));
 			
 		    if (!$this->Usuario->exists($id)) {
@@ -183,25 +182,25 @@ class UsuariosController extends AppController {
 		    }
 		    if ($this->request->is(array('post', 'put'))) {
 			    if ($this->request->data['Usuario']['contrasena'] == $this->request->data['Usuario']['confirmarContrasena']) {
-				    //para el md5 de la contrasena de tamano 32
+				    //si las contraseñas coinciden se realiza el cambio de contraseña
 				    $this->request->data['Usuario']['contrasena'] = md5($this->request->data['Usuario']['contrasena']);
 				    $this->request->data['Usuario']['fecha'] = date("Y-m-d H:i:s");
 				
-				    if ($this->Usuario->save($this->request->data)) {
+				    if ($this->Usuario->save($this->request->data)) {//se guardan los datos nuevos
 					    $this->Session->setFlash(__('El usuario ha sido actualizado'));
 					    return $this->redirect(array('controller' => 'Usuarios', 'action' => 'edit', $id));
 				    } else {
 					    $this->Session->setFlash(__('El usuario no se ha podido actualizar. Por favor, intente de nuevo.'));
 				    }
-			    } else {
-				    if($this->request->data['Usuario']['confirmarContrasena'] == "") {
-			    		if ($this->Usuario->save($this->request->data)) {
+			    } else {//si las contraseñas no coinciden, hay dos casos
+				    if($this->request->data['Usuario']['confirmarContrasena'] == "") {//se asume que no desea cambar la contraseña
+			    		if ($this->Usuario->save($this->request->data)) {//y se guardan los datos
 						    $this->Session->setFlash(__('El usuario ha sido actualizado'));
 						    return $this->redirect(array('controller' => 'Usuarios', 'action' => 'edit', $id));
 					    } else {
 						    $this->Session->setFlash(__('El usuario no se ha podido actualizar. Por favor, intente de nuevo.'));
 					    }
-			    	} else {
+			    	} else {// la otra opción es que sí se quiere cambiar la contraseña, pero no coinciden
 				    	$this->Session->setFlash(__('Las contraseñas no coinciden.'));
 					}
 			    }

@@ -6741,3 +6741,91 @@ Stack Trace:
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aulavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2015-01-01 14:09:45 Error: [CakeException] Can not determine the mimetype.
+Request URL: /capacitavirtual/sitio/aula_virtual/Usuarios/edit/124
+Stack Trace:
+#0 [internal function]: Validation::mimeType('album_meddle_fr...', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('urlfoto', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(267): CakeValidationSet->validate(Array, true)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(3325): ModelValidator->validates(Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(1745): Model->validates(Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/UsuariosController.php(198): Model->save(Array)
+#8 [internal function]: UsuariosController->edit('124')
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-01 14:16:13 Error: [CakeException] Can not determine the mimetype.
+Request URL: /capacitavirtual/sitio/aula_virtual/usuarios/edit/124
+Stack Trace:
+#0 [internal function]: Validation::mimeType('IMG-20141026-WA...', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('urlfoto', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(267): CakeValidationSet->validate(Array, true)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(3325): ModelValidator->validates(Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(1745): Model->validates(Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/UsuariosController.php(164): Model->save(Array)
+#8 [internal function]: UsuariosController->edit('124')
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-01 21:36:22 Error: Fatal Error (1): Class 'Usuarios' not found in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/SesionesController.php, line 12]
+2015-01-01 21:36:22 Error: [FatalErrorException] Class 'Usuarios' not found
+Request URL: /capacitavirtual/sitio/aula_virtual/sesiones/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Usuarios...', '/Applications/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Usuarios...', '/Applications/M...', 12, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Usuarios...', '/Applications/M...', 12, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-01 21:58:58 Error: [CakeException] Can not determine the mimetype.
+Request URL: /capacitavirtual/sitio/aula_virtual/Usuarios/edit/124
+Stack Trace:
+#0 [internal function]: Validation::mimeType('IMG-20141026-WA...', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('urlfoto', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(267): CakeValidationSet->validate(Array, true)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(3325): ModelValidator->validates(Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(1745): Model->validates(Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/UsuariosController.php(197): Model->save(Array)
+#8 [internal function]: UsuariosController->edit('124')
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-01 22:01:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aula_virtual/img/IMG-20141026-WA0002.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-01 22:03:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aula_virtual/img/IMG-20141026-WA0002.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-01 22:04:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aula_virtual/img/IMG-20141026-WA0002.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

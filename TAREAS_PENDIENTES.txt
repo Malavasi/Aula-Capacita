@@ -3,6 +3,7 @@ REUNIÓN 9 de Diciembre 2014
 BLOGFOROS
     [D][x] Eliminar la controladora duplicada.
     [D][] Revisar blogforos, reportaron que no se puede accesar, ver y editar. Ya se revisó, pero Ahora ocurre otro error, debe de estar relacionado con la eliminación de la controladora duplicada, aunque ya se corrigió el nombre de la controladora en todo el código.
+    [D][] Mostrar foto del instructor al lado de cada post.
 
 MATERIALES
     [D][] Permitir subir links.
@@ -20,13 +21,13 @@ NOTIFICACIONES
 
 USUARIOS
     [D][x] Permitir edición de datos al instructor.
-    [D][] Mostrar foto de instructor.
+    [D][x] Mostrar foto de instructor.
     [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql “normal”. Tal vez lo mejor sea utilizar jquery. Se agregó SIN jquery.
     [][] Agregar un blacklist. Sería bueno notificar al usuario que ha sido incluido en la lista negra.
     [A][X] Hay dos modelos para usuario. Dejar solo uno.
 
 LINKS
-    [D][x] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aulavirtual“.
+    [D][x] cambiar el nombre del directorio del aula virtual de “capacitavirtual” a “aula_virtual“.
     [D][x] Asegurar que todos los links redirijan al aula virtual. “aula_virtual”.
 
 LOG/REPORTES

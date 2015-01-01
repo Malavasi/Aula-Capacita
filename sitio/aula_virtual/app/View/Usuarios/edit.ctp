@@ -1,10 +1,13 @@
 <?php if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 2){ ?>
 	<div class="usuarios form">
-	<?php echo $this->Form->create('Usuario'); ?>
+	<?php echo $this->Form->create('Usuario', array('type'=>'file')); ?>
 		<fieldset>
 			<legend><?php echo __('Editar Usuario'); ?></legend>
 		<?php
 			echo $this->Form->input('id');
+			if (!empty($usuario['Usuario']['urlfoto'])) {
+				echo $this->Html->image($usuario['Usuario']['urlfoto'], array('class' => 'center', 'width' => '100px'));
+			}
 			echo $this->Form->input('identificacion', array('label' => __('Identificación: ', true)));
 			echo $this->Form->input('nombre', array('label' => __('Nombre: ', true)));
 			echo $this->Form->input('apellidos', array('label' => __('Apellidos: ', true)));
