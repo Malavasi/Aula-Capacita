@@ -1,7 +1,6 @@
 <?php
     session_start();
 App::uses('AppController', 'Controller');
-App::uses('Usuarios', 'Model');
 App::uses('Usuario', 'Model');
 App::uses('CakeEmail', 'Network/Email');
 App::uses('Cursos', 'Model');
@@ -58,13 +57,15 @@ class BlogForosController extends AppController {
 	        //$_SESSION['id_curso'] = $id;
 			
 			$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
-	        $usuario = new Usuarios();
+	        $usuario = new Usuario();
 	        $blogforo = $this->Blogforo->find('first', $options);
 	        $conta = 0;
 	        foreach ($blogforo['Comentario'] as $comentario):
 	            $tmp = $usuario->findById($comentario['usuario_id']);
-	            $blogforo['Comentario'][$conta]['nombre'] = $tmp['Usuarios']['nombre'];
-				$blogforo['Comentario'][$conta]['apellidos'] = $tmp['Usuarios']['apellidos'];
+	            $blogforo['Comentario'][$conta]['nombre'] = $tmp['Usuario']['nombre'];
+				$blogforo['Comentario'][$conta]['apellidos'] = $tmp['Usuario']['apellidos'];
+				$blogforo['Comentario'][$conta]['tipo_usuario'] = $tmp['Usuario']['tipo'];
+				$blogforo['Comentario'][$conta]['urlfoto'] = $tmp['Usuario']['urlfoto'];
 	            ++$conta;
 	        endforeach;
 	        $this->set('blogforo', $blogforo);
@@ -86,7 +87,6 @@ class BlogForosController extends AppController {
 				$this->request->data['Blogforo']['fechapublicacion'] = date("Y-m-d H:i:s");
 				$this->request->data['Blogforo']['curso_id'] = $_SESSION['id_curso'];
 	            $this->request->data['Blogforo']['usuario_id'] = $_SESSION['id_usuario'];
-				var_dump($this->request->data);
 				
 				$this->Blogforo->create();
 				if ($this->Blogforo->save($this->request->data)) {
