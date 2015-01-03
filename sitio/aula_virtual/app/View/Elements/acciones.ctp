@@ -31,7 +31,7 @@ if(isset($_SESSION['tipo_usuario'])) {
         }
 		
 		if(isset($enAula) and isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] >= 2 and !isset($_SESSION['no_matriculado'])) {
-			echo '<li>', $this->Html->link('Descargas', array('controller' => 'MyFiles', 'action' => 'index', $_SESSION['id_curso'])), '</li>'; 
+			echo '<li>', $this->Html->link('Descargas', array('controller' => 'Materiales', 'action' => 'index', $_SESSION['id_curso'])), '</li>'; 
 			echo '<li>', $this->Html->link('Comentarios', array('controller' => 'Blogforos', 'action' => 'index', $_SESSION['id_curso'])), '</li>';
 		}
 		
@@ -41,10 +41,10 @@ if(isset($_SESSION['tipo_usuario'])) {
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 and isset($archivos) ) {
             echo '<br>'.__('Archivos');
-			echo '<li>'. $this->Html->link(__('Subir Archivo'), array('controller' => 'MyFiles','action' => 'add')).'</li>';
+			echo '<li>'. $this->Html->link(__('Subir Archivo'), array('controller' => 'Materiales','action' => 'add')).'</li>';
 			
 			if ($_SESSION['tipo_usuario'] == 1) {
-				echo '<li>'.$this->Html->link(__('Consultar Archivos'), array('controller' => 'MyFiles','action' => 'index')).'</li>';
+				echo '<li>'.$this->Html->link(__('Consultar Archivos'), array('controller' => 'Materiales','action' => 'index')).'</li>';
 			}
 			 
         }

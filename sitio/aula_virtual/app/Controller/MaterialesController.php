@@ -4,10 +4,12 @@ App::uses('Usuario', 'Model');
 App::uses('Matriculas', 'Model');
 App::uses('Programas', 'Model');
 App::uses('CakeEmail', 'Network/Email');
+App::uses('Folder', 'Utility');
+App::uses('File', 'Utility');
 /**
- * MyFiles Controller
+ * Materiales Controller
  *
- * @property MyFile $MyFile
+ * @property Material $Material
  * @property PaginatorComponent $Paginator
  */
  session_start();
@@ -79,10 +81,9 @@ class MaterialesController extends AppController {
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
 	        if (!empty($this->request->data)) {
-	            $this->request->data['Material']['curso_id']	= $_SESSION['id_curso'];
+	            $this->request->data['Material']['curso_id'] = $_SESSION['id_curso'];
 	            $this->request->data['Material']['usuario_id']	= $_SESSION['id_usuario'];
 	            $this->request->data['Material']['nombre'] = $this->request->data['Material']['url']['name'];
-	            $this->request->data['Material']['tamano'] = $this->request->data['Material']['url']['size'];
 				$this->request->data['Material']['fecha'] = date("Y-m-d H:i:s");
 				
                 if(strcmp($this->request->data['Material']['programas'],'')==0)
@@ -113,7 +114,7 @@ class MaterialesController extends AppController {
                             $Email->to($estudiantes[0]['Usuario']['email']);
                             $Email->subject('Nuevo archivo');
                             $Email->template('archivo');
-                            $Email->viewVars(array('Usuario' =>$estudiantes[0]['Usuario']['nombre'].' '.$estudiantes[0]['Usuario']['apellidos'], 'archivo'=>$this->request->data['MyFile']['File']['name'],'curso'=>''));
+                            $Email->viewVars(array('Usuario' =>$estudiantes[0]['Usuario']['nombre'].' '.$estudiantes[0]['Usuario']['apellidos'], 'archivo'=>$this->request->data['Material']['url']['name'],'curso'=>''));
                             $Email->emailFormat('html');
                             $Email->send();
                         }
@@ -189,6 +190,34 @@ class MaterialesController extends AppController {
 				$this->Session->setFlash(__('El archivo no se ha podido eliminar. Por favor, intente de nuevo.'));
 			}
 			return $this->redirect(array('controller' => 'Materiales', 'action' => 'index', $_SESSION['id_curso']));
+        } else {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
+	}
+	
+	function download($id) {
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
+		    Configure::write('debug', 0);
+		    $archivo = $this->Material->findById($id);
+			
+			$dir = new Folder(WWW_ROOT.'files/materiales');
+			$files = $dir->find($archivo['Material']['nombre']);
+			
+			$file = new File($dir->pwd(). DS . $files[0]);
+			
+			$fileInfo = $file->info();
+			$contents = $file->read('r');
+			
+			$fileData = fread(fopen($dir->pwd(). DS . $files[0], "r"), $fileInfo['filezise']);
+			
+		    header('Content-type: ' . $fileInfo['mime']);
+		    header('Content-length: ' . $fileInfo['filezise']);
+			header('Content-Disposition: attachment; filename="'.$fileInfo['basename'].'"');
+			//echo $fileData;
+			echo $contents;
+			
+			$file->close();		
+		    exit();
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }

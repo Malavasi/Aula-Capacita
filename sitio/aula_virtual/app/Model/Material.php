@@ -68,8 +68,8 @@ class Material extends AppModel {
 	 */
 	public function beforeValidate($options = array()) {
 		// ignore empty file - causes issues with form validation when file is empty and optional
-		if (!empty($this->data[$this->alias]['urlfoto']['error']) && $this->data[$this->alias]['filename']['error']==4 && $this->data[$this->alias]['filename']['size']==0) {
-			unset($this->data[$this->alias]['urlfoto']);
+		if (!empty($this->data[$this->alias]['url']['error']) && $this->data[$this->alias]['filename']['error']==4 && $this->data[$this->alias]['filename']['size']==0) {
+			unset($this->data[$this->alias]['url']);
 		}
 		return parent::beforeValidate($options);
 	}
@@ -81,7 +81,7 @@ class Material extends AppModel {
 	public function beforeSave($options = array()) {
 		// a file has been uploaded so grab the filepath
 		if (!empty($this->data[$this->alias]['filepath'])) {
-			$this->data[$this->alias]['urlfoto'] = $this->data[$this->alias]['filepath'];
+			$this->data[$this->alias]['url'] = $this->data[$this->alias]['filepath'];
 		}
 		
 		return parent::beforeSave($options);

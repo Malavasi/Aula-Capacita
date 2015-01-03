@@ -3080,3 +3080,273 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 198
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
 [main] - APP/webroot/index.php, line 108
 
+2015-01-03 20:24:23 Notice: Notice (8): Undefined index: type in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 203]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 203
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 20:24:23 Notice: Notice (8): Undefined index: size in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 204]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 204
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 20:24:23 Notice: Notice (8): Undefined index: name in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 205]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 205
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 20:24:23 Notice: Notice (8): Undefined index: data in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 206]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 206
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 20:50:21 Notice: Notice (8): Array to string conversion in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 214]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 214
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 20:50:40 Notice: Notice (8): Array to string conversion in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 214]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 214
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:22:33 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 213]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 213
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:26:11 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 213]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 213
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:28:01 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:28:33 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:28:51 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:30:36 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:32:23 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:33:34 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:36:54 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 212]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:40:45 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 213]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 213
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:42:16 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 212]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:52:35 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 212]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 21:54:23 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 212]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:03:35 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 212]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 212
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:34:22 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:35:13 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:37:27 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:37:27 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 214]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 214
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:37:37 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:37:37 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 214]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 214
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:42:03 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:42:03 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 214]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 214
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:44:12 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 211]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2015-01-03 22:44:12 Notice: Notice (8): Undefined index: filezise in [/Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php, line 214]
+Trace:
+MaterialesController::download() - APP/Controller/MaterialesController.php, line 214
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
