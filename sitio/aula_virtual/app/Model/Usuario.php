@@ -181,8 +181,8 @@ class Usuario extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'MyFile' => array(
-			'className' => 'MyFile',
+		'Material' => array(
+			'className' => 'Material',
 			'foreignKey' => 'usuario_id',
 			'dependent' => false,
 			'conditions' => '',

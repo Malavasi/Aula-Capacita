@@ -299,5 +299,36 @@ class UsuariosController extends AppController {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
 	}
+	
+	public function blacklist($usuario_id=null) {
+		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 ) { //si es usuario administrador
+			$usuario = $this->Usuario->findById($usuario_id);
+        	$this->set('usuario', $this->Usuario->findById($usuario_id));
+			
+		    if (!$this->Usuario->exists($usuario_id)) {
+			    throw new NotFoundException(__('Usuario Inválido'));
+		    }
+			
+			if($usuario['Usuario']['blacklisted']) {
+		    	$usuario['Usuario']['blacklisted'] = FALSE;
+			} else {
+				$usuario['Usuario']['blacklisted'] = TRUE;
+			}
+			
+		    if ($this->Usuario->save($usuario)) {
+		    	
+				if($usuario['Usuario']['blacklisted']) {
+					$this->Session->setFlash(__('El usuario se agregó a la lista negra'));
+				} else {
+					$this->Session->setFlash(__('El usuario ha sido de removido de la lista negra'));
+				}
+				
+			    return $this->redirect(array('controller' => 'Usuarios', 'action' => 'edit', $usuario_id));
+		    } else {
+			    $this->Session->setFlash(__('El usuario no se pudo agregar a la lista negra. Por favor, intente de nuevo.'));
+		    }
+		    
+        }
+	}
 
 }

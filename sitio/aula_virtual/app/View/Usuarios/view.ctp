@@ -1,6 +1,12 @@
 <div class="usuarios view">
 	
 <h2><?php echo __('Usuario'); ?></h2>
+	<?php
+		if($usuario['Usuario']['blacklisted']) {
+			echo "<strong style=\"color: red\">", 'El usuario está en la lista negra', "</strong>";
+			echo $this->Html->link(__('Quitar de la lista negra'), array('controller' => 'Usuarios', 'action' => 'blacklist', $usuario['Usuario']['id']));
+		}
+	?>
 	<dl>
 		<?php if (!empty($usuario['Usuario']['urlfoto'])): ?>
 			
@@ -52,7 +58,7 @@
 			<h3><?php echo __('Curso Matriculado'); ?></h3>
 			<dl>
 				<dt><?php echo __('Nombre'); ?></dt>
-				<dd><?php echo$this->Html->link(__($curso['Curso']['nombre']), array('controller' => 'aulas', 'index' => 'view', $curso['Curso']['id'])); ?>&nbsp;</dd>
+				<dd><?php echo $this->Html->link(__($curso['Curso']['nombre']), array('controller' => 'aulas', 'index' => 'view', $curso['Curso']['id'])); ?>&nbsp;</dd>
 				
 				<dt><?php echo __('Fecha Inicio'); ?></dt>
 				<dd><?php echo $curso['Curso']['fechainicio']; ?>&nbsp;</dd>

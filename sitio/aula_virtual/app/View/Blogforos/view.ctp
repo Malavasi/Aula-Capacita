@@ -16,7 +16,9 @@
 			<br>
 			<?php
 				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
-					echo 'de ', $this->Html->link($blogforo['Usuario']['nombre'].' '.$blogforo['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+					echo 'de ', $this->Html->link($blogforo['Usuario']['nombre'].' '.$blogforo['Usuario']['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id']));
+					echo ' - ';
+					echo $this->Html->link('Bloquear', array('controller' => 'Usuarios', 'action' => 'blacklist', $blogforo['Blogforo']['usuario_id']));
 				} else {
 					echo 'de ', $blogforo['Usuario']['nombre'],' ',$blogforo['Usuario']['apellidos'];
 				}
@@ -54,8 +56,10 @@
 					<br>
 					
 					<?php
-						if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1) {
-							echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nombre'].' '.$blogforo['Comentario'][$cont]['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id'])); 
+						if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 and $blogforo['Comentario'][$cont]['usuario_id'] != $_SESSION['id_usuario']) {
+							echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nombre'].' '.$blogforo['Comentario'][$cont]['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id']));
+							echo ' - ';
+							echo $this->Html->link('Bloquear', array('controller' => 'Usuarios', 'action' => 'blacklist', $comentario['usuario_id']));
 						} else {
 							echo 'de ', $blogforo['Comentario'][$cont]['nombre'], ' ', $blogforo['Comentario'][$cont]['apellidos'];
 						}

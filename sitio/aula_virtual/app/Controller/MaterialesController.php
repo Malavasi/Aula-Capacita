@@ -213,8 +213,8 @@ class MaterialesController extends AppController {
 		    header('Content-type: ' . $fileInfo['mime']);
 		    header('Content-length: ' . $fileInfo['filezise']);
 			header('Content-Disposition: attachment; filename="'.$fileInfo['basename'].'"');
-			//echo $fileData;
-			echo $contents;
+			echo $fileData;
+			//echo $contents;
 			
 			$file->close();		
 		    exit();
