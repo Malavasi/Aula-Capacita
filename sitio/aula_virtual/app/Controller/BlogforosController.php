@@ -65,6 +65,7 @@ class BlogForosController extends AppController {
 	            $blogforo['Comentario'][$conta]['nombre'] = $tmp['Usuario']['nombre'];
 				$blogforo['Comentario'][$conta]['apellidos'] = $tmp['Usuario']['apellidos'];
 				$blogforo['Comentario'][$conta]['tipo_usuario'] = $tmp['Usuario']['tipo'];
+				$blogforo['Comentario'][$conta]['blacklisted'] = $tmp['Usuario']['blacklisted'];
 				$blogforo['Comentario'][$conta]['urlfoto'] = $tmp['Usuario']['urlfoto'];
 	            ++$conta;
 	        endforeach;

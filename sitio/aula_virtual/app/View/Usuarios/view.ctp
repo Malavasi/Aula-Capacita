@@ -3,8 +3,11 @@
 <h2><?php echo __('Usuario'); ?></h2>
 	<?php
 		if($usuario['Usuario']['blacklisted']) {
-			echo "<strong style=\"color: red\">", 'El usuario está en la lista negra', "</strong>";
-			echo $this->Html->link(__('Quitar de la lista negra'), array('controller' => 'Usuarios', 'action' => 'blacklist', $usuario['Usuario']['id']));
+			echo "<strong style=\"color: red\">", 'El usuario está en la lista negra', "</strong> <br>";
+			
+			if($_SESSION['tipo_usuario'] == 1) {
+				echo $this->Html->link(__('Quitar de la lista negra'), array('controller' => 'Usuarios', 'action' => 'blacklist', $usuario['Usuario']['id']));
+			}
 		}
 	?>
 	<dl>

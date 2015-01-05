@@ -4,9 +4,11 @@
 		<fieldset>
 			<legend><?php echo __('Editar Usuario'); ?></legend>
 		<?php
-			if($_SESSION['tipo_usuario'] == 1 and $usuario['Usuario']['blacklisted']) {
-				echo "<strong style=\"color: red\">", 'El usuario está en la lista negra', "</strong>";
-				echo $this->Html->link(__('Quitar de la lista negra'), array('controller' => 'Usuarios', 'action' => 'blacklist', $usuario['Usuario']['id']));
+			if($usuario['Usuario']['blacklisted']) {
+				echo "<strong style=\"color: red\">", 'El usuario está en la lista negra', "</strong> <br>";
+				if($_SESSION['tipo_usuario'] == 1) {
+					echo $this->Html->link(__('Quitar de la lista negra'), array('controller' => 'Usuarios', 'action' => 'blacklist', $usuario['Usuario']['id']));
+				}
 			}
 		?>
 			
@@ -86,6 +88,16 @@
 	<?php echo $this->Form->create('Usuario'); ?>
 		<fieldset>
 			<legend><?php echo __('Editar Usuario'); ?></legend>
+			
+			<?php
+				if($usuario['Usuario']['blacklisted']) {
+					echo "<strong style=\"color: red\">", 'El usuario está en la lista negra', "</strong> <br>";
+					if($_SESSION['tipo_usuario'] == 1) {
+						echo $this->Html->link(__('Quitar de la lista negra'), array('controller' => 'Usuarios', 'action' => 'blacklist', $usuario['Usuario']['id']));
+					}
+				}
+			?>
+			
 		<?php
 			echo $this->Form->input('id');
 			echo $this->Form->label('Identificación: '); echo ' ', $usuario['Usuario']['identificacion'], '<br>';

@@ -300,7 +300,7 @@ class UsuariosController extends AppController {
         }
 	}
 	
-	public function blacklist($usuario_id=null) {
+	public function blacklist($blogforo_id=null, $usuario_id=null) {
 		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']==1 ) { //si es usuario administrador
 			$usuario = $this->Usuario->findById($usuario_id);
         	$this->set('usuario', $this->Usuario->findById($usuario_id));
@@ -323,7 +323,8 @@ class UsuariosController extends AppController {
 					$this->Session->setFlash(__('El usuario ha sido de removido de la lista negra'));
 				}
 				
-			    return $this->redirect(array('controller' => 'Usuarios', 'action' => 'edit', $usuario_id));
+			    //return $this->redirect(array('controller' => 'Usuarios', 'action' => 'view', $usuario_id));
+				return $this->redirect(array('controller' => 'Blogforos', 'action' => 'view', $blogforo_id));
 		    } else {
 			    $this->Session->setFlash(__('El usuario no se pudo agregar a la lista negra. Por favor, intente de nuevo.'));
 		    }

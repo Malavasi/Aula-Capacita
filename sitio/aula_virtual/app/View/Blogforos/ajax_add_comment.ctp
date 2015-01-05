@@ -18,7 +18,7 @@
 				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 and $blogforo['Comentario'][$cont]['usuario_id'] != $_SESSION['id_usuario']) {
 					echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nombre'].' '.$blogforo['Comentario'][$cont]['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id']));
 					echo ' - ';
-					echo $this->Html->link('Bloquear', array('controller' => 'Usuarios', 'action' => 'blacklist', $blogforo['Usuario']['id']));  
+					echo $this->Html->link('Bloquear', array('controller' => 'Usuarios', 'action' => 'blacklist', $blogforo['Blogforo']['id'], $comentario['usuario_id']));
 				} else {
 					echo 'de ', $blogforo['Comentario'][$cont]['nombre'], ' ', $blogforo['Comentario'][$cont]['apellidos'];
 				}
@@ -32,7 +32,16 @@
 			?>
 			<?php echo h($comentario['fecha']); ?>
 		</td></tr>
-		<tr><td></td><td><?php echo h($comentario['comentario']); ?>&nbsp;</td></tr>
+		<tr><td></td><td>
+				<?php
+					if($comentario['blacklisted']) {
+						echo "<strong style=\"color: red\">", 'Los comentarios de este usuario han sido bloqueados.', "</strong> <br>";
+					} else {
+						echo h($comentario['comentario']);
+					}
+				?>&nbsp;
+			</td>
+		</tr>
 	</table>
 	<br>
 	

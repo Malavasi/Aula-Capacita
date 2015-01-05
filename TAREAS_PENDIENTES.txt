@@ -4,13 +4,13 @@ BLOGFOROS
     [D][x] Eliminar la controladora duplicada.
     [D][] Revisar blogforos, reportaron que no se puede accesar, ver y editar. Ya se revisó, pero Ahora ocurre otro error, debe de estar relacionado con la eliminación de la controladora duplicada, aunque ya se corrigió el nombre de la controladora en todo el código.
     [D][x] Mostrar foto del instructor al lado de cada post.
-    [][] Ocultar comentarios y temas de discusión publicados por usuarios en la lista negra.
+    [D][] Ocultar comentarios y temas de discusión publicados por usuarios en la lista negra. Hay un error al bloquear al instructor.
 
 MATERIALES
     [D][] Permitir subir links.
     [D][x] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
-    [D][] Cambiar forma de subir archivos de BD a filesystem.
-    [][] Se reportó un error al subir archivos, revisarlo.
+    [D][x] Cambiar forma de subir archivos de BD a filesystem.
+    [][] arreglar la descarga de usuarios, no se descargan los datos.
     [][] agregar barra de progreso al subir un archivo.
 
 MATRICULAS
