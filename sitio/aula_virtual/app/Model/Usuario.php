@@ -75,7 +75,8 @@ class Usuario extends AppModel {
 	 */
 	public function beforeValidate($options = array()) {
 		// ignore empty file - causes issues with form validation when file is empty and optional
-		if (!empty($this->data[$this->alias]['urlfoto']['error']) && $this->data[$this->alias]['filename']['error']==4 && $this->data[$this->alias]['filename']['size']==0) {
+		
+		if (!empty($this->data[$this->alias]['urlfoto']['error']) && $this->data[$this->alias]['urlfoto']['error']==4 && $this->data[$this->alias]['urlfoto']['size']==0) {
 			unset($this->data[$this->alias]['urlfoto']);
 		}
 		return parent::beforeValidate($options);
