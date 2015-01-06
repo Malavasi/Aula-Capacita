@@ -1,6 +1,6 @@
 <h3><p>Saludos, <?php echo $Usuario ?>.</p></h3>
 
-Se le informa que se ha sido agregado a la lista negra del Aula Virtual ya que ha publicado material o comentarios que se consideran inapropiados.
+Se le informa que se ha sido agregado a la lista negra del Aula Virtual porque ha publicado material y/o comentarios que se consideran inapropiados.
 
 
 <br><br>

@@ -382,6 +382,17 @@ class UsuariosController extends AppController {
 		    	
 				if($usuario['Usuario']['blacklisted']) {
 					$this->Session->setFlash(__('El usuario se agregó a la lista negra'));
+					
+					//notificación por correo
+					$Email = new CakeEmail('default');
+                    $Email->from(array('soporte@capacita.co' => 'Soporte Capacita'));
+                    $Email->to($usuario['Usuario']['email']);
+                    $Email->subject('Lista Negra');
+                    $Email->template('blacklisted');
+                    $Email->viewVars(array('Usuario' =>$usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos']));
+                    $Email->emailFormat('html');
+                    $Email->send();
+                    $this->Session->setFlash(__('El usuario ha sido creado.'));
 				} else {
 					$this->Session->setFlash(__('El usuario ha sido de removido de la lista negra'));
 				}
