@@ -14,7 +14,7 @@
 		
 			<tr>
 				<td><?php echo $this->Html->link($material['Material']['nombre'], array('action' => 'view', $material['Material']['id'])); ?>&nbsp;</td>
-				<td><?php echo h($material['Material']['tamano']), ' B'; ?>&nbsp;</td>
+				<td><?php echo h($material['Material']['tamano']), ' KB'; ?>&nbsp;</td>
 				<td><?php echo h($material['Material']['fecha']); ?>&nbsp;</td>
 				
 				<?php if (isset($_SESSION) and $_SESSION['tipo_usuario'] <= 3) { ?>

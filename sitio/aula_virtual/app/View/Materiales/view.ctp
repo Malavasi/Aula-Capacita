@@ -7,7 +7,7 @@
 			<dd><?php echo $this->Html->link($material['Material']['nombre'], array('action' => 'download', $material['Material']['id'])); ?>&nbsp;</dd>
 			
 			<dt><?php echo __('Tamaño'); ?></dt>
-			<dd><?php echo h($material['Material']['tamano']), ' B'; ?>&nbsp;</dd>
+			<dd><?php echo h($material['Material']['tamano']), ' KB'; ?>&nbsp;</dd>
 		<?php elseif(!empty($material['Material']['link'])): ?>
 			<dt><?php echo __('Link'); ?></dt>
 			<dd><?php echo '<a href="'. $material['Material']['link'] . '">'. $material['Material']['link'] . '</a>'; ?>&nbsp;</dd>

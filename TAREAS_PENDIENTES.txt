@@ -11,6 +11,7 @@ MATERIALES
     [D][x] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
     [D][x] Cambiar forma de subir archivos de BD a filesystem.
     [D][x] arreglar la descarga de materiales, no se descargan los datos. revisar encabezado http.
+    [D][] Ver cómo manejar cuando el mismo usuario va a subir archivos con el mismo nombre
     [][] agregar barra de progreso al subir un archivo.
 
 MATRICULAS
@@ -37,7 +38,7 @@ LOG/REPORTES
 
 OTROS
     [A][X] creación y matrícula de usuarios a partir de archivo csv con lista de usuarios.
-    [A][] Elegir curso en el cual cual matricular a los alumnos agregados
+    [A][] Elegir curso en el cual matricular a los alumnos agregados
 
 ——————————————————————————————————————————o——————————————————————————————————————————
 REUNIÓN 18 de Setiembre 2014

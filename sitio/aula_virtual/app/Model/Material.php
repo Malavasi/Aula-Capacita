@@ -1,5 +1,7 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('Folder', 'Utility');
+App::uses('File', 'Utility');
 /**
  * Usuario Model
  *
@@ -8,7 +10,7 @@ App::uses('AppModel', 'Model');
  * @property Curso $Curso
  * @property Matricula $Matricula
  * @property Material $Material
- */
+ */ 
 class Material extends AppModel {
 	public $useTable = 'materiales';
 	public $validate = array(
@@ -19,14 +21,14 @@ class Material extends AppModel {
 				'message' => 'Error al subir el archivo',
 				'required' => FALSE,
 				'allowEmpty' => TRUE,
-			),
+			),/*
 			// http://book.cakephp.org/2.0/en/models/data-validation.html#Validation::mimeType
 			'mimeType' => array(
 				'rule' => array('mimeType', array('image/gif','image/png','image/jpg','image/jpeg')),
 				'message' => 'Archivo inválido, únicamente imágenes',
 				'required' => FALSE,
 				'allowEmpty' => TRUE,
-			),
+			),*/
 			// custom callback to deal with the file upload
 			'processUpload' => array(
 				'rule' => 'processUpload',
@@ -99,8 +101,11 @@ class Material extends AppModel {
 			if (!is_uploaded_file($check['url']['tmp_name'])) {
 				return FALSE;
 			}
+			//crear directorio para subir archivos. El nombre del directorio va a ser el id del usuario que lo subió			
+			$dir = new Folder(WWW_ROOT . 'files' . DS . $this->uploadDir . DS . $_SESSION['id_usuario'], true, 0755);
+			
 			// build full filename
-			$filename = WWW_ROOT . 'files' . DS . $this->uploadDir . DS . Inflector::slug(pathinfo($check['url']['name'], PATHINFO_FILENAME)).'.'.pathinfo($check['url']['name'], PATHINFO_EXTENSION);
+			$filename = WWW_ROOT . 'files' . DS . $this->uploadDir . DS . $_SESSION['id_usuario'] . DS . Inflector::slug(pathinfo($check['url']['name'], PATHINFO_FILENAME)).'.'.pathinfo($check['url']['name'], PATHINFO_EXTENSION);
 			// @todo check for duplicate filename
 			// try moving file
 			if (!move_uploaded_file($check['url']['tmp_name'], $filename)) {
@@ -108,8 +113,7 @@ class Material extends AppModel {
 			// file successfully uploaded
 			} else {
 				// save the file path relative from WWW_ROOT e.g. uploads/example_filename.jpg
-				$path = str_replace('/files', '', $filename);//quito el '/files' para poder usar la función de cake que muestra ima´genes
-				$this->data[$this->alias]['filepath'] = str_replace(DS, "/", str_replace(WWW_ROOT, "", $path) );
+				$this->data[$this->alias]['filepath'] = str_replace(DS, "/", str_replace(WWW_ROOT, "", $filename) );
 			}
 		}
 		return TRUE;

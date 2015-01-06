@@ -84,6 +84,7 @@ class MaterialesController extends AppController {
 	            $this->request->data['Material']['curso_id'] = $_SESSION['id_curso'];
 	            $this->request->data['Material']['usuario_id']	= $_SESSION['id_usuario'];
 	            $this->request->data['Material']['fecha'] = date("Y-m-d H:i:s");
+				$this->request->data['Material']['tamano'] = $this->request->data['Material']['url']['size'] * 0.001;//tamano en KB
 				
 				if (empty($this->request->data['Material']['url']['name'])){
 					$this->request->data['Material']['nombre'] = $this->request->data['Material']['link'];
@@ -189,7 +190,16 @@ class MaterialesController extends AppController {
 				throw new NotFoundException(__('Archivo inválido'));
 			}
 			$this->request->allowMethod('post', 'delete');
+			
+			$archivo = $this->Material->findById($id);
 			if ($this->Material->delete()) {
+				
+				//buscar archivo en directorio para eliminarlo
+				$dir = new Folder(WWW_ROOT.'files' . DS . 'materiales' . DS . $archivo['Material']['usuario_id']);
+				$files = $dir->find($archivo['Material']['nombre']);
+				$file = new File($dir->pwd() . DS . $files[0]);
+				$file->delete();				
+				
 				$this->Session->setFlash(__('El archivo ha sido eliminado.'));
 			} else {
 				$this->Session->setFlash(__('El archivo no se ha podido eliminar. Por favor, intente de nuevo.'));
@@ -204,9 +214,8 @@ class MaterialesController extends AppController {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
 		    $archivo = $this->Material->findById($id);
 			
-			$dir = new Folder(WWW_ROOT.'files/materiales');
+			$dir = new Folder(WWW_ROOT.'files' . DS . 'materiales' . DS . $archivo['Material']['usuario_id']);
 			$files = $dir->find($archivo['Material']['nombre']);
-			
 			$file = new File($dir->pwd() . DS . $files[0]);
 			
 			$fileInfo = $file->info();

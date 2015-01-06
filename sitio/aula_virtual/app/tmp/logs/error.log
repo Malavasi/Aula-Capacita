@@ -7928,3 +7928,27 @@ Stack Trace:
 #4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
 #5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2015-01-06 03:59:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /capacitavirtual/sitio/aula_virtual/Materiales/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `et...', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `et...')
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(1834): DboSource->create(Object(Material), Array, Array)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php(108): Model->save(Array)
+#5 [internal function]: MaterialesController->add()
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MaterialesController), Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-01-06 04:26:56 Error: [NotFoundException] The requested file /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/// was not found or not readable
+Request URL: /capacitavirtual/sitio/aula_virtual/Materiales/download/12
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php(226): CakeResponse->file('//', Array)
+#1 [internal function]: MaterialesController->download('12')
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MaterialesController), Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
