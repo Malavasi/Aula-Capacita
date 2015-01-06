@@ -5,13 +5,13 @@
 		<?php if (!empty($material['Material']['url'])): ?>
 			<dt><?php echo __('Nombre'); ?></dt>
 			<dd><?php echo $this->Html->link($material['Material']['nombre'], array('action' => 'download', $material['Material']['id'])); ?>&nbsp;</dd>
+			
+			<dt><?php echo __('Tamaño'); ?></dt>
+			<dd><?php echo h($material['Material']['tamano']), ' B'; ?>&nbsp;</dd>
 		<?php elseif(!empty($material['Material']['link'])): ?>
 			<dt><?php echo __('Link'); ?></dt>
 			<dd><?php echo '<a href="'. $material['Material']['link'] . '">'. $material['Material']['link'] . '</a>'; ?>&nbsp;</dd>
 		<?php endif ?>
-		
-		<dt><?php echo __('Tamaño'); ?></dt>
-		<dd><?php echo h($material['Material']['tamano']), ' B'; ?>&nbsp;</dd>
 		
 		<dt><?php echo __('Incluído'); ?></dt>
 		<dd><?php echo h($material['Material']['fecha']); ?>&nbsp;</dd>
@@ -31,13 +31,19 @@
 		<ul>
 			<li>
 				<?php 
-					if (isset($_SESSION['id_usuario']) and $_SESSION['id_usuario'] == $material['Material']['usuario_id'] or $_SESSION['tipo_usuario'] == 1) {
+					if (isset($_SESSION['id_usuario']) and ($_SESSION['id_usuario'] == $material['Material']['usuario_id'] or $_SESSION['tipo_usuario'] == 1)) {
 						echo $this->Html->link(__('Editar'), array('action' => 'edit', $material['Material']['id']));
 						echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $material['Material']['id']), array(), __('¿Desea eliminar el archivo %s?', $material['Material']['nombre']));
 					}
 				?>
 			</li>
-			<li><?php echo $this->Html->link(__('Descargar'), array('action' => 'download', $material['Material']['id'])); ?> </li> 
+			<li>
+				<?php 
+					if(!empty($material['Material']['url'])) {
+						echo $this->Html->link(__('Descargar'), array('action' => 'download', $material['Material']['id'])); 
+					}
+				?> 
+			</li> 
 
 		</ul>
 	</div>

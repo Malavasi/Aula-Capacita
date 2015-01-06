@@ -18,7 +18,14 @@
 				if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 and $blogforo['Comentario'][$cont]['usuario_id'] != $_SESSION['id_usuario']) {
 					echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nombre'].' '.$blogforo['Comentario'][$cont]['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id']));
 					echo ' - ';
-					echo $this->Html->link('Bloquear', array('controller' => 'Usuarios', 'action' => 'blacklist', $blogforo['Blogforo']['id'], $comentario['usuario_id']));
+					
+					if($comentario['blacklisted']){
+						$block_unblock = 'Desbloquear';
+					} else {
+						$block_unblock = 'Bloquear';
+					}
+					
+					echo $this->Html->link($block_unblock, array('controller' => 'Usuarios', 'action' => 'blacklist', $blogforo['Blogforo']['id'], $comentario['usuario_id']));
 				} else {
 					echo 'de ', $blogforo['Comentario'][$cont]['nombre'], ' ', $blogforo['Comentario'][$cont]['apellidos'];
 				}
