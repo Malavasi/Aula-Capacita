@@ -202,27 +202,23 @@ class MaterialesController extends AppController {
 	
 	function download($id) {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
-		    Configure::write('debug', 0);
 		    $archivo = $this->Material->findById($id);
 			
 			$dir = new Folder(WWW_ROOT.'files/materiales');
 			$files = $dir->find($archivo['Material']['nombre']);
 			
-			$file = new File($dir->pwd(). DS . $files[0]);
+			$file = new File($dir->pwd() . DS . $files[0]);
 			
 			$fileInfo = $file->info();
-			$contents = $file->read('r');
 			
-			$fileData = fread(fopen($dir->pwd(). DS . $files[0], "r"), $fileInfo['filezise']);
+		    $this->response->file(
+			    $fileInfo['dirname'] . DS . $fileInfo['basename'],
+			    array('download' => true, 'name' => $fileInfo['basename'])
+			);
+		    // Return response object to prevent controller from trying to render
+		    // a view
+		    return $this->response;
 			
-		    header('Content-type: ' . $fileInfo['mime']);
-		    header('Content-length: ' . $fileInfo['filezise']);
-			header('Content-Disposition: attachment; filename="'.$fileInfo['basename'].'"');
-			echo $fileData;
-			//echo $contents;
-			
-			$file->close();		
-		    exit();
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
