@@ -34,7 +34,7 @@ LINKS
     [D][x] Asegurar que todos los links redirijan al aula virtual. “aula_virtual”.
 
 LOG/REPORTES
-    [][] Mostrar cuales usuarios se han conectado al aula.
+    [A][] Mostrar cuales usuarios se han conectado al aula.
 
 OTROS
     [A][X] creación y matrícula de usuarios a partir de archivo csv con lista de usuarios.

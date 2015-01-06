@@ -7952,3 +7952,235 @@ Stack Trace:
 #4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
 #5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2015-01-05 22:53:13 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/Cursos
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('cursos')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\CursosController.php(16): PaginatorComponent->paginate()
+#9 [internal function]: CursosController->index()
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#15 {main}
+2015-01-05 22:53:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/Cursos
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('cursos')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\CursosController.php(16): PaginatorComponent->paginate()
+#9 [internal function]: CursosController->index()
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#15 {main}
+2015-01-05 22:55:32 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/Cursos
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('cursos')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\CursosController.php(16): PaginatorComponent->paginate()
+#9 [internal function]: CursosController->index()
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#15 {main}
+2015-01-05 22:55:33 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/Cursos
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('cursos')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\CursosController.php(16): PaginatorComponent->paginate()
+#9 [internal function]: CursosController->index()
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#15 {main}
+2015-01-05 22:55:39 Error: Fatal Error (4): syntax error, unexpected ';' in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php, line 18]
+2015-01-05 22:55:39 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /aula_virtual/Sesiones/logout
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 18, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 18, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 22:56:48 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php(14): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2015-01-05 22:57:16 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php(14): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2015-01-05 22:57:23 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php(14): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2015-01-05 22:57:26 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php(14): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2015-01-05 22:57:38 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-05 23:01:39 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Sesiones\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Sesiones\\login.ctp',
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
