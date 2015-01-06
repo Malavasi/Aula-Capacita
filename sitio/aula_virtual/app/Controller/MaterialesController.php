@@ -92,29 +92,25 @@ class MaterialesController extends AppController {
 					$this->request->data['Material']['nombre'] = $this->request->data['Material']['url']['name'];
 				}
 				
-                if(strcmp($this->request->data['Material']['programas'],'')==0)
-                {
+                if(strcmp($this->request->data['Material']['programas'],'')==0) {
                     $programas = new Programas();
                     $archivo = explode('.',$this->request->data['Material']['nombre']);
                     $extension = strtolower($archivo[1]);
                     $programa = $programas->find('all', array('conditions' => array('extension' => $extension )) );
-                    if(isset($programa[0]['Programas']))
-                    {
+                    if(isset($programa[0]['Programas'])) {
                         $this->request->data['Material']['programas'] = $programa[0]['Programas']['programas'];
                     }
                 }
 				
 				$this->Material->create();
 	            if($this->Material->save($this->request->data)) {
-                    /*/correo
+                    //correo
                     $usuarios = new Matriculas();
                     $matriculas = $usuarios->find('all', array('conditions' => array('curso_id' => $_SESSION['id_curso'] )) );
                     $usuarios = new Usuario();     
-                    foreach($matriculas as $matricula)
-                    {
+                    foreach($matriculas as $matricula) {
                         $estudiantes =  $usuarios->find('all', array('conditions' => array('id' =>$matricula['Matriculas']['usuario_id'] )) );
-                        if(isset($estudiantes[0]) &&  $estudiantes[0]['Usuario']['notificaciones']==1)
-                        {
+                        if(isset($estudiantes[0]) &&  $estudiantes[0]['Usuario']['notificaciones']==1) {
                             $Email = new CakeEmail('default');
                             $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
                             $Email->to($estudiantes[0]['Usuario']['email']);
@@ -125,7 +121,7 @@ class MaterialesController extends AppController {
                             $Email->send();
                         }
                     }
-                    */
+					
 	            	$this->Session->setFlash(__('El archivo ha sido guardado.'));
 					return $this->redirect(array('controller' => 'Materiales', 'action' => 'index', $_SESSION['id_curso']));
 	            } else {
@@ -148,7 +144,7 @@ class MaterialesController extends AppController {
 		
 		if (isset($_SESSION['id_curso'])) {
 			$this->Material->recursive = 0;
-            $this->set('infoArchivo', $this->Paginator->paginate(array ('curso_id'=>$_SESSION['id_curso'])));   
+            $this->set('infoArchivo', $this->Paginator->paginate(array ('Material.id' => $id, 'Material.curso_id'=>$_SESSION['id_curso'])));   
 		}
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3) {

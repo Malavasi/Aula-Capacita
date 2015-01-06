@@ -30,7 +30,9 @@ class SesionesController extends AppController {
                 $_SESSION['id_usuario']=$datos[0]['Usuario']['id'];
                 $_SESSION['tipo_usuario']=$datos[0]['Usuario']['tipo'];
                 $_SESSION['nombre_usuario']=$datos[0]['Usuario']['nombre'].' '.$datos[0]['Usuario']['apellidos'];
+				$_SESSION['blacklisted']=$datos[0]['Usuario']['blacklisted'];
             } else {
+            	$this->Session->setFlash(__('Usuario o contraseña incorrecta.'));
                 $this->redirect(array('controller' =>'inicio','action' => 'index')); 
             }
 			
@@ -58,6 +60,7 @@ class SesionesController extends AppController {
         unset($_SESSION['tipo_usuario']);
         unset($_SESSION['nombre_usuario']);
         unset($_SESSION['id_curso']);
+		unset($_SESSION['blacklisted']);
 
         $this->redirect(array('controller' =>'inicio','action' => 'index')); 
     }

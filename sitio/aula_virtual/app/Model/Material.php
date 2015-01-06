@@ -73,6 +73,25 @@ class Material extends AppModel {
 		// ignore empty file - causes issues with form validation when file is empty and optional
 		if (!empty($this->data[$this->alias]['url']['error']) && $this->data[$this->alias]['url']['error']==4 && $this->data[$this->alias]['url']['size']==0) {
 			unset($this->data[$this->alias]['url']);
+		} else {
+			//crear directorio para subir archivos. El nombre del directorio va a ser el id del usuario que lo subió			
+			$dir = new Folder(WWW_ROOT . 'files' . DS . $this->uploadDir . DS . $_SESSION['id_usuario'], true, 0755);
+						
+			// Revisar si el archivo ya existe.
+			$cont = 1;
+			$existe = $dir->findRecursive($this->data[$this->alias]['nombre']);
+			$name = $this->data[$this->alias]['nombre'];
+			
+			while (!empty($existe)){
+				$existe = $dir->findRecursive($this->data[$this->alias]['nombre']);
+				
+				// si ya existe, se le cambia el nombre y la url.
+				if(!empty($existe)) {
+					$this->data[$this->alias]['nombre'] = $cont . '_' . $name;
+					$this->data[$this->alias]['url']['name'] = $cont . '_' . $name;
+				}
+				$cont++;
+			}
 		}
 		return parent::beforeValidate($options);
 	}

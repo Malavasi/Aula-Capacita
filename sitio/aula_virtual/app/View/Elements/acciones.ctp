@@ -41,17 +41,26 @@ if(isset($_SESSION['tipo_usuario'])) {
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 and isset($archivos) ) {
             echo '<br>'.__('Archivos');
-			echo '<li>'. $this->Html->link(__('Subir Archivo'), array('controller' => 'Materiales','action' => 'add')).'</li>';
+			if($_SESSION['blacklisted']) {
+				echo "<strong style=\"color: red\">", 'Bloqueado.', "</strong> <br>";
+			} else {
+				echo '<li>'. $this->Html->link(__('Subir Material'), array('controller' => 'Materiales','action' => 'add')).'</li>';
+			}
 			
 			if ($_SESSION['tipo_usuario'] == 1) {
-				echo '<li>'.$this->Html->link(__('Consultar Archivos'), array('controller' => 'Materiales','action' => 'index')).'</li>';
+				echo '<li>'.$this->Html->link(__('Consultar Materiales'), array('controller' => 'Materiales','action' => 'index')).'</li>';
 			}
 			 
         }
 		
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] <= 3 and isset($blog) ) {
-            echo '<br>'.__('Blog');
-            echo '<li>'.$this->Html->link(__('Agregar Tema'), array('controller' => 'Blogforos','action' => 'add')).'</li>';
+            echo '<br>'.__('Comentarios');
+			
+			if($_SESSION['blacklisted']) {
+				echo "<strong style=\"color: red\">", 'Bloqueado.', "</strong> <br>";
+			} else {
+				echo '<li>'.$this->Html->link(__('Comentar'), array('controller' => 'Blogforos','action' => 'add')).'</li>';
+			}
         }
 	
 		?>

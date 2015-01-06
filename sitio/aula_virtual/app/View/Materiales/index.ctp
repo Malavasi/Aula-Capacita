@@ -10,7 +10,7 @@
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($materiales as $material): ?>
+	<?php pr($materiales);foreach ($materiales as $material): ?>
 		
 			<tr>
 				<td><?php echo $this->Html->link($material['Material']['nombre'], array('action' => 'view', $material['Material']['id'])); ?>&nbsp;</td>
@@ -21,7 +21,7 @@
 					<td class="actions">
 						<?php 
 							if (isset($_SESSION['id_usuario']) and $_SESSION['id_usuario'] == $material['Material']['usuario_id'] or $_SESSION['tipo_usuario'] == 1) {
-								echo $this->Html->link(__('Editar'), array('action' => 'edit', $material['Material']['id']));
+								echo $this->Html->link(__('Editar'), array('action' => 'edit', $material['Material']['id'])), $material['Material']['id'];
 								echo $this->Form->postLink(__('Eliminar'), array('action' => 'delete', $material['Material']['id']), array(), __('¿Desea eliminar el archivo %s?', $material['Material']['nombre']));
 							}
 						?>

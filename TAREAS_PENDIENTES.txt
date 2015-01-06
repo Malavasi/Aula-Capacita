@@ -11,7 +11,7 @@ MATERIALES
     [D][x] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
     [D][x] Cambiar forma de subir archivos de BD a filesystem.
     [D][x] arreglar la descarga de materiales, no se descargan los datos. revisar encabezado http.
-    [D][] Ver cómo manejar cuando el mismo usuario va a subir archivos con el mismo nombre
+    [D][x] Ver cómo manejar cuando el mismo usuario va a subir archivos con el mismo nombre
     [][] agregar barra de progreso al subir un archivo.
 
 MATRICULAS
@@ -26,7 +26,7 @@ USUARIOS
     [D][x] Mostrar foto de instructor.
     [D][x] Agregar opción de búsqueda de usuarios. Se probó utilizando un behaviour, pero creo que lo más práctico es utilizar una consulta en sql “normal”. Tal vez lo mejor sea utilizar jquery. Se agregó SIN jquery.
     [D][x] Agregar un blacklist.
-    [][] Notificar por correo al usuario que fue agregado a la lista negra.
+    [D][x] Notificar por correo al usuario que fue agregado a la lista negra.
     [A][X] Hay dos modelos para usuario. Dejar solo uno.
 
 LINKS
