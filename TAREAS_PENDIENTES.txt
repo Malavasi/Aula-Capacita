@@ -10,7 +10,7 @@ MATERIALES
     [D][x] Permitir subir links.
     [D][x] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
     [D][x] Cambiar forma de subir archivos de BD a filesystem.
-    [][] arreglar la descarga de materiales, no se descargan los datos. revisar encabezado http.
+    [D][x] arreglar la descarga de materiales, no se descargan los datos. revisar encabezado http.
     [][] agregar barra de progreso al subir un archivo.
 
 MATRICULAS
