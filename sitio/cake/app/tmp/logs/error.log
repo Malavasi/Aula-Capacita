@@ -6453,3 +6453,67 @@ Stack Trace:
 #4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
 #6 {main}
+2015-01-05 23:17:50 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php, line 159]
+2015-01-05 23:17:50 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 23:17:58 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php, line 159]
+2015-01-05 23:17:58 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 23:18:14 Error: [MissingTableException] Table my_files for model MyFile was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_files',
+  'class' => 'MyFile',
+  'ds' => 'default',
+)
+Request URL: /cake/cursos/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(3504): Model->setSource('my_files')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(1357): Model->getDataSource()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(2494): Model->schema()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1735): DboSource->fields(Object(MyFile), 'MyFile', '')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1238): DboSource->generateAssociationQuery(Object(Usuario), Object(MyFile), 'hasMany', 'MyFile', Array, Array, true)
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Usuario), Object(MyFile), 'hasMany', 'MyFile', Array, Array, true, Array, 0, Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Usuario), Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\CursosController.php(27): Model->find('all', Array)
+#9 [internal function]: CursosController->add()
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 G:\Nube\GitHub\Aula-Capacita\sitio\cake\index.php(41): require('G:\Nube\GitHub\...')
+#15 {main}
+2015-01-05 23:18:21 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php, line 159]
+2015-01-05 23:18:21 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cake/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 23:18:25 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\UsuariosController.php, line 159]
+2015-01-05 23:18:25 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cake/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 159, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

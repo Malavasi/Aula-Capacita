@@ -68,10 +68,10 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'port' => '8889',
+		//'port' => '8889',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'etechni1_capacitavirtual',
+		'database' => 'cursos',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

@@ -8184,3 +8184,245 @@ Stack Trace:
 #4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
 #6 {main}
+2015-01-05 23:16:11 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php(14): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2015-01-05 23:24:35 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 162]
+2015-01-05 23:24:35 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /aula_virtual/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 162)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 162, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 162, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 23:29:16 Error: [MissingActionException] Action TiposArchivosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'TiposArchivosController',
+  'action' => 'view',
+)
+Request URL: /aula_virtual/TiposArchivos/view/1
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TiposArchivosController), Object(CakeRequest))
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#4 {main}
+2015-01-05 23:37:37 Error: Fatal Error (1): Class 'AppModel' not found in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Model\Cursos.php, line 2]
+2015-01-05 23:37:37 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /aula_virtual/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', 'G:\Nube\GitHub\...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', 'G:\Nube\GitHub\...', 2, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', 'G:\Nube\GitHub\...', 2, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 23:39:03 Error: Fatal Error (1): Class 'Cursos' not found in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 77]
+2015-01-05 23:39:04 Error: [FatalErrorException] Class 'Cursos' not found
+Request URL: /aula_virtual/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Class 'Cursos' ...', 'G:\Nube\GitHub\...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Cursos' ...', 'G:\Nube\GitHub\...', 77, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Cursos' ...', 'G:\Nube\GitHub\...', 77, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 23:53:08 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\add.ctp, line 44]
+2015-01-05 23:53:08 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /aula_virtual/usuarios/add
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 44, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 44, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 23:58:18 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-05 23:58:32 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:10:31 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 161]
+2015-01-06 00:10:31 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 161, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 161, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-06 00:15:10 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:16:29 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:17:05 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:18:22 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:19:36 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:21:09 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:21:53 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:22:18 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:22:45 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}
+2015-01-06 00:23:56 Error: [MissingViewException] View file "G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\View\Usuarios\adds.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'G:\\Nube\\GitHub\\Aula-Capacita\\sitio\\aula_virtual\\app\\View\\Usuarios\\adds.ctp',
+)
+Request URL: /aula_virtual/usuarios/adds
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#6 {main}

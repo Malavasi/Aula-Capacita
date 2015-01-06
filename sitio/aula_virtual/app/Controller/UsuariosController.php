@@ -74,7 +74,9 @@ class UsuariosController extends AppController {
  */
 	public function add() {		
 		$temp;
-		if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
+        $datosCursos = $this->Curso->find('all');
+        $this->set('cursos', $datosCursos);
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
         {
 		    if ($this->request->is('post')) {
 			
@@ -118,6 +120,67 @@ class UsuariosController extends AppController {
         }
 	}
 	
+
+    public function adds() {		
+		$temp;
+        $noCreados = "";
+        if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
+        {
+		   
+            if (!empty($this->request->data) && is_uploaded_file($this->request->data['Usuarios']['File']['tmp_name'])) {
+                 $fileData = fopen($this->request->data['Usuarios']['File']['tmp_name'], "r");
+                 $header = fgetcsv($fileData);
+                 while (($row = fgetcsv($fileData)) !== FALSE) {
+                    $usuario['Usuario']['nick'] = $row[2];
+                    $usuario['Usuario']['email'] = $row[2];
+                    $usuario['Usuario']['nombre'] = $row[0];
+                    $usuario['Usuario']['apellidos'] = $row[1];
+			        $usuario['Usuario']['contrasena'] = $this->crearContrasena(8);
+                    $contrasenaTmp = $usuario['Usuario']['contrasena'];
+                    $usuario['Usuario']['contrasena'] = md5($usuario['Usuario']['contrasena']);
+			        $usuario['Usuario']['fecha'] = date("Y-m-d H:i:s");
+
+			    //creacion del usuario para ser almacenado
+			        $this->Usuario->create();
+                    if ($this->Usuario->save($usuario)) {
+                        //correo
+                        $Email = new CakeEmail('default');
+                        $Email->from(array('soporte@capacita.co' => 'Soporte Capacita'));
+                        $Email->to($usuario['Usuario']['email']);
+                        $Email->subject('Usuario creado');
+                        $Email->template('UsuarioCreado');
+                        $Email->viewVars(array('Usuario' =>$usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'] , 'nick' => $usuario['Usuario']['nick'], 'contrasena'=>$contrasenaTmp));
+                        $Email->emailFormat('html');
+					    $Email->attachments(array('manual_usuario.pdf' => ROOT.'/app/webroot/files/Manual.pdf'));
+					    $Email->send();
+			    } else {
+                    $noCreados .='El usuario '.$usuario['Usuario']['nick'] . ' no se ha podido crear. Podría estar repetido.<br>';
+			    }
+                if(!empty($this->request->data['Usuarios']['curso']))
+                {
+                    $idUsuario = $this->Usuario->find('all',array('conditions' => array('nick'=>$usuario['Usuario']['nick'])));
+                    $matricula['matriculas']['usuario_id']= $idUsuario[0]['Usuario']['id'];
+                    $matricula['matriculas']['curso_id']= $this->request->data['Usuarios']['curso'];
+                    /*pr($matricula);
+                    pr($this->Matricula->save($matricula));*/
+                }
+                 }
+                 if(strcmp("",$noCreados)==0)
+                 {
+                    $this->Session->setFlash(__('Todos los usuarios han sido creados.')); 
+                 }                 else
+                 {
+                    $this->Session->setFlash(__($noCreados));
+                 }
+                // $this->redirect(array('action' => 'add'));
+            }
+            //$this->redirect(array('controller' =>'usuarios','action' => 'add'));
+        }
+        else
+        {
+            $this->redirect(array('controller' =>'inicio','action' => 'index'));    
+        }
+	}
 /**
  * edit method
  *

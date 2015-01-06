@@ -35,6 +35,27 @@
 		<br>
 		<?php echo $this->Form->end(__('Crear')); ?>
 	</fieldset>
-	
+	<fieldset>
+		<legend><?php echo __('Crear Usuarios'); ?></legend>
+        <?php echo $this->Form->create('Usuarios', array('action' => 'adds', 'type' => 'file')); ?>
+		<?php
+			echo $this->Form->file('File');
+            foreach($cursos as $cur)
+            {
+                $curso[$cur['Curso']['id']] =$cur['Curso']['nombre'];
+            }
+		    echo $this->Form->input(
+		    'curso',
+		    array(
+		        'options' => $curso,
+		        'type' => 'select',
+		        'empty' => 'Ninguno',
+		        'label' => 'Cursos: '
+		    )
+		);
+		?>
+		<br>
+		<?php echo $this->Form->end(__('Subir')); ?>
+	</fieldset>
 </div>
 <?php echo $this->element('acciones'); ?>
