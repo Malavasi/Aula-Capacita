@@ -1,10 +1,15 @@
 <div class="materiales view">
 	
 <h2><?php echo __('Archivo'); ?></h2>
-	<dl>		
-		<dt><?php echo __('Nombre'); ?></dt>
-		<dd><?php echo $this->Html->link($material['Material']['nombre'], array('action' => 'download', $material['Material']['id'])); ?>&nbsp;</dd>
-				
+	<dl>
+		<?php if (!empty($material['Material']['url'])): ?>
+			<dt><?php echo __('Nombre'); ?></dt>
+			<dd><?php echo $this->Html->link($material['Material']['nombre'], array('action' => 'download', $material['Material']['id'])); ?>&nbsp;</dd>
+		<?php elseif(!empty($material['Material']['link'])): ?>
+			<dt><?php echo __('Link'); ?></dt>
+			<dd><?php echo '<a href="'. $material['Material']['link'] . '">'. $material['Material']['link'] . '</a>'; ?>&nbsp;</dd>
+		<?php endif ?>
+		
 		<dt><?php echo __('Tamaño'); ?></dt>
 		<dd><?php echo h($material['Material']['tamano']), ' B'; ?>&nbsp;</dd>
 		

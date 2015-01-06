@@ -2,12 +2,12 @@ REUNIÓN 9 de Diciembre 2014
 
 BLOGFOROS
     [D][x] Eliminar la controladora duplicada.
-    [D][] Revisar blogforos, reportaron que no se puede accesar, ver y editar. Ya se revisó, pero Ahora ocurre otro error, debe de estar relacionado con la eliminación de la controladora duplicada, aunque ya se corrigió el nombre de la controladora en todo el código.
+    [D][] Revisar blogforos, reportaron que no se puede accesar, ver y editar. Ya se revisó, pero Ahora ocurre otro error, debe de estar relacionado con la eliminación de la controladora duplicada, aunque ya se corrigió el nombre de la controladora en todo el código. Probar cuando esté instalado en el servidor.
     [D][x] Mostrar foto del instructor al lado de cada post.
-    [D][] Ocultar comentarios y temas de discusión publicados por usuarios en la lista negra. Hay un error al bloquear al instructor, est’a relacionado con la validaci’on del mimetype de la imagen.
+    [D][x] Ocultar comentarios y temas de discusión publicados por usuarios en la lista negra. Hay un error al bloquear al instructor, est’a relacionado con la validaci’on del mimetype de la imagen.
 
 MATERIALES
-    [D][] Permitir subir links.
+    [D][x] Permitir subir links.
     [D][x] Con el usuario Instructor, se muestra la lista de todos archivos del sitio. Hay que filtrar para que solo se vean los del cada curso.
     [D][x] Cambiar forma de subir archivos de BD a filesystem.
     [][] arreglar la descarga de materiales, no se descargan los datos. revisar encabezado http.

@@ -16,7 +16,8 @@ class Usuario extends AppModel {
         	'alphaNumeric' => array(
         		'rule' => 'alphaNumeric',
         		'allowEmpty' => true,
-				'message' => 'Únicamente letras y números (sin espacios).')),
+				'message' => 'Únicamente letras y números (sin espacios).')
+		),
 		'tipo' => array(
 	        'rule' => array('multiple', array(
 	            'in'  => array('1', '2', '3'),
@@ -44,13 +45,13 @@ class Usuario extends AppModel {
 				'required' => FALSE,
 				'allowEmpty' => TRUE,
 			),
-			// http://book.cakephp.org/2.0/en/models/data-validation.html#Validation::mimeType
+			/*/ http://book.cakephp.org/2.0/en/models/data-validation.html#Validation::mimeType
 			'mimeType' => array(
 				'rule' => array('mimeType', array('image/gif','image/png','image/jpg','image/jpeg')),
 				'message' => 'Archivo inválido, únicamente imágenes',
 				'required' => FALSE,
 				'allowEmpty' => TRUE,
-			),
+			),*/
 			// custom callback to deal with the file upload
 			'processUpload' => array(
 				'rule' => 'processUpload',
@@ -75,7 +76,6 @@ class Usuario extends AppModel {
 	 */
 	public function beforeValidate($options = array()) {
 		// ignore empty file - causes issues with form validation when file is empty and optional
-		
 		if (!empty($this->data[$this->alias]['urlfoto']['error']) && $this->data[$this->alias]['urlfoto']['error']==4 && $this->data[$this->alias]['urlfoto']['size']==0) {
 			unset($this->data[$this->alias]['urlfoto']);
 		}

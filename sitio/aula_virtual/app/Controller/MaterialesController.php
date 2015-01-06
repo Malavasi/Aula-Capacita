@@ -83,8 +83,13 @@ class MaterialesController extends AppController {
 	        if (!empty($this->request->data)) {
 	            $this->request->data['Material']['curso_id'] = $_SESSION['id_curso'];
 	            $this->request->data['Material']['usuario_id']	= $_SESSION['id_usuario'];
-	            $this->request->data['Material']['nombre'] = $this->request->data['Material']['url']['name'];
-				$this->request->data['Material']['fecha'] = date("Y-m-d H:i:s");
+	            $this->request->data['Material']['fecha'] = date("Y-m-d H:i:s");
+				
+				if (empty($this->request->data['Material']['url']['name'])){
+					$this->request->data['Material']['nombre'] = $this->request->data['Material']['link'];
+				} else {
+					$this->request->data['Material']['nombre'] = $this->request->data['Material']['url']['name'];
+				}
 				
                 if(strcmp($this->request->data['Material']['programas'],'')==0)
                 {

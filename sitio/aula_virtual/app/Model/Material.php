@@ -41,6 +41,7 @@ class Material extends AppModel {
         		'allowEmpty' => true,
 				'message' => 'Ya existe un archivo con ese nombre.'),
 		)/*,
+		 se comentó porque aún no se realizan validaciones para estos campos
 		'programas' => array(
         	'email' => array(
         		'rule' => 'email',
@@ -52,7 +53,7 @@ class Material extends AppModel {
         		'rule' => 'isUnique',
         		'allowEmpty' => true,
 				'message' => 'El nombre de usario ya existe.'),
-		),*/
+		)*/
     );
 
 
@@ -68,7 +69,7 @@ class Material extends AppModel {
 	 */
 	public function beforeValidate($options = array()) {
 		// ignore empty file - causes issues with form validation when file is empty and optional
-		if (!empty($this->data[$this->alias]['url']['error']) && $this->data[$this->alias]['filename']['error']==4 && $this->data[$this->alias]['filename']['size']==0) {
+		if (!empty($this->data[$this->alias]['url']['error']) && $this->data[$this->alias]['url']['error']==4 && $this->data[$this->alias]['url']['size']==0) {
 			unset($this->data[$this->alias]['url']);
 		}
 		return parent::beforeValidate($options);

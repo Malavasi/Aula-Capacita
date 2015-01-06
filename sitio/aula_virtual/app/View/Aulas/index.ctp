@@ -2,7 +2,7 @@
 	<h2><?php echo __($curso['Curso']['nombre']); ?></h2>
 	<p><h3>
     <?php 
-        echo $this->Html->link('Material de descargas', array('controller' => 'MyFiles', 'action' => 'index', $curso['Curso']['id'])); 
+        echo $this->Html->link('Material de descargas', array('controller' => 'Materiales', 'action' => 'index', $curso['Curso']['id'])); 
     ?></h3>
     <p><h3>
     <?php 

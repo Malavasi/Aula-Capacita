@@ -7732,3 +7732,29 @@ Stack Trace:
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2015-01-05 23:15:50 Error: [CakeException] Can not determine the mimetype.
+Request URL: /capacitavirtual/sitio/aula_virtual/Usuarios/blacklist/26/31
+Stack Trace:
+#0 [internal function]: Validation::mimeType('fotos_instructo...', Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('urlfoto', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(267): CakeValidationSet->validate(Array, true)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(3325): ModelValidator->validates(Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(1745): Model->validates(Array)
+#7 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/UsuariosController.php(318): Model->save(Array)
+#8 [internal function]: UsuariosController->blacklist('26', '31')
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-06 00:20:40 Error: [MissingControllerException] Controller class MyFilesController could not be found.
+Exception Attributes: array (
+  'class' => 'MyFilesController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aula_virtual/MyFiles/index/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
