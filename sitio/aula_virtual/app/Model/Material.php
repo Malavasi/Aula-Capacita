@@ -76,14 +76,14 @@ class Material extends AppModel {
 		} else {
 			//crear directorio para subir archivos. El nombre del directorio va a ser el id del usuario que lo subió			
 			$dir = new Folder(WWW_ROOT . 'files' . DS . $this->uploadDir . DS . $_SESSION['id_usuario'], true, 0755);
-						
+			
 			// Revisar si el archivo ya existe.
 			$cont = 1;
-			$existe = $dir->findRecursive($this->data[$this->alias]['nombre']);
-			$name = $this->data[$this->alias]['nombre'];
+			$existe = $dir->findRecursive($this->data[$this->alias]['url']['name']);
+			$name = $this->data[$this->alias]['url']['name'];
 			
 			while (!empty($existe)){
-				$existe = $dir->findRecursive($this->data[$this->alias]['nombre']);
+				$existe = $dir->findRecursive($this->data[$this->alias]['url']['name']);
 				
 				// si ya existe, se le cambia el nombre y la url.
 				if(!empty($existe)) {

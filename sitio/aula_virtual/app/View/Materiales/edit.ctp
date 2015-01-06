@@ -1,7 +1,7 @@
 <div class="materiales form">
 <fieldset>
 	
-	<legend><?php echo __('Editar Archivo'); pr($infoArchivo);?></legend>
+	<legend><?php echo __('Editar Archivo');?></legend>
 	
 	<h3><?php echo $infoArchivo[0]['Curso']['nombre'] ?></h3>
 	<h4><?php echo 'Usuario: ', $infoArchivo[0]['Usuario']['nombre'], ' ' ,$infoArchivo[0]['Usuario']['apellidos']; ?> </h4>
@@ -14,8 +14,9 @@
 		<dd><?php echo $infoArchivo[0]['Material']['tamano'], ' B'; ?>&nbsp;</dd>
 	</dl>
 	
-<?php echo $this->Form->create('MyFile',array('type' => 'file')); ?>
+<?php echo $this->Form->create('Material', array('type' => 'file')); ?>
 	<?php
+		echo $this->Form->input('id');
 		echo $this->Form->input('link', array('label' => __('Link: ', true)));
 		echo $this->Form->input('url', array('type' => 'file', 'label' => 'Archivo: '));
 		echo $this->Form->input('programas', array('label' => __('Abrir con: ', true)));

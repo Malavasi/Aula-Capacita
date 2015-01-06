@@ -109,7 +109,7 @@ class MaterialesController extends AppController {
                     $matriculas = $usuarios->find('all', array('conditions' => array('curso_id' => $_SESSION['id_curso'] )) );
                     $usuarios = new Usuario();     
                     foreach($matriculas as $matricula) {
-                        $estudiantes =  $usuarios->find('all', array('conditions' => array('id' =>$matricula['Matriculas']['usuario_id'] )) );
+                        $estudiantes =  $usuarios->find('all', array('conditions' => array('Usuario.id' =>$matricula['Matriculas']['usuario_id'] )) );
                         if(isset($estudiantes[0]) &&  $estudiantes[0]['Usuario']['notificaciones']==1) {
                             $Email = new CakeEmail('default');
                             $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
@@ -151,14 +151,36 @@ class MaterialesController extends AppController {
 			if (!$this->Material->exists($id)) {
 				throw new NotFoundException(__('Archivo inválido'));
 			}
-	
-			$this->set('requestInfo', $this->request->data);		
-	        	
 				
 			if ($this->request->is(array('post', 'put'))) {
-	            $this->Material->id = $id; 
+				if (empty($this->request->data['Material']['url']['name'])){
+					$this->request->data['Material']['nombre'] = $this->request->data['Material']['link'];
+				} else {
+					$this->request->data['Material']['nombre'] = $this->request->data['Material']['url']['name'];
+				}
+				
+				if(strcmp($this->request->data['Material']['programas'],'')==0) {
+                    $programas = new Programas();
+                    $archivo = explode('.',$this->request->data['Material']['nombre']);
+                    $extension = strtolower($archivo[1]);
+                    $programa = $programas->find('all', array('conditions' => array('extension' => $extension )) );
+                    if(isset($programa[0]['Programas'])) {
+                        $this->request->data['Material']['programas'] = $programa[0]['Programas']['programas'];
+                    }
+                }
+				
+				//buscar archivo viejo en directorio para eliminarlo
+				$archivo = $this->Material->findById($id);
+				$dir = new Folder(WWW_ROOT.'files' . DS . 'materiales' . DS . $archivo['Material']['usuario_id']);
+				$files = $dir->find($archivo['Material']['nombre']);
+				$file = new File($dir->pwd() . DS . $files[0]);
+				
+	            $this->Material->id = $id;
 				if ($this->Material->save($this->request->data)) {
-					$this->Session->setFlash(__('El archivo ha sido guardado.'));
+					//ya que el archivo viejo se ha guardado correctamente, se puede eliminar el viejo
+					$file->delete();
+					
+					$this->Session->setFlash(__('El archivo ha sido actualizado.'));
 					return $this->redirect(array('controller' => 'Materiales', 'action' => 'index', $_SESSION['id_curso']));
 				} else {
 					$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));

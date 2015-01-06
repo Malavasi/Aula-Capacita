@@ -8579,3 +8579,38 @@ Stack Trace:
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
 #12 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2015-01-06 20:34:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /capacitavirtual/sitio/aula_virtual/Materiales/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Usuario...', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Usuario), Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php(112): Model->find('all', Array)
+#7 [internal function]: MaterialesController->add()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MaterialesController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-06 21:07:45 Error: [NotFoundException] The requested file /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app//Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/files/materiales was not found or not readable
+Request URL: /capacitavirtual/sitio/aula_virtual/Materiales/download/55
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/MaterialesController.php(227): CakeResponse->file('/Applications/M...', Array)
+#1 [internal function]: MaterialesController->download('55')
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MaterialesController), Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-01-06 21:14:24 Error: [NotFoundException] Archivo inválido
+Request URL: /capacitavirtual/sitio/aula_virtual/Materiales/edit/56
+Stack Trace:
+#0 [internal function]: MaterialesController->edit('56')
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MaterialesController), Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
