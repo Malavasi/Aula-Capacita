@@ -8650,3 +8650,13 @@ Stack Trace:
 #4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
 #6 {main}
+2015-01-07 00:27:44 Error: Fatal Error (4): syntax error, unexpected '[' in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php, line 22]
+2015-01-07 00:27:44 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /aula_virtual/Sesiones/logout
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 22, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 22, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -16,8 +16,10 @@ class SesionesController extends AppController {
             if(isset($datos[0])) {
                 $bitacora = new Bitacora();
                 $informacionBitacora = $bitacora->find('all',array('conditions' => array ('id_usuario' => $datos[0]['Usuario']['id'])));
+                $bita['Bitacora']['ultimo_acceso'] = date("Y-m-d H:i:s"); 
                 if(isset($informacionBitacora[0]))
                 {
+                    $informacionBitacora[0]['Bitacora']['ultimo_acceso'] = date("Y-m-d H:i:s"); 
                     $informacionBitacora[0]['Bitacora']['cantidad_accesos']= $informacionBitacora[0]['Bitacora']['cantidad_accesos']+1;
                     $bitacora->save($informacionBitacora[0]);
                 }
