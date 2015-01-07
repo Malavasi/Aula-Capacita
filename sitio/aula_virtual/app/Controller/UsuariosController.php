@@ -132,6 +132,7 @@ class UsuariosController extends AppController {
                  $header = fgetcsv($fileData);
                  while (($row = fgetcsv($fileData)) !== FALSE) {
                     $usuario['Usuario']['nick'] = $row[2];
+                    $usuario['Usuario']['tipo'] = '3';
                     $usuario['Usuario']['email'] = $row[2];
                     $usuario['Usuario']['nombre'] = $row[0];
                     $usuario['Usuario']['apellidos'] = $row[1];
@@ -159,10 +160,10 @@ class UsuariosController extends AppController {
                 if(!empty($this->request->data['Usuarios']['curso']))
                 {
                     $idUsuario = $this->Usuario->find('all',array('conditions' => array('nick'=>$usuario['Usuario']['nick'])));
-                    $matricula['matriculas']['usuario_id']= $idUsuario[0]['Usuario']['id'];
-                    $matricula['matriculas']['curso_id']= $this->request->data['Usuarios']['curso'];
-                    /*pr($matricula);
-                    pr($this->Matricula->save($matricula));*/
+                    $matricula['Matriculas']['usuario_id']= $idUsuario[0]['Usuario']['id'];
+                    $matricula['Matriculas']['curso_id']= $this->request->data['Usuarios']['curso'];
+                    //pr($matricula);
+                    $this->Matricula->save($matricula);
                 }
                  }
                  if(strcmp("",$noCreados)==0)
@@ -172,9 +173,9 @@ class UsuariosController extends AppController {
                  {
                     $this->Session->setFlash(__($noCreados));
                  }
-                // $this->redirect(array('action' => 'add'));
+                 $this->redirect(array('action' => 'add'));
             }
-            //$this->redirect(array('controller' =>'usuarios','action' => 'add'));
+            $this->redirect(array('controller' =>'usuarios','action' => 'add'));
         }
         else
         {
