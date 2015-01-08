@@ -151,12 +151,14 @@ class MaterialesController extends AppController {
 			if (!$this->Material->exists($id)) {
 				throw new NotFoundException(__('Archivo inválido'));
 			}
-				
+			$archivoViejo = $this->Material->findById($id);
+			$replaceFile = 0;//para confirmar que se va a reemplazar el archivo guardado
 			if ($this->request->is(array('post', 'put'))) {
 				if (empty($this->request->data['Material']['url']['name'])){
 					$this->request->data['Material']['nombre'] = $this->request->data['Material']['link'];
 				} else {
 					$this->request->data['Material']['nombre'] = $this->request->data['Material']['url']['name'];
+					$replaceFile = 1;
 				}
 				
 				if(strcmp($this->request->data['Material']['programas'],'')==0) {
@@ -169,16 +171,11 @@ class MaterialesController extends AppController {
                     }
                 }
 				
-				//buscar archivo viejo en directorio para eliminarlo
-				$archivo = $this->Material->findById($id);
-				$dir = new Folder(WWW_ROOT.'files' . DS . 'materiales' . DS . $archivo['Material']['usuario_id']);
-				$files = $dir->find($archivo['Material']['nombre']);
-				$file = new File($dir->pwd() . DS . $files[0]);
-				
 	            $this->Material->id = $id;
 				if ($this->Material->save($this->request->data)) {
-					//ya que el archivo viejo se ha guardado correctamente, se puede eliminar el viejo
-					$file->delete();
+					if($replaceFile == 1) {//si se comfirma el reemplazo y se guardó el archivo nuevo, se elimina el viejo
+						$this->deleteFile($id, $archivoViejo);
+					}
 					
 					$this->Session->setFlash(__('El archivo ha sido actualizado.'));
 					return $this->redirect(array('controller' => 'Materiales', 'action' => 'index', $_SESSION['id_curso']));
@@ -211,13 +208,7 @@ class MaterialesController extends AppController {
 			
 			$archivo = $this->Material->findById($id);
 			if ($this->Material->delete()) {
-				
-				//buscar archivo en directorio para eliminarlo
-				$dir = new Folder(WWW_ROOT.'files' . DS . 'materiales' . DS . $archivo['Material']['usuario_id']);
-				$files = $dir->find($archivo['Material']['nombre']);
-				$file = new File($dir->pwd() . DS . $files[0]);
-				$file->delete();				
-				
+				$this->deleteFile($id, $archivo);
 				$this->Session->setFlash(__('El archivo ha sido eliminado.'));
 			} else {
 				$this->Session->setFlash(__('El archivo no se ha podido eliminar. Por favor, intente de nuevo.'));
@@ -228,7 +219,7 @@ class MaterialesController extends AppController {
         }
 	}
 	
-	function download($id) {
+	public function download($id) {
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=3 ) {
 		    $archivo = $this->Material->findById($id);
 			
@@ -249,5 +240,13 @@ class MaterialesController extends AppController {
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
+	}
+	
+	public function deleteFile($id, $archivo) {
+		//buscar archivo en directorio para eliminarlo
+		$dir = new Folder(WWW_ROOT.'files' . DS . 'materiales' . DS . $archivo['Material']['usuario_id']);
+		$files = $dir->find($archivo['Material']['nombre']);
+		$file = new File($dir->pwd() . DS . $files[0]);
+		$file->delete();
 	}
 }

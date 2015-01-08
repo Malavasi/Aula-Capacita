@@ -13,7 +13,15 @@
 	<?php foreach ($materiales as $material): ?>
 		
 			<tr>
-				<td><?php echo $this->Html->link($material['Material']['nombre'], array('action' => 'view', $material['Material']['id'])); ?>&nbsp;</td>
+				<td>
+					<?php
+						if(!empty($material['Material']['link'])){
+							echo $this->Html->link($material['Material']['descripcion'], array('action' => 'view', $material['Material']['id']));
+						} else {
+							echo $this->Html->link($material['Material']['nombre'], array('action' => 'view', $material['Material']['id']));
+						}
+					?>&nbsp;
+				</td>
 				<td><?php echo h($material['Material']['tamano']), ' KB'; ?>&nbsp;</td>
 				<td><?php echo h($material['Material']['fecha']); ?>&nbsp;</td>
 				

@@ -49,13 +49,11 @@ class Material extends AppModel {
         		'rule' => 'email',
         		'notEmpty' => true,
 				'message' => 'Direccción de correo inválida.')
-		),
+		)*/,
 		'descripcion' => array(
-        	'isUnique' => array(
-        		'rule' => 'isUnique',
-        		'allowEmpty' => true,
-				'message' => 'El nombre de usario ya existe.'),
-		)*/
+			'rule' => 'notEmpty',
+			'message' => 'Debe ingresar una descripción.'
+		),
     );
 
 
