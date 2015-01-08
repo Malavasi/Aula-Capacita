@@ -178,7 +178,7 @@ class MaterialesController extends AppController {
 					}
 					
 					$this->Session->setFlash(__('El archivo ha sido actualizado.'));
-					return $this->redirect(array('controller' => 'Materiales', 'action' => 'index', $_SESSION['id_curso']));
+					return $this->redirect(array('controller' => 'Materiales', 'action' => 'view', $id));
 				} else {
 					$this->Session->setFlash(__('El archivo no se ha podido guardar. Por favor, intente de nuevo.'));
 				}

@@ -8689,3 +8689,21 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-01-08 17:47:54 Error: [NotFoundException] Archivo inválido
+Request URL: /capacitavirtual/sitio/aula_virtual/Materiales/view/www.google.com
+Stack Trace:
+#0 [internal function]: MaterialesController->view('www.google.com')
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MaterialesController), Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-08 17:48:01 Error: [NotFoundException] Archivo inválido
+Request URL: /capacitavirtual/sitio/aula_virtual/Materiales/view/www.google.com
+Stack Trace:
+#0 [internal function]: MaterialesController->view('www.google.com')
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MaterialesController), Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

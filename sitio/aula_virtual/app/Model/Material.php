@@ -54,6 +54,10 @@ class Material extends AppModel {
 			'rule' => 'notEmpty',
 			'message' => 'Debe ingresar una descripción.'
 		),
+		'link' => array(
+			'rule' => 'url',
+			'message' => 'No es una dirección de internet válida.'
+		)
     );
 
 
@@ -75,20 +79,22 @@ class Material extends AppModel {
 			//crear directorio para subir archivos. El nombre del directorio va a ser el id del usuario que lo subió			
 			$dir = new Folder(WWW_ROOT . 'files' . DS . $this->uploadDir . DS . $_SESSION['id_usuario'], true, 0755);
 			
-			// Revisar si el archivo ya existe.
-			$cont = 1;
-			$existe = $dir->findRecursive($this->data[$this->alias]['url']['name']);
-			$name = $this->data[$this->alias]['url']['name'];
-			
-			while (!empty($existe)){
+			if(!empty($this->data[$this->alias]['url'])){
+				// Revisar si el archivo ya existe.
+				$cont = 1;
 				$existe = $dir->findRecursive($this->data[$this->alias]['url']['name']);
+				$name = $this->data[$this->alias]['url']['name'];
 				
-				// si ya existe, se le cambia el nombre y la url.
-				if(!empty($existe)) {
-					$this->data[$this->alias]['nombre'] = $cont . '_' . $name;
-					$this->data[$this->alias]['url']['name'] = $cont . '_' . $name;
+				while (!empty($existe)){
+					$existe = $dir->findRecursive($this->data[$this->alias]['url']['name']);
+					
+					// si ya existe, se le cambia el nombre y la url.
+					if(!empty($existe)) {
+						$this->data[$this->alias]['nombre'] = $cont . '_' . $name;
+						$this->data[$this->alias]['url']['name'] = $cont . '_' . $name;
+					}
+					$cont++;
 				}
-				$cont++;
 			}
 		}
 		return parent::beforeValidate($options);
