@@ -5,7 +5,7 @@
 	<table>
 		<tr>
 			<td width="50px">
-			<?php
+			<?php 
 				if (!empty($blogforo['Usuario']['urlfoto'])) {
 					echo $this->Html->image($blogforo['Usuario']['urlfoto'], array('class' => 'left', 'width' => '50px'));
 				} 
@@ -57,6 +57,7 @@
 		<?php 
 			$cont = 0;
 			foreach ($blogforo['Comentario'] as $comentario):
+				pr($comentario);
 		?>
 			<table>
 				<tr><td width="50px">

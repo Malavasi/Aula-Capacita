@@ -12,7 +12,7 @@ MATERIALES
     [D][x] Cambiar forma de subir archivos de BD a filesystem.
     [D][x] arreglar la descarga de materiales, no se descargan los datos. revisar encabezado http.
     [D][x] Ver cómo manejar cuando el mismo usuario va a subir archivos con el mismo nombre
-    [][] agregar barra de progreso al subir un archivo.
+    [D][] agregar barra de progreso al subir/bajar un archivo.
 
 MATRICULAS
     [D][x] Permitir que los estudiantes puedan estar matriculados en varios cursos.
