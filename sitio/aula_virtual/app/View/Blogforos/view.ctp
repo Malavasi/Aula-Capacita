@@ -57,7 +57,6 @@
 		<?php 
 			$cont = 0;
 			foreach ($blogforo['Comentario'] as $comentario):
-				pr($comentario);
 		?>
 			<table>
 				<tr><td width="50px">
