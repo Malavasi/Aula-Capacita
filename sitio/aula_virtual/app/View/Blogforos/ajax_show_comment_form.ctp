@@ -8,7 +8,7 @@
 		echo $this->Js->submit("Enviar Comentario",
 								array('url' => array( 'action' => 'AjaxAddComment'),
 								'before' => $this->Js->get('#comm')->effect('fadeIn'),
-								'success' => $this->Js->get('#commForm')->effect('fadeOut'),
+								'success' => $this->Js->get('#formAddComment')->effect('fadeOut'),
 								'update' => '#comments'));
 		echo $this->Form->end();
 		

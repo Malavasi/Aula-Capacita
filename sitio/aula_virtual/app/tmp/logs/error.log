@@ -1144,7 +1144,7 @@ Stack Trace:
 #6 {main}
 2014-07-14 14:44:03 Error: Fatal Error (1): Call to a member function findById() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php, line 35]
 2014-07-14 14:44:03 Error: [FatalErrorException] Call to a member function findById() on a non-object
-Request URL: /cake/BlogForos/index/1
+Request URL: /cake/Blogforo/index/1
 Stack Trace:
 #0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 35)
 #1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 35, Array)
@@ -1153,7 +1153,7 @@ Stack Trace:
 #4 [internal function]: App::shutdown()
 #5 {main}
 2014-07-14 15:01:52 Error: [MissingModelException] BlogForo
-Request URL: /cake/BlogForos/index/1
+Request URL: /cake/Blogforo/index/1
 Stack Trace:
 #0 G:\Nube\GitHub\Aula-Capacita\sitio\cake\lib\Cake\Controller\Controller.php(1080): PaginatorComponent->paginate('BlogForo', Array, Array)
 #1 G:\Nube\GitHub\Aula-Capacita\sitio\cake\app\Controller\BlogforosController.php(42): Controller->paginate('BlogForo')
@@ -3268,7 +3268,7 @@ Stack Trace:
 #5 {main}
 2014-08-09 21:38:24 Error: Fatal Error (4): syntax error, unexpected ')' in [/Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/View/Blogforos/index.ctp, line 18]
 2014-08-09 21:38:24 Error: [FatalErrorException] syntax error, unexpected ')'
-Request URL: /Aula-capacita/sitio/cake/BlogForos/index
+Request URL: /Aula-capacita/sitio/cake/Blogforo/index
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Error/ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
 #1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
@@ -3277,7 +3277,7 @@ Stack Trace:
 #4 [internal function]: App::shutdown()
 #5 {main}
 2014-08-09 22:15:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Blogforos.curso_id' in 'where clause'
-Request URL: /Aula-capacita/sitio/cake/BlogForos/index
+Request URL: /Aula-capacita/sitio/cake/Blogforo/index
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
 #1 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Blogfor...', Array)
@@ -3286,7 +3286,7 @@ Stack Trace:
 #4 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Blogforo), Array)
 #5 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
 #6 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
-#7 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/BlogForosController.php(32): PaginatorComponent->paginate('Blogforo', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/app/Controller/BlogforoController.php(32): PaginatorComponent->paginate('Blogforo', Array)
 #8 [internal function]: BlogforosController->index()
 #9 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
 #10 /Applications/XAMPP/xamppfiles/htdocs/Aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
@@ -5487,25 +5487,25 @@ Stack Trace:
 #4 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #5 /Applications/XAMPP/xamppfiles/htdocs/aula-capacita/sitio/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
-2014-09-18 10:41:32 Error: [MissingControllerException] Controller class BlogForosController could not be found.
+2014-09-18 10:41:32 Error: [MissingControllerException] Controller class BlogforoController could not be found.
 Exception Attributes: array (
-  'class' => 'BlogForosController',
+  'class' => 'BlogforoController',
   'plugin' => NULL,
 )
-Request URL: /capacitavirtual/BlogForos/index/11
+Request URL: /capacitavirtual/Blogforo/index/11
 Stack Trace:
 #0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2014-09-18 10:44:54 Error: [MissingViewException] View file "/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/BlogForos/index.ctp" is missing.
+2014-09-18 10:44:54 Error: [MissingViewException] View file "/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Blogforo/index.ctp" is missing.
 Exception Attributes: array (
-  'file' => '/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/BlogForos/index.ctp',
+  'file' => '/home1/etechni1/public_html/capacita-co/capacitavirtual/app/View/Blogforo/index.ctp',
 )
-Request URL: /capacitavirtual/BlogForos/index/11
+Request URL: /capacitavirtual/Blogforo/index/11
 Stack Trace:
 #0 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
 #1 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
 #2 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
-#3 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogForosController), Object(CakeRequest))
+#3 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforoController), Object(CakeRequest))
 #4 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 2014-09-18 10:45:46 Error: [MissingControllerException] Controller class BlogforosController could not be found.
@@ -5655,7 +5655,7 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
 [main] - APP/webroot/index.php, line 108
 
-2014-11-24 17:01:37 Warning: Warning (2): include(/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php): failed to open stream: No such file or directory in [/home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Core/App.php, line 545]
+2014-11-24 17:01:37 Warning: Warning (2): include(/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogforoController.php): failed to open stream: No such file or directory in [/home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Core/App.php, line 545]
 Trace:
 App::load() - CORE/Cake/Core/App.php, line 545
 App::load() - CORE/Cake/Core/App.php, line 545
@@ -5666,7 +5666,7 @@ Dispatcher::_getController() - CORE/Cake/Routing/Dispatcher.php, line 233
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 156
 [main] - APP/webroot/index.php, line 108
 
-2014-11-24 17:01:37 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php' for inclusion (include_path='/home1/etechni1/public_html/capacita-co/capacitavirtual/lib:.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in [/home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Core/App.php, line 545]
+2014-11-24 17:01:37 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogforoController.php' for inclusion (include_path='/home1/etechni1/public_html/capacita-co/capacitavirtual/lib:.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in [/home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Core/App.php, line 545]
 Trace:
 App::load() - CORE/Cake/Core/App.php, line 545
 App::load() - CORE/Cake/Core/App.php, line 545
@@ -5677,23 +5677,23 @@ Dispatcher::_getController() - CORE/Cake/Routing/Dispatcher.php, line 233
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 156
 [main] - APP/webroot/index.php, line 108
 
-2014-11-24 17:01:37 Error: [MissingControllerException] Controller class BlogForosController could not be found.
+2014-11-24 17:01:37 Error: [MissingControllerException] Controller class BlogforoController could not be found.
 Exception Attributes: array (
-  'class' => 'BlogForosController',
+  'class' => 'BlogforoController',
   'plugin' => NULL,
 )
-Request URL: /capacitavirtual/BlogForos/index
+Request URL: /capacitavirtual/Blogforo/index
 Stack Trace:
 #0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-11-26 07:31:37 Error: [NotFoundException] Foro inválido
-Request URL: /capacitavirtual/BlogForos/AjaxAddComment
+Request URL: /capacitavirtual/Blogforo/AjaxAddComment
 Stack Trace:
-#0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php(212): BlogForosController->view(NULL)
-#1 [internal function]: BlogForosController->AjaxAddComment()
-#2 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogForosController), Array)
+#0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogforoController.php(212): BlogforoController->view(NULL)
+#1 [internal function]: BlogforoController->AjaxAddComment()
+#2 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforoController), Array)
 #3 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#4 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogForosController), Object(CakeRequest))
+#4 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforoController), Object(CakeRequest))
 #5 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
 2014-11-26 08:46:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'curso_id' cannot be null
@@ -5872,23 +5872,23 @@ Stack Trace:
 #9 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
 2014-12-08 08:21:26 Error: [NotFoundException] Foro inválido
-Request URL: /capacitavirtual/BlogForos/AjaxAddComment
+Request URL: /capacitavirtual/Blogforo/AjaxAddComment
 Stack Trace:
-#0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php(212): BlogForosController->view(NULL)
-#1 [internal function]: BlogForosController->AjaxAddComment()
-#2 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogForosController), Array)
+#0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogforoController.php(212): BlogforoController->view(NULL)
+#1 [internal function]: BlogforoController->AjaxAddComment()
+#2 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforoController), Array)
 #3 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#4 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogForosController), Object(CakeRequest))
+#4 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforoController), Object(CakeRequest))
 #5 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
 2014-12-08 08:21:34 Error: [NotFoundException] Foro inválido
-Request URL: /capacitavirtual/BlogForos/AjaxAddComment
+Request URL: /capacitavirtual/Blogforo/AjaxAddComment
 Stack Trace:
-#0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogForosController.php(212): BlogForosController->view(NULL)
-#1 [internal function]: BlogForosController->AjaxAddComment()
-#2 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogForosController), Array)
+#0 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/Controller/BlogforoController.php(212): BlogforoController->view(NULL)
+#1 [internal function]: BlogforoController->AjaxAddComment()
+#2 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforoController), Array)
 #3 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#4 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogForosController), Object(CakeRequest))
+#4 /home1/etechni1/public_html/capacita-co/capacitavirtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforoController), Object(CakeRequest))
 #5 /home1/etechni1/public_html/capacita-co/capacitavirtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
 2014-12-12 21:23:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
@@ -6840,7 +6840,7 @@ Stack Trace:
 #4 [internal function]: App::shutdown()
 #5 {main}
 2015-01-01 22:51:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
-Request URL: /capacitavirtual/sitio/aula_virtual/BlogForos/AjaxAddComment
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforo/AjaxAddComment
 Stack Trace:
 #0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
 #1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Usuario...', Array)
@@ -6848,15 +6848,15 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Usuario...', false)
 #4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Usuario), Array)
 #5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
-#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/BlogForosController.php(199): Model->find('all', Array)
-#7 [internal function]: BlogForosController->AjaxAddComment()
-#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogForosController), Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/BlogforoController.php(199): Model->find('all', Array)
+#7 [internal function]: BlogforoController->AjaxAddComment()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforoController), Array)
 #9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogForosController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforoController), Object(CakeRequest))
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
 2015-01-01 23:12:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
-Request URL: /capacitavirtual/sitio/aula_virtual/BlogForos/AjaxAddComment
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforo/AjaxAddComment
 Stack Trace:
 #0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
 #1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Usuario...', Array)
@@ -6864,20 +6864,20 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Usuario...', false)
 #4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Usuario), Array)
 #5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
-#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/BlogForosController.php(200): Model->find('all', Array)
-#7 [internal function]: BlogForosController->AjaxAddComment()
-#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogForosController), Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/BlogforoController.php(200): Model->find('all', Array)
+#7 [internal function]: BlogforoController->AjaxAddComment()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforoController), Array)
 #9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogForosController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforoController), Object(CakeRequest))
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
 2015-01-01 23:12:41 Error: [NotFoundException] Foro inválido
-Request URL: /capacitavirtual/sitio/aula_virtual/BlogForos/view/
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforo/view/
 Stack Trace:
-#0 [internal function]: BlogForosController->view()
-#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogForosController), Array)
+#0 [internal function]: BlogforoController->view()
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforoController), Array)
 #2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
-#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogForosController), Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforoController), Object(CakeRequest))
 #4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 2015-01-03 15:26:46 Error: [MissingTableException] Table materials for model Material was not found in datasource default.
@@ -8707,3 +8707,78 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MaterialesController), Object(CakeRequest))
 #4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-01-11 20:49:18 Error: [MissingControllerException] Controller class BlogforoController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogforoController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforo/view/17
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-11 20:51:04 Error: [MissingControllerException] Controller class BlogforoController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogforoController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforo/view/17
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-11 20:51:43 Error: [MissingControllerException] Controller class BlogforoController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogforoController',
+  'plugin' => NULL,
+)
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforo/view/17
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-11 20:57:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforos/AjaxAddComment
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Usuario...', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Usuario), Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/BlogforosController.php(202): Model->find('all', Array)
+#7 [internal function]: BlogforosController->AjaxAddComment()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-11 23:21:33 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforos/AjaxAddComment
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Usuario...', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Usuario), Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/BlogforosController.php(199): Model->find('all', Array)
+#7 [internal function]: BlogforosController->AjaxAddComment()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-11 23:26:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /capacitavirtual/sitio/aula_virtual/Blogforos/AjaxAddComment
+Stack Trace:
+#0 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Usuario...', Array)
+#2 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2905): DboSource->read(Object(Usuario), Array)
+#5 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/Controller/BlogforosController.php(199): Model->find('all', Array)
+#7 [internal function]: BlogforosController->AjaxAddComment()
+#8 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#9 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

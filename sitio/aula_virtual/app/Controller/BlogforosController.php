@@ -11,7 +11,7 @@ App::uses('Blogforo', 'Model');
  * @property Blogforo $Blogforo
  * @property PaginatorComponent $Paginator
  */
-class BlogForosController extends AppController {
+class BlogforosController extends AppController {
 
 /**
  * Components
@@ -187,13 +187,10 @@ class BlogForosController extends AppController {
 		$this->layout = 'ajax';
 		
 		if($this->request->is('post') && isset($_SESSION['id_usuario']))	{
-               
-
 			$this->request->data['Comentario']['usuario_id'] = $_SESSION['id_usuario'];
 			$this->request->data['Comentario']['fecha'] = date("Y-m-d H:i:s");
 				
 			$this->Blogforo->Comentario->create();
-			
 			if($this->Blogforo->Comentario->save($this->request->data))	{
                 //correo
                 $curso = new Cursos();
@@ -232,9 +229,6 @@ class BlogForosController extends AppController {
 				
 				if ($this->Blogforo->Comentario->save($this->request->data)) {
 					$this->Session->setFlash(__('El comentario ha sido actualizado.'));
-					
-					var_dump($this->request->data);
-					
 					return $this->redirect(array('action' => 'view', $this->request->data['Comentario']['blogforo_id']));
 				} else {
 					$this->Session->setFlash(__('El comentario no se ha podido actualizar. Por favor, intente de nuevo.'));
