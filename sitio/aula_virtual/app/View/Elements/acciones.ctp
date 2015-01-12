@@ -59,7 +59,7 @@ if(isset($_SESSION['tipo_usuario'])) {
 			if($_SESSION['blacklisted']) {
 				echo "<strong style=\"color: red\">", 'Bloqueado.', "</strong> <br>";
 			} else {
-				echo '<li>'.$this->Html->link(__('Comentar'), array('controller' => 'Blogforos','action' => 'add')).'</li>';
+				echo '<li>'.$this->Html->link(__('Crear Tema'), array('controller' => 'Blogforos','action' => 'add')).'</li>';
 			}
         }
 	
