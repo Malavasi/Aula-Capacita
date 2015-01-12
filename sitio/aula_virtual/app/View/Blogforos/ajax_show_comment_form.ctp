@@ -1,5 +1,5 @@
 <?php
-	echo '<div id="commForm"><fieldset>';
+	echo '<div id="formAddComment"><fieldset>';
 		echo '<legend>Comentario</legend>';
 		echo $this->Form->create("Comentario");
 		echo $this->Form->input('blogforo_id', array('type' => 'hidden', 'default' => $blogforoID));

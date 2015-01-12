@@ -61,8 +61,8 @@
 			<table>
 				<tr><td width="50px">
 					<?php
-						if ($blogforo['Comentario'][$cont]['tipo_usuario'] <= 2 and !empty($blogforo['Usuario']['urlfoto'])) {
-							echo $this->Html->image($blogforo['Comentario'][$cont]['urlfoto'], array('class' => 'left', 'width' => '50px'));
+						if ($blogforo['Comentario'][$cont]['tipo_usuario'] <= 2 and !empty($comentario['urlfoto'])) {
+							echo $this->Html->image($comentario['urlfoto'], array('class' => 'left', 'width' => '50px'));
 						}
 					?>
 					</td>
@@ -72,7 +72,7 @@
 					
 					<?php
 						if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 and $blogforo['Comentario'][$cont]['usuario_id'] != $_SESSION['id_usuario']) {
-							echo 'de ', $this->Html->link($blogforo['Comentario'][$cont]['nombre'].' '.$blogforo['Comentario'][$cont]['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $blogforo['Usuario']['id']));
+							echo 'de ', $this->Html->link($comentario['nombre'].' '.$comentario['apellidos'], array('controller' => 'usuarios', 'action' => 'view', $comentario['usuario_id']));
 							echo ' - ';
 							
 							if($comentario['blacklisted']){
@@ -83,13 +83,13 @@
 							
 							echo $this->Html->link($block_unblock, array('controller' => 'Usuarios', 'action' => 'blacklist', $blogforo['Blogforo']['id'], $comentario['usuario_id']));
 						} else {
-							echo 'de ', $blogforo['Comentario'][$cont]['nombre'], ' ', $blogforo['Comentario'][$cont]['apellidos'];
+							echo 'de ', $comentario['nombre'], ' ', $comentario['apellidos'];
 						}
 					?>
 					&nbsp; - &nbsp;
 					<?php
-						if ($_SESSION['id_usuario'] == $blogforo['Comentario'][$cont]['usuario_id']) {
-							echo $this->Html->link(__('Editar'), array('controller' => 'Blogforos', 'action' => 'editComment', $blogforo['Comentario'][$cont]['id'])); 
+						if ($_SESSION['id_usuario'] == $comentario['usuario_id']) {
+							echo $this->Html->link(__('Editar'), array('controller' => 'Blogforos', 'action' => 'editComment', $comentario['id'])); 
 							echo '&nbsp; - &nbsp';
 						}
 					?>

@@ -3,7 +3,7 @@
 App::uses('AppController', 'Controller');
 App::uses('Usuario', 'Model');
 App::uses('CakeEmail', 'Network/Email');
-App::uses('Cursos', 'Model');
+App::uses('Curso', 'Model');
 App::uses('Blogforo', 'Model');
 /**
  * Blogforos Controller
@@ -193,10 +193,9 @@ class BlogforosController extends AppController {
 			$this->Blogforo->Comentario->create();
 			if($this->Blogforo->Comentario->save($this->request->data))	{
                 //correo
-                $curso = new Cursos();
-                   $matriculas = $curso->findById($_SESSION['id_curso']);//('all', array('conditions' => array('id' => $_SESSION['id_curso'] )) );
-                    $usuarios = new Usuario();     
-                    $profesor =  $usuarios->find('all', array('conditions' => array('id' =>$matriculas['Cursos']['usuario_id'] )) );
+                //$curso = new Cursos();
+                   $curso = $this->Curso->findById($_SESSION['id_curso']);//('all', array('conditions' => array('id' => $_SESSION['id_curso'] )) );
+                   $profesor =  $this->Usuario->find('all', array('conditions' => array('Usuario.id' => $curso['Curso']['usuario_id'] )) );
                         if(isset($profesor[0])  &&  $profesor[0]['Usuario']['notificaciones']==1)
                         {
                             $Email = new CakeEmail('default');
