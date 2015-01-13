@@ -8798,3 +8798,205 @@ Stack Trace:
 #10 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
 #11 /Applications/MAMP/htdocs/capacitavirtual/sitio/aula_virtual/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2015-01-12 22:43:27 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php(14): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2015-01-12 22:44:36 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 28]
+2015-01-12 22:44:36 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 22:46:33 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 28]
+2015-01-12 22:46:33 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 22:46:34 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 28]
+2015-01-12 22:46:34 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 22:46:51 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 28]
+2015-01-12 22:46:51 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 22:47:13 Error: [MissingHelperException] Helper class EmailHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EmailHelper',
+  'plugin' => false,
+)
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(886): HelperCollection->load('Email', Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(1241): View->__construct(Object(UsuariosController))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(940): Controller->_getViewObject()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#8 {main}
+2015-01-12 22:47:44 Error: [MissingHelperException] Helper class EmailHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EmailHelper',
+  'plugin' => false,
+)
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(886): HelperCollection->load('Email', Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(1241): View->__construct(Object(UsuariosController))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(940): Controller->_getViewObject()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#8 {main}
+2015-01-12 22:47:46 Error: [MissingHelperException] Helper class EmailHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EmailHelper',
+  'plugin' => false,
+)
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(886): HelperCollection->load('Email', Array)
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\View\View.php(354): View->loadHelpers()
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(1241): View->__construct(Object(UsuariosController))
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(940): Controller->_getViewObject()
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#8 {main}
+2015-01-12 22:48:02 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 28]
+2015-01-12 22:48:02 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 22:48:52 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 28]
+2015-01-12 22:48:52 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 22:50:32 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 28]
+2015-01-12 22:50:32 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 28, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 23:05:21 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 29]
+2015-01-12 23:05:21 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 23:05:32 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 29]
+2015-01-12 23:05:33 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 23:14:12 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 29]
+2015-01-12 23:14:12 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 23:14:22 Error: Fatal Error (1): Call to a member function hola() on a non-object in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 29]
+2015-01-12 23:14:22 Error: [FatalErrorException] Call to a member function hola() on a non-object
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'G:\Nube\GitHub\...', 29, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 23:18:07 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Lib\Correo.php, line 3]
+2015-01-12 23:18:08 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 3, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 3, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-12 23:52:26 Error: Fatal Error (1): Call to undefined method Correo::hola() in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\UsuariosController.php, line 30]
+2015-01-12 23:52:26 Error: [FatalErrorException] Call to undefined method Correo::hola()
+Request URL: /aula_virtual/usuarios
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'G:\Nube\GitHub\...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'G:\Nube\GitHub\...', 30, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'G:\Nube\GitHub\...', 30, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

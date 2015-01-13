@@ -6,6 +6,7 @@ App::uses('Programas', 'Model');
 App::uses('CakeEmail', 'Network/Email');
 App::uses('Folder', 'Utility');
 App::uses('File', 'Utility');
+App::uses('Correo', 'Lib');
 /**
  * Materiales Controller
  *
@@ -111,14 +112,8 @@ class MaterialesController extends AppController {
                     foreach($matriculas as $matricula) {
                         $estudiantes =  $usuarios->find('all', array('conditions' => array('Usuario.id' =>$matricula['Matriculas']['usuario_id'] )) );
                         if(isset($estudiantes[0]) &&  $estudiantes[0]['Usuario']['notificaciones']==1) {
-                            $Email = new CakeEmail('default');
-                            $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
-                            $Email->to($estudiantes[0]['Usuario']['email']);
-                            $Email->subject('Nuevo archivo');
-                            $Email->template('archivo');
-                            $Email->viewVars(array('Usuario' =>$estudiantes[0]['Usuario']['nombre'].' '.$estudiantes[0]['Usuario']['apellidos'], 'archivo'=>$this->request->data['Material']['url']['name'],'curso'=>''));
-                            $Email->emailFormat('html');
-                            $Email->send();
+                            $correo = new Correo();
+                            $correo->enviar($estudiantes[0]['Usuario']['email'],'Nuevo archivo','archivo',array('Usuario' =>$estudiantes[0]['Usuario']['nombre'].' '.$estudiantes[0]['Usuario']['apellidos'], 'archivo'=>$this->request->data['Material']['url']['name'],'curso'=>''),FALSE);0
                         }
                     }
 					

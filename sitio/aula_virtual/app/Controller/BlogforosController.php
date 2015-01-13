@@ -3,6 +3,7 @@
 App::uses('AppController', 'Controller');
 App::uses('Usuario', 'Model');
 App::uses('CakeEmail', 'Network/Email');
+App::uses('Correo', 'Lib');
 App::uses('Curso', 'Model');
 App::uses('Blogforo', 'Model');
 /**
@@ -192,20 +193,12 @@ class BlogforosController extends AppController {
 				
 			$this->Blogforo->Comentario->create();
 			if($this->Blogforo->Comentario->save($this->request->data))	{
-                //correo
-                //$curso = new Cursos();
                    $curso = $this->Curso->findById($_SESSION['id_curso']);//('all', array('conditions' => array('id' => $_SESSION['id_curso'] )) );
                    $profesor =  $this->Usuario->find('all', array('conditions' => array('Usuario.id' => $curso['Curso']['usuario_id'] )) );
                         if(isset($profesor[0])  &&  $profesor[0]['Usuario']['notificaciones']==1)
                         {
-                            $Email = new CakeEmail('default');
-                            $Email->from(array('soporte@capacita.co' => 'Aula Capacita'));
-                            $Email->to($profesor[0]['Usuario']['email']);
-                            $Email->subject('Nuevo comentario');
-                            $Email->template('Comentario');
-                            $Email->viewVars(array('Usuario' =>$profesor[0]['Usuario']['nombre'].' '.$profesor[0]['Usuario']['apellidos'],'curso'=>''));
-                            $Email->emailFormat('html');
-                            $Email->send();
+                            $correo = new Correo();
+                            $correo->enviar($profesor[0]['Usuario']['email'],'Nuevo comentario','Comentario',array('Usuario' =>$profesor[0]['Usuario']['nombre'].' '.$profesor[0]['Usuario']['apellidos'],'curso'=>''),FALSE);
                         }
             
 				$this->view($this->request->data['Comentario']['blogforo_id']);

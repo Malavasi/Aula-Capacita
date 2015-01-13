@@ -1,6 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
 App::uses('CakeEmail', 'Network/Email');
+App::uses('Correo', 'Lib');
 /**
  * Usuarios Controller
  *
@@ -25,11 +26,9 @@ class UsuariosController extends AppController {
  * @return void
  */
 	public function index() {
-                    
          if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] == 1 ) {
 		    $this->Usuario->recursive = 0;
-             
-		    $this->set('usuarios', $this->Paginator->paginate());
+            $this->set('usuarios', $this->Paginator->paginate());
         } else {
             $this->redirect(array('controller' =>'inicio','action' => 'index'));    
         }
@@ -95,18 +94,8 @@ class UsuariosController extends AppController {
 			    //creacion del usuario para ser almacenado
 			    $this->Usuario->create();
 			    if ($this->Usuario->save($this->request->data)) {
-
-                    //correo
-                    $Email = new CakeEmail('default');
-                    $Email->from(array('soporte@capacita.co' => 'Soporte Capacita'));
-                    $Email->to($this->request->data['Usuario']['email']);
-                    $Email->subject('Usuario creado');
-                    $Email->template('UsuarioCreado');
-                    $Email->viewVars(array('Usuario' =>$this->request->data['Usuario']['nombre'].' '.$this->request->data['Usuario']['apellidos'] , 'nick' => $this->request->data['Usuario']['nick'], 'contrasena'=>$contrasenaTmp));
-                    $Email->emailFormat('html');
-					$Email->attachments(array('manual_usuario.pdf' => WWW_ROOT.'files/Manual.pdf'));
-					//$Email->attachments(array('manual_usuario.pdf' => '/capacitavirtual/app/webroot/files/Manual.pdf'));
-                    $Email->send();
+                    $correo = new Correo();
+                    $correo->enviar($this->request->data['Usuario']['email'],'Usuario creado','UsuarioCreado',array('Usuario' =>$this->request->data['Usuario']['nombre'].' '.$this->request->data['Usuario']['apellidos'] , 'nick' => $this->request->data['Usuario']['nick'], 'contrasena'=>$contrasenaTmp),TRUE);
                     $this->Session->setFlash(__('El usuario ha sido creado.'));
 				    return $this->redirect(array('action' => 'add'));
 			    } else {
@@ -126,7 +115,7 @@ class UsuariosController extends AppController {
         $noCreados = "";
         if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario']<=1 )
         {
-		   
+		    $correo = new Correo();
             if (!empty($this->request->data) && is_uploaded_file($this->request->data['Usuarios']['File']['tmp_name'])) {
                  $fileData = fopen($this->request->data['Usuarios']['File']['tmp_name'], "r");
                  $header = fgetcsv($fileData);
@@ -145,16 +134,8 @@ class UsuariosController extends AppController {
 			        $this->Usuario->create();
                     if ($this->Usuario->save($usuario)) {
                         //correo
-                        $Email = new CakeEmail('default');
-                        $Email->from(array('soporte@capacita.co' => 'Soporte Capacita'));
-                        $Email->to($usuario['Usuario']['email']);
-                        $Email->subject('Usuario creado');
-                        $Email->template('UsuarioCreado');
-                        $Email->viewVars(array('Usuario' =>$usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'] , 'nick' => $usuario['Usuario']['nick'], 'contrasena'=>$contrasenaTmp));
-                        $Email->emailFormat('html');
-					    $Email->attachments(array('manual_usuario.pdf' => ROOT.'/app/webroot/files/Manual.pdf'));
-					    $Email->send();
-			    } else {
+                        $correo->enviar($usuario['Usuario']['email'],'Usuario creado','UsuarioCreado',array('Usuario' =>$usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos'] , 'nick' => $usuario['Usuario']['nick'], 'contrasena'=>$contrasenaTmp),TRUE);
+ 			    } else {
                     $noCreados .='El usuario '.$usuario['Usuario']['nick'] . ' no se ha podido crear. Podría estar repetido.<br>';
 			    }
                 if(!empty($this->request->data['Usuarios']['curso']))
@@ -383,16 +364,8 @@ class UsuariosController extends AppController {
 		    	
 				if($usuario['Usuario']['blacklisted']) {
 					$this->Session->setFlash(__('El usuario se agregó a la lista negra'));
-					
-					//notificación por correo
-					$Email = new CakeEmail('default');
-                    $Email->from(array('soporte@capacita.co' => 'Soporte Capacita'));
-                    $Email->to($usuario['Usuario']['email']);
-                    $Email->subject('Lista Negra');
-                    $Email->template('blacklisted');
-                    $Email->viewVars(array('Usuario' =>$usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos']));
-                    $Email->emailFormat('html');
-                    $Email->send();
+					$correo = new Correo();
+                    $correo->enviar($usuario['Usuario']['email'],'Lista Negra','blacklisted',array('Usuario' =>$usuario['Usuario']['nombre'].' '.$usuario['Usuario']['apellidos']),FALSE);
                     $this->Session->setFlash(__('El usuario ha sido creado.'));
 				} else {
 					$this->Session->setFlash(__('El usuario ha sido de removido de la lista negra'));
