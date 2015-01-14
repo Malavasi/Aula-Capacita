@@ -9000,3 +9000,13 @@ Stack Trace:
 #3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-01-14 14:23:12 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\BlogforosController.php, line 95]
+2015-01-14 14:23:12 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /aula_virtual/Blogforos/index/11
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'G:\Nube\GitHub\...', 95, Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'G:\Nube\GitHub\...', 95, Array)
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

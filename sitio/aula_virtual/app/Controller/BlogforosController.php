@@ -6,6 +6,7 @@ App::uses('CakeEmail', 'Network/Email');
 App::uses('Correo', 'Lib');
 App::uses('Curso', 'Model');
 App::uses('Blogforo', 'Model');
+App::uses('Correo', 'Lib');
 /**
  * Blogforos Controller
  *
@@ -55,8 +56,7 @@ class BlogforosController extends AppController {
 			if (!$this->Blogforo->exists($id)) {
 				throw new NotFoundException(__('Foro inválido'));
 			}
-	        //$_SESSION['id_curso'] = $id;
-			
+            
 			$options = array('conditions' => array('Blogforo.' . $this->Blogforo->primaryKey => $id));
 	        $usuario = new Usuario();
 	        $blogforo = $this->Blogforo->find('first', $options);
@@ -91,6 +91,10 @@ class BlogforosController extends AppController {
 	            $this->request->data['Blogforo']['usuario_id'] = $_SESSION['id_usuario'];
 				
 				$this->Blogforo->create();
+                $correo = new Correo();
+                $correo->enviar('f.adrian59@yahoo.com','Mensaje del foro','mensaje_foro',array('asunto'=>$this->request->data['Blogforo']['asunto'],'cuerpo'=>$this->request->data['Blogforo']['cuerpo'],'usuario'=> $usuario,'curso'=>$curso),FALSE);
+	            //$_SESSION['id_curso'] = $id;
+			
 				if ($this->Blogforo->save($this->request->data)) {
 					$this->Session->setFlash(__('El foro ha sido creado.'));
 					return $this->redirect(array('controller' => 'Blogforos', 'action' => 'index', $_SESSION['id_curso']));
