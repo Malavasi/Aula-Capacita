@@ -91,8 +91,8 @@ class BlogforosController extends AppController {
 	            $this->request->data['Blogforo']['usuario_id'] = $_SESSION['id_usuario'];
 				
 				$this->Blogforo->create();
-                $correo = new Correo();
-                $correo->enviar('f.adrian59@yahoo.com','Mensaje del foro','mensaje_foro',array('asunto'=>$this->request->data['Blogforo']['asunto'],'cuerpo'=>$this->request->data['Blogforo']['cuerpo'],'usuario'=> $usuario,'curso'=>$curso),FALSE);
+                //$correo = new Correo();
+                //$correo->enviar('fadrian59@gmail.com','Mensaje del foro','mensaje_foro',array('asunto'=>$this->request->data['Blogforo']['asunto'],'cuerpo'=>$this->request->data['Blogforo']['cuerpo'],'usuario'=> '','curso'=>''),FALSE);
 	            //$_SESSION['id_curso'] = $id;
 			
 				if ($this->Blogforo->save($this->request->data)) {
@@ -196,6 +196,10 @@ class BlogforosController extends AppController {
 			$this->request->data['Comentario']['fecha'] = date("Y-m-d H:i:s");
 				
 			$this->Blogforo->Comentario->create();
+            $correo = new Correo();
+
+            $correo->enviar('f.adrian59@yahoo.com,fadrian59@gmail.com','Mensaje del foro','mensaje_foro',array('comentario'=>$this->request->data['Comentario']['comentario'],'usuario'=> '','curso'=>''),FALSE);
+	            
 			if($this->Blogforo->Comentario->save($this->request->data))	{
                    $curso = $this->Curso->findById($_SESSION['id_curso']);//('all', array('conditions' => array('id' => $_SESSION['id_curso'] )) );
                    $profesor =  $this->Usuario->find('all', array('conditions' => array('Usuario.id' => $curso['Curso']['usuario_id'] )) );
@@ -222,7 +226,9 @@ class BlogforosController extends AppController {
 			if ($this->request->is(array('post', 'put'))) {
 				
 				$this->request->data['Comentario']['fechapublicacion'] = date("Y-m-d H:i:s");
-				
+				$correo = new Correo();
+                $correo->enviar('f.adrian59@yahoo.com','Mensaje del foro','mensaje_foro',array('comentario'=>$this->request->data['Comentario']['comentario'],'usuario'=> '','curso'=>''),FALSE);
+	        
 				if ($this->Blogforo->Comentario->save($this->request->data)) {
 					$this->Session->setFlash(__('El comentario ha sido actualizado.'));
 					return $this->redirect(array('action' => 'view', $this->request->data['Comentario']['blogforo_id']));

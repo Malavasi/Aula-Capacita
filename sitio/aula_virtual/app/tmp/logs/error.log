@@ -9010,3 +9010,41 @@ Stack Trace:
 #3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-01-14 22:42:04 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+',
+  'enabled' => true,
+)
+Request URL: /aula_virtual/sesiones/login
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3482): ConnectionManager::getDataSource('default')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(1128): Model->setDataSource('default')
+#4 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(3504): Model->setSource('usuarios')
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\SesionesController.php(14): Model->find('all', Array)
+#8 [internal function]: SesionesController->login()
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SesionesController), Array)
+#10 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(SesionesController), Object(CakeRequest))
+#12 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#14 {main}
+2015-01-21 21:38:49 Error: [SocketException] Invalid email: "f.adrian59@yahoo.com,fadrian59@gmail.com"
+Request URL: /aula_virtual/Blogforos/AjaxAddComment
+Stack Trace:
+#0 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail('f.adrian59@yaho...')
+#1 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Network\Email\CakeEmail.php(445): CakeEmail->_setEmail('_to', 'f.adrian59@yaho...', NULL)
+#2 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Lib\Correo.php(7): CakeEmail->to('f.adrian59@yaho...')
+#3 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\Controller\BlogforosController.php(201): Correo->enviar('f.adrian59@yaho...', 'Mensaje del for...', 'mensaje_foro', Array, false)
+#4 [internal function]: BlogforosController->AjaxAddComment()
+#5 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BlogforosController), Array)
+#6 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BlogforosController), Object(CakeRequest))
+#8 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 G:\Nube\GitHub\Aula-Capacita\sitio\aula_virtual\index.php(41): require('G:\Nube\GitHub\...')
+#10 {main}
